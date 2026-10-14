@@ -12,6 +12,33 @@ const {pathToFileURL}=require('node:url');
   catch(error){failures.push(name+': '+error.message);}finally{await page.close();}
  }
  try{
+  await scenario('Bulk controls allow subsequent individual edits and restore the overview',async page=>{
+   assert.equal(await page.locator('.map-controls #expand-all').count(),1);
+   assert.equal(await page.locator('.map-controls #reset-map').count(),1);
+   const initial=await page.evaluate(()=>graph.getState()),ready=()=>page.evaluate(()=>graph.whenReady());
+   const openAll=async()=>{await page.locator('#expand-all').click();await ready();};
+   const closeAll=async()=>{await page.locator('#reset-map').click();await ready();};
+   await openAll();
+   const complete=await page.evaluate(()=>({state:graph.getState(),visible:graph.getVisibleGraph(),owners:Object.keys(LAW_GRAPH.expansions),count:data.stages.length+data.entities.length}));
+   assert.deepEqual([...complete.state.expanded].sort(),complete.owners.sort());assert.equal(complete.visible.nodes.length,complete.count);
+   assert.ok(complete.visible.nodes.some(node=>node.id==='ilp-electors'),'Bulk expansion includes nested participants');
+   await page.evaluate(async()=>{await graph.toggle('senate-source');await graph.toggle('autonomy-source');});
+   const edited=await page.evaluate(()=>graph.getState());assert.ok(!edited.expanded.includes('senate-source')&&!edited.expanded.includes('autonomy-source'));assert.ok(edited.expanded.includes('ilp-signatures'));
+   await openAll();assert.equal((await page.evaluate(()=>graph.getVisibleGraph())).nodes.length,complete.count);
+   await closeAll();assert.deepEqual(await page.evaluate(()=>graph.getState()),initial);
+   await page.evaluate(async()=>{await graph.toggle('initiative');await graph.toggle('senate-source');});
+   await closeAll();assert.deepEqual(await page.evaluate(()=>graph.getState()),initial);
+   await closeAll();assert.deepEqual(await page.evaluate(()=>graph.getState()),initial);
+   await page.locator('#expand-all').click();await page.locator('#reset-map').click();await ready();
+   assert.deepEqual(await page.evaluate(()=>graph.getState()),initial,'Collapse must cancel an unfinished bulk expansion');
+   await page.evaluate(async()=>{await graph.setLawMode('organic');await graph.showReturns(false);});await openAll();
+   const filtered=await page.evaluate(()=>({state:graph.getState(),visible:graph.getVisibleGraph()}));
+   assert.equal(filtered.state.lawMode,'organic');assert.equal(filtered.state.returns,false);
+   assert.ok(!filtered.visible.nodes.some(node=>['return','ilp-signatures','ilp-electors','congress-full-commission'].includes(node.id)),'Bulk expansion respects the selected filters');
+   await closeAll();const collapsed=await page.evaluate(()=>graph.getState());assert.deepEqual(collapsed.expanded,[]);assert.equal(collapsed.lawMode,'organic');assert.equal(collapsed.returns,false);
+   await page.setViewportSize({width:390,height:844});
+   const controls=await page.locator('.map-controls').boundingBox(),fullscreen=await page.locator('#fullscreen').boundingBox();assert.ok(controls.x+controls.width<fullscreen.x,'Bulk buttons must fit beside fullscreen on mobile');
+  });
   await scenario('Stable source order through expansion and collapse',async page=>{
    await page.evaluate(()=>graph.toggle('initiative'));
    const sourceOrder=()=>page.evaluate(()=>graph.getVisibleGraph().nodes.filter(node=>node.parent==='initiative').sort((a,b)=>graph.getState().positions[a.id].x-graph.getState().positions[b.id].x).map(node=>node.id));

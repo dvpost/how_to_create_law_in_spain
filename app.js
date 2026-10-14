@@ -67,7 +67,8 @@ document.addEventListener('keydown',event=>{
  if(event.key==='Escape'&&!dialog.open&&!archiveDialog.open&&!document.getElementById('term-popover').matches(':popover-open'))closeDetail();
 });
 document.getElementById('align').addEventListener('click',()=>graph.align());
-document.getElementById('reset-map').addEventListener('click',()=>{graph.reset();closeDetail();});
+document.getElementById('expand-all').addEventListener('click',()=>{glossary.close();closeDetail();selected=null;graph.expandAll();});
+document.getElementById('reset-map').addEventListener('click',()=>{glossary.close();closeDetail();selected=null;graph.reset();});
 document.getElementById('show-descriptions').addEventListener('change',event=>{if(!event.target.checked)closeDetail();});
 document.getElementById('show-terms').addEventListener('change',event=>{
  glossary.setEnabled(event.target.checked);graph.refreshLabels();

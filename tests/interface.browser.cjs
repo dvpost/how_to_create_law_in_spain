@@ -13,15 +13,15 @@ const {pathToFileURL}=require('node:url');
   const settings=async()=>{if(!await page.locator('#settings-menu').isVisible())await page.locator('#settings-toggle').click();};
   const closeSettings=async()=>{if(await page.locator('#settings-menu').isVisible())await page.locator('#settings-toggle').click();};
   const noScroll=()=>page.evaluate(()=>document.documentElement.scrollHeight<=innerHeight&&document.documentElement.scrollWidth<=innerWidth&&scrollY===0&&scrollX===0);
-  // Initial page consists of the whole-viewport map and four small controls.
+  // Initial page consists of the whole-viewport map and six small controls.
   const area=await page.locator('#viewport').boundingBox();assert.deepEqual(area,{x:0,y:0,width:1600,height:1000});
   assert.equal(await noScroll(),true);assert.equal(await page.locator('header,footer,select,input[type=file],#export-layout,#import-layout').count(),0);
   for(const id of ['detail-panel','settings-menu','project-menu','help-menu'])assert.equal(await page.locator('#'+id).isVisible(),false);
-  assert.equal(await page.locator('.map-controls button').count(),3);assert.equal((await state()).lawMode,'all');
+  assert.equal(await page.locator('.map-controls button').count(),5);assert.equal((await state()).lawMode,'all');
   const initial=await state(),root=initial.positions.initiative;
   assert.ok(Math.abs(root.x*initial.viewport.zoom+initial.viewport.pan.x-800)<320,'Initial route is near the horizontal centre');
   await page.screenshot({path:path.resolve(__dirname,'../reports/map.png')});
-  await page.locator('#menu-toggle').click();assert.match(await page.locator('#project-menu').textContent(),/Как появляется закон.*v16/s);await page.locator('#menu-toggle').click();
+  await page.locator('#menu-toggle').click();assert.match(await page.locator('#project-menu').textContent(),/Как появляется закон.*v17/s);await page.locator('#menu-toggle').click();
   await page.locator('#help-toggle').click();assert.match(await page.locator('#help-menu').textContent(),/Связь без стрелки/);assert.equal(await noScroll(),true);await page.locator('#help-toggle').click();
   // Reading and independently disabling descriptions/terms must preserve the graph.
   await page.evaluate(()=>graph.activate('publication'));assert.equal(await page.locator('#detail-panel').isVisible(),true);assert.deepEqual(await state(),initial);
@@ -43,7 +43,7 @@ const {pathToFileURL}=require('node:url');
   await page.evaluate(()=>graph.activate('congress-law-type'));assert.match(await page.locator('#detail-content').textContent(),/Junta de Portavoces/);await page.locator('#detail-content [data-proof="020"]').first().click();assert.match(await page.locator('#proof-title').textContent(),/020/);await page.keyboard.press('Escape');await page.locator('#close-detail').click();
   await settings();await page.locator('input[value="organic"]').check();await ready();await closeSettings();visible=await view();assert.ok(visible.nodes.some(node=>node.id==='ilp-admit'));assert.ok(!visible.nodes.some(node=>node.id==='ilp-signatures'||node.id==='congress-ordinary-type'));
   await settings();await page.locator('input[value="ordinary"]').check();await ready();await closeSettings();visible=await view();assert.ok(visible.nodes.some(node=>node.id==='ilp-signatures'));assert.ok(!visible.nodes.some(node=>node.id==='ilp-blocked'||node.id==='congress-organic-type'));
-  await settings();await page.locator('input[value="all"]').check();await ready();await page.locator('#reset-map').click();await ready();await page.locator('#align').click();await ready();await closeSettings();assert.deepEqual((await state()).expanded,[]);
+  await settings();await page.locator('input[value="all"]').check();await ready();await page.locator('#reset-map').click();await ready();await settings();await page.locator('#align').click();await ready();await closeSettings();assert.deepEqual((await state()).expanded,[]);
   // Actual browser fullscreen API, including the exit control.
   await page.locator('#fullscreen').click();await page.waitForFunction(()=>document.fullscreenElement===document.documentElement);assert.equal(await noScroll(),true);assert.match(await page.locator('#fullscreen').getAttribute('aria-label'),/Выйти/);
   await page.locator('#fullscreen').click();await page.waitForFunction(()=>!document.fullscreenElement);

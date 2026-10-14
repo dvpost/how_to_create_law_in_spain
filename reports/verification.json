@@ -1,5 +1,5 @@
 {
-  "version": "v16",
+  "version": "v17",
   "checked_date": "2026-10-14",
   "structure": "participants-procedures-v8",
   "browser_suites": {
@@ -17,7 +17,7 @@
     "senate_crossing_pairs": 1,
     "details": "reports/layout-checks.json"
   },
-  "regression_evidence": "Before the change, the autonomy source was fifth and its collapsed Government alternative was absent. Both assertions failed; they pass with autonomy second and an explicit preview connection.",
+  "regression_evidence": "The new bulk-controls scenario failed because the expand-all toolbar button was absent. It passes with recursive expansion and the collapse button in the same toolbar.",
   "checks": [
     "Stable order through opening and closing all five source branches; autonomy second",
     "Intermediate animation frames, fixed screen anchor and unchanged zoom",
@@ -34,7 +34,10 @@
     "No HTTP requests during page use; embedded WASM",
     "Collapsed Government alternative is clickable, preserved when returns are hidden, and replaced by the actual expanded path",
     "The direct autonomy route keeps its own Congress path and separately explains budget consent",
-    "Senate responses continue to the final text only after the required Congress decision, without another Senate round"
+    "Senate responses continue to the final text only after the required Congress decision, without another Senate round",
+    "Toolbar expand/collapse all; complete nested expansion, subsequent individual edits, repeat collapse and exact initial overview restoration",
+    "Bulk actions preserve law/return filters and fit beside fullscreen on a mobile screen",
+    "Collapse cancels an unfinished bulk expansion"
   ],
   "local_html_links": 123,
   "original_source_hashes": 14,
@@ -51,9 +54,8 @@
     "reports/autonomy-expanded.png"
   ],
   "cleanup": [
-    "Typed preview connections do not impose ELK layer constraints",
-    "Preview is replaced on expansion, with no duplicate summary and detailed Government path",
-    "return-final is a conditional forward continuation; only the Senate hand-back uses return styling"
+    "Collapse-all control moved from settings to the toolbar with one existing reset handler",
+    "All branches open in one layout request; no sequential per-card rebuilds"
   ],
   "limits": [
     "Crossing minimization is heuristic; zero edge crossings is not guaranteed",

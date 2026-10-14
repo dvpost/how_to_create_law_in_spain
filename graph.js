@@ -229,6 +229,12 @@ window.createLawGraph=function(container,data,config,callbacks){
   getGeometry:()=>({nodes:cy.nodes().map(n=>({id:n.id(),x:n.position('x')-n.outerWidth()/2,y:n.position('y')-n.outerHeight()/2,width:n.outerWidth(),height:n.outerHeight()})),edges:cy.edges().map(e=>({id:e.id(),source:e.source().id(),target:e.target().id(),kind:e.data('kind'),points:[e.sourceEndpoint(),...e.segmentPoints(),e.targetEndpoint()]}))}),
   refreshLabels:rebuildActions,getVisibleGraph:()=>({nodes:cy.nodes().map(n=>({id:n.id(),kind:model.get(n.id()).kind,title:model.get(n.id()).item.title,parent:model.get(n.id()).parent,label:n.data('label')})),edges:cy.edges().map(e=>({...e.data()}))}),fit:()=>focus(cy.elements()),
   align:()=>rebuild(),showReturns:value=>{returns=value;return rebuild();},
+  expandAll:()=>{
+   expanded.clear();current=null;
+   function open(id){if(!allowed(config.nodeModes[id]))return;const items=children(id);if(items.length){expanded.add(id);items.forEach(open);}}
+   data.stages.filter(stage=>stage.id!=='return'||returns).forEach(stage=>open(stage.id));
+   return rebuild();
+  },
   setLawMode:async mode=>{if(!['all','ordinary','organic'].includes(mode))throw new Error('Unknown law mode');lawMode=mode;if(mode==='organic'){expanded.add('initiative');expanded.add('ilp-source');}[...expanded].forEach(id=>{if(!children(id).length)collapse(id);});const applied=await rebuild();if(applied&&current&&cy.getElementById(current).length)callbacks.onSelect(model.get(current),expanded.has(current),false);return applied;},
   reset:()=>{expanded.clear();current=null;return rebuild();},resize:()=>cy.resize()};
 };
