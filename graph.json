@@ -1,5 +1,5 @@
 {
-  "schema": "participants-procedures-v12",
+  "schema": "participants-procedures-v13",
   "mainPath": [
     "initiative",
     "admission",
@@ -1006,7 +1006,7 @@
       "nodes": [
         "congress-plenary",
         "congress-full-commission",
-        "commission-delegable",
+        "plenary-required",
         "commission-avocation"
       ],
       "edges": [
@@ -1028,26 +1028,26 @@
           "mode": "ordinary"
         },
         {
-          "id": "approval>commission-delegable",
+          "id": "approval>plenary-required",
           "source": "approval",
-          "target": "commission-delegable",
+          "target": "plenary-required",
           "kind": "flow",
           "ref": "008"
         },
         {
-          "id": "commission-delegable>congress-plenary",
-          "source": "commission-delegable",
+          "id": "plenary-required>congress-plenary",
+          "source": "plenary-required",
           "target": "congress-plenary",
           "kind": "flow",
-          "label": "Нет, в том числе органический закон",
+          "label": "Да",
           "ref": "008"
         },
         {
-          "id": "commission-delegable>commission-avocation",
-          "source": "commission-delegable",
+          "id": "plenary-required>commission-avocation",
+          "source": "plenary-required",
           "target": "commission-avocation",
           "kind": "flow",
-          "label": "Да",
+          "label": "Нет",
           "ref": "008",
           "mode": "ordinary"
         },

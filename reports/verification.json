@@ -1,7 +1,7 @@
 {
-  "version": "v22",
+  "version": "v23",
   "checked_date": "2026-10-15",
-  "structure": "participants-procedures-v12",
+  "structure": "participants-procedures-v13",
   "browser_suites": {
     "graph": "PASS",
     "glossary": "PASS",
@@ -19,8 +19,9 @@
     "senate_crossing_pairs": 2,
     "details": "reports/layout-checks.json"
   },
-  "regression_evidence": "Content-only clarification checked with existing glossary, graph, interface, layout, interactions, conditions and terminals suites. Glossary checks cover both regional examples, proof access, nested definitions and long mobile popovers; reports/territory-terms.png records the updated explanation. No new procedural branches or runtime paths.",
+  "regression_evidence": "conditions.browser.cjs failed before the change because the new mandatory-Plenary decision was absent. It now verifies Yes reaches the Plenary and No reaches the retention check, with the opposite-polarity node removed. glossary.browser.cjs clicks the condition on the canvas, checks all five exclusions, opens Leyes de bases from the list and verifies graph state is unchanged.",
   "checks": [
+    "Mandatory-Plenary category question, correct Yes/No branches, complete clickable five-category list and detailed Leyes de bases explanation",
     "Consistent autonomous-community terminology; sourced distinctions between community, province, city and valenciano in proof 017",
     "Successful parliamentary paths enter the King directly; final-version conditions and proof references retained in the description",
     "Single Congress submission/admission stage; no separate connector, broken input routes or numbering gap",
@@ -45,7 +46,7 @@
   "original_source_hashes": 14,
   "proof_archive_hashes": 38,
   "proof_folders": 20,
-  "glossary_terms": 62,
+  "glossary_terms": 63,
   "proof_references": "PASS",
   "current_screenshots": [
     "reports/autonomy-collapsed.png",
@@ -56,7 +57,9 @@
     "reports/map.png",
     "reports/senate.png",
     "reports/terminal-paths.png",
-    "reports/territory-terms.png"
+    "reports/territory-terms.png",
+    "reports/plenary-categories.png",
+    "reports/leyes-de-bases.png"
   ],
   "limits": [
     "Crossing minimization is heuristic; zero edge crossings is not guaranteed",

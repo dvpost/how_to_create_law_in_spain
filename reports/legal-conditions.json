@@ -1,6 +1,6 @@
 {
   "checked_date": "14.10.2026",
-  "structure": "participants-procedures-v12",
+  "structure": "participants-procedures-v13",
   "audited_stages": [
     "initiative",
     "admission",
@@ -185,7 +185,7 @@
     {
       "area": "approval",
       "nodes": [
-        "commission-delegable",
+        "plenary-required",
         "commission-avocation",
         "organic-first-vote",
         "organic-new-report",
@@ -196,7 +196,7 @@
         "008",
         "009"
       ],
-      "finding": "Constitutional exclusions and timely Plenary retention; one new report and a second organic vote"
+      "finding": "Mandatory-Plenary category check: Yes goes to Plenary, No goes to timely Plenary retention. All five CE 75.3 exclusions are exposed; organic votes still allow one new report and a second vote."
     },
     {
       "area": "senate",

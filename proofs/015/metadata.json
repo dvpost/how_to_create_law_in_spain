@@ -80,8 +80,20 @@
       "locator": "Ley 50/1997, статья 26"
     },
     {
-      "text": "Законы, которыми парламент передаёт Правительству право составить текст с силой закона и задаёт предмет, пределы, принципы и критерии этого поручения. Их принятие нельзя передать парламентской комиссии с полной законодательной компетенцией.",
-      "locator": "CE 82.2, 82.4, 75.3"
+      "text": "Парламент принимает закон, которым поручает Правительству разработать и принять подробный текст с силой закона. В этом законе парламент заранее определяет тему, пределы, принципы и критерии поручения. Такой закон называется ley de bases; leyes de bases — множественное число.",
+      "locator": "CE 82.1–4"
+    },
+    {
+      "text": "Парламент прямо указывает, по какому вопросу Правительство вправе издать текст с силой закона, что именно ему поручено и какими принципами оно обязано руководствоваться. Для выполнения поручения устанавливается конкретный срок. Органические предметы передавать Правительству этим способом нельзя.",
+      "locator": "CE 82.1–4"
+    },
+    {
+      "text": "Правительство в заданных рамках разрабатывает и принимает текст со статьями. Принятый на основании такого поручения акт имеет силу закона и называется Decreto Legislativo — законодательный декрет. После использования поручения путём опубликования соответствующей нормы переданное полномочие исчерпывается.",
+      "locator": "CE 82.1–3, 85"
+    },
+    {
+      "text": "Саму ley de bases нельзя окончательно одобрить только в комиссии: она входит в перечень статьи 75.3. В этой ситуации парламент передаёт Правительству право издать акт с силой закона. Передача комиссии права одобрить закон — другой механизм.",
+      "locator": "CE 75.2–3, 82.1–4"
     },
     {
       "text": "Предусмотренный Регламентом способ попросить Mesa пересмотреть решение о парламентском документе или порядке его рассмотрения. В Конгрессе Mesa выслушивает Junta de Portavoces и принимает окончательное мотивированное решение.",
@@ -154,6 +166,11 @@
           "heading": "Artículo 82",
           "anchor": "a82",
           "text": "[Bloque 96: #a82]\nJurisprudencia\nArtículo 82\n1. Las Cortes Generales podrán delegar en el Gobierno la potestad de dictar normas con rango de ley sobre materias determinadas no incluidas en el artículo anterior.\n2. La delegación legislativa deberá otorgarse mediante una ley de bases cuando su objeto sea la formación de textos articulados o por una ley ordinaria cuando se trate de refundir varios textos legales en uno solo.\n3. La delegación legislativa habrá de otorgarse al Gobierno de forma expresa para materia concreta y con fijación del plazo para su ejercicio. La delegación se agota por el uso que de ella haga el Gobierno mediante la publicación de la norma correspondiente. No podrá entenderse concedida de modo implícito o por tiempo indeterminado. Tampoco podrá permitir la subdelegación a autoridades distintas del propio Gobierno.\n4. Las leyes de bases delimitarán con precisión el objeto y alcance de la delegación legislativa y los principios y criterios que han de seguirse en su ejercicio.\n5. La autorización para refundir textos legales determinará el ámbito normativo a que se refiere el contenido de la delegación, especificando si se circunscribe a la mera formulación de un texto único o si se incluye la de regularizar, aclarar y armonizar los textos legales que han de ser refundidos.\n6. Sin perjuicio de la competencia propia de los Tribunales, las leyes de delegación podrán establecer en cada caso fórmulas adicionales de control.\nSubir"
+        },
+        {
+          "heading": "Artículo 85",
+          "anchor": "a85",
+          "text": "[Bloque 99: #a85]\nJurisprudencia\nArtículo 85\nLas disposiciones del Gobierno que contengan legislación delegada recibirán el título de Decretos Legislativos.\nSubir"
         },
         {
           "heading": "Artículo 87",

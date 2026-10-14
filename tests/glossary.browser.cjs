@@ -19,6 +19,19 @@ const {pathToFileURL}=require('node:url');
    assert.deepEqual(await page.evaluate(()=>graph.getState()),initial,'Definition must preserve the graph');
    await page.keyboard.press('Escape');assert.equal(await page.locator('#term-popover').isVisible(),false);
   }
+  await page.evaluate(()=>graph.toggle('approval'));
+  const approvalState=await page.evaluate(()=>graph.getState());
+  await page.locator('[data-node-title="plenary-required"] [data-term="plenary-required"]').click();
+  const categories=await page.locator('.term-definition').textContent();
+  for(const text of ['1. Изменение Конституции','2. Международные вопросы','3. Органические законы','4. Leyes de bases','5. Государственный бюджет'])assert.ok(categories.includes(text),'The complete mandatory-Plenary list must be readable');
+  assert.equal(await page.locator('.term-definition').evaluate(element=>getComputedStyle(element).whiteSpace),'pre-line');
+  await page.locator('#term-popover [data-term="bases"]').click();
+  assert.match(await page.locator('.term-definition').textContent(),/Парламент принимает закон/);
+  assert.match(await page.locator('.term-sections').textContent(),/конкретный срок/);
+  assert.match(await page.locator('.term-sections').textContent(),/Decreto Legislativo/);
+  assert.ok(await page.locator('#term-popover [data-proof="015"]').count());
+  assert.deepEqual(await page.evaluate(()=>graph.getState()),approvalState,'Nested category/bases explanations must not change the map');
+  await page.keyboard.press('Escape');await page.evaluate(()=>graph.toggle('approval'));
   // Terms on the canvas are real controls, distinct from card selection.
   await page.locator('[data-node-toggle="initiative"]').click();await ready();
   await page.evaluate(id=>graph.activate(id),'congress-source');await page.locator('#detail-content [data-term="congress"]').first().click();

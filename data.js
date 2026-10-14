@@ -968,6 +968,7 @@ window.LAW_MAP = {
           "75",
           "79",
           "82",
+          "85",
           "87",
           "147",
           "161",
@@ -1052,6 +1053,11 @@ window.LAW_MAP = {
               "heading": "Artículo 82",
               "anchor": "a82",
               "text": "[Bloque 96: #a82]\nJurisprudencia\nArtículo 82\n1. Las Cortes Generales podrán delegar en el Gobierno la potestad de dictar normas con rango de ley sobre materias determinadas no incluidas en el artículo anterior.\n2. La delegación legislativa deberá otorgarse mediante una ley de bases cuando su objeto sea la formación de textos articulados o por una ley ordinaria cuando se trate de refundir varios textos legales en uno solo.\n3. La delegación legislativa habrá de otorgarse al Gobierno de forma expresa para materia concreta y con fijación del plazo para su ejercicio. La delegación se agota por el uso que de ella haga el Gobierno mediante la publicación de la norma correspondiente. No podrá entenderse concedida de modo implícito o por tiempo indeterminado. Tampoco podrá permitir la subdelegación a autoridades distintas del propio Gobierno.\n4. Las leyes de bases delimitarán con precisión el objeto y alcance de la delegación legislativa y los principios y criterios que han de seguirse en su ejercicio.\n5. La autorización para refundir textos legales determinará el ámbito normativo a que se refiere el contenido de la delegación, especificando si se circunscribe a la mera formulación de un texto único o si se incluye la de regularizar, aclarar y armonizar los textos legales que han de ser refundidos.\n6. Sin perjuicio de la competencia propia de los Tribunales, las leyes de delegación podrán establecer en cada caso fórmulas adicionales de control.\nSubir"
+            },
+            {
+              "heading": "Artículo 85",
+              "anchor": "a85",
+              "text": "[Bloque 99: #a85]\nJurisprudencia\nArtículo 85\nLas disposiciones del Gobierno que contengan legislación delegada recibirán el título de Decretos Legislativos.\nSubir"
             },
             {
               "heading": "Artículo 87",
@@ -3297,17 +3303,18 @@ window.LAW_MAP = {
       ]
     },
     {
-      "id": "commission-delegable",
-      "title": "Допускает ли Конституция полную компетенцию комиссии?",
+      "id": "plenary-required",
+      "title": "Для этого вида текста обязательно одобрение пленума?",
       "kind": "decision",
       "ref": "008",
       "facts": [
         {
-          "text": "Конституция допускает делегирование комиссиям окончательного законодательного рассмотрения, кроме конституционной реформы, международных вопросов, органических законов, leyes de bases и государственного бюджета. Обычная форма сама по себе не означает, что любой текст можно делегировать.",
+          "text": "По статье 75.3 окончательное одобрение комиссии исключено для пяти видов текста: изменения Конституции, международных вопросов, органических законов, leyes de bases и государственного бюджета. Проверяется принадлежность текста к этому перечню.",
           "ref": "008",
-          "loc": "CE 75.2–3; RCD 148"
+          "loc": "CE 75.3"
         }
-      ]
+      ],
+      "note": "Да — окончательное одобрение на пленуме. Нет — далее проверяется, оставил ли пленум окончательное решение за собой в порядке статьи 149 Регламента."
     },
     {
       "id": "commission-avocation",
@@ -4073,6 +4080,25 @@ window.LAW_MAP = {
           "text": "Органический закон и государственный бюджет нельзя окончательно одобрить по этому варианту в парламентской комиссии: Конституция исключает их из делегирования.",
           "ref": "008",
           "loc": "CE 75.3; RCD 149.1"
+        }
+      ]
+    },
+    {
+      "id": "plenary-required",
+      "title": "Виды текста с обязательным одобрением пленума",
+      "es": "Excepciones a la delegación legislativa en comisiones · CE 75.3",
+      "aliases": [
+        "вида текста"
+      ],
+      "text": "Окончательное одобрение нельзя передать комиссии для следующих пяти видов текста:\n\n1. Изменение Конституции.\n2. Международные вопросы.\n3. Органические законы.\n4. Leyes de bases.\n5. Государственный бюджет.",
+      "ref": "008",
+      "loc": "CE 75.3",
+      "sections": [
+        {
+          "title": "Что происходит после проверки",
+          "text": "При попадании в перечень текст идёт к пленарному одобрению. Для остальных текстов действует ещё одна проверка: оставил ли пленум окончательное решение за собой в предусмотренном порядке. Отсутствие текста в перечне само по себе не отменяет эту проверку.",
+          "ref": "008",
+          "loc": "CE 75.2–3; RCD 148.1, 149.1"
         }
       ]
     },
@@ -4858,18 +4884,41 @@ window.LAW_MAP = {
     },
     {
       "id": "bases",
-      "title": "Leyes de bases — законы об основах делегирования",
+      "title": "Leyes de bases — закон с поручением Правительству",
       "es": "Ley de bases",
       "aliases": [
         "leyes de bases",
         "ley de bases"
       ],
-      "text": "Законы, которыми парламент передаёт Правительству право составить текст с силой закона и задаёт предмет, пределы, принципы и критерии этого поручения. Их принятие нельзя передать парламентской комиссии с полной законодательной компетенцией.",
+      "text": "Парламент принимает закон, которым поручает Правительству разработать и принять подробный текст с силой закона. В этом законе парламент заранее определяет тему, пределы, принципы и критерии поручения. Такой закон называется ley de bases; leyes de bases — множественное число.",
       "ref": "015",
       "extraRefs": [
         "008"
       ],
-      "loc": "CE 82.2, 82.4, 75.3"
+      "loc": "CE 82.1–4",
+      "sections": [
+        {
+          "title": "Что решает парламент",
+          "text": "Парламент прямо указывает, по какому вопросу Правительство вправе издать текст с силой закона, что именно ему поручено и какими принципами оно обязано руководствоваться. Для выполнения поручения устанавливается конкретный срок. Органические предметы передавать Правительству этим способом нельзя.",
+          "ref": "015",
+          "loc": "CE 82.1–4"
+        },
+        {
+          "title": "Что делает Правительство",
+          "text": "Правительство в заданных рамках разрабатывает и принимает текст со статьями. Принятый на основании такого поручения акт имеет силу закона и называется Decreto Legislativo — законодательный декрет. После использования поручения путём опубликования соответствующей нормы переданное полномочие исчерпывается.",
+          "ref": "015",
+          "loc": "CE 82.1–3, 85"
+        },
+        {
+          "title": "Почему здесь нужен пленум",
+          "text": "Саму ley de bases нельзя окончательно одобрить только в комиссии: она входит в перечень статьи 75.3. В этой ситуации парламент передаёт Правительству право издать акт с силой закона. Передача комиссии права одобрить закон — другой механизм.",
+          "ref": "008",
+          "extraRefs": [
+            "015"
+          ],
+          "loc": "CE 75.2–3, 82.1–4"
+        }
+      ]
     },
     {
       "id": "reconsideration",
