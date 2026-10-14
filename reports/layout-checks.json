@@ -5,7 +5,7 @@
     {
       "name": "Senate",
       "nodes": 24,
-      "edges": 33,
+      "edges": 34,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
       "crossingPairs": 1
@@ -13,7 +13,7 @@
     {
       "name": "Reveal initiative",
       "nodes": 24,
-      "edges": 33,
+      "edges": 34,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
       "crossingPairs": 1
@@ -21,7 +21,7 @@
     {
       "name": "Reveal government-source",
       "nodes": 26,
-      "edges": 35,
+      "edges": 36,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
       "crossingPairs": 1
@@ -29,7 +29,7 @@
     {
       "name": "Reveal congress-source",
       "nodes": 28,
-      "edges": 38,
+      "edges": 39,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
       "crossingPairs": 1
@@ -37,7 +37,7 @@
     {
       "name": "Reveal senate-source",
       "nodes": 28,
-      "edges": 38,
+      "edges": 39,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
       "crossingPairs": 1
@@ -48,7 +48,7 @@
       "edges": 41,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 4
+      "crossingPairs": 1
     },
     {
       "name": "Reveal ilp-source",
@@ -56,7 +56,7 @@
       "edges": 51,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 4
+      "crossingPairs": 1
     },
     {
       "name": "Reveal admission",
@@ -64,7 +64,7 @@
       "edges": 62,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 4
+      "crossingPairs": 2
     },
     {
       "name": "Reveal discussion",
@@ -72,7 +72,7 @@
       "edges": 73,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 4
+      "crossingPairs": 2
     },
     {
       "name": "Reveal approval",
@@ -80,7 +80,7 @@
       "edges": 76,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 4
+      "crossingPairs": 2
     },
     {
       "name": "Reveal ilp-signatures",
@@ -88,7 +88,7 @@
       "edges": 77,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 10
+      "crossingPairs": 8
     },
     {
       "name": "ordinary",
@@ -96,7 +96,7 @@
       "edges": 74,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 9
+      "crossingPairs": 8
     },
     {
       "name": "organic",
@@ -104,7 +104,7 @@
       "edges": 66,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 5
+      "crossingPairs": 1
     },
     {
       "name": "all",
@@ -112,7 +112,7 @@
       "edges": 76,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 4
+      "crossingPairs": 2
     },
     {
       "name": "No returns",
@@ -120,7 +120,7 @@
       "edges": 71,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 4
+      "crossingPairs": 1
     },
     {
       "name": "Latest request",
@@ -128,7 +128,7 @@
       "edges": 68,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 4
+      "crossingPairs": 1
     },
     {
       "name": "Reset and align",

@@ -1,5 +1,5 @@
 window.LAW_GRAPH = {
-  "schema": "participants-procedures-v7",
+  "schema": "participants-procedures-v8",
   "mainPath": [
     "initiative",
     "entry",
@@ -90,8 +90,8 @@ window.LAW_GRAPH = {
       "id": "return-final",
       "source": "return",
       "target": "final",
-      "kind": "return",
-      "label": "После решения Конгресса",
+      "kind": "flow",
+      "label": "Вето снято / решение по поправкам",
       "ref": "010"
     },
     {
@@ -116,10 +116,10 @@ window.LAW_GRAPH = {
     "initiative": {
       "nodes": [
         "ilp-source",
+        "autonomy-source",
         "government-source",
         "congress-source",
-        "senate-source",
-        "autonomy-source"
+        "senate-source"
       ],
       "edges": [
         {
@@ -182,6 +182,13 @@ window.LAW_GRAPH = {
           "target": "entry",
           "kind": "collapsed",
           "mode": "ordinary"
+        },
+        {
+          "id": "autonomy-government-preview",
+          "source": "autonomy-source",
+          "target": "government-source",
+          "kind": "preview",
+          "ref": "001"
         }
       ],
       "removeEdges": [
@@ -413,12 +420,13 @@ window.LAW_GRAPH = {
           "target": "government-source",
           "kind": "flow",
           "label": "Если Правительство принимает проект",
-          "ref": "001",
+          "ref": "002",
           "feedback": true
         }
       ],
       "removeEdges": [
-        "autonomy-source-entry"
+        "autonomy-source-entry",
+        "autonomy-government-preview"
       ],
       "description": "Два предусмотренных Конституцией способа. Просьба не равна уже принятому правительственному проекту."
     },

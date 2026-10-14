@@ -40,7 +40,7 @@ function nodeHits(geometry){
     if(a.x<b.x+b.width&&b.x<a.x+a.width&&a.y<b.y+b.height&&b.y<a.y+a.height)overlaps.push([a.id,b.id]);
    }
    assert.deepEqual(overlaps,[],name+': cards must not overlap');
-   for(const ids of [['ilp-source','government-source','congress-source','senate-source','autonomy-source'],['senators-25','senate-group','senate-commissions']]){
+   for(const ids of [['ilp-source','autonomy-source','government-source','congress-source','senate-source'],['senators-25','senate-group','senate-commissions']]){
     const row=ids.map(id=>geometry.nodes.find(node=>node.id===id));
     if(row.every(Boolean))for(let i=1;i<row.length;i++)assert.ok(row[i-1].x<row[i].x,name+': sibling order must remain stable');
    }

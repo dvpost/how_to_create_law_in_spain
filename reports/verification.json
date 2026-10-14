@@ -1,7 +1,7 @@
 {
-  "version": "v15",
+  "version": "v16",
   "checked_date": "2026-10-14",
-  "structure": "participants-procedures-v7",
+  "structure": "participants-procedures-v8",
   "browser_suites": {
     "graph": "PASS",
     "glossary": "PASS",
@@ -17,9 +17,9 @@
     "senate_crossing_pairs": 1,
     "details": "reports/layout-checks.json"
   },
-  "regression_evidence": "Three regressions reproduced before changes: Senate reordered the source row, disclosure had no intermediate positions, and dropped connectors had diagonal segments. All three checks pass with stable model order, anchored transitions and libavoid routing.",
+  "regression_evidence": "Before the change, the autonomy source was fifth and its collapsed Government alternative was absent. Both assertions failed; they pass with autonomy second and an explicit preview connection.",
   "checks": [
-    "Stable order through opening and closing all five source branches; Senate fourth",
+    "Stable order through opening and closing all five source branches; autonomy second",
     "Intermediate animation frames, fixed screen anchor and unchanged zoom",
     "Orthogonal rerouting on dragfree with other node positions and camera unchanged",
     "Reduced motion keeps the screen anchor",
@@ -31,7 +31,10 @@
     "Visible ELK and libavoid failures, no automatic retry or alternative engine",
     "Reading cards and terms preserves graph and viewport",
     "Fullscreen enter/exit, mobile bounds, no page scroll",
-    "No HTTP requests during page use; embedded WASM"
+    "No HTTP requests during page use; embedded WASM",
+    "Collapsed Government alternative is clickable, preserved when returns are hidden, and replaced by the actual expanded path",
+    "The direct autonomy route keeps its own Congress path and separately explains budget consent",
+    "Senate responses continue to the final text only after the required Congress decision, without another Senate round"
   ],
   "local_html_links": 123,
   "original_source_hashes": 14,
@@ -43,13 +46,14 @@
     "reports/map.png",
     "reports/map-mobile.png",
     "reports/senate.png",
-    "reports/expanded.png"
+    "reports/expanded.png",
+    "reports/autonomy-collapsed.png",
+    "reports/autonomy-expanded.png"
   ],
   "cleanup": [
-    "ELK node placement and libavoid routing have separate responsibilities",
-    "Relative Cytoscape stretching is no longer the final result after a drop",
-    "ELK bend-point rendering removed; all final paths come from libavoid",
-    "Disclosure no longer automatically fits or zooms the viewport"
+    "Typed preview connections do not impose ELK layer constraints",
+    "Preview is replaced on expansion, with no duplicate summary and detailed Government path",
+    "return-final is a conditional forward continuation; only the Senate hand-back uses return styling"
   ],
   "limits": [
     "Crossing minimization is heuristic; zero edge crossings is not guaranteed",
@@ -57,5 +61,17 @@
     "Edges are hidden during the 320 ms card transition and rebuilt at its end"
   ],
   "placement": "elkjs 0.12.0",
-  "routing": "libavoid-js 0.5.0-beta.5"
+  "routing": "libavoid-js 0.5.0-beta.5",
+  "legal_checks": {
+    "constitution": "Current BOE articles 87.2, 88, 90.2 and 134.6 checked against retained excerpts",
+    "congress": "Current BOE articles 121–123, 126–127 and 132 checked against retained excerpts",
+    "proofs": [
+      "001",
+      "002",
+      "003",
+      "006",
+      "010"
+    ],
+    "archive_bytes": "Existing official documents unchanged; claim mappings rebuilt"
+  }
 }

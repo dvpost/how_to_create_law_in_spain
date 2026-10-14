@@ -2,7 +2,8 @@
 // ELK owns stable node placement, port allocation and space for labels.
 window.createLawLayout=function(config){
  const engine=new ELK({algorithms:['layered']});
- return async function(nodes,edges){
+ return async function(nodes,allEdges){
+  const previews=allEdges.filter(edge=>edge.kind==='preview'),edges=allEdges.filter(edge=>edge.kind!=='preview');
   const boxes=new Map(nodes.map(node=>[node.id,{...node}])),owners=new Map(),groups=[];
   for(const spec of config.participantGroups){
    if(!boxes.has(spec.participant))continue;
@@ -63,6 +64,11 @@ window.createLawLayout=function(config){
    if(reversed.has(edge.id))[ends.source,ends.target]=[ends.target,ends.source];
    if(Object.values(ends).some(point=>!Number.isFinite(point.x)||!Number.isFinite(point.y)))throw new Error('Invalid ELK coordinates: '+edge.id);
    endpoints.set(edge.id,ends);
+  }
+  const sizes=new Map(nodes.map(node=>[node.id,node]));
+  for(const edge of previews){
+   const source=positions.get(edge.source),target=positions.get(edge.target),direction=source.x<target.x?1:-1;
+   endpoints.set(edge.id,{source:{x:source.x+direction*sizes.get(edge.source).width/2,y:source.y},target:{x:target.x-direction*sizes.get(edge.target).width/2,y:target.y}});
   }
   return {positions,endpoints};
  };

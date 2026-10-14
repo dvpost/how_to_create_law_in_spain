@@ -25,6 +25,8 @@ window.createLawGraph=function(container,data,config,callbacks){
   {selector:'node[id="king"]',style:{'background-color':'#112a46','border-color':'#112a46',color:'#f7f3ea'}},
   {selector:'node.current',style:{'border-width':3,'border-color':'#187a75'}},
   {selector:'edge',style:{width:1.8,'line-color':'#112a46','target-arrow-color':'#112a46','target-arrow-shape':'triangle','curve-style':'segments','edge-distances':'node-position','segment-weights':'data(weights)','segment-distances':'data(distances)','source-endpoint':'data(sourceEndpoint)','target-endpoint':'data(targetEndpoint)',label:'','font-size':11,color:'#5c6874','text-wrap':'wrap','overlay-opacity':0}},
+  {selector:'edge.collapsed',style:{width:2.5}},
+  {selector:'edge.preview',style:{width:1.2,'line-style':'dotted','line-color':'#8b9fb9','target-arrow-color':'#8b9fb9','target-arrow-fill':'hollow',opacity:.75}},
   {selector:'edge.motion',style:{opacity:0}},
   {selector:'edge.return',style:{'line-style':'dashed','line-color':'#187a75','target-arrow-color':'#187a75'}},
   {selector:'edge.membership',style:{'line-color':'#8baca2','line-style':'dotted','target-arrow-shape':'none',width:1.4}},
@@ -219,7 +221,7 @@ window.createLawGraph=function(container,data,config,callbacks){
   const applied=await rebuild({anchor:id,fit:false});
   if(applied)callbacks.onSelect(entry,expanded.has(id),false);
  }
- cy.on('tap','node',e=>activate(e.target.id()));cy.on('tap','edge',e=>{if(e.target.data('kind')==='collapsed')activate(e.target.source().id());else if(e.target.data('ref'))callbacks.onProof(e.target.data('ref'));});
+ cy.on('tap','node',e=>activate(e.target.id()));cy.on('tap','edge',e=>{if(['collapsed','preview'].includes(e.target.data('kind')))activate(e.target.source().id());else if(e.target.data('ref'))callbacks.onProof(e.target.data('ref'));});
  cy.on('dragfree','node',()=>reroute());
  function getState(){return {expanded:[...expanded],lawMode,returns,layoutStatus,positions:Object.fromEntries(cy.nodes().map(n=>[n.id(),{...n.position()}])),viewport:{zoom:cy.zoom(),pan:{...cy.pan()}}};}
  rebuild();
