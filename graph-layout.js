@@ -1,5 +1,5 @@
 'use strict';
-// One layout engine owns both node placement and obstacle-aware edge routing.
+// ELK owns stable node placement, port allocation and space for labels.
 window.createLawLayout=function(config){
  const engine=new ELK({algorithms:['layered']});
  return async function(nodes,edges){
@@ -36,32 +36,34 @@ window.createLawLayout=function(config){
   if(order.size!==children.length)throw new Error('Unclassified cycle in legislative procedure');
   const reversed=new Set(edges.filter(edge=>edge.feedback&&order.get(ownerId(edge.source))>order.get(ownerId(edge.target))).map(edge=>edge.id));
   function port(edge,end){
-   const id=edge[end],owner=owners.get(id),node=byId.get(owner?owner.group.id:id),side=edge.kind==='return'?'WEST':end==='source'?'SOUTH':'NORTH';
+   const id=edge[end],owner=owners.get(id),node=byId.get(owner?owner.group.id:id),side=edge.kind==='return'||edge.feedback?'WEST':end==='source'?'SOUTH':'NORTH';
    const result={id:edge.id+':'+end,width:0,height:0,layoutOptions:{'elk.port.side':side}};
    if(owner){const m=owner.member;result.x=side==='WEST'?m.x:m.x+m.width/2;result.y=side==='SOUTH'?m.y+m.height:side==='NORTH'?m.y:m.y+m.height/2;}
    node.ports.push(result);return result.id;
   }
-  const input={id:'law-map',layoutOptions:config.layout,children,edges:edges.filter(edge=>!internal.has(edge.id)).map(edge=>({
+  const modelOrder=new Map(children.map((node,index)=>[node.id,index]));
+  const orderedEdges=edges.filter(edge=>!internal.has(edge.id)).sort((a,b)=>modelOrder.get(ownerId(a.source))-modelOrder.get(ownerId(b.source))||modelOrder.get(ownerId(a.target))-modelOrder.get(ownerId(b.target)));
+  const input={id:'law-map',layoutOptions:config.layout,children,edges:orderedEdges.map(edge=>({
    id:edge.id,sources:[port(edge,reversed.has(edge.id)?'target':'source')],targets:[port(edge,reversed.has(edge.id)?'source':'target')],
    labels:edge.label?[{id:edge.id+':label',text:edge.label,width:edge.labelSize.width,height:edge.labelSize.height,
     layoutOptions:{'elk.edgeLabels.placement':'CENTER'}}]:[]
   }))};
-  const result=await engine.layout(input),positions=new Map(),routes=new Map();
+  const result=await engine.layout(input),positions=new Map(),endpoints=new Map();
   for(const node of result.children){
    const group=boxes.get(node.id);
    if(group.members){
     for(const member of group.members)positions.set(member.id,{x:node.x+member.x+member.width/2,y:node.y+member.y+member.height/2});
     const [participant,stage]=group.members,a={x:node.x+stage.x,y:node.y+stage.y+stage.height/2},b={x:node.x+participant.width,y:node.y+participant.y+participant.height/2};
-    routes.set(group.link.id,{points:[a,b],label:{x:(a.x+b.x)/2,y:a.y-group.link.labelSize.height/2-6}});
+    endpoints.set(group.link.id,{source:a,target:b});
    }else positions.set(node.id,{x:node.x+node.width/2,y:node.y+node.height/2});
   }
   for(const edge of result.edges){
    if(edge.sections?.length!==1)throw new Error('Invalid ELK route: '+edge.id);
-   const section=edge.sections[0],points=[section.startPoint,...(section.bendPoints||[]),section.endPoint];
-   if(reversed.has(edge.id))points.reverse();
-   if(points.some(point=>!Number.isFinite(point.x)||!Number.isFinite(point.y)))throw new Error('Invalid ELK coordinates: '+edge.id);
-   const label=edge.labels?.[0];routes.set(edge.id,{points,label:label?{x:label.x+label.width/2,y:label.y+label.height/2}:null});
+   const section=edge.sections[0],ends={source:section.startPoint,target:section.endPoint};
+   if(reversed.has(edge.id))[ends.source,ends.target]=[ends.target,ends.source];
+   if(Object.values(ends).some(point=>!Number.isFinite(point.x)||!Number.isFinite(point.y)))throw new Error('Invalid ELK coordinates: '+edge.id);
+   endpoints.set(edge.id,ends);
   }
-  return {positions,routes};
+  return {positions,endpoints};
  };
 };

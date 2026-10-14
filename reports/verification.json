@@ -1,13 +1,13 @@
 {
-  "version": "v14",
+  "version": "v15",
   "checked_date": "2026-10-14",
   "structure": "participants-procedures-v7",
-  "layout_engine": "elkjs 0.12.0",
   "browser_suites": {
     "graph": "PASS",
     "glossary": "PASS",
     "interface": "PASS",
-    "layout": "PASS"
+    "layout": "PASS",
+    "interactions": "PASS"
   },
   "geometry": {
     "scenarios": 17,
@@ -17,19 +17,23 @@
     "senate_crossing_pairs": 1,
     "details": "reports/layout-checks.json"
   },
-  "regression_evidence": "The Senate reproduction failed on the original renderer with eight non-return edge/node collisions; the same rendered-geometry assertion passes with ELK.",
+  "regression_evidence": "Three regressions reproduced before changes: Senate reordered the source row, disclosure had no intermediate positions, and dropped connectors had diagonal segments. All three checks pass with stable model order, anchored transitions and libavoid routing.",
   "checks": [
+    "Stable order through opening and closing all five source branches; Senate fourth",
+    "Intermediate animation frames, fixed screen anchor and unchanged zoom",
+    "Orthogonal rerouting on dragfree with other node positions and camera unchanged",
+    "Reduced motion keeps the screen anchor",
+    "New request cancels an active transition",
     "Every disclosure and all/ordinary/organic modes",
     "Main-stage order and Senate return placement",
     "ILP signers beside their signature stage",
-    "Dragging preserves attached arrow endpoints; align recalculates routes",
     "Latest asynchronous request wins",
-    "Engine failure is visible and clears the map without another engine or retry",
+    "Visible ELK and libavoid failures, no automatic retry or alternative engine",
     "Reading cards and terms preserves graph and viewport",
     "Fullscreen enter/exit, mobile bounds, no page scroll",
-    "No HTTP requests during page use"
+    "No HTTP requests during page use; embedded WASM"
   ],
-  "local_html_links": 121,
+  "local_html_links": 123,
   "original_source_hashes": 14,
   "proof_archive_hashes": 36,
   "proof_folders": 20,
@@ -42,14 +46,16 @@
     "reports/expanded.png"
   ],
   "cleanup": [
-    "Dagre dependency and layout integration removed",
-    "Post-layout node offsets and saved manual positions removed",
-    "Redundant route-fit button and handler removed",
-    "Research prototype, historical screenshots and numbered ZIP copies removed"
+    "ELK node placement and libavoid routing have separate responsibilities",
+    "Relative Cytoscape stretching is no longer the final result after a drop",
+    "ELK bend-point rendering removed; all final paths come from libavoid",
+    "Disclosure no longer automatically fits or zooms the viewport"
   ],
   "limits": [
-    "Edge crossings are minimized heuristically, not guaranteed absent for every possible graph",
-    "Arbitrary manual movement can create crossings until the next layout"
+    "Crossing minimization is heuristic; zero edge crossings is not guaranteed",
+    "Manual placement on top of another card is not resolved by moving other nodes",
+    "Edges are hidden during the 320 ms card transition and rebuilt at its end"
   ],
-  "browser_refresh": "Automation of the open file:// tab was blocked by browser URL policy; manual reload is required"
+  "placement": "elkjs 0.12.0",
+  "routing": "libavoid-js 0.5.0-beta.5"
 }

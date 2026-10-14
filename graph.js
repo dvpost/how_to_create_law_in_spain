@@ -2,8 +2,8 @@
 // Explicit participants and procedures; descriptive facts never generate nodes.
 window.createLawGraph=function(container,data,config,callbacks){
  const model=new Map(),expanded=new Set();
- let lawMode='all',returns=true,current=null,revision=0,latest,layoutStatus='pending';
- const arrange=createLawLayout(config),edgeLabels=new Map();
+ let lawMode='all',returns=true,current=null,revision=0,latest,layoutStatus='pending',cancelMotion=null;
+ const arrange=createLawLayout(config),routeFixed=createLawRouter(),edgeLabels=new Map();
  const kinds={initiative:'source',entry:'gateway',admission:'process',discussion:'process',approval:'process',senate:'process',final:'gateway',king:'actor',publication:'process',return:'process'};
  data.stages.forEach(item=>model.set(item.id,{id:item.id,item,kind:kinds[item.id],core:true,parent:null,children:[]}));
  data.entities.forEach(item=>model.set(item.id,{id:item.id,item,kind:item.kind,core:false,parent:null,children:[]}));
@@ -25,6 +25,7 @@ window.createLawGraph=function(container,data,config,callbacks){
   {selector:'node[id="king"]',style:{'background-color':'#112a46','border-color':'#112a46',color:'#f7f3ea'}},
   {selector:'node.current',style:{'border-width':3,'border-color':'#187a75'}},
   {selector:'edge',style:{width:1.8,'line-color':'#112a46','target-arrow-color':'#112a46','target-arrow-shape':'triangle','curve-style':'segments','edge-distances':'node-position','segment-weights':'data(weights)','segment-distances':'data(distances)','source-endpoint':'data(sourceEndpoint)','target-endpoint':'data(targetEndpoint)',label:'','font-size':11,color:'#5c6874','text-wrap':'wrap','overlay-opacity':0}},
+  {selector:'edge.motion',style:{opacity:0}},
   {selector:'edge.return',style:{'line-style':'dashed','line-color':'#187a75','target-arrow-color':'#187a75'}},
   {selector:'edge.membership',style:{'line-color':'#8baca2','line-style':'dotted','target-arrow-shape':'none',width:1.4}},
   {selector:'edge.unverified',style:{'line-style':'dotted','line-color':'#969d96','target-arrow-shape':'none'}}
@@ -43,7 +44,7 @@ window.createLawGraph=function(container,data,config,callbacks){
   actions.querySelectorAll('[data-node-toggle],[data-node-title]').forEach(element=>{
    const node=cy.getElementById(element.dataset.nodeToggle||element.dataset.nodeTitle),p=node.renderedPosition();
    const offset=element.dataset.nodeToggle?node.height()/2-18:(node.hasClass('expandable')?-13:0);
-   element.style.left=p.x+'px';element.style.top=(p.y+offset*zoom)+'px';element.style.transform=`translate(-50%,-50%) scale(${zoom})`;
+   element.style.opacity=node.style('opacity');element.style.left=p.x+'px';element.style.top=(p.y+offset*zoom)+'px';element.style.transform=`translate(-50%,-50%) scale(${zoom})`;
   });
  }
  function rebuildActions(){
@@ -98,6 +99,7 @@ window.createLawGraph=function(container,data,config,callbacks){
   function endpoint(point,id){
    if(model.get(id).kind!=='decision')return point;
    const centre=positions.get(id),size=sizes.get(id),dx=point.x-centre.x,dy=point.y-centre.y;
+   if(Math.abs(Math.abs(dx)/(size.width/2)+Math.abs(dy)/(size.height/2)-1)<.001)return point;
    const adjusted={...point};
    if(Math.abs(dy)>=size.height/2-.1)adjusted.y=centre.y+Math.sign(dy)*size.height/2*(1-Math.abs(dx)/(size.width/2));
    else adjusted.x=centre.x+Math.sign(dx)*size.width/2*(1-Math.abs(dy)/(size.height/2));
@@ -114,32 +116,99 @@ window.createLawGraph=function(container,data,config,callbacks){
   if(route.label)edgeLabels.set(edge.id,{...route.label,source:{...source},target:{...target}});
   return {...edge,weights,distances,sourceEndpoint:`${first.x-source.x}px ${first.y-source.y}px`,targetEndpoint:`${last.x-target.x}px ${last.y-target.y}px`};
  }
- function rebuild(after=()=>focus(cy.elements())){
-  const version=++revision,spec=snapshot();layoutStatus='pending';container.setAttribute('aria-busy','true');cy.nodes().ungrabify();
+ function nodeElement(node,position){
+  const entry=model.get(node.id);
+  return {group:'nodes',data:{...node,label:label(entry),kind:entry.kind},position:{...position},classes:entry.kind+(entry.children.length?' expandable':'')+(node.id===current?' current':'')};
+ }
+ function applyGraph(spec,result){
+  const ids=new Set(spec.nodes.map(node=>node.id)),sizes=new Map(spec.nodes.map(node=>[node.id,node]));actions.replaceChildren();edgeLabels.clear();
+  cy.batch(()=>{
+   cy.edges().remove();cy.nodes().filter(node=>!ids.has(node.id())).remove();
+   for(const node of spec.nodes){
+    const element=nodeElement(node,result.positions.get(node.id)),existing=cy.getElementById(node.id);
+    if(existing.length){existing.data(element.data);existing.classes(element.classes);existing.position(element.position);existing.style('opacity',1);}else cy.add(element);
+   }
+   cy.add(spec.edges.map(edge=>({group:'edges',data:edgeData(edge,result.routes.get(edge.id),result.positions,sizes),classes:edge.kind})));
+  });rebuildActions();
+ }
+ async function animateGraph(spec,result,anchor){
+  if(!cy.nodes().length)return true;
+  const previous=new Map(cy.nodes().map(node=>[node.id(),{...node.position()}])),added=new Set(),removed=new Set();
+  const viewport={zoom:cy.zoom(),pan:{...cy.pan()}},anchorBefore=previous.has(anchor)?{...previous.get(anchor)}:null;
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){
+   if(anchorBefore){const after=result.positions.get(anchor);cy.pan({x:viewport.pan.x+(anchorBefore.x-after.x)*viewport.zoom,y:viewport.pan.y+(anchorBefore.y-after.y)*viewport.zoom});}
+   return true;
+  }
+  function ancestorPosition(id,positions){
+   let parent=model.get(id).parent;
+   while(parent){if(positions.has(parent))return positions.get(parent);parent=model.get(parent).parent;}
+   return positions.get('initiative');
+  }
+  cy.batch(()=>{
+   cy.edges().addClass('motion');
+   for(const node of spec.nodes)if(!previous.has(node.id)){
+    const start=ancestorPosition(node.id,previous);previous.set(node.id,{...start});added.add(node.id);cy.add(nodeElement(node,start)).ungrabify().style('opacity',0);
+   }
+   cy.nodes().forEach(node=>{if(!result.positions.has(node.id()))removed.add(node.id());});
+  });rebuildActions();
+  const start=performance.now(),duration=320;
+  return new Promise(resolve=>{
+   let frame;
+   cancelMotion=()=>{cancelAnimationFrame(frame);cancelMotion=null;resolve(false);};
+   function step(now){
+    const progress=Math.min(1,(now-start)/duration),t=progress*progress*(3-2*progress);
+    cy.batch(()=>{
+     cy.nodes().forEach(node=>{
+      const from=previous.get(node.id()),to=result.positions.get(node.id())||ancestorPosition(node.id(),result.positions);
+      node.position({x:from.x+(to.x-from.x)*t,y:from.y+(to.y-from.y)*t});node.style('opacity',added.has(node.id())?t:removed.has(node.id())?1-t:1);
+     });
+     if(anchorBefore){const after=result.positions.get(anchor);cy.pan({x:viewport.pan.x+(anchorBefore.x-after.x)*viewport.zoom*t,y:viewport.pan.y+(anchorBefore.y-after.y)*viewport.zoom*t});}
+    });
+    if(progress<1)frame=requestAnimationFrame(step);else{cancelMotion=null;resolve(true);}
+   }
+   frame=requestAnimationFrame(step);
+  });
+ }
+ function schedule(update){
+  cancelMotion?.();const version=++revision;layoutStatus='pending';container.setAttribute('aria-busy','true');cy.nodes().ungrabify();
   latest=(async()=>{
    try{
-    const result=await arrange(spec.nodes,spec.edges);
-    if(version!==revision)return false;
-    const sizes=new Map(spec.nodes.map(node=>[node.id,node]));actions.replaceChildren();edgeLabels.clear();
-    cy.batch(()=>{
-     cy.elements().remove();
-     cy.add(spec.nodes.map(node=>{const entry=model.get(node.id);return {group:'nodes',data:{...node,label:label(entry),kind:entry.kind},position:result.positions.get(node.id),classes:entry.kind+(entry.core?' core':'')+(entry.children.length?' expandable':'')+(node.id===current?' current':'')};}));
-     cy.add(spec.edges.map(edge=>({group:'edges',data:edgeData(edge,result.routes.get(edge.id),result.positions,sizes),classes:edge.kind})));
-    });
-    layoutStatus='ready';rebuildActions();after();callbacks.onError(null);return true;
+    if(!await update(version)||version!==revision)return false;
+    layoutStatus='ready';callbacks.onError(null);return true;
    }catch(error){
     if(version!==revision)return false;
-    layoutStatus='error';cy.elements().remove();actions.replaceChildren();callbacks.onError(error);return false;
+    layoutStatus='error';actions.replaceChildren();cy.elements().remove();callbacks.onError(error);return false;
    }finally{if(version===revision){container.setAttribute('aria-busy','false');cy.nodes().grabify();}}
   })();return latest;
  }
- function focus(collection,anchor=null){
+ function rebuild({anchor=null,fit=true}={}){
+  return schedule(async version=>{
+   const spec=snapshot(),result=await arrange(spec.nodes,spec.edges);
+   if(version!==revision)return false;
+   const nodes=spec.nodes.map(node=>({...node,...result.positions.get(node.id)}));
+   const edges=spec.edges.map(edge=>{
+    const ends=result.endpoints.get(edge.id),source=result.positions.get(edge.source),target=result.positions.get(edge.target);
+    return {...edge,sourceOffset:{x:ends.source.x-source.x,y:ends.source.y-source.y},targetOffset:{x:ends.target.x-target.x,y:ends.target.y-target.y}};
+   });
+   result.routes=await routeFixed(nodes,edges);
+   if(version!==revision||!await animateGraph(spec,result,anchor)||version!==revision)return false;
+   applyGraph(spec,result);if(fit)focus(cy.elements());return true;
+  });
+ }
+ function reroute(){
+  return schedule(async version=>{
+   const nodes=cy.nodes().map(node=>({...node.data(),...node.position()})),positions=new Map(nodes.map(node=>[node.id,{x:node.x,y:node.y}])),sizes=new Map(nodes.map(node=>[node.id,node]));
+   const offset=value=>{const [x,y]=value.split(' ').map(parseFloat);return {x,y};};
+   const edges=cy.edges().map(edge=>({...edge.data(),sourceOffset:offset(edge.data('sourceEndpoint')),targetOffset:offset(edge.data('targetEndpoint'))}));
+   const routes=await routeFixed(nodes,edges);if(version!==revision)return false;
+   edgeLabels.clear();cy.batch(()=>{for(const edge of edges)cy.getElementById(edge.id).data(edgeData(edge,routes.get(edge.id),positions,sizes));});rebuildActions();return true;
+  });
+ }
+ function focus(collection){
   cy.fit(collection,35);if(cy.zoom()>1.05)cy.zoom({level:1.05,renderedPosition:{x:container.clientWidth/2,y:container.clientHeight/2}});
-  if(anchor&&cy.zoom()<.5){cy.zoom(.5);const p=cy.getElementById(anchor).position();cy.pan({x:container.clientWidth/2-p.x*cy.zoom(),y:90-p.y*cy.zoom()});}
  }
  function select(id){current=id;cy.nodes().removeClass('current');cy.getElementById(id).addClass('current');}
  function collapse(id){expanded.delete(id);(config.expansions[id]?.nodes||[]).forEach(collapse);}
- function subtree(id){return [id,...children(id).flatMap(child=>subtree(child))];}
  function activate(id){
   const entry=model.get(id);if(!entry||!cy.getElementById(id).length)return;
   select(id);callbacks.onSelect(entry,expanded.has(id));
@@ -147,13 +216,11 @@ window.createLawGraph=function(container,data,config,callbacks){
  async function toggle(id){
   const entry=model.get(id);if(!entry||!cy.getElementById(id).length||!entry.children.length)return;current=id;
   if(expanded.has(id))collapse(id);else expanded.add(id);
-  const applied=await rebuild(()=>{
-   if(expanded.has(id)){const targets=new Set(subtree(id));if(entry.parent)targets.add(entry.parent);if(['government-source','congress-source','senate-source','autonomy-source','ilp-source'].includes(id))targets.add('entry');focus(cy.nodes().filter(n=>targets.has(n.id())),id);}
-   else if(entry.parent)focus(cy.getElementById(entry.parent).union(cy.getElementById(id)));else focus(cy.elements());
-  });
+  const applied=await rebuild({anchor:id,fit:false});
   if(applied)callbacks.onSelect(entry,expanded.has(id),false);
  }
  cy.on('tap','node',e=>activate(e.target.id()));cy.on('tap','edge',e=>{if(e.target.data('kind')==='collapsed')activate(e.target.source().id());else if(e.target.data('ref'))callbacks.onProof(e.target.data('ref'));});
+ cy.on('dragfree','node',()=>reroute());
  function getState(){return {expanded:[...expanded],lawMode,returns,layoutStatus,positions:Object.fromEntries(cy.nodes().map(n=>[n.id(),{...n.position()}])),viewport:{zoom:cy.zoom(),pan:{...cy.pan()}}};}
  rebuild();
  return {activate,toggle,getState,whenReady:()=>latest,

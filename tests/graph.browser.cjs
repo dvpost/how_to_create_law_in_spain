@@ -16,7 +16,7 @@ const {pathToFileURL}=require('node:url');
   assert.ok((await view()).nodes.every(n=>!/(условия справа|подробности справа|#\d)/i.test(n.label)),'Map labels must not contain panel hints or proof codes');
   const point=(p,v)=>({x:box.x+p.x*v.zoom+v.pan.x,y:box.y+p.y*v.zoom+v.pan.y});
   let p=point(before.positions.initiative,before.viewport);
-  await page.mouse.move(p.x,p.y);await page.mouse.down();await page.mouse.move(p.x+85,p.y+18,{steps:15});await page.mouse.up();
+  await page.mouse.move(p.x,p.y);await page.mouse.down();await page.mouse.move(p.x+85,p.y+18,{steps:15});await page.mouse.up();await page.evaluate(()=>graph.whenReady());
   let moved=await state();assert.ok(moved.positions.initiative.x-before.positions.initiative.x>100);assert.deepEqual(moved.expanded,[]);
   p=point(moved.positions.initiative,moved.viewport);await page.mouse.click(p.x,p.y);
   assert.deepEqual(await state(),moved,'Reading a node must preserve layout, viewport and expansions');

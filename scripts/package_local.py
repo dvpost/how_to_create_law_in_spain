@@ -15,7 +15,7 @@ if __name__=='__main__':
         for source in proof['sources']:
             if sha256((metadata.parent/(source['key']+'.html')).read_bytes()).hexdigest()!=source['sha256']:
                 raise ValueError('Archived proof hash mismatch: '+str(metadata))
-    files=[ROOT/name for name in ['index.html','styles.css','app.js','graph.js','graph-layout.js','glossary.js','glossary.json','data.js','data.json','graph.json','graph-data.js','README.md','AGENTS.md']]
+    files=[ROOT/name for name in ['index.html','styles.css','app.js','graph.js','graph-layout.js','graph-routing.js','glossary.js','glossary.json','data.js','data.json','graph.json','graph-data.js','README.md','AGENTS.md']]
     for directory in ['proofs','sources','scripts','vendor','tests']:
         files.extend(path for path in (ROOT/directory).rglob('*') if path.is_file() and '__pycache__' not in path.parts)
     archive=ROOT/'law-pipeline-spain.zip'

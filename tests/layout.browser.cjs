@@ -40,6 +40,10 @@ function nodeHits(geometry){
     if(a.x<b.x+b.width&&b.x<a.x+a.width&&a.y<b.y+b.height&&b.y<a.y+a.height)overlaps.push([a.id,b.id]);
    }
    assert.deepEqual(overlaps,[],name+': cards must not overlap');
+   for(const ids of [['ilp-source','government-source','congress-source','senate-source','autonomy-source'],['senators-25','senate-group','senate-commissions']]){
+    const row=ids.map(id=>geometry.nodes.find(node=>node.id===id));
+    if(row.every(Boolean))for(let i=1;i<row.length;i++)assert.ok(row[i-1].x<row[i].x,name+': sibling order must remain stable');
+   }
    scenarios.push({name,nodes:geometry.nodes.length,edges:geometry.edges.length,nodeOverlaps:overlaps.length,edgeNodeHits:nodeHits(geometry).length,crossingPairs:crossings(geometry).length});
    for(const edge of geometry.edges)for(let i=1;i<edge.points.length;i++){
     const a=edge.points[i-1],b=edge.points[i];assert.ok(Math.abs(a.x-b.x)<.1||Math.abs(a.y-b.y)<.1,name+': route must be orthogonal: '+edge.id);
@@ -61,7 +65,7 @@ function nodeHits(geometry){
   }
   const role=await page.evaluate(()=>graph.getState().positions);
   assert.equal(role['ilp-electors'].y,role['ilp-signatures'].y);assert.ok(role['ilp-electors'].x<role['ilp-signatures'].x);
-  await page.screenshot({path:path.resolve(__dirname,'../reports/expanded.png')});
+  await page.evaluate(()=>graph.fit());await page.screenshot({path:path.resolve(__dirname,'../reports/expanded.png')});
   for(const mode of ['ordinary','organic','all']){
    await page.evaluate(mode=>graph.setLawMode(mode),mode);verify(await page.evaluate(()=>graph.getGeometry()),mode);
   }
@@ -74,8 +78,9 @@ function nodeHits(geometry){
   await page.evaluate(()=>graph.reset());
   const beforeDrag=await page.evaluate(()=>({state:graph.getState(),edge:graph.getGeometry().edges.find(edge=>edge.id==='initiative-entry')}));
   const root=beforeDrag.state.positions.initiative,z=beforeDrag.state.viewport.zoom,pan=beforeDrag.state.viewport.pan;
-  await page.mouse.move(root.x*z+pan.x,root.y*z+pan.y);await page.mouse.down();await page.mouse.move(root.x*z+pan.x+90,root.y*z+pan.y+15,{steps:12});await page.mouse.up();
-  const afterDrag=await page.evaluate(()=>({state:graph.getState(),edge:graph.getGeometry().edges.find(edge=>edge.id==='initiative-entry')}));
+  await page.mouse.move(root.x*z+pan.x,root.y*z+pan.y);await page.mouse.down();await page.mouse.move(root.x*z+pan.x+90,root.y*z+pan.y+15,{steps:12});await page.mouse.up();await page.evaluate(()=>graph.whenReady());
+  const afterDrag=await page.evaluate(()=>({state:graph.getState(),edge:graph.getGeometry().edges.find(edge=>edge.id==='initiative-entry'),geometry:graph.getGeometry()}));
+  assert.deepEqual(nodeHits(afterDrag.geometry),[],'Dropped routes must avoid other cards');
   const delta=afterDrag.state.positions.initiative.x-root.x;assert.ok(delta>50,'Node remains draggable');
   assert.ok(Math.abs(afterDrag.edge.points[0].x-beforeDrag.edge.points[0].x-delta)<.1,'Arrow source follows dragged node');
   assert.deepEqual(afterDrag.edge.points.at(-1),beforeDrag.edge.points.at(-1),'Other endpoint remains attached');
@@ -87,7 +92,7 @@ function nodeHits(geometry){
   await failed.goto(pathToFileURL(path.resolve(__dirname,'../index.html')).href);assert.equal(await failed.evaluate(()=>graph.whenReady()),false);
   assert.match(await failed.locator('#ui-status').textContent(),/test-layout-error/);assert.equal(await failed.locator('#ui-status').isVisible(),true);
   assert.deepEqual(await failed.evaluate(()=>graph.getVisibleGraph()),{nodes:[],edges:[]});assert.equal(await failed.locator('#viewport').getAttribute('aria-busy'),'false');await failed.close();
-  fs.writeFileSync(path.resolve(__dirname,'../reports/layout-checks.json'),JSON.stringify({engine:'elkjs 0.12.0',scenarios,offlineRequests:network,errors},null,2)+'\n');
+  fs.writeFileSync(path.resolve(__dirname,'../reports/layout-checks.json'),JSON.stringify({placement:'elkjs 0.12.0',routing:'libavoid-js 0.5.0-beta.5',scenarios,offlineRequests:network,errors},null,2)+'\n');
   console.log('PASS: every disclosure and law mode; orthogonal rendered routes; zero node/edge collisions; main-stage order; ILP group; latest async request; visible engine failure without fallback; offline');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1});

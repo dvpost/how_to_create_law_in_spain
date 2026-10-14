@@ -22,7 +22,10 @@
     "elk.layered.spacing.edgeEdgeBetweenLayers": "18",
     "elk.layered.crossingMinimization.strategy": "LAYER_SWEEP",
     "elk.layered.thoroughness": "20",
-    "elk.randomSeed": "1"
+    "elk.randomSeed": "1",
+    "elk.layered.considerModelOrder.strategy": "NODES_AND_EDGES",
+    "elk.layered.crossingMinimization.forceNodeModelOrder": "true",
+    "elk.layered.crossingMinimization.greedySwitch.type": "OFF"
   },
   "edges": [
     {
@@ -112,11 +115,11 @@
   "expansions": {
     "initiative": {
       "nodes": [
+        "ilp-source",
         "government-source",
         "congress-source",
         "senate-source",
-        "autonomy-source",
-        "ilp-source"
+        "autonomy-source"
       ],
       "edges": [
         {
@@ -410,7 +413,8 @@
           "target": "government-source",
           "kind": "flow",
           "label": "Если Правительство принимает проект",
-          "ref": "001"
+          "ref": "001",
+          "feedback": true
         }
       ],
       "removeEdges": [

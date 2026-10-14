@@ -1,5 +1,6 @@
 {
-  "engine": "elkjs 0.12.0",
+  "placement": "elkjs 0.12.0",
+  "routing": "libavoid-js 0.5.0-beta.5",
   "scenarios": [
     {
       "name": "Senate",
@@ -23,7 +24,7 @@
       "edges": 35,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 2
+      "crossingPairs": 1
     },
     {
       "name": "Reveal congress-source",
@@ -31,7 +32,7 @@
       "edges": 38,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 2
+      "crossingPairs": 1
     },
     {
       "name": "Reveal senate-source",
@@ -39,7 +40,7 @@
       "edges": 38,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 2
+      "crossingPairs": 1
     },
     {
       "name": "Reveal autonomy-source",
@@ -47,7 +48,7 @@
       "edges": 41,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 2
+      "crossingPairs": 4
     },
     {
       "name": "Reveal ilp-source",
@@ -55,7 +56,7 @@
       "edges": 51,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 4
     },
     {
       "name": "Reveal admission",
@@ -63,7 +64,7 @@
       "edges": 62,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 4
     },
     {
       "name": "Reveal discussion",
@@ -71,7 +72,7 @@
       "edges": 73,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 4
     },
     {
       "name": "Reveal approval",
@@ -79,7 +80,7 @@
       "edges": 76,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 4
     },
     {
       "name": "Reveal ilp-signatures",
@@ -87,7 +88,7 @@
       "edges": 77,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 10
     },
     {
       "name": "ordinary",
@@ -95,7 +96,7 @@
       "edges": 74,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 2
+      "crossingPairs": 9
     },
     {
       "name": "organic",
@@ -103,7 +104,7 @@
       "edges": 66,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 5
     },
     {
       "name": "all",
@@ -111,7 +112,7 @@
       "edges": 76,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 4
     },
     {
       "name": "No returns",
@@ -119,7 +120,7 @@
       "edges": 71,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 4
     },
     {
       "name": "Latest request",
@@ -127,7 +128,7 @@
       "edges": 68,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 4
     },
     {
       "name": "Reset and align",

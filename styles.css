@@ -10,3 +10,5 @@ dialog{width:min(860px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overfl
 @media(max-width:600px){.detail-popover{top:68px;right:12px;width:calc(100vw - 24px);padding:18px}.proof-row{grid-template-columns:35px 1fr auto;gap:10px}h2{font-size:24px}}
 
 #viewport[aria-busy="true"] .node-actions a{pointer-events:none}
+
+#viewport[aria-busy="true"] .edge-title{visibility:hidden}
