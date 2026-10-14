@@ -1,0 +1,101 @@
+{
+  "id": "017",
+  "title": "Примеры автономий: Валенсийское сообщество и Страна Басков",
+  "checked_date": "14.10.2026",
+  "claims": [
+    {
+      "text": "Пример различия уровней: провинция Валенсия — местное территориальное образование. Валенсийское сообщество — автономное сообщество, включающее муниципалитеты провинций Аликанте, Кастельон и Валенсия.",
+      "locator": "Ley 7/1985, статья 3.1.b; статут Валенсийского сообщества, статьи 1–2"
+    },
+    {
+      "text": "Les Corts, парламент Валенсийского сообщества, вправе направить в Конгресс собственное законодательное предложение и назначить депутатов для его защиты.",
+      "locator": "Статут Валенсийского сообщества, статья 22.f"
+    },
+    {
+      "text": "Статут Валенсийского сообщества утверждён органическим законом 5/1982. Статуты автономии — один из предметов, для которых Конституция предусматривает органический закон.",
+      "locator": "LO 5/1982; CE 81.1"
+    },
+    {
+      "text": "Валенсийское сообщество (Comunitat Valenciana) — автономия, включающая муниципалитеты провинций Аликанте, Кастельон и Валенсия. Его парламент называется Les Corts.",
+      "locator": "Статут Валенсийского сообщества, статьи 1–2, 21"
+    },
+    {
+      "text": "Страна Басков (Euskadi / País Vasco) — автономное сообщество Испании. Его законодательный орган — Баскский парламент (Parlamento Vasco).",
+      "locator": "Статут Страны Басков, статьи 1, 25"
+    },
+    {
+      "text": "Статья 21 Статута Валенсийского сообщества закрепляет законодательные полномочия Les Corts. Так статут определяет роль конкретного органа автономии.",
+      "locator": "Статут Валенсийского сообщества, статья 21"
+    },
+    {
+      "text": "Les Corts, парламент Валенсийского сообщества, назначает сенаторов, которые должны представлять это сообщество в Сенате Испании. Это пример участия автономии в формировании общегосударственной палаты.",
+      "locator": "Статут Валенсийского сообщества, статья 22.j; CE 69.5"
+    },
+    {
+      "text": "Провинция Валенсия — местное территориальное образование. Валенсийское сообщество — автономное сообщество: его территория включает муниципалитеты провинций Аликанте, Кастельон и Валенсия.",
+      "locator": "Ley 7/1985, статья 3.1.b; статут Валенсийского сообщества, статьи 1–2"
+    },
+    {
+      "text": "Примеры автономных сообществ — Валенсийское сообщество и Страна Басков. Вопросы автономного уровня относятся к сфере работы этой комиссии Сената.",
+      "locator": "Статут Валенсийского сообщества, статья 1; статут Страны Басков, статья 1; RS 56.a"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ley Orgánica 5/1982 · Estatuto de Autonomía de la Comunidad Valenciana",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-17235",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-17235",
+      "retrieved_at_utc": "2026-10-14T17:40:44.661985+00:00",
+      "sha256": "4991f8daf05952eac4adb7b82db2a8b80c727ac0ae6b797c410f14cb51fc7403",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/valencia-statute/official.html",
+      "key": "valencia-statute",
+      "version": "Última actualización, publicada el 28/12/2022",
+      "articles": [
+        {
+          "heading": "Artículo 1.",
+          "anchor": "aprimero",
+          "text": "[Bloque 3: #aprimero]\nArtículo 1.\n1. El pueblo valenciano, históricamente organizado como Reino de Valencia, se constituye en Comunidad Autónoma, dentro de la unidad de la Nación española, como expresión de su identidad diferenciada como nacionalidad histórica y en el ejercicio del derecho de autogobierno que la Constitución Española reconoce a toda nacionalidad, con la denominación de Comunitat Valenciana.\n2. La Comunitat Valenciana es la expresión de la voluntad democrática y del derecho de autogobierno del pueblo valenciano y se rige por el presente Estatuto, que es su norma institucional básica.\n3. La Comunitat Valenciana tiene como objetivo la consecución del autogobierno en los términos de este Estatuto, reforzar la democracia y garantizar la participación de todos los ciudadanos en la realización de sus fines.\n4. La Comunitat Valenciana, como región de Europa, asume los valores de la Unión Europea y velará por el cumplimiento de sus objetivos y por la defensa de los derechos de todos los ciudadanos europeos.\nSe modifica por el art. 2 de la Ley Orgánica 1/2006, de 10 de abril. Ref. BOE-A-2006-6472.\nSeleccionar redacción:\nÚltima actualización, publicada el 11/04/2006, en vigor a partir del 11/04/2006.\nTexto original, publicado el 10/07/1982, en vigor a partir del 10/07/1982.\nSubir"
+        },
+        {
+          "heading": "Artículo 2.",
+          "anchor": "asegundo",
+          "text": "[Bloque 4: #asegundo]\nArtículo 2.\nEl territorio de la Comunitat Valenciana comprende el de los municipios integrados en las provincias de Alicante, Castellón y Valencia.\nSe modifica por el art. 3 de la Ley Orgánica 1/2006, de 10 de abril. Ref. BOE-A-2006-6472.\nSeleccionar redacción:\nÚltima actualización, publicada el 11/04/2006, en vigor a partir del 11/04/2006.\nTexto original, publicado el 10/07/1982, en vigor a partir del 10/07/1982.\nSubir"
+        },
+        {
+          "heading": "Artículo 21.",
+          "anchor": "aveintiuno",
+          "text": "[Bloque 33: #aveintiuno]\nArtículo 21.\n1. La potestad legislativa dentro la Comunitat Valenciana corresponde a Les Corts, que representan al pueblo. Les Corts son inviolables y gozan de autonomía.\n2. Les Corts tienen su sede en el Palacio de los Borja de la ciudad de Valencia, pudiendo celebrar sesiones en otros lugares de la Comunitat Valenciana cuando sus órganos de gobierno así lo acuerden.\nSe modifica por el art. 25 de la Ley Orgánica 1/2006, de 10 de abril. Ref. BOE-A-2006-6472.\nSeleccionar redacción:\nÚltima actualización, publicada el 11/04/2006, en vigor a partir del 11/04/2006.\nTexto original, publicado el 10/07/1982, en vigor a partir del 10/07/1982.\nSubir"
+        },
+        {
+          "heading": "Artículo 22.",
+          "anchor": "aveintidos",
+          "text": "[Bloque 34: #aveintidos]\nArtículo 22.\nSon funciones de Les Corts:\na) Aprobar los presupuestos de la Generalitat y las emisiones de Deuda Pública.\nb) Controlar la acción del Consell.\nc) Elegir al President de la Generalitat.\nd) Exigir, en su caso, la responsabilidad política del President y del Consell.\ne) Ejercer el control parlamentario sobre la acción de la Administración situada bajo la autoridad de la Generalitat. Con esta finalidad se podrán crear, en su caso, comisiones especiales de investigación, o atribuir esta facultad a las comisiones permanentes.\nf) Presentar ante la Mesa del Congreso proposiciones de ley y nombrar a los Diputados encargados de defenderlas.\ng) Solicitar al Gobierno del Estado la adopción de proyectos de ley.\nh) Interponer recursos de inconstitucionalidad, así como personarse ante el Tribunal Constitucional.\ni) Aprobar, a propuesta del Consell, los convenios y los acuerdos de cooperación con el Estado y con las demás Comunidades Autónomas.\nj) Designar los Senadores y Senadoras que deben representar a la Comunitat Valenciana, conforme a lo previsto en la Constitución y en la forma que determine la Ley de Designación de Senadores en representación de la Comunitat Valenciana.\nk) Recibir información, a través del Consell, debatir y emitir opinión respecto de los tratados internacionales y legislación de la Unión Europea en cuanto se refieran a materias de particular interés de la Comunitat Valenciana, de acuerdo con la legislación del Estado.\nl) Aquellas otras que les atribuyan las leyes y este Estatuto.\nSe modifica por el art. 26 de la Ley Orgánica 1/2006, de 10 de abril. Ref. BOE-A-2006-6472.\nSeleccionar redacción:\nÚltima actualización, publicada el 11/04/2006, en vigor a partir del 11/04/2006.\nTexto original, publicado el 10/07/1982, en vigor a partir del 10/07/1982.\nSubir"
+        }
+      ]
+    },
+    {
+      "title": "Ley Orgánica 3/1979 · Estatuto de Autonomía para el País Vasco",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1979-30177",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1979-30177",
+      "retrieved_at_utc": "2026-10-14T17:40:44.660926+00:00",
+      "sha256": "22908ea39d0f98ef38ad836f71df02b583c94c55a5aac1166d9918fb15738656",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/basque-statute/official.html",
+      "key": "basque-statute",
+      "version": "Última actualización, publicada el 22/12/1979",
+      "articles": [
+        {
+          "heading": "Artículo 1.",
+          "anchor": "a1",
+          "text": "[Bloque 3: #a1]\nArtículo 1.\nEl Pueblo Vasco o Euskal-Herria, como expresión de su nacionalidad, y para acceder a su autogobierno, se constituye en Comunidad Autónoma dentro del Estado Español bajo la denominación de Euskadi o País Vasco, de acuerdo con la Constitución y con el presente Estatuto, que es su norma institucional básica.\nSubir"
+        },
+        {
+          "heading": "Artículo 25.",
+          "anchor": "a25",
+          "text": "[Bloque 31: #a25]\nArtículo 25.\n1. El Parlamento Vasco ejerce la potestad legislativa, aprueba sus presupuestos e impulsa y controla la acción del Gobierno Vasco, todo ello sin perjuicio de las competencias de las Instituciones a que se refiere el artículo 37 del presente Estatuto.\n2. El Parlamento Vasco es inviolable.\nSubir"
+        }
+      ]
+    }
+  ]
+}

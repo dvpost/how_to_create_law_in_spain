@@ -1,0 +1,128 @@
+{
+  "constitution": {
+    "title": "Constitución Española",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+    "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+    "retrieved_at_utc": "2026-10-14T13:54:29.642281+00:00",
+    "sha256": "4fcb22f5b32889b0828ae67e83483df7b1c6a0cd364447527882379e3978eb35",
+    "content_type": "text/html; charset=UTF-8",
+    "file": "sources/constitution/official.html"
+  },
+  "congress": {
+    "title": "Reglamento del Congreso",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-5196",
+    "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-5196",
+    "retrieved_at_utc": "2026-10-14T13:54:30.670638+00:00",
+    "sha256": "938f1e19a147e6cf0db64bf44cb38fcdfba0d9695fc4b4a3576f089ad5323b98",
+    "content_type": "text/html; charset=UTF-8",
+    "file": "sources/congress/official.html"
+  },
+  "senate": {
+    "title": "Reglamento del Senado",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-10830",
+    "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-10830",
+    "retrieved_at_utc": "2026-10-14T13:54:29.711971+00:00",
+    "sha256": "7419f47fb497c5e31c97bbfba0edd336147134566259b0b71748382f9a3d64cb",
+    "content_type": "text/html; charset=UTF-8",
+    "file": "sources/senate/official.html"
+  },
+  "ilp": {
+    "title": "Ley Orgánica 3/1984 · iniciativa legislativa popular",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1984-7249",
+    "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1984-7249",
+    "retrieved_at_utc": "2026-10-14T13:54:29.537626+00:00",
+    "sha256": "128fe532482de1f3d940e4ea5afb8cf41d675cd76ce5a63c18d9d04c260a3aad",
+    "content_type": "text/html; charset=UTF-8",
+    "file": "sources/ilp/official.html"
+  },
+  "publication": {
+    "title": "Real Decreto 181/2008 · BOE",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-2389",
+    "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-2389",
+    "retrieved_at_utc": "2026-10-14T13:54:29.601923+00:00",
+    "sha256": "fa3135cc0650d1b36e18486c9a766a2b3747b07e4745f450251c636d507d0372",
+    "content_type": "text/html; charset=UTF-8",
+    "file": "sources/publication/official.html"
+  },
+  "civil": {
+    "title": "Código Civil",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763",
+    "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763",
+    "retrieved_at_utc": "2026-10-14T13:54:30.256580+00:00",
+    "sha256": "8eac249cf8e5413fe67f92b21f8a66f2a8beff0be24d29bebf77d341a402a483",
+    "content_type": "text/html; charset=UTF-8",
+    "file": "sources/civil/official.html"
+  },
+  "royal-comment": {
+    "title": "Congreso · comentario oficial del artículo 91",
+    "url": "https://constitucion.congreso.es/imprimir-articulo?numero=91",
+    "resolved_url": "https://constitucion.congreso.es/imprimir-articulo?numero=91",
+    "retrieved_at_utc": "2026-10-14T13:54:29.716111+00:00",
+    "sha256": "3b27a043384836141f703a3163b833a88ab68ce3c1cb78215f13127e15d67ee7",
+    "content_type": "text/html;charset=UTF-8",
+    "file": "sources/royal-comment/official.html"
+  },
+  "government": {
+    "title": "Ley 50/1997 · del Gobierno",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-25336",
+    "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-25336",
+    "retrieved_at_utc": "2026-10-14T16:46:00.893091+00:00",
+    "sha256": "db0d796d248140d2877fa287f4e426e6beb143d65c23b85ea0534e2658d202d1",
+    "content_type": "text/html; charset=UTF-8",
+    "file": "sources/government/official.html"
+  },
+  "electoral": {
+    "title": "Ley Orgánica 5/1985 · régimen electoral general",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672",
+    "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672",
+    "retrieved_at_utc": "2026-10-14T16:46:01.118054+00:00",
+    "sha256": "0918de77d251b6a17d0cc0d695f76aa9c8680d08c2b530fd220772faa46f03ca",
+    "content_type": "text/html; charset=UTF-8",
+    "file": "sources/electoral/official.html"
+  },
+  "parliament-dictionary": {
+    "title": "Senado · словарь парламентских терминов",
+    "url": "https://www.senado.es/web/diccionarioterminosparlamentarios/index.html?lang=es",
+    "resolved_url": "https://www.senado.es/web/diccionarioterminosparlamentarios/index.html?lang=es",
+    "retrieved_at_utc": "2026-10-14T16:52:07.967064+00:00",
+    "sha256": "7a359f9922ad1235adef5fb270b6ac6927961646aa3e1a0451ee561115d949c7",
+    "content_type": "text/html;charset=UTF-8",
+    "file": "sources/parliament-dictionary/official.html"
+  },
+  "valencia-statute": {
+    "title": "Ley Orgánica 5/1982 · Estatuto de Autonomía de la Comunidad Valenciana",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-17235",
+    "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-17235",
+    "retrieved_at_utc": "2026-10-14T17:40:44.661985+00:00",
+    "sha256": "4991f8daf05952eac4adb7b82db2a8b80c727ac0ae6b797c410f14cb51fc7403",
+    "content_type": "text/html; charset=UTF-8",
+    "file": "sources/valencia-statute/official.html"
+  },
+  "basque-statute": {
+    "title": "Ley Orgánica 3/1979 · Estatuto de Autonomía para el País Vasco",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1979-30177",
+    "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1979-30177",
+    "retrieved_at_utc": "2026-10-14T17:40:44.660926+00:00",
+    "sha256": "22908ea39d0f98ef38ad836f71df02b583c94c55a5aac1166d9918fb15738656",
+    "content_type": "text/html; charset=UTF-8",
+    "file": "sources/basque-statute/official.html"
+  },
+  "bicameral-guide": {
+    "title": "Senado · El Senado en el sistema bicameral español",
+    "url": "https://www.senado.es/web/conocersenado/temasclave/sistemabicameral/index.html?lang=es_ES",
+    "resolved_url": "https://www.senado.es/web/conocersenado/temasclave/sistemabicameral/index.html?lang=es_ES",
+    "retrieved_at_utc": "2026-10-14T17:51:57.833846+00:00",
+    "sha256": "ed33330d21d2aa5a8fb3959756fdd33fd6ba388bd5cfab14591197b3e81a86d5",
+    "content_type": "text/html;charset=UTF-8",
+    "file": "sources/bicameral-guide/official.html"
+  },
+  "local-regime": {
+    "title": "Ley 7/1985 · Bases del Régimen Local",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392",
+    "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392",
+    "retrieved_at_utc": "2026-10-14T19:40:24.529032+00:00",
+    "sha256": "18c6892e75af210339c4b84b3c58907b70ba3f2a413b4874660a221aaabf24d5",
+    "content_type": "text/html; charset=UTF-8",
+    "file": "sources/local-regime/official.html"
+  }
+}

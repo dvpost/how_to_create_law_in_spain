@@ -1,0 +1,149 @@
+{
+  "id": "008",
+  "title": "Одобрение: пленум, комиссия, одно чтение",
+  "checked_date": "14.10.2026",
+  "claims": [
+    {
+      "text": "Пленум или комиссия с полными законодательными полномочиями.",
+      "locator": ""
+    },
+    {
+      "text": "Для конституционно делегируемых текстов Регламент предполагает делегирование полной законодательной компетенции комиссии. При этом прения и голосование по тексту в целом или toma en consideración не делегируются.",
+      "locator": "RCD 148.1"
+    },
+    {
+      "text": "При полной компетенции комиссии нет окончательных пленарных прений и голосования. Пленум может вернуть себе окончательное рассмотрение в случаях и порядке статьи 149.",
+      "locator": "RCD 148.2–149.1"
+    },
+    {
+      "text": "Делегирование комиссии исключено для конституционной реформы, международных вопросов, органических законов, leyes de bases и государственного бюджета.",
+      "locator": "CE 75.3"
+    },
+    {
+      "text": "Общее правило решений — простое большинство присутствующих членов соответствующего органа; Конституция, органические законы и Регламент могут устанавливать специальные большинства.",
+      "locator": "RCD 79.1"
+    },
+    {
+      "text": "Если характер или простота текста это допускают, пленум по предложению Mesa, выслушав Junta de Portavoces, может назначить lectura única: прения и одно голосование по всему тексту. Одобренный текст направляется в Сенат; при отрицательном голосовании отклоняется.",
+      "locator": "RCD 150"
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "Если характер или простота текста это допускают, пленум по предложению Mesa, выслушав Junta de Portavoces, может назначить lectura única: прения и одно голосование по всему тексту. Одобренный текст направляется в Сенат; при отрицательном голосовании отклоняется.",
+      "locator": "RCD 150"
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "Если характер или простота текста это допускают, пленум по предложению Mesa, выслушав Junta de Portavoces, может назначить lectura única: прения и одно голосование по всему тексту. Одобренный текст направляется в Сенат; при отрицательном голосовании отклоняется.",
+      "locator": "RCD 150"
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "Общее правило решений — простое большинство присутствующих членов соответствующего органа; Конституция, органические законы и Регламент могут устанавливать специальные большинства.",
+      "locator": "RCD 79.1"
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "Для конституционно делегируемых текстов Регламент предполагает делегирование полной законодательной компетенции комиссии. При этом прения и голосование по тексту в целом или toma en consideración не делегируются.",
+      "locator": "RCD 148.1"
+    },
+    {
+      "text": "При полной компетенции комиссии нет окончательных пленарных прений и голосования. Пленум может вернуть себе окончательное рассмотрение в случаях и порядке статьи 149.",
+      "locator": "RCD 148.2–149.1"
+    },
+    {
+      "text": "Делегирование комиссии исключено для конституционной реформы, международных вопросов, органических законов, leyes de bases и государственного бюджета.",
+      "locator": "CE 75.3"
+    },
+    {
+      "text": "Полномочие комиссии одобрить текст вместо заключительного обсуждения и голосования пленума. Это возможно лишь для допускающих такое делегирование законов. Например, органические законы исключены. Пленум может вернуть себе рассмотрение в установленном порядке.",
+      "locator": "CE 75.2–3; RCD 148–149"
+    },
+    {
+      "text": "Органический закон и государственный бюджет нельзя окончательно одобрить по этому варианту в парламентской комиссии: Конституция исключает их из делегирования.",
+      "locator": "CE 75.3; RCD 149.1"
+    },
+    {
+      "text": "Голосов «за» больше, чем голосов «против». Это общее правило принятия решений, если для конкретного вопроса не требуется специальное большинство. Оно отличается от абсолютного большинства, которое считают от всего состава органа.",
+      "locator": "RCD 79.1, 122.2; официальный словарь Сената: Mayoría simple — пояснение, не норма"
+    },
+    {
+      "text": "Процедура Конгресса, при которой пленум обсуждает и голосует весь текст одним голосованием. Её назначает пленум по предложению Mesa, выслушав Junta de Portavoces, если характер или простота текста позволяют такой порядок.",
+      "locator": "RCD 150"
+    },
+    {
+      "text": "Законы, которыми парламент передаёт Правительству право составить текст с силой закона и задаёт предмет, пределы, принципы и критерии этого поручения. Их принятие нельзя передать парламентской комиссии с полной законодательной компетенцией.",
+      "locator": "CE 82.2, 82.4, 75.3"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Constitución Española",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "retrieved_at_utc": "2026-10-14T13:54:29.642281+00:00",
+      "sha256": "4fcb22f5b32889b0828ae67e83483df7b1c6a0cd364447527882379e3978eb35",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/constitution/official.html",
+      "key": "constitution",
+      "version": "Última actualización, publicada el 20/05/2026",
+      "articles": [
+        {
+          "heading": "Artículo 75",
+          "anchor": "a75",
+          "text": "[Bloque 88: #a75]\nArtículo 75\n1. Las Cámaras funcionarán en Pleno y por Comisiones.\n2. Las Cámaras podrán delegar en las Comisiones Legislativas Permanentes la aprobación de proyectos o proposiciones de ley. El Pleno podrá, no obstante, recabar en cualquier momento el debate y votación de cualquier proyecto o proposición de ley que haya sido objeto de esta delegación.\n3. Quedan exceptuados de lo dispuesto en el apartado anterior la reforma constitucional, las cuestiones internacionales, las leyes orgánicas y de bases y los Presupuestos Generales del Estado.\nSubir"
+        },
+        {
+          "heading": "Artículo 79",
+          "anchor": "a79",
+          "text": "[Bloque 92: #a79]\nJurisprudencia\nArtículo 79\n1. Para adoptar acuerdos, las Cámaras deben estar reunidas reglamentariamente y con asistencia de la mayoría de sus miembros.\n2. Dichos acuerdos, para ser válidos, deberán ser aprobados por la mayoría de los miembros presentes, sin perjuicio de las mayorías especiales que establezcan la Constitución o las leyes orgánicas y las que para elección de personas establezcan los Reglamentos de las Cámaras.\n3. El voto de Senadores y Diputados es personal e indelegable.\nSubir"
+        }
+      ]
+    },
+    {
+      "title": "Reglamento del Congreso",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-5196",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-5196",
+      "retrieved_at_utc": "2026-10-14T13:54:30.670638+00:00",
+      "sha256": "938f1e19a147e6cf0db64bf44cb38fcdfba0d9695fc4b4a3576f089ad5323b98",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/congress/official.html",
+      "key": "congress",
+      "version": "Última actualización, publicada el 28/07/2026",
+      "articles": [
+        {
+          "heading": "Artículo 79.",
+          "anchor": "art79",
+          "text": "[Bloque 106: #art79]\nArtículo 79.\n1. Los acuerdos, para ser válidos, deberán ser aprobados por la mayoría simple de los miembros presentes del órgano correspondiente, sin perjuicio de las mayorías especiales que establezcan la Constitución, las Leyes orgánicas o este Reglamento.\n2. El voto de cada miembro de la Cámara es personal e indelegable. Nadie podrá tomar parte en las votaciones sobre resoluciones que afecten a su estatuto de diputado o diputada.\n3. Se computará como presente en la votación cada miembro de la Cámara que, pese a estar ausente, haya recibido expresa autorización de la Mesa para participar en la misma.\nSe modifican los apartados 2 y 3 por el art. único.72 de la Reforma del Reglamento de 22 de julio de 2025. Ref. BOE-A-2025-15844\nSe añade el apartado 3 por el artículo 1 de la Reforma del Reglamento de 21 de julio de 2011. Ref. BOE-A-2011-13243.\nSeleccionar redacción:\nÚltima actualización, publicada el 31/07/2025, en vigor a partir del 31/07/2025.\nModificación publicada el 02/08/2011, en vigor a partir del 01/09/2011.\nTexto original, publicado el 05/03/1982, en vigor a partir del 24/02/1982.\nSubir"
+        },
+        {
+          "heading": "Artículo 148.",
+          "anchor": "art148",
+          "text": "[Bloque 202: #art148]\nArtículo 148.\n1. El acuerdo del Pleno por el que se delega la competencia legislativa plena en las Comisiones, se presumirá para todos los proyectos y proposiciones de ley que sean constitucionalmente delegables, excluyéndose de la delegación el debate y votación de totalidad o de toma en consideración, y sin menoscabo de lo previsto en el artículo siguiente.\n2. El procedimiento aplicable para la tramitación de estos proyectos y proposiciones de ley será el legislativo común, excluido el trámite de deliberación y votación final en el Pleno.\nSubir"
+        },
+        {
+          "heading": "Artículo 149.",
+          "anchor": "art149",
+          "text": "[Bloque 203: #art149]\nArtículo 149.\n1. El Pleno de la Cámara podrá recabar para sí la deliberación y votación final de los proyectos y proposiciones de ley a que se refiere el artículo anterior, en virtud de acuerdo adoptado en la sesión plenaria en que se proceda al debate de totalidad, conforme al artículo 112 de este Reglamento, o a la toma en consideración de proposiciones de ley. En los demás casos y antes de iniciarse el debate en Comisión, el Pleno podrá avocar la aprobación final, a propuesta de la Mesa, oída la Junta de Portavoces. La propuesta de avocación se someterá a votación sin debate previo.\n2. Las Comisiones carecerán de competencia para conocer con plenitud legislativa de los proyectos o proposiciones de ley que hubieren sido vetados o enmendados por el Senado, siempre que el veto o las enmiendas hubieran sido aprobados por el Pleno de dicha Cámara.\nSubir"
+        },
+        {
+          "heading": "Artículo 150.",
+          "anchor": "art150",
+          "text": "[Bloque 205: #art150]\nArtículo 150.\n1. Cuando la naturaleza del proyecto o proposición de ley tomada en consideración lo aconsejen o su simplicidad de formulación lo permita, el Pleno de la Cámara, a propuesta de la Mesa, oída la Junta de Portavoces, podrá acordar que se tramite directamente y en lectura única.\n2. Adoptado tal acuerdo se procederá a un debate sujeto a las normas establecidas para los de totalidad, sometiéndose seguidamente el conjunto del texto a una sola votación.\n3. Si el resultado de la votación es favorable, el texto quedará aprobado y se remitirá al Senado. En caso contrario, quedará rechazado.\nSubir"
+        }
+      ]
+    }
+  ]
+}

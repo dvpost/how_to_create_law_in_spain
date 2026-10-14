@@ -1,0 +1,92 @@
+{
+  "id": "014",
+  "title": "Границы основного маршрута",
+  "checked_date": "14.10.2026",
+  "claims": [
+    {
+      "text": "Его подготовка принадлежит Правительству, рассмотрение и принятие — Cortes Generales. Особый маршрут в этой версии не раскрыт.",
+      "locator": "CE 134.1"
+    },
+    {
+      "text": "Статьи 82–86 регулируют правительственные акты с силой закона. Здесь их самостоятельные маршруты не построены.",
+      "locator": "CE 82–86"
+    },
+    {
+      "text": "Инициатива и процедуры регулируются статьями 166–168. Эти ветви здесь не раскрыты.",
+      "locator": "CE 166–168"
+    },
+    {
+      "text": "Временный акт Правительства с силой закона для чрезвычайной и срочной необходимости, с конституционными ограничениями по предмету. Конгресс должен в течение 30 дней решить, подтвердить его или отменить. Этот отдельный путь не раскрыт основной картой.",
+      "locator": "CE 86"
+    },
+    {
+      "text": "Акт Правительства с силой закона, изданный потому, что парламент прямо передал ему такое полномочие для определённого предмета и срока. Это отдельный механизм от рассмотрения обычного предложения закона.",
+      "locator": "CE 82, 85"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Constitución Española",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "retrieved_at_utc": "2026-10-14T13:54:29.642281+00:00",
+      "sha256": "4fcb22f5b32889b0828ae67e83483df7b1c6a0cd364447527882379e3978eb35",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/constitution/official.html",
+      "key": "constitution",
+      "version": "Última actualización, publicada el 20/05/2026",
+      "articles": [
+        {
+          "heading": "Artículo 81",
+          "anchor": "a81",
+          "text": "[Bloque 95: #a81]\nJurisprudencia\nArtículo 81\n1. Son leyes orgánicas las relativas al desarrollo de los derechos fundamentales y de las libertades públicas, las que aprueben los Estatutos de Autonomía y el régimen electoral general y las demás previstas en la Constitución.\n2. La aprobación, modificación o derogación de las leyes orgánicas exigirá mayoría absoluta del Congreso, en una votación final sobre el conjunto del proyecto.\nSubir"
+        },
+        {
+          "heading": "Artículo 82",
+          "anchor": "a82",
+          "text": "[Bloque 96: #a82]\nJurisprudencia\nArtículo 82\n1. Las Cortes Generales podrán delegar en el Gobierno la potestad de dictar normas con rango de ley sobre materias determinadas no incluidas en el artículo anterior.\n2. La delegación legislativa deberá otorgarse mediante una ley de bases cuando su objeto sea la formación de textos articulados o por una ley ordinaria cuando se trate de refundir varios textos legales en uno solo.\n3. La delegación legislativa habrá de otorgarse al Gobierno de forma expresa para materia concreta y con fijación del plazo para su ejercicio. La delegación se agota por el uso que de ella haga el Gobierno mediante la publicación de la norma correspondiente. No podrá entenderse concedida de modo implícito o por tiempo indeterminado. Tampoco podrá permitir la subdelegación a autoridades distintas del propio Gobierno.\n4. Las leyes de bases delimitarán con precisión el objeto y alcance de la delegación legislativa y los principios y criterios que han de seguirse en su ejercicio.\n5. La autorización para refundir textos legales determinará el ámbito normativo a que se refiere el contenido de la delegación, especificando si se circunscribe a la mera formulación de un texto único o si se incluye la de regularizar, aclarar y armonizar los textos legales que han de ser refundidos.\n6. Sin perjuicio de la competencia propia de los Tribunales, las leyes de delegación podrán establecer en cada caso fórmulas adicionales de control.\nSubir"
+        },
+        {
+          "heading": "Artículo 83",
+          "anchor": "a83",
+          "text": "[Bloque 97: #a83]\nArtículo 83\nLas leyes de bases no podrán en ningún caso:\na) Autorizar la modificación de la propia ley de bases.\nb) Facultar para dictar normas con carácter retroactivo.\nSubir"
+        },
+        {
+          "heading": "Artículo 84",
+          "anchor": "a84",
+          "text": "[Bloque 98: #a84]\nArtículo 84\nCuando una proposición de ley o una enmienda fuere contraria a una delegación legislativa en vigor, el Gobierno está facultado para oponerse a su tramitación. En tal supuesto, podrá presentarse una proposición de ley para la derogación total o parcial de la ley de delegación.\nSubir"
+        },
+        {
+          "heading": "Artículo 85",
+          "anchor": "a85",
+          "text": "[Bloque 99: #a85]\nJurisprudencia\nArtículo 85\nLas disposiciones del Gobierno que contengan legislación delegada recibirán el título de Decretos Legislativos.\nSubir"
+        },
+        {
+          "heading": "Artículo 86",
+          "anchor": "a86",
+          "text": "[Bloque 100: #a86]\nJurisprudencia\nArtículo 86\n1. En caso de extraordinaria y urgente necesidad, el Gobierno podrá dictar disposiciones legislativas provisionales que tomarán la forma de Decretos-leyes y que no podrán afectar al ordenamiento de las instituciones básicas del Estado, a los derechos, deberes y libertades de los ciudadanos regulados en el Título I, al régimen de las Comunidades Autónomas ni al Derecho electoral general.\n2. Los Decretos-leyes deberán ser inmediatamente sometidos a debate y votación de totalidad al Congreso de los Diputados, convocado al efecto si no estuviere reunido, en el plazo de los treinta días siguientes a su promulgación. El Congreso habrá de pronunciarse expresamente dentro de dicho plazo sobre su convalidación o derogación, para lo cual el Reglamento establecerá un procedimiento especial y sumario.\n3. Durante el plazo establecido en el apartado anterior, las Cortes podrán tramitarlos como proyectos de ley por el procedimiento de urgencia.\nSubir"
+        },
+        {
+          "heading": "Artículo 134",
+          "anchor": "a134",
+          "text": "[Bloque 153: #a134]\nJurisprudencia\nArtículo 134\n1. Corresponde al Gobierno la elaboración de los Presupuestos Generales del Estado y a las Cortes Generales, su examen, enmienda y aprobación.\n2. Los Presupuestos Generales del Estado tendrán carácter anual, incluirán la totalidad de los gastos e ingresos del sector público estatal y en ellos se consignará el importe de los beneficios fiscales que afecten a los tributos del Estado.\n3. El Gobierno deberá presentar ante el Congreso de los Diputados los Presupuestos Generales del Estado al menos tres meses antes de la expiración de los del año anterior.\n4. Si la Ley de Presupuestos no se aprobara antes del primer día del ejercicio económico correspondiente, se considerarán automáticamente prorrogados los Presupuestos del ejercicio anterior hasta la aprobación de los nuevos.\n5. Aprobados los Presupuestos Generales del Estado, el Gobierno podrá presentar proyectos de ley que impliquen aumento del gasto público o disminución de los ingresos correspondientes al mismo ejercicio presupuestario.\n6. Toda proposición o enmienda que suponga aumento de los créditos o disminución de los ingresos presupuestarios requerirá la conformidad del Gobierno para su tramitación.\n7. La Ley de Presupuestos no puede crear tributos. Podrá modificarlos cuando una ley tributaria sustantiva así lo prevea.\nSubir"
+        },
+        {
+          "heading": "Artículo 166",
+          "anchor": "a166",
+          "text": "[Bloque 191: #a166]\nArtículo 166\nLa iniciativa de reforma constitucional se ejercerá en los términos previstos en los apartados 1 y 2 del artículo 87.\nSubir"
+        },
+        {
+          "heading": "Artículo 167",
+          "anchor": "a167",
+          "text": "[Bloque 192: #a167]\nArtículo 167\n1. Los proyectos de reforma constitucional deberán ser aprobados por una mayoría de tres quintos de cada una de las Cámaras. Si no hubiera acuerdo entre ambas, se intentará obtenerlo mediante la creación de una Comisión de composición paritaria de Diputados y Senadores, que presentará un texto que será votado por el Congreso y el Senado.\n2. De no lograrse la aprobación mediante el procedimiento del apartado anterior, y siempre que el texto hubiere obtenido el voto favorable de la mayoría absoluta del Senado, el Congreso, por mayoría de dos tercios, podrá aprobar la reforma.\n3. Aprobada la reforma por las Cortes Generales, será sometida a referéndum para su ratificación cuando así lo soliciten, dentro de los quince días siguientes a su aprobación, una décima parte de los miembros de cualquiera de las Cámaras.\nSubir"
+        },
+        {
+          "heading": "Artículo 168",
+          "anchor": "a168",
+          "text": "[Bloque 193: #a168]\nArtículo 168\n1. Cuando se propusiere la revisión total de la Constitución o una parcial que afecte al Título preliminar, al Capítulo segundo, Sección primera del Título I, o al Título II, se procederá a la aprobación del principio por mayoría de dos tercios de cada Cámara, y a la disolución inmediata de las Cortes.\n2. Las Cámaras elegidas deberán ratificar la decisión y proceder al estudio del nuevo texto constitucional, que deberá ser aprobado por mayoría de dos tercios de ambas Cámaras.\n3. Aprobada la reforma por las Cortes Generales, será sometida a referéndum para su ratificación.\nSubir"
+        }
+      ]
+    }
+  ]
+}

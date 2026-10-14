@@ -1,0 +1,3647 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="ltr" dir="ltr" lang="es-ES">
+
+<head>
+	<title>imprimir-articulo</title>
+
+	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="importmap">{"imports":{"react-dom":"/o/frontend-js-react-web/__liferay__/exports/react-dom.js","@clayui/breadcrumb":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$breadcrumb.js","@clayui/charts":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$charts.js","@clayui/empty-state":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$empty-state.js","react":"/o/frontend-js-react-web/__liferay__/exports/react.js","react-dom-16":"/o/frontend-js-react-web/__liferay__/exports/react-dom-16.js","@clayui/navigation-bar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$navigation-bar.js","@clayui/icon":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$icon.js","@clayui/table":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$table.js","@clayui/slider":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$slider.js","@clayui/multi-select":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$multi-select.js","@clayui/nav":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$nav.js","@clayui/provider":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$provider.js","@clayui/panel":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$panel.js","@clayui/list":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$list.js","@liferay/dynamic-data-mapping-form-field-type":"/o/dynamic-data-mapping-form-field-type/__liferay__/index.js","@clayui/date-picker":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$date-picker.js","@clayui/label":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$label.js","@liferay/frontend-js-api/data-set":"/o/frontend-js-dependencies-web/__liferay__/exports/@liferay$js-api$data-set.js","@clayui/core":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$core.js","@clayui/pagination-bar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$pagination-bar.js","@clayui/layout":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$layout.js","@clayui/multi-step-nav":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$multi-step-nav.js","@liferay/frontend-js-api":"/o/frontend-js-dependencies-web/__liferay__/exports/@liferay$js-api.js","@clayui/toolbar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$toolbar.js","@clayui/badge":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$badge.js","react-dom-18":"/o/frontend-js-react-web/__liferay__/exports/react-dom-18.js","@clayui/link":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$link.js","@clayui/card":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$card.js","@clayui/tooltip":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$tooltip.js","@clayui/button":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$button.js","@clayui/tabs":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$tabs.js","@clayui/sticker":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$sticker.js","@clayui/form":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$form.js","@clayui/popover":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$popover.js","@clayui/shared":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$shared.js","@clayui/localized-input":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$localized-input.js","@clayui/modal":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$modal.js","@clayui/color-picker":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$color-picker.js","@clayui/pagination":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$pagination.js","@clayui/autocomplete":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$autocomplete.js","@clayui/management-toolbar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$management-toolbar.js","@clayui/time-picker":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$time-picker.js","@clayui/upper-toolbar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$upper-toolbar.js","@clayui/loading-indicator":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$loading-indicator.js","@clayui/drop-down":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$drop-down.js","@clayui/data-provider":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$data-provider.js","@liferay/language/":"/o/js/language/","@clayui/css":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$css.js","@clayui/alert":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$alert.js","@clayui/progress-bar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$progress-bar.js","react-16":"/o/frontend-js-react-web/__liferay__/exports/react-16.js","react-18":"/o/frontend-js-react-web/__liferay__/exports/react-18.js"},"scopes":{}}</script><script data-senna-track="temporary">var Liferay = window.Liferay || {};Liferay.Icons = Liferay.Icons || {};Liferay.Icons.controlPanelSpritemap = 'https://constitucion.congreso.es/o/admin-theme/images/clay/icons.svg'; Liferay.Icons.spritemap = 'https://constitucion.congreso.es/o/classic-theme/images/clay/icons.svg';</script>
+<script data-senna-track="permanent" type="text/javascript">window.Liferay = window.Liferay || {}; window.Liferay.CSP = {nonce: ''};</script>
+<link data-senna-track="temporary" href="https://constitucion.congreso.es/imprimir-articulo" rel="canonical" />
+<link data-senna-track="temporary" href="https://constitucion.congreso.es/imprimir-articulo" hreflang="es-ES" rel="alternate" />
+<link data-senna-track="temporary" href="https://constitucion.congreso.es/imprimir-articulo" hreflang="x-default" rel="alternate" />
+
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:site_name" content="Constitución">
+<meta property="og:title" content="imprimir-articulo">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://constitucion.congreso.es/imprimir-articulo">
+
+
+<link href="https://constitucionpre.congreso.es/documents/17157/18249/logo-congreso.png" rel="apple-touch-icon" />
+<link href="https://constitucionpre.congreso.es/documents/17157/18249/logo-congreso.png" rel="icon" />
+
+
+
+<link class="lfr-css-file" data-senna-track="temporary" href="https://constitucion.congreso.es/o/classic-theme/css/clay.css?browserId=other&amp;themeId=classic_WAR_classictheme&amp;minifierType=css&amp;languageId=es_ES&amp;t=1757105658000" id="liferayAUICSS" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+	<link href="/combo?browserId=other&amp;minifierType=css&amp;themeId=classic_WAR_classictheme&amp;languageId=es_ES&amp;com_liferay_cookies_banner_web_portlet_CookiesBannerPortlet:%2Fo%2Fcookies-banner-web%2Fcookies_banner%2Fcss%2Fmain.css&amp;com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_templateSearch:%2Fo%2Fportal-search-web%2Fcss%2Fmain.css&amp;com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet:%2Fo%2Fproduct-navigation-product-menu-web%2Fcss%2Fmain.css&amp;com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet:%2Fo%2Fproduct-navigation-user-personal-bar-web%2Fcss%2Fmain.css&amp;com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet:%2Fo%2Fsite-navigation-menu-web%2Fcss%2Fmain.css&amp;t=1757105658000" rel="stylesheet" type="text/css"
+ data-senna-track="temporary" id="21465f31" />
+
+
+
+
+
+
+
+
+<script type="text/javascript" data-senna-track="temporary">
+	// <![CDATA[
+		var Liferay = Liferay || {};
+
+		Liferay.Browser = {
+			acceptsGzip: function () {
+				return false;
+			},
+
+			
+
+			getMajorVersion: function () {
+				return 0;
+			},
+
+			getRevision: function () {
+				return '';
+			},
+			getVersion: function () {
+				return '';
+			},
+
+			
+
+			isAir: function () {
+				return false;
+			},
+			isChrome: function () {
+				return false;
+			},
+			isEdge: function () {
+				return false;
+			},
+			isFirefox: function () {
+				return false;
+			},
+			isGecko: function () {
+				return false;
+			},
+			isIe: function () {
+				return false;
+			},
+			isIphone: function () {
+				return false;
+			},
+			isLinux: function () {
+				return false;
+			},
+			isMac: function () {
+				return false;
+			},
+			isMobile: function () {
+				return false;
+			},
+			isMozilla: function () {
+				return false;
+			},
+			isOpera: function () {
+				return false;
+			},
+			isRtf: function () {
+				return false;
+			},
+			isSafari: function () {
+				return false;
+			},
+			isSun: function () {
+				return false;
+			},
+			isWebKit: function () {
+				return false;
+			},
+			isWindows: function () {
+				return false;
+			}
+		};
+
+		Liferay.Data = Liferay.Data || {};
+
+		Liferay.Data.ICONS_INLINE_SVG = true;
+
+		Liferay.Data.NAV_SELECTOR = '#navigation';
+
+		Liferay.Data.NAV_SELECTOR_MOBILE = '#navigationCollapse';
+
+		Liferay.Data.isCustomizationView = function () {
+			return false;
+		};
+
+		Liferay.Data.notices = [
+			
+		];
+
+		(function () {
+			var available = {};
+
+			var direction = {};
+
+			
+
+				available['es_ES'] = 'español\x20\x28España\x29';
+				direction['es_ES'] = 'ltr';
+
+			
+
+			let _cache = {};
+
+			if (Liferay && Liferay.Language && Liferay.Language._cache) {
+				_cache = Liferay.Language._cache;
+			}
+
+			Liferay.Language = {
+				_cache,
+				available,
+				direction,
+				get: function(key) {
+					let value = Liferay.Language._cache[key];
+
+					if (value === undefined) {
+						value = key;
+					}
+
+					return value;
+				}
+			};
+		})();
+
+		var featureFlags = {"LPD-10964":false,"LPD-37927":false,"LPD-10889":false,"LPS-193884":false,"LPD-30371":false,"LPD-11131":false,"LPS-178642":false,"LPS-193005":false,"LPD-31789":false,"LPD-10562":false,"LPD-11212":false,"COMMERCE-8087":false,"LPD-39304":false,"LPD-13311":false,"LRAC-10757":false,"LPD-35941":false,"LPS-180090":false,"LPS-178052":false,"LPD-21414":false,"LPS-185892":false,"LPS-186620":false,"LPD-40533":false,"LPD-40534":false,"LPS-184404":false,"LPD-40530":false,"LPD-20640":false,"LPS-198183":false,"LPD-38869":false,"LPD-35678":false,"LPD-6378":false,"LPS-153714":false,"LPD-11848":false,"LPS-170670":false,"LPD-7822":false,"LPS-169981":false,"LPD-21926":false,"LPS-177027":false,"LPD-37531":false,"LPD-11003":false,"LPD-36446":false,"LPD-39437":false,"LPS-135430":false,"LPD-20556":false,"LPD-45276":false,"LPS-134060":false,"LPS-164563":false,"LPD-32050":false,"LPS-122920":false,"LPS-199086":false,"LPD-35128":false,"LPD-10588":false,"LPD-13778":false,"LPD-11313":false,"LPD-6368":false,"LPD-34594":false,"LPS-202104":false,"LPD-19955":false,"LPD-35443":false,"LPD-39967":false,"LPD-11235":false,"LPD-11232":false,"LPS-196935":false,"LPD-43542":false,"LPS-176691":false,"LPS-197909":false,"LPD-29516":false,"COMMERCE-8949":false,"LPD-11228":false,"LPS-153813":false,"LPD-17809":false,"COMMERCE-13024":false,"LPS-165482":false,"LPS-193551":false,"LPS-197477":false,"LPS-174816":false,"LPS-186360":false,"LPD-30204":false,"LPD-32867":false,"LPS-153332":false,"LPD-35013":false,"LPS-179669":false,"LPS-174417":false,"LPD-44091":false,"LPD-31212":false,"LPD-18221":false,"LPS-155284":false,"LRAC-15017":false,"LPD-19870":false,"LPS-200108":false,"LPD-20131":false,"LPS-159643":false,"LPS-129412":false,"LPS-169837":false,"LPD-20379":false};
+
+		Liferay.FeatureFlags = Object.keys(featureFlags).reduce(
+			(acc, key) => ({
+				...acc, [key]: featureFlags[key] === 'true' || featureFlags[key] === true
+			}), {}
+		);
+
+		Liferay.PortletKeys = {
+			DOCUMENT_LIBRARY: 'com_liferay_document_library_web_portlet_DLPortlet',
+			DYNAMIC_DATA_MAPPING: 'com_liferay_dynamic_data_mapping_web_portlet_DDMPortlet',
+			ITEM_SELECTOR: 'com_liferay_item_selector_web_portlet_ItemSelectorPortlet'
+		};
+
+		Liferay.PropsValues = {
+			JAVASCRIPT_SINGLE_PAGE_APPLICATION_TIMEOUT: 0,
+			UPLOAD_SERVLET_REQUEST_IMPL_MAX_SIZE: 104857600
+		};
+
+		Liferay.ThemeDisplay = {
+
+			
+
+			
+				getLayoutId: function () {
+					return '128';
+				},
+
+				
+
+				getLayoutRelativeControlPanelURL: function () {
+					return '/group/constitucion/~/control_panel/manage';
+				},
+
+				getLayoutRelativeURL: function () {
+					return '/imprimir-articulo';
+				},
+				getLayoutURL: function () {
+					return 'https://constitucion.congreso.es/imprimir-articulo';
+				},
+				getParentLayoutId: function () {
+					return '0';
+				},
+				isControlPanel: function () {
+					return false;
+				},
+				isPrivateLayout: function () {
+					return 'false';
+				},
+				isVirtualLayout: function () {
+					return false;
+				},
+			
+
+			getBCP47LanguageId: function () {
+				return 'es-ES';
+			},
+			getCanonicalURL: function () {
+
+				
+
+				return 'https\x3a\x2f\x2fconstitucion\x2econgreso\x2ees\x2fimprimir-articulo';
+			},
+			getCDNBaseURL: function () {
+				return 'https://constitucion.congreso.es';
+			},
+			getCDNDynamicResourcesHost: function () {
+				return '';
+			},
+			getCDNHost: function () {
+				return '';
+			},
+			getCompanyGroupId: function () {
+				return '121';
+			},
+			getCompanyId: function () {
+				return '21202188467139';
+			},
+			getDefaultLanguageId: function () {
+				return 'es_ES';
+			},
+			getDoAsUserIdEncoded: function () {
+				return '';
+			},
+			getLanguageId: function () {
+				return 'es_ES';
+			},
+			getParentGroupId: function () {
+				return '17157';
+			},
+			getPathContext: function () {
+				return '';
+			},
+			getPathImage: function () {
+				return '/image';
+			},
+			getPathJavaScript: function () {
+				return '/o/frontend-js-web';
+			},
+			getPathMain: function () {
+				return '/c';
+			},
+			getPathThemeImages: function () {
+				return 'https://constitucion.congreso.es/o/classic-theme/images';
+			},
+			getPathThemeRoot: function () {
+				return '/o/classic-theme';
+			},
+			getPlid: function () {
+				return '246';
+			},
+			getPortalURL: function () {
+				return 'https://constitucion.congreso.es';
+			},
+			getRealUserId: function () {
+				return '96';
+			},
+			getRemoteAddr: function () {
+				return '10.89.0.5';
+			},
+			getRemoteHost: function () {
+				return '10.89.0.5';
+			},
+			getScopeGroupId: function () {
+				return '17157';
+			},
+			getScopeGroupIdOrLiveGroupId: function () {
+				return '17157';
+			},
+			getSessionId: function () {
+				return '';
+			},
+			getSiteAdminURL: function () {
+				return 'https://constitucion.congreso.es/group/constitucion/~/control_panel/manage?p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view';
+			},
+			getSiteGroupId: function () {
+				return '17157';
+			},
+			getTimeZone: function() {
+				return 'UTC';
+			},
+			getURLControlPanel: function() {
+				return '/group/control_panel?refererPlid=246';
+			},
+			getURLHome: function () {
+				return 'https\x3a\x2f\x2fconstitucion\x2econgreso\x2ees\x2fweb\x2fguest';
+			},
+			getUserEmailAddress: function () {
+				return '';
+			},
+			getUserId: function () {
+				return '96';
+			},
+			getUserName: function () {
+				return '';
+			},
+			isAddSessionIdToURL: function () {
+				return false;
+			},
+			isImpersonated: function () {
+				return false;
+			},
+			isSignedIn: function () {
+				return false;
+			},
+
+			isStagedPortlet: function () {
+				
+					
+						return false;
+					
+				
+			},
+
+			isStateExclusive: function () {
+				return false;
+			},
+			isStateMaximized: function () {
+				return false;
+			},
+			isStatePopUp: function () {
+				return false;
+			}
+		};
+
+		var themeDisplay = Liferay.ThemeDisplay;
+
+		Liferay.AUI = {
+
+			
+
+			getCombine: function () {
+				return true;
+			},
+			getComboPath: function () {
+				return '/combo/?browserId=other&minifierType=&languageId=es_ES&t=1757105613031&';
+			},
+			getDateFormat: function () {
+				return '%d/%m/%Y';
+			},
+			getEditorCKEditorPath: function () {
+				return '/o/frontend-editor-ckeditor-web';
+			},
+			getFilter: function () {
+				var filter = 'raw';
+
+				
+					
+						filter = 'min';
+					
+					
+
+				return filter;
+			},
+			getFilterConfig: function () {
+				var instance = this;
+
+				var filterConfig = null;
+
+				if (!instance.getCombine()) {
+					filterConfig = {
+						replaceStr: '.js' + instance.getStaticResourceURLParams(),
+						searchExp: '\\.js$'
+					};
+				}
+
+				return filterConfig;
+			},
+			getJavaScriptRootPath: function () {
+				return '/o/frontend-js-web';
+			},
+			getPortletRootPath: function () {
+				return '/html/portlet';
+			},
+			getStaticResourceURLParams: function () {
+				return '?browserId=other&minifierType=&languageId=es_ES&t=1757105613031';
+			}
+		};
+
+		Liferay.authToken = '04JJUOpG';
+
+		
+
+		Liferay.currentURL = '\x2fimprimir-articulo\x3fnumero\x3d91';
+		Liferay.currentURLEncoded = '\x252Fimprimir-articulo\x253Fnumero\x253D91';
+	// ]]>
+</script>
+
+<script data-senna-track="temporary" type="text/javascript">window.__CONFIG__= {basePath: '',combine: true, defaultURLParams: null, explainResolutions: false, exposeGlobal: false, logLevel: 'warn', moduleType: 'module', namespace:'Liferay', nonce: '', reportMismatchedAnonymousModules: 'warn', resolvePath: '/o/js_resolve_modules', url: '/combo/?browserId=other&minifierType=js&languageId=es_ES&t=1757105613031&', waitTimeout: 300000};</script><script data-senna-track="permanent" src="/o/frontend-js-loader-modules-extender/loader.js?&mac=9WaMmhziBCkScHZwrrVcOR7VZF4=&browserId=other&languageId=es_ES&minifierType=js" type="text/javascript"></script><script data-senna-track="permanent" src="/combo?browserId=other&minifierType=js&languageId=es_ES&t=1757105613031&/o/frontend-js-aui-web/aui/aui/aui-min.js&/o/frontend-js-aui-web/liferay/modules.js&/o/frontend-js-aui-web/liferay/aui_sandbox.js&/o/frontend-js-aui-web/aui/attribute-base/attribute-base-min.js&/o/frontend-js-aui-web/aui/attribute-complex/attribute-complex-min.js&/o/frontend-js-aui-web/aui/attribute-core/attribute-core-min.js&/o/frontend-js-aui-web/aui/attribute-observable/attribute-observable-min.js&/o/frontend-js-aui-web/aui/attribute-extras/attribute-extras-min.js&/o/frontend-js-aui-web/aui/event-custom-base/event-custom-base-min.js&/o/frontend-js-aui-web/aui/event-custom-complex/event-custom-complex-min.js&/o/frontend-js-aui-web/aui/oop/oop-min.js&/o/frontend-js-aui-web/aui/aui-base-lang/aui-base-lang-min.js&/o/frontend-js-aui-web/liferay/dependency.js&/o/frontend-js-aui-web/liferay/util.js&/o/frontend-js-web/liferay/dom_task_runner.js&/o/frontend-js-web/liferay/events.js&/o/frontend-js-web/liferay/lazy_load.js&/o/frontend-js-web/liferay/liferay.js&/o/frontend-js-web/liferay/global.bundle.js&/o/frontend-js-web/liferay/portlet.js&/o/frontend-js-web/liferay/workflow.js&/o/oauth2-provider-web/js/liferay.js" type="text/javascript"></script>
+<script data-senna-track="temporary" type="text/javascript"  src="/o/constitucion-theme-cx/js/barebone_header.min.js"></script><script data-senna-track="temporary" type="text/javascript">window.Liferay = Liferay || {}; window.Liferay.OAuth2 = {getAuthorizeURL: function() {return 'https://constitucion.congreso.es/o/oauth2/authorize';}, getBuiltInRedirectURL: function() {return 'https://constitucion.congreso.es/o/oauth2/redirect';}, getIntrospectURL: function() { return 'https://constitucion.congreso.es/o/oauth2/introspect';}, getTokenURL: function() {return 'https://constitucion.congreso.es/o/oauth2/token';}, getUserAgentApplication: function(externalReferenceCode) {return Liferay.OAuth2._userAgentApplications[externalReferenceCode];}, _userAgentApplications: {}}</script><script data-senna-track="temporary" type="text/javascript">try {var MODULE_MAIN='dynamic-data-mapping-web@5.0.115/index';var MODULE_PATH='/o/dynamic-data-mapping-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	const LiferayAUI = Liferay.AUI;
+
+	AUI().applyConfig({
+		groups: {
+			ddm: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: LiferayAUI.getFilterConfig(),
+				modules: {
+					'liferay-ddm-form': {
+						path: 'ddm_form.js',
+						requires: [
+							'aui-base',
+							'aui-datatable',
+							'aui-datatype',
+							'aui-image-viewer',
+							'aui-parse-content',
+							'aui-set',
+							'aui-sortable-list',
+							'json',
+							'liferay-form',
+							'liferay-map-base',
+							'liferay-translation-manager',
+							'liferay-util-window',
+						],
+					},
+					'liferay-portlet-dynamic-data-mapping': {
+						condition: {
+							trigger: 'liferay-document-library',
+						},
+						path: 'main.js',
+						requires: [
+							'arraysort',
+							'aui-form-builder-deprecated',
+							'aui-form-validator',
+							'aui-map',
+							'aui-text-unicode',
+							'json',
+							'liferay-menu',
+							'liferay-translation-manager',
+							'liferay-util-window',
+							'text',
+						],
+					},
+					'liferay-portlet-dynamic-data-mapping-custom-fields': {
+						condition: {
+							trigger: 'liferay-document-library',
+						},
+						path: 'custom_fields.js',
+						requires: ['liferay-portlet-dynamic-data-mapping'],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='frontend-editor-alloyeditor-web@5.0.56/index';var MODULE_PATH='/o/frontend-editor-alloyeditor-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			alloyeditor: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-alloy-editor': {
+						path: 'alloyeditor.js',
+						requires: [
+							'aui-component',
+							'liferay-portlet-base',
+							'timers',
+						],
+					},
+					'liferay-alloy-editor-source': {
+						path: 'alloyeditor_source.js',
+						requires: [
+							'aui-debounce',
+							'liferay-fullscreen-source-editor',
+							'liferay-source-editor',
+							'plugin',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='exportimport-web@5.0.100/index';var MODULE_PATH='/o/exportimport-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			exportimportweb: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-export-import-export-import': {
+						path: 'main.js',
+						requires: [
+							'aui-datatype',
+							'aui-dialog-iframe-deprecated',
+							'aui-modal',
+							'aui-parse-content',
+							'aui-toggler',
+							'liferay-portlet-base',
+							'liferay-util-window',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='staging-processes-web@5.0.65/index';var MODULE_PATH='/o/staging-processes-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			stagingprocessesweb: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-staging-processes-export-import': {
+						path: 'main.js',
+						requires: [
+							'aui-datatype',
+							'aui-dialog-iframe-deprecated',
+							'aui-modal',
+							'aui-parse-content',
+							'aui-toggler',
+							'liferay-portlet-base',
+							'liferay-util-window',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='@liferay/frontend-js-react-web@5.0.54/index';var MODULE_PATH='/o/frontend-js-react-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			react: {
+
+				// eslint-disable-next-line
+				mainModule: MODULE_MAIN,
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='@liferay/document-library-web@6.0.198/index';var MODULE_PATH='/o/document-library-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			dl: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'document-library-upload-component': {
+						path: 'DocumentLibraryUpload.js',
+						requires: [
+							'aui-component',
+							'aui-data-set-deprecated',
+							'aui-overlay-manager-deprecated',
+							'aui-overlay-mask-deprecated',
+							'aui-parse-content',
+							'aui-progressbar',
+							'aui-template-deprecated',
+							'liferay-search-container',
+							'querystring-parse-simple',
+							'uploader',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='portal-workflow-kaleo-designer-web@5.0.146/index';var MODULE_PATH='/o/portal-workflow-kaleo-designer-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			'kaleo-designer': {
+				base: MODULE_PATH + '/designer/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-kaleo-designer-autocomplete-util': {
+						path: 'autocomplete_util.js',
+						requires: ['autocomplete', 'autocomplete-highlighters'],
+					},
+					'liferay-kaleo-designer-definition-diagram-controller': {
+						path: 'definition_diagram_controller.js',
+						requires: [
+							'liferay-kaleo-designer-field-normalizer',
+							'liferay-kaleo-designer-utils',
+						],
+					},
+					'liferay-kaleo-designer-dialogs': {
+						path: 'dialogs.js',
+						requires: ['liferay-util-window'],
+					},
+					'liferay-kaleo-designer-editors': {
+						path: 'editors.js',
+						requires: [
+							'aui-ace-editor',
+							'aui-ace-editor-mode-xml',
+							'aui-base',
+							'aui-datatype',
+							'aui-node',
+							'liferay-kaleo-designer-autocomplete-util',
+							'liferay-kaleo-designer-utils',
+						],
+					},
+					'liferay-kaleo-designer-field-normalizer': {
+						path: 'field_normalizer.js',
+						requires: ['liferay-kaleo-designer-remote-services'],
+					},
+					'liferay-kaleo-designer-nodes': {
+						path: 'nodes.js',
+						requires: [
+							'aui-datatable',
+							'aui-datatype',
+							'aui-diagram-builder',
+							'liferay-kaleo-designer-editors',
+							'liferay-kaleo-designer-utils',
+						],
+					},
+					'liferay-kaleo-designer-remote-services': {
+						path: 'remote_services.js',
+						requires: ['aui-io'],
+					},
+					'liferay-kaleo-designer-templates': {
+						path: 'templates.js',
+						requires: ['aui-tpl-snippets-deprecated'],
+					},
+					'liferay-kaleo-designer-utils': {
+						path: 'utils.js',
+						requires: [],
+					},
+					'liferay-kaleo-designer-xml-definition': {
+						path: 'xml_definition.js',
+						requires: [
+							'aui-base',
+							'aui-component',
+							'dataschema-xml',
+							'datatype-xml',
+						],
+					},
+					'liferay-kaleo-designer-xml-definition-serializer': {
+						path: 'xml_definition_serializer.js',
+						requires: ['escape', 'liferay-kaleo-designer-xml-util'],
+					},
+					'liferay-kaleo-designer-xml-util': {
+						path: 'xml_util.js',
+						requires: ['aui-base'],
+					},
+					'liferay-portlet-kaleo-designer': {
+						path: 'main.js',
+						requires: [
+							'aui-ace-editor',
+							'aui-ace-editor-mode-xml',
+							'aui-tpl-snippets-deprecated',
+							'dataschema-xml',
+							'datasource',
+							'datatype-xml',
+							'event-valuechange',
+							'io-form',
+							'liferay-kaleo-designer-autocomplete-util',
+							'liferay-kaleo-designer-editors',
+							'liferay-kaleo-designer-nodes',
+							'liferay-kaleo-designer-remote-services',
+							'liferay-kaleo-designer-utils',
+							'liferay-kaleo-designer-xml-util',
+							'liferay-util-window',
+						],
+					},
+				},
+				root: MODULE_PATH + '/designer/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='portal-search-web@6.0.148/index';var MODULE_PATH='/o/portal-search-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			search: {
+				base: MODULE_PATH + '/js/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-search-custom-range-facet': {
+						path: 'custom_range_facet.js',
+						requires: ['aui-form-validator'],
+					},
+				},
+				root: MODULE_PATH + '/js/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='calendar-web@5.0.105/index';var MODULE_PATH='/o/calendar-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			calendar: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-calendar-a11y': {
+						path: 'calendar_a11y.js',
+						requires: ['calendar'],
+					},
+					'liferay-calendar-container': {
+						path: 'calendar_container.js',
+						requires: [
+							'aui-alert',
+							'aui-base',
+							'aui-component',
+							'liferay-portlet-base',
+						],
+					},
+					'liferay-calendar-date-picker-sanitizer': {
+						path: 'date_picker_sanitizer.js',
+						requires: ['aui-base'],
+					},
+					'liferay-calendar-interval-selector': {
+						path: 'interval_selector.js',
+						requires: ['aui-base', 'liferay-portlet-base'],
+					},
+					'liferay-calendar-interval-selector-scheduler-event-link': {
+						path: 'interval_selector_scheduler_event_link.js',
+						requires: ['aui-base', 'liferay-portlet-base'],
+					},
+					'liferay-calendar-list': {
+						path: 'calendar_list.js',
+						requires: [
+							'aui-template-deprecated',
+							'liferay-scheduler',
+						],
+					},
+					'liferay-calendar-message-util': {
+						path: 'message_util.js',
+						requires: ['liferay-util-window'],
+					},
+					'liferay-calendar-recurrence-converter': {
+						path: 'recurrence_converter.js',
+						requires: [],
+					},
+					'liferay-calendar-recurrence-dialog': {
+						path: 'recurrence.js',
+						requires: [
+							'aui-base',
+							'liferay-calendar-recurrence-util',
+						],
+					},
+					'liferay-calendar-recurrence-util': {
+						path: 'recurrence_util.js',
+						requires: ['aui-base', 'liferay-util-window'],
+					},
+					'liferay-calendar-reminders': {
+						path: 'calendar_reminders.js',
+						requires: ['aui-base'],
+					},
+					'liferay-calendar-remote-services': {
+						path: 'remote_services.js',
+						requires: [
+							'aui-base',
+							'aui-component',
+							'liferay-calendar-util',
+							'liferay-portlet-base',
+						],
+					},
+					'liferay-calendar-session-listener': {
+						path: 'session_listener.js',
+						requires: ['aui-base', 'liferay-scheduler'],
+					},
+					'liferay-calendar-simple-color-picker': {
+						path: 'simple_color_picker.js',
+						requires: ['aui-base', 'aui-template-deprecated'],
+					},
+					'liferay-calendar-simple-menu': {
+						path: 'simple_menu.js',
+						requires: [
+							'aui-base',
+							'aui-template-deprecated',
+							'event-outside',
+							'event-touch',
+							'widget-modality',
+							'widget-position',
+							'widget-position-align',
+							'widget-position-constrain',
+							'widget-stack',
+							'widget-stdmod',
+						],
+					},
+					'liferay-calendar-util': {
+						path: 'calendar_util.js',
+						requires: [
+							'aui-datatype',
+							'aui-io',
+							'aui-scheduler',
+							'aui-toolbar',
+							'autocomplete',
+							'autocomplete-highlighters',
+						],
+					},
+					'liferay-scheduler': {
+						path: 'scheduler.js',
+						requires: [
+							'async-queue',
+							'aui-datatype',
+							'aui-scheduler',
+							'dd-plugin',
+							'liferay-calendar-a11y',
+							'liferay-calendar-message-util',
+							'liferay-calendar-recurrence-converter',
+							'liferay-calendar-recurrence-util',
+							'liferay-calendar-util',
+							'liferay-scheduler-event-recorder',
+							'liferay-scheduler-models',
+							'promise',
+							'resize-plugin',
+						],
+					},
+					'liferay-scheduler-event-recorder': {
+						path: 'scheduler_event_recorder.js',
+						requires: [
+							'dd-plugin',
+							'liferay-calendar-util',
+							'resize-plugin',
+						],
+					},
+					'liferay-scheduler-models': {
+						path: 'scheduler_models.js',
+						requires: [
+							'aui-datatype',
+							'dd-plugin',
+							'liferay-calendar-util',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='@liferay/frontend-js-state-web@1.0.30/index';var MODULE_PATH='/o/frontend-js-state-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			state: {
+
+				// eslint-disable-next-line
+				mainModule: MODULE_MAIN,
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='contacts-web@5.0.65/index';var MODULE_PATH='/o/contacts-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			contactscenter: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-contacts-center': {
+						path: 'main.js',
+						requires: [
+							'aui-io-plugin-deprecated',
+							'aui-toolbar',
+							'autocomplete-base',
+							'datasource-io',
+							'json-parse',
+							'liferay-portlet-base',
+							'liferay-util-window',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='frontend-js-components-web@2.0.80/index';var MODULE_PATH='/o/frontend-js-components-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			components: {
+
+				// eslint-disable-next-line
+				mainModule: MODULE_MAIN,
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}</script>
+
+
+
+
+<script type="text/javascript" data-senna-track="temporary">
+	// <![CDATA[
+		
+			
+				
+		
+
+		
+	// ]]>
+</script>
+
+
+
+
+
+	
+		
+
+			
+
+			
+		
+		
+
+
+
+	
+		
+
+			
+
+			
+		
+		
+
+
+
+	
+		
+
+			
+
+			
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link class="lfr-css-file" data-senna-track="temporary" href="https://constitucion.congreso.es/o/classic-theme/css/main.css?browserId=other&amp;themeId=classic_WAR_classictheme&amp;minifierType=css&amp;languageId=es_ES&amp;t=1757105658000" id="liferayThemeCSS" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+	<style data-senna-track="temporary" type="text/css">
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+	</style>
+
+
+<style data-senna-track="temporary" type="text/css">
+	:root {
+		--container-max-sm: 540px;
+		--h4-font-size: 1rem;
+		--font-weight-bold: 700;
+		--rounded-pill: 50rem;
+		--display4-weight: 300;
+		--danger: #da1414;
+		--display2-size: 5.5rem;
+		--body-bg: #fff;
+		--display2-weight: 300;
+		--display1-weight: 300;
+		--display3-weight: 300;
+		--box-shadow-sm: 0 .125rem .25rem rgba(0, 0, 0, .075);
+		--font-weight-lighter: lighter;
+		--h3-font-size: 1.1875rem;
+		--btn-outline-primary-hover-border-color: #0b5fff;
+		--transition-collapse: height .35s ease;
+		--blockquote-small-color: #6b6c7e;
+		--gray-200: #f1f2f5;
+		--btn-secondary-hover-background-color: #f7f8f9;
+		--gray-600: #6b6c7e;
+		--secondary: #6b6c7e;
+		--btn-outline-primary-color: #0b5fff;
+		--btn-link-hover-color: #004ad7;
+		--hr-border-color: rgba(0, 0, 0, .1);
+		--hr-border-margin-y: 1rem;
+		--light: #f1f2f5;
+		--btn-outline-primary-hover-color: #0b5fff;
+		--btn-secondary-background-color: #fff;
+		--btn-outline-secondary-hover-border-color: transparent;
+		--display3-size: 4.5rem;
+		--primary: #0b5fff;
+		--container-max-md: 720px;
+		--border-radius-sm: 0.1875rem;
+		--display-line-height: 1.2;
+		--h6-font-size: 0.8125rem;
+		--h2-font-size: 1.375rem;
+		--aspect-ratio-4-to-3: 75%;
+		--spacer-10: 10rem;
+		--font-weight-semi-bold: 600;
+		--font-weight-normal: 400;
+		--dark: #272833;
+		--blockquote-small-font-size: 80%;
+		--h5-font-size: 0.875rem;
+		--blockquote-font-size: 1.25rem;
+		--brand-color-3: #2e5aac;
+		--brand-color-2: #6b6c7e;
+		--brand-color-1: #0b5fff;
+		--transition-fade: opacity .15s linear;
+		--display4-size: 3.5rem;
+		--border-radius-lg: 0.375rem;
+		--btn-primary-hover-color: #fff;
+		--display1-size: 6rem;
+		--brand-color-4: #30313f;
+		--black: #000;
+		--lighter: #f7f8f9;
+		--gray-300: #e7e7ed;
+		--gray-700: #495057;
+		--btn-secondary-border-color: #cdced9;
+		--btn-outline-secondary-hover-color: #272833;
+		--body-color: #1c1c24;
+		--btn-outline-secondary-hover-background-color: rgba(39, 40, 51, 0.03);
+		--btn-primary-color: #fff;
+		--btn-secondary-color: #6b6c7e;
+		--btn-secondary-hover-border-color: #cdced9;
+		--box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, .175);
+		--container-max-lg: 960px;
+		--btn-outline-primary-border-color: #0b5fff;
+		--aspect-ratio: 100%;
+		--gray-dark: #393a4a;
+		--aspect-ratio-16-to-9: 56.25%;
+		--box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+		--white: #fff;
+		--warning: #b95000;
+		--info: #2e5aac;
+		--hr-border-width: 1px;
+		--btn-link-color: #0b5fff;
+		--gray-400: #cdced9;
+		--gray-800: #393a4a;
+		--btn-outline-primary-hover-background-color: #f0f5ff;
+		--btn-primary-hover-background-color: #0053f0;
+		--btn-primary-background-color: #0b5fff;
+		--success: #287d3c;
+		--font-size-sm: 0.875rem;
+		--btn-primary-border-color: #0b5fff;
+		--font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+		--spacer-0: 0;
+		--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+		--lead-font-size: 1.25rem;
+		--border-radius: 0.25rem;
+		--spacer-9: 9rem;
+		--font-weight-light: 300;
+		--btn-secondary-hover-color: #272833;
+		--spacer-2: 0.5rem;
+		--spacer-1: 0.25rem;
+		--spacer-4: 1.5rem;
+		--spacer-3: 1rem;
+		--spacer-6: 4.5rem;
+		--spacer-5: 3rem;
+		--spacer-8: 7.5rem;
+		--border-radius-circle: 50%;
+		--spacer-7: 6rem;
+		--font-size-lg: 1.125rem;
+		--aspect-ratio-8-to-3: 37.5%;
+		--font-family-sans-serif: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+		--gray-100: #f7f8f9;
+		--font-weight-bolder: 900;
+		--container-max-xl: 1248px;
+		--btn-outline-secondary-color: #6b6c7e;
+		--gray-500: #a7a9bc;
+		--h1-font-size: 1.625rem;
+		--gray-900: #272833;
+		--text-muted: #a7a9bc;
+		--btn-primary-hover-border-color: transparent;
+		--btn-outline-secondary-border-color: #cdced9;
+		--lead-font-weight: 300;
+		--font-size-base: 0.875rem;
+	}
+	:root {
+		--font-family-base: Roboto,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+		--h4-font-size: 1.125rem;
+		--btn-outline-primary-border-color: #142144;
+		--container-max-md: 768px;
+		--body-bg: #FAFAFA;
+		--spacer-3: 1rem;
+		--h5-font-size: 1rem;
+		--spacer-5: 2.5rem;
+		--font-size-lg: 1.5rem;
+		--brand-color-3: #4376AA;
+		--font-family-sans-serif: Roboto,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+		--brand-color-2: #142144;
+		--brand-color-1: #41576D;
+		--h3-font-size: 1.25rem;
+		--btn-outline-primary-hover-border-color: #142144;
+		--gray-100: #F1E1C1;
+		--btn-primary-hover-color: #142144;
+		--container-max-xl: 1200px;
+		--brand-color-4: #4376AA;
+		--gray-500: #B4AEAF;
+		--btn-link-color: #4376AA;
+		--gray-400: #D1D5DC;
+		--gray-300: #F1F2F7;
+		--gray-200: #FAFAFA;
+		--gray-900: #171717;
+		--gray-800: #41576D;
+		--btn-outline-primary-hover-background-color: #142144;
+		--gray-700: #5895A8;
+		--gray-600: #A6B989;
+		--btn-primary-hover-background-color: #FFFFFF;
+		--btn-link-hover-color: #4376AA;
+		--btn-outline-primary-color: #142144;
+		--secondary: #142144;
+		--btn-primary-hover-border-color: #FFFFFF;
+		--btn-primary-background-color: #142144;
+		--btn-outline-primary-hover-color: #FFFFFF;
+		--body-color: #000000;
+		--btn-primary-color: #FFFFFF;
+		--font-size-sm: 1rem;
+		--container-max-lg: 992px;
+		--btn-primary-border-color: #142144;
+		--font-size-base: 1rem;
+	}
+</style>
+<link data-senna-track="permanent" href="/o/frontend-js-aui-web/alloy_ui.css?&mac=favIEq7hPo8AEd6k+N5OVADEEls=&browserId=other&languageId=es_ES&minifierType=css&themeId=classic_WAR_classictheme" rel="stylesheet"></link>
+<script type="module">
+import {init} from '/o/frontend-js-spa-web/__liferay__/index.js';
+{
+init({"navigationExceptionSelectors":":not([target=\"_blank\"]):not([data-senna-off]):not([data-resource-href]):not([data-cke-saved-href]):not([data-cke-saved-href])","cacheExpirationTime":-1,"clearScreensCache":true,"portletsBlacklist":["com_liferay_login_web_portlet_CreateAccountPortlet","com_liferay_site_navigation_directory_web_portlet_SitesDirectoryPortlet","com_liferay_nested_portlets_web_portlet_NestedPortletsPortlet","com_liferay_questions_web_internal_portlet_QuestionsPortlet","com_liferay_account_admin_web_internal_portlet_AccountUsersRegistrationPortlet","com_liferay_login_web_portlet_ForgotPasswordPortlet","com_liferay_portal_language_override_web_internal_portlet_PLOPortlet","com_liferay_login_web_portlet_LoginPortlet","com_liferay_login_web_portlet_FastLoginPortlet"],"excludedTargetPortlets":["com_liferay_users_admin_web_portlet_UsersAdminPortlet","com_liferay_server_admin_web_portlet_ServerAdminPortlet"],"validStatusCodes":[221,490,494,499,491,496,492,493,495,220],"debugEnabled":false,"loginRedirect":"","excludedPaths":["/c/document_library","/documents","/image"],"preloadCSS":false,"userNotification":{"message":"Parece que esto está tardando más de lo esperado.","title":"Vaya","timeout":30000},"requestTimeout":0});
+}
+
+</script><link data-senna-track="temporary" href="/o/layout-common-styles/main.css?plid=246&segmentsExperienceId=242303&t=1780472996854" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" data-senna-track="temporary">
+	if (window.Analytics) {
+		window._com_liferay_document_library_analytics_isViewFileEntry = false;
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+Liferay.on(
+	'ddmFieldBlur', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldBlurred',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					focusDuration: event.focusDuration,
+					formId: event.formId,
+					formPageTitle: event.formPageTitle,
+					page: event.page,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFieldFocus', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldFocused',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					formId: event.formId,
+					formPageTitle: event.formPageTitle,
+					page: event.page,
+					title:event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormPageShow', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'pageViewed',
+				'Form',
+				{
+					formId: event.formId,
+					formPageTitle: event.formPageTitle,
+					page: event.page,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormSubmit', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formSubmitted',
+				'Form',
+				{
+					formId: event.formId,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormView', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formViewed',
+				'Form',
+				{
+					formId: event.formId,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+</script><script>
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<link data-senna-track="temporary" href="/o/constitucion-theme-cx/styles/main.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="other controls-visible  yui3-skin-sam signed-out public-page site">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<nav aria-label="Enlaces rápidos" class="bg-dark cadmin quick-access-nav text-center text-white" id="myen_quickAccessNav">
+		
+			
+				<a class="d-block p-2 sr-only sr-only-focusable text-reset" href="#main-content">
+		Saltar al contenido principal
+	</a>
+			
+			
+	</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="d-flex flex-column min-vh-100">
+
+	<div class="d-flex flex-column flex-fill position-relative" id="wrapper">
+
+		<div class=" flex-fill" id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+		<div class="layout-content portlet-layout" id="main-content" role="main">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	<div class="lfr-layout-structure-item-hero lfr-layout-structure-item-8e75b0ee-dce7-bc84-018c-a9ba50b0369e "><div id="fragment-d89b24ed-c931-7cd0-dd3e-a21b3554cffe" >
+<div class="const-container const-container--fluid hero-container">
+    <div class="absolute-container">
+        <picture data-fileentryid="24368"><source media="(max-width:300px)" srcset="/o/adaptive-media/image/24368/Thumbnail-300x300/azul.png?t=1774852086011" /><source media="(max-width:1000px) and (min-width:300px)" srcset="/o/adaptive-media/image/24368/Preview-1000x0/azul.png?t=1774852086011" /><img data-lfr-editable-id="heroImage" data-lfr-editable-type="image" src="/documents/17157/24366/azul.png/694c288a-668b-fd02-9aea-b05cbae98ada?version=2.0&amp;t=1774852086011" alt="" loading="lazy" class="hero-bg" data-fileentryid="24368"></picture>
+    </div>
+
+    <div class="">
+    <div class="const-container const-container--main
+        pt-32-16 pb-24-8">
+        <div><div class="lfr-layout-structure-item-atom-text lfr-layout-structure-item-f3bd1666-2b97-99f2-5a80-8ea3a6221ccb "><div id="fragment-cab56a67-8173-9f16-dfac-b0c5593c8ee2"> <div class="lfr-74 atom-text text-center">
+  <h1 class="text-40-28 const-font-roboto-bold c-black" data-lfr-editable-id="element-text" data-lfr-editable-type="rich-text">Constitución española</h1>
+</div>
+</div></div></div>
+    </div>
+</div>
+</div>
+</div><style >
+
+</style></div><div class="lfr-layout-structure-item-container-0 lfr-layout-structure-item-006ca039-090d-cd19-4c95-83fc330fc143 "><div id="fragment-02d7a51f-419b-de18-ebe3-c04a275da993" > <section>
+	        <div class="const-container const-container--main    pb-80-44   ">
+
+           <div><div class="lfr-layout-structure-item-concordancias lfr-layout-structure-item-9860c273-a68d-adfb-3b7f-f4c9d9cfd698 "><div id="fragment-b680b53b-d3db-9b74-e039-6ffc26d7b7c1"> <div class="card-article bg-white mb-3 p-16"> 
+	<div class="concordancias-list">
+		
+	
+	<p>Concordancias:	 </p> 
+		<div id="concordancias"></div></div> </div>
+</div><script type="module">const configuration = {}; const fragmentElement = document.querySelector('#fragment-b680b53b-d3db-9b74-e039-6ffc26d7b7c1'); const fragmentEntryLinkNamespace = 'tlvh'; const fragmentNamespace = 'tlvh'; const layoutMode = 'view';const params = new URLSearchParams(window.location.search);
+const itemId = params.get('numero');
+const siteId = Liferay.ThemeDisplay.getScopeGroupId();
+const container = document.getElementById('concordancias');
+
+const urlArticulo = `/o/c/articuloconstitucions/scopes/${siteId}?filter=numero%20eq%20${itemId}`;
+
+Liferay.Util.fetch(urlArticulo, {
+    method: 'GET',
+    headers: {
+        'Accept': 'application/json',
+        'x-csrf-token': Liferay.authToken
+    }
+})
+.then(r => r.json())
+.then(data => {
+    if (!data.items || data.items.length === 0) {
+        container.innerHTML = "<p>Sin concordancias.</p>";
+        return;
+    }
+
+    const articuloId = data.items[0].id;
+
+    const urlConcordancias = 
+        `/o/c/relacionconcordanciases/scopes/${siteId}` +
+        `?filter=r_articuloOrigen_c_articuloConstitucionId eq '${articuloId}'` +
+        `&nestedFields=r_disposicionDestino_c_disp%20AND%20r_articuloDestino_c_articuloConstitucion`;
+
+    return Liferay.Util.fetch(urlConcordancias, {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            'x-csrf-token': Liferay.authToken
+        }
+    });
+})
+.then(r => r && r.json())
+.then(data => {
+    if (!data || !data.items || data.items.length === 0) {
+        container.innerHTML = "<p>Sin concordancias.</p>";
+        return;
+    }
+
+    const ordenados = [...data.items].sort((a, b) => 
+        Number(a.etiqueta) - Number(b.etiqueta)
+    );
+
+    const enlaces = ordenados.map(item => {
+        console.log(item);
+
+        if (item.r_articuloDestino_c_articuloConstitucion) {
+            const urlDetalle = "articulo?numero=" + 
+                item.r_articuloDestino_c_articuloConstitucion.numero;
+            return `<a href="${urlDetalle}">${item.etiqueta}</a>`;
+        } else {
+            const urlDetalle = "/disposicion?numero=" + 
+                item.r_disposicionDestino_c_disp.numero + 
+                "&tipo=" + item.r_disposicionDestino_c_disp.tipo.key;
+            return `<a href="${urlDetalle}">${item.etiqueta}</a>`;
+        }
+    });
+
+    container.innerHTML = enlaces.join(', ');
+})
+.catch(err => {
+    console.error('Error:', err);
+});
+;</script></div><div class="lfr-layout-structure-item-com-liferay-asset-publisher-web-portlet-assetpublisherportlet lfr-layout-structure-item-4fce6a8b-61fd-d024-655c-7e5d95905b88 "><div id="fragment-00012061-a2dd-3b90-dd12-fa84329a0802"><link href="/combo?browserId=other&amp;minifierType=css&amp;themeId=classic_WAR_classictheme&amp;languageId=es_ES&amp;com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ruwd:%2Fo%2Fasset-publisher-web%2Fcss%2Fmain.css&amp;t=1757105658000" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_  portlet-static portlet-static-end portlet-borderless portlet-asset-publisher " id="p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ruwd_">
+		<span id="p_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ruwd"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ruwd">
+
+	<div class="portlet-content">
+
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+	
+		
+			
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+		
+		
+			
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <article>
+                <div class="card-article bg-white mb-3 p-16">
+                    <h2 class="const-font-roboto-bold text-24-22">
+                        Comentario
+                    </h2>
+
+
+
+									
+									
+                    <div class="card-article--header">
+                        <h3 class="card-article--title const-font-roboto-bold text-20-20 pb-3">
+                            Artículo 91
+                        </h3>
+                    </div>
+
+
+
+                    <div><p><u><strong>Contenido sistemático del precepto</strong></u></p>
+
+<p>El artículo 91 recoge el punto de llegada del proceso de elaboración de las leyes al que se dedica el Capítulo Segundo del Título III de la Constitución. La relevancia de lo consagrado en este precepto ha llevado incluso a que sectores de la doctrina identifiquen la sanción, promulgación y publicación en él plasmadas con una fase del procedimiento legislativo que designarían como integrativa de eficacia. Temporalmente se sitúa en el momento posterior a la aprobación de las leyes, es decir, inmediatamente después de que se haya desplegado lo que García Martínez designa como “el mecanismo a través del cual se determina de manera indubitada cuál es la voluntad de la Cámara respecto del texto propuesto para ley”. Hacia él se orienta en gran medida todo el iter legislativo, lo que ha llevado a algunos autores a hablar de que las Cámaras habrían pasado desde finales del siglo XIX a ser una “máquina de votar” (Friedrich), una organización basada en la voluntad en lugar de en el pensamiento (Finer). En todo caso, se trata de una etapa fundamental, que -como apunta Biscaretti di Ruffia- en el marco de un sistema bicameral se configura como un “único acto complejo”, lo que determina la necesidad de que las dos Cámaras se atengan a “un texto rigurosamente idéntico”.</p>
+
+<p>Sea como fuere, a este trámite final han atendido todos los textos de nuestro constitucionalismo histórico desde la Constitución de Cádiz. Ya en 1812 se ofrecía una detallada regulación de la sanción real incluyendo en sus artículos 142 a 152 una verdadera facultad de veto a favor del monarca, así como de la promulgación (con la correspondiente fórmula expresamente reflejada) y de la publicación (en los artículos 154 a 156). Las Constituciones posteriores fueron mucho más concisas y se limitaron a recoger la idea de que “<em>el Rey sanciona y promulga las leyes</em>” (tal y como decían el artículo 39 de la Constitución de 1837; el artículo 38 de la de 1845; el artículo 34 de la de 1869; y el artículo 44 de la de 1876). Salvo en la Constitución de 1869, la consecuencia de que el Rey negase la sanción era la de que no podía proponerse un proyecto de ley sobre el mismo objeto en aquella legislatura, es decir, un veto. Ya en el siglo XX, la Constitución de la Segunda República Española suprimió la sanción y previó el veto suspensivo a favor del Presidente en su artículo 83.</p>
+
+<p>Aunque responda a nuestra tradición, la acumulación de sanción y promulgación no es frecuente en el Derecho comparado, en el que, en términos generales, la fórmula elegida responde al carácter monárquico o republicano de la forma de Estado. Existen excepciones históricas como el Estatuto Albertino italiano, aunque algunas también se recogen en textos actualmente vigentes como la Constitución belga, cuyo artículo 109 dispone que el Rey "<em>sancionará y promulgará</em>" las leyes. También cabe reseñar el artículo 14 de la Constitución danesa o el artículo 139 de la Constitución de los Países Bajos. Entre las repúblicas, pueden citarse el artículo 73 de la Constitución italiana de 1947, el artículo 82 de la Ley Fundamental de Bonn o el artículo 10 de la Constitución francesa de 1958.&nbsp;</p>
+
+<p>La mayoría de estas regulaciones constitucionales ya estaban establecidas cuando se elaboró nuestra norma fundamental. En su proceso de gestación no hubo grandes alteraciones, limitándose las modificaciones a cuestiones estilísticas o mejoras técnicas en aras de una mayor precisión. No obstante, la doctrina sí se ha ocupado de estudiar el significado de cada una de las tres instituciones consagradas en el precepto. Ello en la medida en que su sentido jurídico-constitucional no puede comprenderse plenamente si no es reconociendo el papel histórico que han desempeñado.&nbsp;</p>
+
+<p>Primeramente, la lógica de la sanción regia nos remite a las revoluciones liberales y la necesidad de compatibilizar la nueva concepción de la soberanía nacional con la existencia de una forma monárquica. Ello implicaba tener que acompasar el papel del Rey y del Parlamento, algo que en Reino Unido se concentra en la fórmula “King in Parliament”. La consecuencia de este planteamiento fue el establecimiento de una participación del Rey que, en la práctica, le otorgaba una suerte de veto. Los teóricos volverían la vista a tal circunstancia en el último tercio del siglo XIX: Laband y los miembros de la Escuela Alemana de Derecho Público la concibieron como un elemento constitutivo de la ley, de forma que esta no se perfeccionaba hasta que ese acto real le confería valor obligatorio a su contenido normativo. Frente a tal tesis, Carré de Malberg sostuvo una posición más aceptable por las monarquías parlamentarias, a saber, la de que el texto aprobado expresa la voluntad del Parlamento y, en sí mismo, crea la ley, aunque ésta deba perfeccionarse con otro acto de voluntad que corresponde al monarca en tanto que es el Jefe del Estado, y como tal, asume su representación. Pérez Serrano completa esta tesis apuntando que “la importancia de la sanción se desprende de su propia naturaleza: no es que la Corona resulte lo decisivo; es que interviniendo en último lugar de ella pende a la postre el nacimiento y existencia de la ley; pero no por supremacía jerárquica, sino porque la obra de las Cámaras se halla pendiente de la condición suspensiva que implica el otorgamiento de la sanción regia que no puede venir más que al final del proceso de la compleja operación de procedimiento en que consiste la elaboración de la ley”.&nbsp;</p>
+
+<p>En segundo lugar, la promulgación presenta dificultades teóricas de mayor magnitud imputables, de acuerdo con Santamaría, a una confusa evolución histórica del constitucionalismo francés y a su impremeditada traslación a España. Para un nutrido grupo de autores entre los que se integran Laband, Jellinek, Carré de Malberg, Duguit, Barthélemy o Mortati podría concebirse como un instituto surgido en la Francia napoleónica para reforzar los poderes del primer cónsul bajo la Constitución del año VIII (era la resurrección de la sanción regia en manos de Napoleón). Para otros sectores, vendría a ser en la práctica equivalente a la publicación.&nbsp;</p>
+
+<p>Por último, la publicación consiste en una actividad que supone la inserción del texto de la misma en un medio material de difusión de carácter oficial, y que, a diferencia de la sanción y promulgación, que son dos actos formales, tiene una sustantividad propia, puesto que de la publicación, es decir, del posible acceso de la comunidad al texto de la ley, hace depender el ordenamiento jurídico el inicio de su aplicabilidad y su eficacia en cuanto norma obligatoria.</p>
+
+<p>Sobre esta base, puede verse cómo el artículo 91 conecta directamente con la previsión del artículo 1.3 de la Constitución, lo que obliga a descartar de forma absoluta el supuesto de laboratorio de una negativa del Rey a cumplir con lo que es un acto debido. No existe margen para que el Jefe del Estado decida nada porque ello entraría directamente en contradicción con su papel. Y ello a pesar de que en el Derecho comparado encontramos el problemático precedente de Balduino de Bélgica, quien en 1990 empleó la triquiñuela jurídica de la incapacidad temporal para no firmar una ley que éticamente rechazaba. Así pues, en todo caso, hemos de leer este precepto paralelamente al refrendo del artículo 64: el inciso primero de su apartado 1 dicta que “<em>los actos del Rey serán refrendados por el Presidente del Gobierno y, en su caso, por los Ministros competentes</em>” y el apartado 2 recoge que la responsabilidad por tales actos no corresponde al monarca, sino que se desplaza a aquel que los refrenda.&nbsp;</p>
+
+<p>Además, el precepto establece un plazo que debe computarse, según entienden la mayoría de los autores, desde el momento de recepción del texto. Si se interpretase que el&nbsp;<em>dies a quo</em>&nbsp;es el momento de aprobación definitiva por las Cortes, el tiempo que transcurre entre esta y la preparación del texto oficial podría acortar en exceso el plazo real con que cuenta el monarca.&nbsp;</p>
+
+<p><strong><u>Desarrollo legislativo y jurisprudencial</u></strong></p>
+
+<p>Por su propia naturaleza, el precepto comentado no ha tenido un desarrollo legislativo en sentido estricto<strong>. </strong>En la práctica se ha impuesto la unión de los tres trámites previstos en uno sólo que es, al mismo tiempo, sanción, promulgación y orden de publicación y que se plasma en la firma por el monarca del documento original en que la ley se inserta, conocido como "el papel del canto dorado"<strong>.</strong>&nbsp;En la fórmula que antecede a la firma resuenan ecos de otras épocas y, de hecho, no difiere excesivamente de la que establecía la Constitución de Cádiz. Dice así: "<em>A todos los que la presente vieren y entendieren, sabed: Que las Cortes Generales han aprobado y Yo vengo en sancionar la siguiente Ley... Por tanto, Mando a todos los españoles, particulares y autoridades, que guarden y hagan guardar esta Ley</em>".</p>
+
+<p>Así pues, por un lado, el artículo 9.3 de la Constitución garantiza, entre otros, el principio de publicidad de las normas, como también el de la seguridad jurídica. El primero es consecuencia del segundo, en la medida en que no puede exigirse el cumplimiento de las leyes si no se ofrecen los medios para su conocimiento. Según el artículo 2.1 del Código Civil, las leyes entrarán en vigor a los 20 días de su completa publicación en el Boletín Oficial del Estado, si en ellas no se dispone otra cosa. Se trata de un plazo de "vacatio legis" relativamente amplio si se compara con los previstos en Austria y Francia, donde se prevé la entrada en vigor un día después de su publicación; más cerca están, en cambio, los catorce días de la República Federal Alemana y los quince días de Italia.</p>
+
+<p>Por otro lado y aunque nos remitimos al comentario del precepto correspondiente, cabe recordar que esta cuestión está íntimamente relacionada con la del refrendo, que a nivel legal aparece recogido en la&nbsp;<a href="http://www.congreso.es/constitucion/ficheros/leyes_espa/l_050_1997.pdf">Ley 50/1997, de 27 de noviembre</a>, del Gobierno. En concreto, el artículo 2.2 h) recoge entre las funciones del Presidente del Gobierno la de "<em>refrendar, en su caso, los actos del Rey y someterle, para su sanción, las leyes y demás normas con rango de ley, de acuerdo con lo establecido en los artículos 64 y 91 de la Constitución</em>" y el artículo 4.1 d) atribuye a los Ministros la facultad de refrendar, en su caso, los actos del Rey en materia de su competencia.&nbsp;</p>
+
+<p>Asimismo, se advierte con Biglino que el artículo 91 de la Constitución “no se refiere a la publicación en sí misma, sino tan solo a la orden de publicación que corresponde emitir al Monarca. En realidad, la Constitución no atribuye a ningún órgano en particular la obligación de efectuar la publicación”. Lo hará una norma de rango reglamentario: el Real Decreto 181/2008, de 8 de febrero, de ordenación del diario oficial «Boletín Oficial del Estado». Así pues, lo que hace el Rey es ordenar la publicación que, entre nosotros, no requiere una determinada fórmula, sino que el mandato va implícito en el acto de la sanción y la promulgación, mediante la firma del texto oficial de la ley. En realidad, a quien afecta la obligación de efectuar la publicación inmediata de la ley, una vez sancionada, es al Gobierno, órgano bajo cuya dependencia se sitúa actualmente la Agencia Estatal Boletín Oficial del Estado, creada como tal por el Real Decreto 1495/2007, de 12 de noviembre, y adscrita al Ministerio de la Presidencia.</p>
+
+<p>A partir de este esquema normativo y de la exposición proporcionada por autores como Arnaldo, podemos reconstruir el “viaje” del texto aprobado por el Congreso hasta su publicación en el Boletín Oficial del Estado. El primer paso será la remisión por la Presidencia de la Cámara baja al Gobierno (en concreto, a la Secretaría de Estado competente en materia de relaciones con las Cortes) en el que se da cuenta de la aprobación y se adjunta el texto original de la ley, que habrá sido objeto de revisión por los servicios jurídicos de las Cortes Generales. Una vez es recibido, se traslada al Secretariado del Gobierno y de este, a su vez, al Boletín Oficial del Estado para la confección de las galeradas. Revisadas estas, se numera la norma y se insta al Boletín a elaborar el texto en papel de canto dorado para su firma manuscrita. El Secretariado revisará las cuestiones de intendencia y la Subsecretaría de Presidencia recaba el autógrafo del Presidente con carácter previo a su remisión a la Casa de S.M. el Rey. Con la rúbrica del monarca se hace llegar de nuevo al Boletín con la orden de “<em>insértese</em>”. Tras publicarse en edición electrónica, el original es archivado en el Congreso. A título anecdótico, debe verse que a partir de la Ley 8/2025 ya solo se refleja la fecha de firma del monarca y no aparece, como otrora, el lugar.&nbsp;</p>
+
+<p>En el plano jurisprudencial, merece la pena destacar el ATC 120/1983. Este se dictó en un contexto en el que existía la posibilidad de interponer el recurso previo de inconstitucionalidad contra proyectos de leyes orgánicas, que desapareció con la entrada en vigor de la LO 4/1985. Este, que tenía carácter suspensivo, podía interponerse en un plazo de tres días "<em>desde que el texto definitivo del proyecto recurrible estuviese concluido</em>". En el caso analizado, se había interpuesto frente a un texto que ya había sido sancionado, promulgado y publicado como Ley Orgánica en el Boletín Oficial del Estado. El Tribunal Constitucional entendió en este caso que el plazo de 15 días previsto en el artículo 91 de la Constitución era compatible con el de 3 días establecido en la Ley Orgánica del Tribunal Constitucional para interponer recurso previo. Sostuvo que las Cortes Generales debían esperar al transcurso de este último plazo antes de remitir el texto normativo para su sanción, promulgación y publicación y afirmó que el hecho de que el proyecto hubiera sido ya publicado no era obstáculo para admitir la interposición de recurso previo aunque, en atención al principio de seguridad jurídica, el efecto suspensivo de dicho recurso debía limitarse estrictamente al objeto del mismo. En la esfera parlamentaria, la coexistencia de un Boletín Oficial del Estado y un Boletín Oficial de las Cortes Generales ha dado lugar a cuestiones relevantes. En la STC 179/1989, el máximo intérprete de la Constitución se pronunció acerca de la necesidad de publicación en el Boletín Oficial externo al Parlamento de un Reglamento de una Cámara autonómica. Según el Tribunal Constitucional, “<em>no cabe considerar que constituya publicación suficiente la inserción del Reglamento de la Cámara en un Boletín de carácter interno, sino que será necesaria su inclusión en el instrumento oficial previsto para la publicación de las normas generales de la Comunidad Foral, esto es, el «Boletín Oficial de Navarra». Esta conclusión viene corroborada por la práctica seguida hasta el momento por los órganos parlamentarios del Estado y de las Comunidades Autónomas en la presente etapa constitucional. Tanto los Reglamentos provisionales como los hoy vigentes del Congreso de los Diputados y del Senado se han publicado en el «Boletín Oficial del Estado»; y, en cuanto a los Reglamentos de las Asambleas de las Comunidades Autónomas, su publicación en el «Boletín Oficial» de la Comunidad es una característica común a todas ellas, sin excepción alguna, incluso en los dos únicos casos (País Vasco y Cataluña) en que tal publicación no viene expresamente dispuesta en el correspondiente Reglamento parlamentario</em>”.&nbsp;</p>
+
+<p>Una de las cuestiones más sensibles en relación con la publicación es la relativa a las correcciones de errores. Su régimen jurídico fundamental se prevé en el artículo 26 del Real Decreto 181/2008, de 8 de febrero, que regula el supuesto de una disposición oficial que aparezca publicada con errores que alteren o modifiquen su contenido. En ese caso, será reproducida inmediatamente en su totalidad o en la parte necesaria de acuerdo con las normas allí previstas.&nbsp;</p>
+
+<p>Aunque no es el supuesto regulado en el artículo 91, no debemos pasar por alto la cuestión de la sanción, promulgación y publicación de las leyes autonómicas. La ausencia de previsión constitucional ha llevado a que los diferentes Estatutos de Autonomía resuelvan la cuestión en cada caso. Se trata del artículo 27.5 del Estatuto vasco; el artículo 65 del catalán; el artículo 13.2 del gallego; el artículo 116 del andaluz; el artículo 31.2 del asturiano; el artículo 15.2 del de Cantabria; el artículo 21.1 del riojano; el artículo 30.2 del murciano; el artículo 25.5 del valenciano; el artículo 45 del aragonés; el artículo 12.2 del de Castilla-La Mancha; el artículo 47 del canario; el artículo 22 del navarro; el artículo 40 del extremeño; el artículo 48.2 del balear; el artículo 40.1 del madrileño; y el artículo 25.5 del de Castilla y León. En todos ellos se opta por una solución similar que obvia la referencia a la sanción y atribuye la promulgación al Presidente respectivo. Salvo el vasco, incluyen una referencia a que dicha promulgación se hace "<em>en nombre del Rey</em>". Y en todos se configura como una facultad reglada que impide la existencia de ningún tipo de veto presidencial, aunque la obligación de promulgar se somete a un plazo de quince días tan sólo en la mayoría de los casos; puesto que no se dice nada en los Estatutos de Galicia, Cantabria, Castilla-La Mancha, Canarias, Madrid y Castilla y León.</p>
+
+<p>&nbsp;</p>
+
+<hr>
+<p>&nbsp;</p>
+
+<p>Comentario realizado por</p>
+
+<p><strong>Carlos Gutiérrez Vicén</strong>, Letrado de las Cortes Generales. 2003.</p>
+
+<p>Actualizado por</p>
+
+<p><strong>Ángeles González Escudero</strong>, Letrada de las Cortes Generales. 2011.<br>
+<strong>Enrique García Ortea</strong>, Letrado de las Cortes Generales. 2026.</p>
+
+<p>&nbsp;</p>
+
+<hr>
+<p>&nbsp;</p>
+
+<p><strong>Bibliografía</strong></p>
+
+<p><strong>Arnaldo Alcubilla, E.</strong> (2018). Artículo 91. En M. Rodríguez-Piñero y Bravo-Ferrer y M. E. Casas Baamonde (Dirs.), <em>Comentarios a la Constitución española</em>. Boletín Oficial del Estado; Fundación Wolters Kluwer; Ministerio de Justicia; Tribunal Constitucional.</p>
+
+<p><strong>Biglino Campos, M.P.</strong> (1998). La publicación como fase del procedimiento legislativo. En VVAA, <em>El procedimiento legislativo: V Jornadas de Derecho Parlamentario</em>. Congreso de los Diputados.&nbsp;</p>
+
+<p><strong>Biscaretti Di Ruffia, P.</strong> (1987). <em>Derecho constitucional</em>. Tecnos.&nbsp;</p>
+
+<p><strong>García Martínez, A.</strong> (1987). <em>El procedimiento legislativo ordinario</em>. Congreso de los Diputados.&nbsp;</p>
+
+<p><strong>Pérez Serrano, N.</strong> (1976). <em>Tratado de Derecho político</em>. Civitas.&nbsp;</p>
+
+<p><strong>Santamaría Pastor, J.A.</strong> (1991). <em>Fundamentos de Derecho administrativo I</em>. Centro de Estudios Ramón Areces.&nbsp;</p></div>
+
+                </div>
+            </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+	
+
+
+
+
+			
+			
+		
+	
+	
+
+
+
+
+
+
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+</div></div></div>
+        </div>					
+</section></div></div>
+
+
+
+
+		</div>
+	
+
+
+<form action="#" aria-hidden="true" class="hide" id="hrefFm" method="post" name="hrefFm"><span></span><button hidden type="submit">Oculto</button></form>
+
+	
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+	
+		
+
+			
+
+			
+		
+	
+
+
+</script><script>
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+<script type="text/javascript">
+
+	function getValueByAttribute(node, attr) {
+		return (
+			node.dataset[attr] ||
+			(node.parentElement && node.parentElement.dataset[attr])
+		);
+	}
+
+	function sendDocumentDownloadedAnalyticsEvent(anchor) {
+		var fileEntryId = getValueByAttribute(
+			anchor,
+			'analyticsFileEntryId'
+		);
+		var title = getValueByAttribute(
+			anchor,
+			'analyticsFileEntryTitle'
+		);
+		var version = getValueByAttribute(
+			anchor,
+			'analyticsFileEntryVersion'
+		);
+
+		if (fileEntryId) {
+			Analytics.send('documentDownloaded', 'Document', {
+				groupId: themeDisplay.getScopeGroupId(),
+				fileEntryId,
+				preview:
+					!!window._com_liferay_document_library_analytics_isViewFileEntry,
+				title,
+				version,
+			});
+		}
+	}
+
+	function handleDownloadClick(event) {
+		if (window.Analytics) {
+			if (event.target.nodeName.toLowerCase() === 'a') {
+				sendDocumentDownloadedAnalyticsEvent(
+					event.target
+				);
+			}
+			else if (
+				event.target.parentNode &&
+				event.target.parentNode.nodeName.toLowerCase() === 'a'
+			) {
+				sendDocumentDownloadedAnalyticsEvent(
+					event.target.parentNode
+				);
+			}
+			else {
+				var target = event.target;
+				var matchTextContent =
+					target.textContent &&
+					target.textContent.toLowerCase() ===
+						'descargar';
+				var matchTitle =
+					target.title && target.title.toLowerCase() === 'download';
+				var matchAction = target.action === 'download';
+				var matchLexiconIcon = !!target.querySelector(
+					'.lexicon-icon-download'
+				);
+				var matchLexiconClassName = target.classList.contains(
+					'lexicon-icon-download'
+				);
+				var matchParentTitle =
+					target.parentNode &&
+					target.parentNode.title &&
+					target.parentNode.title.toLowerCase() === 'download';
+				var matchParentLexiconClassName =
+					target.parentNode &&
+					target.parentNode.classList.contains('lexicon-icon-download');
+
+				if (
+					matchTextContent ||
+					matchTitle ||
+					matchParentTitle ||
+					matchAction ||
+					matchLexiconIcon ||
+					matchLexiconClassName ||
+					matchParentLexiconClassName
+				) {
+					var selectedFiles = document.querySelectorAll(
+						'.form .custom-control-input:checked'
+					);
+
+					selectedFiles.forEach(({value}) => {
+						var selectedFile = document.querySelector(
+							'[data-analytics-file-entry-id="' + value + '"]'
+						);
+
+						sendDocumentDownloadedAnalyticsEvent(
+							selectedFile
+						);
+					});
+				}
+			}
+		}
+	}
+
+	Liferay.once('destroyPortlet', () => {
+		document.body.removeEventListener(
+			'click',
+			handleDownloadClick
+		);
+	});
+
+	Liferay.once('portletReady', () => {
+		document.body.addEventListener(
+			'click',
+			handleDownloadClick
+		);
+	});
+
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onShare = function (data) {
+		if (window.Analytics) {
+			Analytics.send('shared', 'SocialBookmarks', {
+				className: data.className,
+				classPK: data.classPK,
+				type: data.type,
+				url: data.url,
+			});
+		}
+	};
+
+	var onDestroyPortlet = function () {
+		Liferay.detach('socialBookmarks:share', onShare);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('socialBookmarks:share', onShare);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onVote = function (event) {
+		if (window.Analytics) {
+			let title = event.contentTitle;
+
+			if (!title) {
+				const dmNode = document.querySelector(
+					'[data-analytics-file-entry-id="' + event.classPK + '"]'
+				);
+
+				if (dmNode) {
+					title = dmNode.dataset.analyticsFileEntryTitle;
+				}
+			}
+
+			Analytics.send('VOTE', 'Ratings', {
+				className: event.className,
+				classPK: event.classPK,
+				ratingType: event.ratingType,
+				score: event.score,
+				title,
+			});
+		}
+	};
+
+	var onDestroyPortlet = function () {
+		Liferay.detach('ratings:vote', onVote);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('ratings:vote', onVote);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onDestroyPortlet = function () {
+		Liferay.detach('messagePosted', onMessagePosted);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+
+	var onMessagePosted = function (event) {
+		if (window.Analytics) {
+			const eventProperties = {
+				className: event.className,
+				classPK: event.classPK,
+				commentId: event.commentId,
+				text: event.text,
+			};
+
+			const blogNode = document.querySelector(
+				'[data-analytics-asset-id="' + event.classPK + '"]'
+			);
+
+			const dmNode = document.querySelector(
+				'[data-analytics-file-entry-id="' + event.classPK + '"]'
+			);
+
+			if (blogNode) {
+				eventProperties.title = blogNode.dataset.analyticsAssetTitle;
+			}
+			else if (dmNode) {
+				eventProperties.title = dmNode.dataset.analyticsFileEntryTitle;
+			}
+
+			Analytics.send('posted', 'Comment', eventProperties);
+		}
+	};
+
+	Liferay.on('messagePosted', onMessagePosted);
+})();
+
+	if (window.svg4everybody && Liferay.Data.ICONS_INLINE_SVG) {
+		svg4everybody(
+			{
+				polyfill: true,
+				validate: function (src, svg, use) {
+					return !src || !src.startsWith('#');
+				}
+			}
+		);
+	}
+
+(function() {var $ = AUI.$;var _ = AUI._;
+	Liferay.Util.delegate(
+		document,
+		'focusin',
+		'.portlet',
+		function(event) {
+			event.delegateTarget.closest('.portlet').classList.add('open');
+		}
+	);
+
+	Liferay.Util.delegate(
+		document,
+		'focusout',
+		'.portlet',
+		function(event) {
+			event.delegateTarget.closest('.portlet').classList.remove('open');
+		}
+	);
+})();
+
+	// <![CDATA[
+
+		
+
+		Liferay.currentURL = '\x2fimprimir-articulo\x3fnumero\x3d91';
+		Liferay.currentURLEncoded = '\x252Fimprimir-articulo\x253Fnumero\x253D91';
+
+	// ]]>
+
+(function() {var $ = AUI.$;var _ = AUI._;
+		import(Liferay.ThemeDisplay.getPathContext() + '/o/frontend-js-web/__liferay__/index.js').then(
+			({openToast}) => {
+				AUI().use(
+					'liferay-session',
+					function () {
+						Liferay.Session = new Liferay.SessionBase(
+							{
+								autoExtend: true,
+								redirectOnExpire: false,
+								redirectUrl: 'https\x3a\x2f\x2fconstitucion\x2econgreso\x2ees\x2fweb\x2fguest',
+								sessionLength: 900,
+								sessionTimeoutOffset: 70,
+								warningLength: 60
+							}
+						);
+
+						
+					}
+				);
+			}
+		)
+	})();
+(function() {var $ = AUI.$;var _ = AUI._;
+	var assetEntryId =
+		'';
+
+	if (assetEntryId) {
+		window.location.hash = assetEntryId;
+	}
+})();
+
+	
+		Liferay.Portlet.register('com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ruwd');
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ruwd_',
+			portletId: 'com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ruwd',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d246\x26p_p_id\x3dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_ruwd\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fimprimir-articulo\x253Fnumero\x253D91',
+			refreshURLData: {}
+		}
+	);
+
+
+</script><script type="module">
+import {InfoItemActionHandler as ComponentModule} from '/o/layout-taglib/__liferay__/index.js';
+AUI().use(
+  'liferay-menu',
+function(A) {
+{
+Liferay.component('infoItemActionComponent', new ComponentModule({"executeInfoItemActionURL":"https:\/\/constitucion.congreso.es\/c\/portal\/execute_info_item_action?p_l_mode=view&plid=246","namespace":"","spritemap":"https:\/\/constitucion.congreso.es\/o\/classic-theme\/images\/clay\/icons.svg"}), { destroyOnNavigate: true, portletId: ''});
+}
+(function() {
+var $ = AUI.$;var _ = AUI._;
+	new Liferay.Menu();
+
+	var liferayNotices = Liferay.Data.notices;
+
+	for (var i = 0; i < liferayNotices.length; i++) {
+		Liferay.Util.openToast(liferayNotices[i]);
+	}
+
+})();
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+<script src="https://constitucion.congreso.es/o/classic-theme/js/main.js?browserId=other&amp;minifierType=js&amp;languageId=es_ES&amp;t=1757105658000" type="text/javascript"></script>
+
+
+
+
+<script type="module">
+import {main} from '/o/frontend-js-alert-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {main} from '/o/frontend-js-tabs-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {main} from '/o/frontend-js-dropdown-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {main} from '/o/frontend-js-tooltip-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {main} from '/o/frontend-js-collapse-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="text/javascript">
+Liferay.CustomDialogs = {enabled: false};
+
+</script><script>
+
+</script><script type="module">
+import {runThirdPartyCookiesInterval} from '/o/cookies-banner-web/__liferay__/index.js';
+{
+runThirdPartyCookiesInterval();
+}
+
+</script>
+
+
+
+
+
+
+
+<div aria-label="banner cookies" class="cookies-banner cookies-banner-bottom" role="dialog">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_cookies_banner_web_portlet_CookiesBannerPortlet_  portlet-static portlet-static-end portlet-borderless portlet-cookies-banner " id="p_p_id_com_liferay_cookies_banner_web_portlet_CookiesBannerPortlet_">
+		<span id="p_com_liferay_cookies_banner_web_portlet_CookiesBannerPortlet"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid container-fluid-max-xl container-view">
+	<div class="row">
+		<div class="autofit-row autofit-padded-no-gutters autofit-row-center autofit-float-sm-down px-2 px-md-0">
+			<div class="autofit-col autofit-col-expand">
+				<p class="mb-0">
+					Usamos cookies para mostrar contenidos personalizados, analizar tendencias, administrar el sitio, llevar un seguimiento de los movimientos de los usuarios en el sitio y recopilar información demográfica sobre nuestra base de usuarios en su conjunto. Acepte todas las cookies para disfrutar de la mejor experiencia posible en nuestro sitio web, o bien administre sus preferencias.
+
+					<a class="" href="/politica-de-cookies" >Consulte la Política de privacidad</a>
+				</p>
+			</div>
+
+			<div class="autofit-col">
+				<button class="btn btn-sm btn-link" id="_com_liferay_cookies_banner_web_portlet_CookiesBannerPortlet_configurationButton" type="button" >Configuración</button>
+			</div>
+
+			<div class="autofit-col">
+				<button class="btn btn-sm btn-secondary" id="_com_liferay_cookies_banner_web_portlet_CookiesBannerPortlet_acceptAllButton" type="button" >Aceptar todo</button>
+			</div>
+
+			
+				<div class="autofit-col">
+					<button class="btn btn-sm btn-secondary" id="_com_liferay_cookies_banner_web_portlet_CookiesBannerPortlet_declineAllButton" type="button" >Rechazar todas</button>
+				</div>
+			
+		</div>
+	</div>
+</div>
+
+<script type="module">
+import {CookiesBanner as ComponentModule} from '/o/cookies-banner-web/__liferay__/index.js';
+{
+Liferay.component('CookiesBanner', new ComponentModule({"configurationURL":"https:\/\/constitucion.congreso.es\/imprimir-articulo?p_p_id=com_liferay_cookies_banner_web_portlet_CookiesBannerConfigurationPortlet&p_p_lifecycle=0&p_p_state=pop_up&p_p_mode=view&_com_liferay_cookies_banner_web_portlet_CookiesBannerConfigurationPortlet_mvcPath=%2Fcookies_banner_configuration%2Fview.jsp&p_p_auth=bcLTuDV1","optionalConsentCookieTypeNames":["CONSENT_TYPE_FUNCTIONAL","CONSENT_TYPE_PERFORMANCE","CONSENT_TYPE_PERSONALIZATION"],"spritemap":"https:\/\/constitucion.congreso.es\/o\/classic-theme\/images\/clay\/icons.svg","configurationNamespace":"com_liferay_cookies_banner_web_portlet_CookiesBannerConfigurationPortlet","namespace":"_com_liferay_cookies_banner_web_portlet_CookiesBannerPortlet_","requiredConsentCookieTypeNames":["CONSENT_TYPE_NECESSARY"],"includeDeclineAllButton":true,"title":"Configuración de cookies"}), { destroyOnNavigate: true, portletId: 'com_liferay_cookies_banner_web_portlet_CookiesBannerPortlet'});
+}
+
+</script>
+		
+	
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+</div><script data-senna-track="temporary" type="text/javascript"  src="/o/constitucion-theme-cx/js/barebone_footer.min.js"></script>
+</body>
+
+</html>
+		
+	
+

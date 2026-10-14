@@ -1,0 +1,114 @@
+{
+  "id": "018",
+  "title": "Палаты парламента: различия Конгресса и Сената",
+  "checked_date": "14.10.2026",
+  "claims": [
+    {
+      "text": "Здесь «палата» означает одну из двух частей парламента Испании. Это Конгресс депутатов и Сенат. Вместе они образуют Cortes Generales. У каждой палаты свой состав и правила работы. Такое устройство называется двухпалатной системой.",
+      "locator": "CE 66.1, 72.1; официальный обзор Сената о двухпалатной системе — пояснение, не норма"
+    },
+    {
+      "text": "Депутатов Конгресса избирают граждане; в избирательных округах применяется пропорциональное представительство. Для назначения главы Правительства кандидат должен получить доверие Конгресса. Правительство политически ответственно перед Конгрессом.",
+      "locator": "CE 68.1–3, 99.2–3, 108"
+    },
+    {
+      "text": "Конституция называет Сенат палатой территориального представительства. В нём есть сенаторы, избираемые населением, и сенаторы, назначаемые автономными сообществами.",
+      "locator": "CE 69.1–5"
+    },
+    {
+      "text": "В показанном на карте маршруте Конгресс одобряет текст, затем Сенат рассматривает его и может внести поправки или наложить вето. Конгресс решает вопрос о поправках и может преодолеть вето по установленным правилам. Поэтому полномочия палат различаются.",
+      "locator": "CE 90.1–2"
+    },
+    {
+      "text": "В официальном пояснении Сената названы две роли второй палаты: ещё раз рассматривать решения Конгресса, предлагая поправки или вето, и давать территориям голос в общегосударственном парламенте. Это объяснение предусмотренного устройства; оно не означает, что обе палаты имеют одинаковые полномочия.",
+      "locator": "Senado: El Senado en el sistema bicameral español, разделы о повторном рассмотрении, территориальном представительстве и различиях полномочий — пояснение, не норма"
+    },
+    {
+      "text": "Les Corts, парламент Валенсийского сообщества, назначает сенаторов, которые должны представлять это сообщество в Сенате Испании. Это пример участия автономии в формировании общегосударственной палаты.",
+      "locator": "Статут Валенсийского сообщества, статья 22.j; CE 69.5"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Constitución Española",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "retrieved_at_utc": "2026-10-14T13:54:29.642281+00:00",
+      "sha256": "4fcb22f5b32889b0828ae67e83483df7b1c6a0cd364447527882379e3978eb35",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/constitution/official.html",
+      "key": "constitution",
+      "version": "Última actualización, publicada el 20/05/2026",
+      "articles": [
+        {
+          "heading": "Artículo 66",
+          "anchor": "a66",
+          "text": "[Bloque 79: #a66]\nJurisprudencia\nArtículo 66\n1. Las Cortes Generales representan al pueblo español y están formadas por el Congreso de los Diputados y el Senado.\n2. Las Cortes Generales ejercen la potestad legislativa del Estado, aprueban sus Presupuestos, controlan la acción del Gobierno y tienen las demás competencias que les atribuya la Constitución.\n3. Las Cortes Generales son inviolables.\nSubir"
+        },
+        {
+          "heading": "Artículo 68",
+          "anchor": "a68",
+          "text": "[Bloque 81: #a68]\nArtículo 68\n1. El Congreso se compone de un mínimo de 300 y un máximo de 400 Diputados, elegidos por sufragio universal, libre, igual, directo y secreto, en los términos que establezca la ley.\n2. La circunscripción electoral es la provincia. Las poblaciones de Ceuta y Melilla estarán representadas cada una de ellas por un Diputado. La ley distribuirá el número total de Diputados, asignando una representación mínima inicial a cada circunscripción y distribuyendo los demás en proporción a la población.\n3. La elección se verificará en cada circunscripción atendiendo a criterios de representación proporcional.\n4. El Congreso es elegido por cuatro años. El mandato de los Diputados termina cuatro años después de su elección o el día de la disolución de la Cámara.\n5. Son electores y elegibles todos los españoles que estén en pleno uso de sus derechos políticos.\nLa ley reconocerá y el Estado facilitará el ejercicio del derecho de sufragio a los españoles que se encuentren fuera del territorio de España.\n6. Las elecciones tendrán lugar entre los treinta días y sesenta días desde la terminación del mandato. El Congreso electo deberá ser convocado dentro de los veinticinco días siguientes a la celebración de las elecciones.\nSubir"
+        },
+        {
+          "heading": "Artículo 69",
+          "anchor": "a69",
+          "text": "[Bloque 82: #a69]\nArtículo 69\n1. El Senado es la Cámara de representación territorial.\n2. En cada provincia se elegirán cuatro Senadores por sufragio universal, libre, igual, directo y secreto por los votantes de cada una de ellas, en los términos que señale una ley orgánica.\n3. En las provincias insulares, cada isla con Cabildo o Consejo Insular constituirá una circunscripción a efectos de elección de Senadores, correspondiendo tres a cada una de las islas mayores −Gran Canaria, Mallorca y Tenerife− y uno a cada una de las siguientes islas: Ibiza, Formentera, Menorca, Fuerteventura, La Gomera, El Hierro, Lanzarote y La Palma.\n4. Las poblaciones de Ceuta y Melilla elegirán cada una de ellas dos Senadores.\n5. Las Comunidades Autónomas designarán además un Senador y otro más por cada millón de habitantes de su respectivo territorio. La designación corresponderá a la Asamblea legislativa o, en su defecto, al órgano colegiado superior de la Comunidad Autónoma, de acuerdo con lo que establezcan los Estatutos, que asegurarán, en todo caso, la adecuada representación proporcional.\n6. El Senado es elegido por cuatro años. El mandato de los Senadores termina cuatro años después de su elección o el día de la disolución de la Cámara.\nSe modifica el apartado 3 por el art. único de la Reforma de 19 de mayo de 2026. Ref. BOE-A-2026-10881\nLa eficacia de la creación de las circunscripciones electorales de Ibiza y Formentera quedará pospuesta hasta la convocatoria de las primeras elecciones al Senado que se celebren tras la entrada en vigor de la citada Reforma, según establece su disposición transitoria única.\nSeleccionar redacción:\nÚltima actualización, publicada el 20/05/2026, en vigor a partir del 20/05/2026.\nTexto original, publicado el 29/12/1978, en vigor a partir del 29/12/1978.\nSubir"
+        },
+        {
+          "heading": "Artículo 72",
+          "anchor": "a72",
+          "text": "[Bloque 85: #a72]\nJurisprudencia\nArtículo 72\n1. Las Cámaras establecen sus propios Reglamentos, aprueban autónomamente sus presupuestos y, de común acuerdo, regulan el Estatuto del Personal de las Cortes Generales. Los Reglamentos y su reforma serán sometidos a una votación final sobre su totalidad, que requerirá la mayoría absoluta.\n2. Las Cámaras eligen sus respectivos Presidentes y los demás miembros de sus Mesas. Las sesiones conjuntas serán presididas por el Presidente del Congreso y se regirán por un Reglamento de las Cortes Generales aprobado por mayoría absoluta de cada Cámara.\n3. Los Presidentes de las Cámaras ejercen en nombre de las mismas todos los poderes administrativos y facultades de policía en el interior de sus respectivas sedes.\nSubir"
+        },
+        {
+          "heading": "Artículo 90",
+          "anchor": "a90",
+          "text": "[Bloque 104: #a90]\nJurisprudencia\nArtículo 90\n1. Aprobado un proyecto de ley ordinaria u orgánica por el Congreso de los Diputados, su Presidente dará inmediata cuenta del mismo al Presidente del Senado, el cual lo someterá a la deliberación de éste.\n2. El Senado en el plazo de dos meses, a partir del día de la recepción del texto, puede, mediante mensaje motivado, oponer su veto o introducir enmiendas al mismo. El veto deberá ser aprobado por mayoría absoluta. El proyecto no podrá ser sometido al Rey para sanción sin que el Congreso ratifique por mayoría absoluta, en caso de veto, el texto inicial, o por mayoría simple, una vez transcurridos dos meses desde la interposición del mismo, o se pronuncie sobre las enmiendas, aceptándolas o no por mayoría simple.\n3. El plazo de dos meses de que el Senado dispone para vetar o enmendar el proyecto se reducirá al de veinte días naturales en los proyectos declarados urgentes por el Gobierno o por el Congreso de los Diputados.\nSubir"
+        },
+        {
+          "heading": "Artículo 99",
+          "anchor": "a99",
+          "text": "[Bloque 115: #a99]\nArtículo 99\n1. Después de cada renovación del Congreso de los Diputados, y en los demás supuestos constitucionales en que así proceda, el Rey, previa consulta con los representantes designados por los Grupos políticos con representación parlamentaria, y a través del Presidente del Congreso, propondrá un candidato a la Presidencia del Gobierno.\n2. El candidato propuesto conforme a lo previsto en el apartado anterior expondrá ante el Congreso de los Diputados el programa político del Gobierno que pretenda formar y solicitará la confianza de la Cámara.\n3. Si el Congreso de los Diputados, por el voto de la mayoría absoluta de sus miembros, otorgare su confianza a dicho candidato, el Rey le nombrará Presidente. De no alcanzarse dicha mayoría, se someterá la misma propuesta a nueva votación cuarenta y ocho horas después de la anterior, y la confianza se entenderá otorgada si obtuviere la mayoría simple.\n4. Si efectuadas las citadas votaciones no se otorgase la confianza para la investidura, se tramitarán sucesivas propuestas en la forma prevista en los apartados anteriores.\n5. Si transcurrido el plazo de dos meses, a partir de la primera votación de investidura, ningún candidato hubiere obtenido la confianza del Congreso, el Rey disolverá ambas Cámaras y convocará nuevas elecciones con el refrendo del Presidente del Congreso.\nSubir"
+        },
+        {
+          "heading": "Artículo 108",
+          "anchor": "a108",
+          "text": "[Bloque 125: #a108]\nArtículo 108\nEl Gobierno responde solidariamente en su gestión política ante el Congreso de los Diputados.\nSubir"
+        },
+        {
+          "heading": "Artículo 113",
+          "anchor": "a113",
+          "text": "[Bloque 130: #a113]\nArtículo 113\n1. El Congreso de los Diputados puede exigir la responsabilidad política del Gobierno mediante la adopción por mayoría absoluta de la moción de censura.\n2. La moción de censura deberá ser propuesta al menos por la décima parte de los Diputados, y habrá de incluir un candidato a la Presidencia del Gobierno.\n3. La moción de censura no podrá ser votada hasta que transcurran cinco días desde su presentación. En los dos primeros días de dicho plazo podrán presentarse mociones alternativas.\n4. Si la moción de censura no fuere aprobada por el Congreso, sus signatarios no podrán presentar otra durante el mismo período de sesiones.\nSubir"
+        }
+      ]
+    },
+    {
+      "title": "Senado · El Senado en el sistema bicameral español",
+      "url": "https://www.senado.es/web/conocersenado/temasclave/sistemabicameral/index.html?lang=es_ES",
+      "resolved_url": "https://www.senado.es/web/conocersenado/temasclave/sistemabicameral/index.html?lang=es_ES",
+      "retrieved_at_utc": "2026-10-14T17:51:57.833846+00:00",
+      "sha256": "ed33330d21d2aa5a8fb3959756fdd33fd6ba388bd5cfab14591197b3e81a86d5",
+      "content_type": "text/html;charset=UTF-8",
+      "file": "sources/bicameral-guide/official.html",
+      "key": "bicameral-guide",
+      "version": "Официальный обзор Сената: двухпалатная система · пояснение, не норма",
+      "articles": [
+        {
+          "heading": "Повторное рассмотрение",
+          "anchor": "",
+          "text": "función de reflexión o reconsideración"
+        },
+        {
+          "heading": "Представительство территорий",
+          "anchor": "",
+          "text": "voz e intereses de estas entidades territoriales"
+        },
+        {
+          "heading": "Различие полномочий",
+          "anchor": "",
+          "text": "decide finalmente el Congreso"
+        }
+      ]
+    }
+  ]
+}

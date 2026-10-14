@@ -1,0 +1,120 @@
+{
+  "id": "006",
+  "title": "Допуск и бюджетное согласие",
+  "checked_date": "14.10.2026",
+  "claims": [
+    {
+      "text": "Mesa проверяет документы; маршрут начала зависит от источника текста.",
+      "locator": ""
+    },
+    {
+      "text": "Mesa Конгресса квалифицирует парламентские документы, решает вопрос их допустимости и определяет порядок рассмотрения.",
+      "locator": "RCD 31.1.4–5"
+    },
+    {
+      "text": "Для предложения, увеличивающего бюджетные ассигнования или уменьшающего бюджетные доходы, Конституция требует согласия Правительства на рассмотрение.",
+      "locator": "CE 134.6; RCD 126.2"
+    },
+    {
+      "text": "После 30 дней без выраженного Правительством отказа в согласии предложение может быть включено в повестку пленума для toma en consideración.",
+      "locator": "RCD 126.3"
+    },
+    {
+      "text": "Член палаты или парламентская группа, несогласные с решением Mesa по квалификации или порядку рассмотрения, могут запросить reconsideración. Mesa принимает мотивированное окончательное решение, выслушав Junta de Portavoces.",
+      "locator": "RCD 31.2"
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "Mesa Конгресса квалифицирует парламентские документы, решает вопрос их допустимости и определяет порядок рассмотрения.",
+      "locator": "RCD 31.1.4–5"
+    },
+    {
+      "text": "Член палаты или парламентская группа, несогласные с решением Mesa по квалификации или порядку рассмотрения, могут запросить reconsideración. Mesa принимает мотивированное окончательное решение, выслушав Junta de Portavoces.",
+      "locator": "RCD 31.2"
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "Для предложения, увеличивающего бюджетные ассигнования или уменьшающего бюджетные доходы, Конституция требует согласия Правительства на рассмотрение.",
+      "locator": "CE 134.6; RCD 126.2"
+    },
+    {
+      "text": "После 30 дней без выраженного Правительством отказа в согласии предложение может быть включено в повестку пленума для toma en consideración.",
+      "locator": "RCD 126.3"
+    },
+    {
+      "text": "Предусмотренный Регламентом способ попросить Mesa пересмотреть решение о парламентском документе или порядке его рассмотрения. В Конгрессе Mesa выслушивает Junta de Portavoces и принимает окончательное мотивированное решение.",
+      "locator": "RCD 31.2; RS 36.2"
+    },
+    {
+      "text": "Проверка того, можно ли начать предусмотренную процедуру по поданным документам. В ILP Mesa проверяет требования до сбора подписей. Допуск не означает, что парламент уже одобрил содержание будущего закона.",
+      "locator": "LO 3/1984, статьи 4–5; RCD 31.1.4–5"
+    },
+    {
+      "text": "В этом правиле речь идёт о предусмотренных бюджетом средствах на расходы. Предложение или поправка, увеличивающие их либо уменьшающие бюджетные доходы, требуют согласия Правительства на рассмотрение.",
+      "locator": "CE 134.6"
+    },
+    {
+      "text": "Проверка поданного парламентского документа по правилам Регламента, связанная с решением о его допустимости и порядке рассмотрения. В данном контексте слово относится к проверке документа руководством палаты.",
+      "locator": "RCD 31.1.4–5; RS 36.1.c"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Reglamento del Congreso",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-5196",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1982-5196",
+      "retrieved_at_utc": "2026-10-14T13:54:30.670638+00:00",
+      "sha256": "938f1e19a147e6cf0db64bf44cb38fcdfba0d9695fc4b4a3576f089ad5323b98",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/congress/official.html",
+      "key": "congress",
+      "version": "Última actualización, publicada el 28/07/2026",
+      "articles": [
+        {
+          "heading": "Artículo 31.",
+          "anchor": "art31",
+          "text": "[Bloque 44: #art31]\nArtículo 31.\n1. Corresponden a la Mesa las siguientes funciones:\n1º. Adoptar cuantas decisiones y medidas requieran la organización del trabajo y el régimen y gobierno interiores de la Cámara.\n2º. Elaborar el proyecto de Presupuesto del Congreso, dirigir y controlar su ejecución y presentar ante el Pleno de la Cámara, al final de cada ejercicio, un informe acerca de su cumplimiento.\n3º. Ordenar los gastos de la Cámara, sin perjuicio de las delegaciones que pueda acordar.\n4º. Calificar, con arreglo al Reglamento, los escritos y documentos de índole parlamentaria, así como declarar la admisibilidad o inadmisibilidad de los mismos.\n5º. Decidir la tramitación de todos los escritos y documentos de índole parlamentaria, de acuerdo con las normas establecidas en este Reglamento.\n6º. Programar las líneas generales de actuación de la Cámara, fijar el calendario de actividades del Pleno y de las Comisiones para cada período de sesiones y coordinar los trabajos de sus distintos órganos, todo ello previa audiencia de la Junta de Portavoces.\n7º. Cualesquiera otras que le encomiende el presente Reglamento y las que no estén atribuidas a un órgano específico.\n2. Si un miembro de la Cámara o un grupo parlamentario discrepare de la decisión adoptada por la Mesa en el ejercicio de las funciones a que se refieren los puntos 4.º y 5.º del apartado anterior, podrá solicitar su reconsideración. La Mesa decidirá definitivamente, oída la Junta de Portavoces, mediante resolución motivada.\nSe modifican los apartados 1.2º y 2 por el art. único.34 de la Reforma del Reglamento de 22 de julio de 2025. Ref. BOE-A-2025-15844\nSeleccionar redacción:\nÚltima actualización, publicada el 31/07/2025, en vigor a partir del 31/07/2025.\nTexto original, publicado el 05/03/1982, en vigor a partir del 24/02/1982.\nSubir"
+        },
+        {
+          "heading": "Artículo 109.",
+          "anchor": "art109",
+          "text": "[Bloque 148: #art109]\nArtículo 109.\nLos proyectos de ley remitidos por el Gobierno irán acompañados de una exposición de motivos y de los antecedentes necesarios para poder pronunciarse sobre ellos. La Mesa del Congreso ordenará su publicación, la apertura del plazo de presentación de enmiendas y el envío a la Comisión correspondiente.\nSubir"
+        },
+        {
+          "heading": "Artículo 126.",
+          "anchor": "art126",
+          "text": "[Bloque 170: #art126]\nArtículo 126.\n1. Las proposiciones de ley del Congreso podrán ser adoptadas a iniciativa de:\n1º. Un diputado o diputada con la firma de catorce miembros más de la Cámara,\n2º. Un Grupo Parlamentario con la sola firma de su portavoz.\n2. Ejercitada la iniciativa, la Mesa del Congreso ordenará la publicación de la proposición de ley y su remisión al Gobierno para que manifieste su criterio respecto a la toma en consideración, así como su conformidad o no a la tramitación si implicara aumento de los créditos o disminución de los ingresos presupuestarios.\n3. Transcurridos treinta días sin que el Gobierno hubiera negado expresamente su conformidad a la tramitación, la proposición de ley quedará en condiciones de ser incluida en el orden del día del Pleno para su toma en consideración.\n4. Antes de iniciar el debate, se dará lectura al criterio del Gobierno, si lo hubiere. El debate se ajustará a lo establecido para los de totalidad.\n5. Acto seguido, la Presidencia preguntará si la Cámara toma o no en consideración la proposición de ley de que se trate. En caso afirmativo, la Mesa de la Cámara acordará su envío a la Comisión competente y la apertura del correspondiente plazo de presentación de enmiendas, sin que, salvo en el supuesto del artículo 125, sean admisibles enmiendas de totalidad de devolución. La proposición seguirá el trámite previsto para los proyectos de ley, correspondiendo a una de las personas proponentes o a un integrante del Grupo autor de la iniciativa la presentación de la misma ante el Pleno.\nSe modifica el numeral 1º del apartado 1 y el apartado 5 por el art. único.103 de la Reforma del Reglamento de 22 de julio de 2025. Ref. BOE-A-2025-15844\nSeleccionar redacción:\nÚltima actualización, publicada el 31/07/2025, en vigor a partir del 31/07/2025.\nTexto original, publicado el 05/03/1982, en vigor a partir del 24/02/1982.\nSubir"
+        },
+        {
+          "heading": "Artículo 127.",
+          "anchor": "art127",
+          "text": "[Bloque 171: #art127]\nArtículo 127.\nLas proposiciones de ley de las Comunidades Autónomas y las de iniciativa popular serán examinadas por la Mesa del Congreso a efectos de verificar el cumplimiento de los requisitos legalmente establecidos. Si los cumplen, su tramitación se ajustará a lo previsto en el artículo anterior, con la única especialidad de que en las de iniciativa de una Asamblea de la Comunidad Autónoma la defensa de la proposición en el trámite de toma en consideración corresponderá a la Delegación de aquélla.\nSubir"
+        }
+      ]
+    },
+    {
+      "title": "Constitución Española",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "retrieved_at_utc": "2026-10-14T13:54:29.642281+00:00",
+      "sha256": "4fcb22f5b32889b0828ae67e83483df7b1c6a0cd364447527882379e3978eb35",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/constitution/official.html",
+      "key": "constitution",
+      "version": "Última actualización, publicada el 20/05/2026",
+      "articles": [
+        {
+          "heading": "Artículo 134",
+          "anchor": "a134",
+          "text": "[Bloque 153: #a134]\nJurisprudencia\nArtículo 134\n1. Corresponde al Gobierno la elaboración de los Presupuestos Generales del Estado y a las Cortes Generales, su examen, enmienda y aprobación.\n2. Los Presupuestos Generales del Estado tendrán carácter anual, incluirán la totalidad de los gastos e ingresos del sector público estatal y en ellos se consignará el importe de los beneficios fiscales que afecten a los tributos del Estado.\n3. El Gobierno deberá presentar ante el Congreso de los Diputados los Presupuestos Generales del Estado al menos tres meses antes de la expiración de los del año anterior.\n4. Si la Ley de Presupuestos no se aprobara antes del primer día del ejercicio económico correspondiente, se considerarán automáticamente prorrogados los Presupuestos del ejercicio anterior hasta la aprobación de los nuevos.\n5. Aprobados los Presupuestos Generales del Estado, el Gobierno podrá presentar proyectos de ley que impliquen aumento del gasto público o disminución de los ingresos correspondientes al mismo ejercicio presupuestario.\n6. Toda proposición o enmienda que suponga aumento de los créditos o disminución de los ingresos presupuestarios requerirá la conformidad del Gobierno para su tramitación.\n7. La Ley de Presupuestos no puede crear tributos. Podrá modificarlos cuando una ley tributaria sustantiva así lo prevea.\nSubir"
+        }
+      ]
+    }
+  ]
+}

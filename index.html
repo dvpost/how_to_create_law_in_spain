@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Как появляется закон · Испания</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="vendor/cytoscape.js" defer></script>
+  <script src="vendor/elk.js" defer></script>
+  <script src="data.js" defer></script>
+  <script src="graph-data.js" defer></script>
+  <script src="glossary.js" defer></script>
+  <script src="graph-layout.js" defer></script>
+  <script src="graph.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main id="viewport" aria-label="Интерактивная карта законодательной процедуры Испании"></main>
+  <nav class="map-controls" aria-label="Управление картой">
+    <button id="menu-toggle" class="icon-button" popovertarget="project-menu" aria-label="Меню проекта" title="Меню проекта"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    <button id="settings-toggle" class="icon-button" popovertarget="settings-menu" aria-label="Настройки" title="Настройки"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 3-1 3-3 1-2 3 2 2-1 3 3 2 3-1 2 3 3-1 1-3 3-1 2-3-2-2 1-3-3-2-3 1-2-3Z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    <button id="help-toggle" class="icon-button" popovertarget="help-menu" aria-label="Помощь и легенда" title="Помощь и легенда"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 2-2.5 2-2.5 4M12 16v.2"/></svg></button>
+  </nav>
+  <button id="fullscreen" class="icon-button fullscreen-control" aria-label="Развернуть на весь экран" title="Развернуть на весь экран"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button>
+  <div id="ui-status" role="status" aria-live="polite" hidden></div>
+  <section id="project-menu" class="control-popover" popover="auto" aria-labelledby="project-title">
+    <h1 id="project-title">Как появляется закон</h1><p class="project-meta">Испания · проверено 14.10.2026 · v14</p>
+    <button class="menu-action" data-archive="proofs">Источники и пруфы</button><button class="menu-action" data-archive="scope">Границы исследования</button>
+  </section>
+  <section id="settings-menu" class="control-popover" popover="auto" aria-labelledby="settings-title">
+    <h2 id="settings-title">Настройки</h2>
+    <label class="setting"><input id="show-descriptions" type="checkbox" checked>Показывать описания карточек</label>
+    <label class="setting"><input id="show-terms" type="checkbox" checked>Пояснять термины</label>
+    <label class="setting"><input id="show-returns" type="checkbox" checked>Показывать возвраты</label>
+    <fieldset class="law-mode"><legend>Маршруты на карте</legend><label><input type="radio" name="law" value="all" checked>Оба типа закона</label><label><input type="radio" name="law" value="ordinary">Обычный закон</label><label><input type="radio" name="law" value="organic">Органический закон</label></fieldset>
+    <div class="setting-actions"><button id="align">Выровнять</button><button id="reset-map">Свернуть всё</button></div>
+  </section>
+  <section id="help-menu" class="control-popover help-popover" popover="auto" aria-labelledby="help-title">
+    <h2 id="help-title">Как пользоваться картой</h2>
+    <p>Перетаскивайте фон, чтобы двигаться по карте. Колесо мыши меняет масштаб. Карточки можно перетаскивать — стрелки остаются связанными с ними.</p>
+    <p>Нажатие на карточку открывает описание. Только ссылка «Раскрыть (N)» или «Свернуть (N)» меняет состав карты. N — число элементов ближайшего уровня.</p>
+    <p>Слово с пунктирным подчёркиванием открывает определение, примеры и источники. Описания карточек и пояснения терминов можно независимо отключить в настройках.</p>
+    <div class="legend"><p><i class="legend-line"></i>Стрелка — ход процедуры</p><p><i class="legend-line return-line"></i>Пунктирная стрелка — возврат</p><p><i class="legend-line membership-line"></i>Связь без стрелки — состав или роль</p></div>
+    <p>Зелёные карточки — участники, светлые — действия, ромбы — решения. Серые пояснения обозначают неуточнённые вопросы.</p>
+    <p>Тип закона в настройках фильтрует маршруты. Юридическую квалификацию выполняет Mesa Конгресса; её решения показаны в раскрываемых ветвях.</p>
+    <p>«Выровнять» заново раскладывает карточки и стрелки и подбирает масштаб. При раскрытии ветвей карта тоже перестраивается; ручные перемещения сохраняются до следующей перестройки. Полноэкранный режим включается кнопкой справа сверху; выход — этой же кнопкой или Esc.</p>
+  </section>
+  <aside id="detail-panel" class="detail-popover" popover="manual" role="dialog" aria-label="Описание карточки"><button id="close-detail" class="close-button" aria-label="Закрыть описание">×</button><div id="detail-content"></div></aside>
+  <dialog id="archive-dialog" aria-labelledby="archive-title"><div class="dialog-top"><h2 id="archive-title"></h2><button data-close-archive class="close-button" aria-label="Закрыть каталог">×</button></div><section id="proofs-view" hidden><p class="archive-note">Номер источника соответствует папке proofs/. Сохранены статьи, полные официальные документы и метаданные. Консолидированные тексты BOE имеют информационный характер; ссылки на официальные публикации сохранены внутри оригиналов.</p><div id="proof-catalog"></div></section><section id="scope-view" hidden><div id="scope-list"></div></section></dialog>
+  <dialog id="proof-dialog" aria-labelledby="proof-title"><div class="dialog-top"><span class="eyebrow">Доказательство</span><button id="close-proof" class="close-button" aria-label="Закрыть доказательство">×</button></div><div id="proof-content"></div></dialog>
+  <div id="term-popover" popover="auto" role="dialog" aria-labelledby="term-title"></div>
+  <noscript>Для интерактивной карты включите JavaScript. Сохранённые документы доступны в каталоге proofs.</noscript>
+</body>
+</html>

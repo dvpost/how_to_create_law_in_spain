@@ -1,0 +1,39 @@
+{
+  "id": "013",
+  "title": "Вступление закона в силу",
+  "checked_date": "14.10.2026",
+  "claims": [
+    {
+      "text": "Официальная публикация в BOE; действие — в установленный законом срок.",
+      "locator": ""
+    },
+    {
+      "text": "Если закон не устанавливает иное, он вступает в силу через 20 дней после полного опубликования в BOE.",
+      "locator": "Código Civil, ст. 2.1"
+    },
+    {
+      "text": "Момент, с которого закон начинает действовать. Если сам закон не установил иной срок, общее правило — через 20 дней после полного опубликования в BOE.",
+      "locator": "Código Civil 2.1"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Código Civil",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763",
+      "retrieved_at_utc": "2026-10-14T13:54:30.256580+00:00",
+      "sha256": "8eac249cf8e5413fe67f92b21f8a66f2a8beff0be24d29bebf77d341a402a483",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/civil/official.html",
+      "key": "civil",
+      "version": "Última actualización, publicada el 03/01/2025",
+      "articles": [
+        {
+          "heading": "Artículo 2.",
+          "anchor": "art2",
+          "text": "[Bloque 7: #art2]\nJurisprudencia\nArtículo 2.\n1. Las leyes entrarán en vigor a los veinte días de su completa publicación en el «Boletín Oficial del Estado», si en ellas no se dispone otra cosa.\n2. Las leyes sólo se derogan por otras posteriores. La derogación tendrá el alcance que expresamente se disponga y se extenderá siempre a todo aquello que en la ley nueva, sobre la misma materia sea incompatible con la anterior. Por la simple derogación de una ley no recobran vigencia las que ésta hubiere derogado.\n3. Las leyes no tendrán efecto retroactivo, si no dispusieren lo contrario.\nSe modifica por el Decreto 1836/1974, de 31 de mayo. Ref. BOE-A-1974-1083.\nSeleccionar redacción:\nÚltima actualización, publicada el 09/07/1974, en vigor a partir del 29/07/1974.\nTexto original, publicado el 25/07/1889, en vigor a partir del 16/08/1889.\nSubir"
+        }
+      ]
+    }
+  ]
+}

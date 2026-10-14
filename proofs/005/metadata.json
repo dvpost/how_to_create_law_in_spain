@@ -1,0 +1,286 @@
+{
+  "id": "005",
+  "title": "Народная законодательная инициатива",
+  "checked_date": "14.10.2026",
+  "claims": [
+    {
+      "text": "Правительственный проект, предложение Сената, Конгресса или автономии и ILP приходят сюда по разным правилам. Предварительная проверка ILP в Mesa Конгресса происходит ещё до сбора подписей.",
+      "locator": ""
+    },
+    {
+      "text": "Граждане вносят предложение через организаторов инициативы — Comisión Promotora. После предварительного допуска граждане поддерживают это предложение подписями.",
+      "locator": "LO 3/1984, ст. 3–4, 7"
+    },
+    {
+      "text": "Исключены вопросы органических законов, налогообложения, международного характера, prerrogativa de gracia, а также статьи 131 и 134.1 Конституции.",
+      "locator": "ст. 2"
+    },
+    {
+      "text": "Находящаяся в парламентском рассмотрении ILP не прекращается из-за роспуска палаты. Mesa может вернуть её на определённую стадию без нового сертификата подписей.",
+      "locator": "ст. 14"
+    },
+    {
+      "text": "Комиссия инициаторов готовит и подаёт документы народной законодательной инициативы. Её состав обязательно указывают при подаче.",
+      "locator": "LO 3/1984, ст. 3.2.c, 4"
+    },
+    {
+      "text": "Сначала подают текст по статьям с мотивировкой и составом Comisión Promotora через Secretaría General в Mesa Конгресса. Если документы поданы вне периода парламентских сессий, сроки начинают исчисляться в следующем периоде.",
+      "locator": "ст. 3–4"
+    },
+    {
+      "text": "Граждане подписывают предложение после его предварительного допуска. Их участие относится к этапу сбора подписей.",
+      "locator": "LO 3/1984, ст. 1, 3.1, 7.1–2"
+    },
+    {
+      "text": "ILP могут осуществлять совершеннолетние испанские граждане, внесённые в избирательный реестр.",
+      "locator": "LO 3/1984, ст. 1"
+    },
+    {
+      "text": "Требуется не менее 500 000 удостоверенных подписей избирателей.",
+      "locator": "ст. 3.1"
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "Сначала подают текст по статьям с мотивировкой и составом Comisión Promotora через Secretaría General в Mesa Конгресса. Если документы поданы вне периода парламентских сессий, сроки начинают исчисляться в следующем периоде.",
+      "locator": "ст. 3–4"
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "Mesa решает вопрос допустимости в течение 15 дней. Для исправимого дефекта требований статьи 3 даётся один месяц.",
+      "locator": "ст. 5.1, 5.2.b"
+    },
+    {
+      "text": "Отказ в допуске можно оспорить через recurso de amparo в Конституционном суде. Закон предусматривает продолжение процедуры или изменение затронутых положений по решению суда.",
+      "locator": "ст. 6"
+    },
+    {
+      "text": "Исключены вопросы органических законов, налогообложения, международного характера, prerrogativa de gracia, а также статьи 131 и 134.1 Конституции.",
+      "locator": "ст. 2"
+    },
+    {
+      "text": "Находящаяся в парламентском рассмотрении ILP не прекращается из-за роспуска палаты. Mesa может вернуть её на определённую стадию без нового сертификата подписей.",
+      "locator": "ст. 14"
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "После допуска Mesa сообщает JEC; JEC уведомляет комиссию инициаторов о допуске для начала сбора подписей.",
+      "locator": "LO 3/1984, ст. 7.1–2"
+    },
+    {
+      "text": "После предварительного допуска начинается сбор подписей. Раскрытие этого этапа показывает граждан, поддерживающих предложение.",
+      "locator": "LO 3/1984, ст. 7"
+    },
+    {
+      "text": "Требуется не менее 500 000 удостоверенных подписей избирателей.",
+      "locator": "ст. 3.1"
+    },
+    {
+      "text": "После допуска JEC уведомляет инициаторов. Собранные подписи нужно передать JEC в течение 9 месяцев от этого уведомления; при causa mayor, признанной Mesa Конгресса, срок может быть продлён на 3 месяца.",
+      "locator": "ст. 7.1–3"
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "Oficina del Censo Electoral проводит проверку и первичный подсчёт; JEC — окончательные проверку и подсчёт, затем направляет сертификат числа действительных подписей в Конгресс.",
+      "locator": "ст. 11–12"
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "После подтверждения нужного числа подписей предложение публикуют и включают в повестку пленума для toma en consideración максимум за 6 месяцев. До этих прений представитель инициаторов выступает в профильной комиссии.",
+      "locator": "ст. 13"
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "Отказ в допуске можно оспорить через recurso de amparo в Конституционном суде. Закон предусматривает продолжение процедуры или изменение затронутых положений по решению суда.",
+      "locator": "ст. 6"
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "Способ, которым граждане могут предложить парламенту текст закона. Инициаторы подают предложение, а избиратели поддерживают его удостоверенными подписями: требуется не менее 500 000. Подписи позволяют внести предложение; закон ещё должен пройти парламентскую процедуру.",
+      "locator": "CE 87.3; LO 3/1984, статьи 1, 3, 13"
+    },
+    {
+      "text": "При ILP именно Mesa Конгресса в течение 15 дней решает вопрос предварительного допуска предложения. Сбор подписей начинается после допуска и уведомления инициаторов.",
+      "locator": "LO 3/1984, статьи 5.1, 7.1–2"
+    },
+    {
+      "text": "Постоянный орган избирательной администрации Испании. В пути ILP он уведомляет инициаторов о допуске, обеспечивает правильность сбора подписей, окончательно проверяет и подсчитывает их и передаёт Конгрессу сертификат числа действительных подписей.",
+      "locator": "LO 5/1985, статьи 8–9; LO 3/1984, статьи 7, 11–12"
+    },
+    {
+      "text": "Условный учебный пример применения правила: Из 510 000 представленных подписей после проверки действительны 490 000. Требование о минимум 500 000 действительных подписей не выполнено.",
+      "locator": "LO 3/1984, статьи 3.1, 12.2"
+    },
+    {
+      "text": "В начале закона об ILP 1984 года король объявляет, что парламент одобрил закон и он его санкционирует. Эта формула находится перед текстом закона.",
+      "locator": "LO 3/1984: вступительная формула перед преамбулой"
+    },
+    {
+      "text": "Закон об ILP, LO 3/1984, опубликован в BOE №74 от 27 марта 1984 года. Это конкретный выпуск официального бюллетеня, содержащий текст закона.",
+      "locator": "Официальная карточка LO 3/1984: поле Publicado en"
+    },
+    {
+      "text": "Форма законодательной инициативы, которую могут использовать парламентские заявители, собрание автономии или граждане через ILP. Для каждого источника установлены собственные требования к внесению и началу рассмотрения.",
+      "locator": "CE 87, 89; RCD 124–127; RS 108; LO 3/1984, статья 3"
+    },
+    {
+      "text": "После подтверждения нужного числа подписей ILP включают в повестку пленума для toma en consideración. Палата решает, начать ли дальнейшее рассмотрение предложения.",
+      "locator": "LO 3/1984, статья 13.1; RCD 126.4–5"
+    },
+    {
+      "text": "В парламентском пути — орган палаты, работающий с порученными вопросами и текстами. В Конгрессе членов комиссии назначают парламентские группы пропорционально их численности. Комиссия инициаторов ILP — другая организация: она представляет граждан, вносящих предложение.",
+      "locator": "CE 75.1; RCD 40; LO 3/1984, статья 3.2.c"
+    },
+    {
+      "text": "Граждане, которые ведут народную законодательную инициативу: готовят и подают документы, взаимодействуют с органами допуска и сбора подписей. Закон требует указать состав этой комиссии при подаче. Граждане-подписанты поддерживают подготовленное предложение на этапе сбора подписей.",
+      "locator": "LO 3/1984, статьи 3.2.c, 4, 7, 11"
+    },
+    {
+      "text": "Инициаторы подают текст и список членов своей комиссии. Поддерживающий гражданин позднее подписывает лист с текстом предложения: это участие в сборе поддержки, а не подача первоначальных документов.",
+      "locator": "LO 3/1984, статьи 3.2, 7, 8"
+    },
+    {
+      "text": "Орган в составе Национального института статистики, который формирует избирательный реестр под руководством и надзором JEC. В ILP он проверяет регистрацию совершеннолетних подписантов и выполняет первичный подсчёт подписей.",
+      "locator": "LO 5/1985, статья 29; LO 3/1984, статья 11"
+    },
+    {
+      "text": "Список лиц, которые отвечают условиям участия в выборах и не лишены права голоса. Для ILP закон требует, чтобы подписант был совершеннолетним испанским гражданином, внесённым в этот реестр.",
+      "locator": "LO 5/1985, статья 31; LO 3/1984, статья 1"
+    },
+    {
+      "text": "Служба Конгресса, через регистр которой подают парламентские документы. Закон об ILP прямо предусматривает подачу документов в Mesa Конгресса через этот секретариат.",
+      "locator": "RCD 92.1; LO 3/1984, статья 4.1"
+    },
+    {
+      "text": "Обращение в Конституционный суд для защиты прав и свобод в предусмотренных законом случаях. Закон об ILP специально позволяет инициаторам таким способом оспорить отказ Mesa в допуске предложения.",
+      "locator": "CE 161.1.b; LO 3/1984, статья 6"
+    },
+    {
+      "text": "Если Mesa отказывает в предварительном допуске ILP, комиссия инициаторов может обжаловать этот отказ в Конституционном суде через amparo.",
+      "locator": "LO 3/1984, статья 6.1"
+    },
+    {
+      "text": "Суд, который, в частности, рассматривает оспаривание конституционности законов и обращения amparo. В показанном пути ILP он может рассмотреть жалобу на отказ в предварительном допуске.",
+      "locator": "CE 161.1.a–b; LO 3/1984, статья 6"
+    },
+    {
+      "text": "В законе об ILP это основание, при признании которого Mesa Конгресса может продлить срок передачи подписей на три месяца. Статья не перечисляет конкретные случаи; критерии признания в этой карте отдельно не исследованы.",
+      "locator": "LO 3/1984, статья 7.3"
+    },
+    {
+      "text": "Полномочие короля осуществлять помилование в соответствии с законом; общие помилования законом разрешены быть не могут. Народная законодательная инициатива по этому предмету исключена Конституцией.",
+      "locator": "CE 62.i, 87.3"
+    },
+    {
+      "text": "Закон об ILP опубликован 27 марта 1984 года, а вступил в силу 16 апреля 1984 года. Публикация и начало действия здесь имеют разные даты.",
+      "locator": "Официальная карточка LO 3/1984: Publicado en и Entrada en vigor"
+    },
+    {
+      "text": "Проверка того, можно ли начать предусмотренную процедуру по поданным документам. В ILP Mesa проверяет требования до сбора подписей. Допуск не означает, что парламент уже одобрил содержание будущего закона.",
+      "locator": "LO 3/1984, статьи 4–5; RCD 31.1.4–5"
+    },
+    {
+      "text": "Подтверждение числа действительных подписей, которое JEC направляет Конгрессу после проверки. Оно позволяет перейти к парламентскому рассмотрению предложения по правилам закона об ILP. Это ещё не решение о принятии самого закона.",
+      "locator": "LO 3/1984, статьи 12.3, 13"
+    },
+    {
+      "text": "Часть года, в которую палаты работают в обычных сессиях. Конституция устанавливает два периода: с сентября по декабрь и с февраля по июнь. Вне них возможны предусмотренные Конституцией чрезвычайные сессии. Для ILP, поданной вне такого периода, закон отдельно регулирует начало сроков.",
+      "locator": "CE 73; LO 3/1984, статья 4.2"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ley Orgánica 3/1984 · iniciativa legislativa popular",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1984-7249",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1984-7249",
+      "retrieved_at_utc": "2026-10-14T13:54:29.537626+00:00",
+      "sha256": "128fe532482de1f3d940e4ea5afb8cf41d675cd76ce5a63c18d9d04c260a3aad",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/ilp/official.html",
+      "key": "ilp",
+      "version": "Última actualización, publicada el 31/03/2015",
+      "articles": [
+        {
+          "heading": "Artículo primero. Objeto de la presente Ley Orgánica.",
+          "anchor": "aprimero",
+          "text": "[Bloque 2: #aprimero]\nArtículo primero. Objeto de la presente Ley Orgánica.\nLos ciudadanos españoles mayores de edad que se encuentren inscritos en el Censo Electoral pueden ejercer la iniciativa legislativa prevista en el artículo 87.3 de la Constitución, de acuerdo con lo dispuesto en esta Ley Orgánica.\nSubir"
+        },
+        {
+          "heading": "Artículo segundo. Materias excluidas de la iniciativa legislativa popular.",
+          "anchor": "asegundo",
+          "text": "[Bloque 3: #asegundo]\nArtículo segundo. Materias excluidas de la iniciativa legislativa popular.\nEstán excluidas de la iniciativa legislativa popular las siguientes materias:\n1. Las que, según la Constitución, son propias de Leyes Orgánicas.\n2. Las de naturaleza tributaria.\n3. Las de carácter internacional.\n4. Las referentes a la prerrogativa de gracia.\n5. Las mencionadas en los artículos 131 y 134.1 de la Constitución.\nSubir"
+        },
+        {
+          "heading": "Artículo tercero. Requisitos de la iniciativa popular.",
+          "anchor": "atercero",
+          "text": "[Bloque 4: #atercero]\nArtículo tercero. Requisitos de la iniciativa popular.\n1. La iniciativa popular se ejerce mediante la presentación de proposiciones de Ley suscritas por las firmas de, al menos, 500.000 electores autenticadas en la forma que determina la presente Ley.\n2. El escrito de presentación deberá contener:\na) El texto articulado de la proposición de Ley precedido de una exposición de motivos.\nb) (Suprimido)\nc) La relación de los miembros que componen la Comisión Promotora de la iniciativa, con expresión de los datos personales de todos ellos.\nSe suprime el apartado 2.b) por el art. único.2 de la Ley Orgánica 4/2006, de 26 de mayo. Ref. BOE-A-2006-9290\nSeleccionar redacción:\nÚltima actualización, publicada el 27/05/2006, en vigor a partir del 28/05/2006.\nTexto original, publicado el 27/03/1984, en vigor a partir del 16/04/1984.\nSubir"
+        },
+        {
+          "heading": "Artículo cuarto. Iniciación del procedimiento.",
+          "anchor": "acuarto",
+          "text": "[Bloque 5: #acuarto]\nArtículo cuarto. Iniciación del procedimiento.\nEl procedimiento se iniciará mediante la presentación ante la Mesa del Congreso de los Diputados, a través de la Secretaría General del mismo, de la documentación exigida en el artículo anterior. Si la iniciativa se presentara fuera de los períodos de sesión parlamentaria, los plazos comenzarán a computarse en el período siguiente a la presentación de dicha documentación.\nSubir"
+        },
+        {
+          "heading": "Artículo quinto. Trámite de admisión de la iniciativa.",
+          "anchor": "aquinto",
+          "text": "[Bloque 6: #aquinto]\nArtículo quinto. Trámite de admisión de la iniciativa.\n1. La Mesa del Congreso de los Diputados examinará la documentación remitida y se pronunciará en el plazo de quince días sobre su admisibilidad.\n2. Son causas de inadmisión de la proposición:\na) Que tenga por objeto alguna de las materias excluidas de la iniciativa popular por el artículo 2.°\nb) Que no se hayan cumplimentado los requisitos del artículo 3.° No obstante, si se tratase de defecto subsanable, la Mesa del Congreso de los Diputados lo comunicará a la Comisión Promotora para que proceda, en su caso, a la subsanación en el plazo de un mes.\nc) El hecho de que el texto de la Proposición verse sobre materias manifiestamente distintas y carentes de homogeneidad entre sí.\nd) La previa existencia en el Congreso o el Senado de un proyecto o proposición de Ley que verse sobre el mismo objeto de la iniciativa popular y que esté, cuando ésta se presenta, en el trámite de enmiendas u otro más avanzado.\ne) El hecho de que sea reproducción de otra iniciativa popular de contenido igual o sustancialmente equivalente presentada durante la legislatura en curso.\nf) (Suprimido)\n3. La resolución de la Mesa de la Cámara se notificará a la Comisión Promotora, y se publicará de acuerdo con lo que al efecto disponga el Reglamento del Congreso de los Diputados.\nSe suprime el apartado 2.f) y se modifica el 2.c) por el art. único.3 de la Ley Orgánica 4/2006, de 26 de mayo. Ref. BOE-A-2006-9290\nSeleccionar redacción:\nÚltima actualización, publicada el 27/05/2006, en vigor a partir del 28/05/2006.\nTexto original, publicado el 27/03/1984, en vigor a partir del 16/04/1984.\nSubir"
+        },
+        {
+          "heading": "Artículo sexto. Amparo ante el Tribunal Constitucional.",
+          "anchor": "asexto",
+          "text": "[Bloque 7: #asexto]\nArtículo sexto. Amparo ante el Tribunal Constitucional.\n1. Contra la decisión de la Mesa del Congreso de no admitir la proposición de Ley, la Comisión Promotora podrá interponer ante el Tribunal Constitucional recurso de amparo, que se tramitará de conformidad con lo previsto en el Título III de la Ley Orgánica 2/1979, de 3 de octubre, del Tribunal Constitucional.\n2. Si el Tribunal decidiera que la proposición no incurre en alguna de las causas de inadmisión previstas en el apartado 2 del articulo 5.º, el procedimiento seguirá su curso.\n3. Si el Tribunal decidiera que la irregularidad afecta a determinados preceptos de la proposición, la Mesa del Congreso lo comunicará a los promotores, a fin de que éstos manifiesten si desean retirar la iniciativa o mantenerla una vez que hayan efectuado las modificaciones correspondientes.\nSubir"
+        },
+        {
+          "heading": "Artículo séptimo. Iniciación del procedimiento de recogida de firmas y plazo para la misma.",
+          "anchor": "aseptimo",
+          "text": "[Bloque 8: #aseptimo]\nArtículo séptimo. Iniciación del procedimiento de recogida de firmas y plazo para la misma.\n1. Admitida la proposición, la Mesa del Congreso lo comunicará a la Junta Electoral Central, que garantizará la regularidad del procedimiento de recogida de firmas.\n2. La Junta Electoral Central notificará a la Comisión Promotora la admisión de la proposición, al objeto de que proceda a la recogida de las firmas requeridas.\n3. El procedimiento de recogida de firmas deberá finalizar con la entrega a la Junta Electoral Central de las firmas recogidas, en el plazo de nueve meses a contar desde la notificación a que se refiere el apartado anterior. Este plazo podrá ser prorrogado por tres meses cuando concurra una causa mayor apreciada por la Mesa del Congreso. Agotado el plazo sin que se haya hecho entrega de las firmas recogidas, caducará la iniciativa.\n4. Las firmas se podrán recoger también como firma electrónica conforme a lo que establezca la legislación correspondiente.\nSe modifica el apartado 3 y se añade el 4 por el art. único.4 y .5 de la Ley 4/2006, de 26 de mayo. Ref. BOE-A-2006-9290\nSeleccionar redacción:\nÚltima actualización, publicada el 27/05/2006, en vigor a partir del 28/05/2006.\nTexto original, publicado el 27/03/1984, en vigor a partir del 16/04/1984.\nSubir"
+        },
+        {
+          "heading": "Artículo undécimo. Remisión de los pliegos a las Juntas Electorales Provinciales y papel auxiliar de las mismas.",
+          "anchor": "aundecimo",
+          "text": "[Bloque 12: #aundecimo]\nArtículo undécimo. Remisión de los pliegos a las Juntas Electorales Provinciales y papel auxiliar de las mismas.\n1. Los pliegos que contengan las firmas recogidas serán enviados a la Junta Electoral Central, quien los remitirá a la Oficina del Censo Electoral para que acredite la inscripción de los firmantes en el Censo Electoral como mayores de edad, y lleve a cabo la comprobación y el recuento inicial de dichas firmas. La Oficina del Censo Electoral, en el plazo de quince días, remitirá a la Junta Electoral Central certificación de todo ello.\n2. La Comisión Promotora podrá recabar en cualquier momento de la Junta Electoral Central la información que estime pertinente respecto del número de firmas recogidas.\nSe modifica por el art. único.7 de la Ley Orgánica 4/2006, de 26 de mayo. Ref. BOE-A-2006-9290\nSeleccionar redacción:\nÚltima actualización, publicada el 27/05/2006, en vigor a partir del 28/05/2006.\nTexto original, publicado el 27/03/1984, en vigor a partir del 16/04/1984.\nSubir"
+        },
+        {
+          "heading": "Artículo duodécimo. Presentación, comprobación y recuento de las firmas.",
+          "anchor": "aduodecimo",
+          "text": "[Bloque 13: #aduodecimo]\nArtículo duodécimo. Presentación, comprobación y recuento de las firmas.\n1. Una vez remitidos los pliegos a la Junta Electoral Central, ésta procederá a su comprobación y recuento definitivos.\n2. Las firmas que no reúnan los requisitos exigidos en esta Ley se declararán inválidas y no serán computadas.\n3. Comprobado el cumplimiento de los requisitos exigidos para la válida presentación de la proposición, la Junta EIectoral Central elevará al Congreso de los Diputados certificación acreditativa del número de firmas válidas y procederá a destruir los pliegos de firmas que obren en su poder.\nSubir"
+        },
+        {
+          "heading": "Artículo decimotercero. Tramitación parlamentaria.",
+          "anchor": "adecimotercero",
+          "text": "[Bloque 14: #adecimotercero]\nArtículo decimotercero. Tramitación parlamentaria.\n1. Recibida la notificación que acredite haberse reunido el número de firmas exigido, la Mesa ordenará la publicación de la Proposición, que deberá ser incluida en el orden del día del Pleno en el plazo máximo de seis meses para su toma en consideración.\n2. La tramitación parlamentaria se efectuará conforme a lo que dispongan los Reglamentos de las Cámaras. En todo caso, la persona designada por la Comisión Promotora será llamada a comparecer en la Comisión del Congreso de los Diputados competente por razón de la materia, con carácter previo al debate de toma en consideración por el Pleno, para que exponga los motivos que justifican la presentación de la iniciativa legislativa popular.\nSe modifica por la disposición final 3 de la Ley Orgánica 3/2015, de 30 de marzo. Ref. BOE-A-2015-3441.\nSe modifica por el art. único.8 de la Ley Orgánica 4/2006, de 26 de mayo. Ref. BOE-A-2006-9290\nSeleccionar redacción:\nÚltima actualización, publicada el 31/03/2015, en vigor a partir del 01/04/2015.\nModificación publicada el 27/05/2006, en vigor a partir del 28/05/2006.\nTexto original, publicado el 27/03/1984, en vigor a partir del 16/04/1984.\nSubir"
+        },
+        {
+          "heading": "Artículo decimocuarto. No caducidad de las proposiciones en caso de disolución de las Cámaras.",
+          "anchor": "adecimocuarto",
+          "text": "[Bloque 15: #adecimocuarto]\nArtículo decimocuarto. No caducidad de las proposiciones en caso de disolución de las Cámaras.\nLa iniciativa legislativa popular que estuviera en tramitación en una de las Cámaras, al disolverse ésta no decaerá, pero podrá retrotraterse al trámite que decida la Mesa de la Cámara, sin que sea preciso en ningún caso presentar nueva certificación acreditativa de haberse reunido el mínimo de firmas exigidas.\nSubir"
+        },
+        {
+          "heading": "Artículo octavo. Pliegos para la recogida de firmas.",
+          "anchor": "aoctavo",
+          "text": "[Bloque 9: #aoctavo]\nArtículo octavo. Pliegos para la recogida de firmas.\n1. Recibida la notificación de admisión de la proposición, la Comisión Promotora presentará ante la Junta Electoral Central, en papel de oficio, los pliegos necesarios para la recogida de firmas. Estos pliegos reproducirán el texto íntegro de la proposición.\nLos pliegos deberán estar escritos en castellano. Para la recogida de firmas en el territorio de una Comunidad Autónoma con otra lengua cooficial podrá utilizarse, conjuntamente, esta otra lengua.\n2. Si el texto de la proposición superase en extensión las tres caras de cada pliego, se acompañará en pliegos aparte, que se unirán al destinado a recoger las firmas, de modo que no puedan ser separados, sellándose y numerándose, de acuerdo con lo dispuesto en el apartado siguiente.\n3. Recibidos los pliegos por la Junta Electoral Central, ésta, dentro de las cuarenta y ocho horas siguientes, los sellará, numerará y devolverá a la Comisión Promotora.\nSe añade el párrafo segundo al apartado 1 por el art. único.6 de la Ley Orgánica 4/2006, de 26 de mayo. Ref. BOE-A-2006-9290\nSeleccionar redacción:\nÚltima actualización, publicada el 27/05/2006, en vigor a partir del 28/05/2006.\nTexto original, publicado el 27/03/1984, en vigor a partir del 16/04/1984.\nSubir"
+        }
+      ]
+    }
+  ]
+}

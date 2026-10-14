@@ -1,0 +1,63 @@
+{
+  "id": "002",
+  "title": "Правительственный проект",
+  "checked_date": "14.10.2026",
+  "claims": [
+    {
+      "text": "Правительственный проект, предложение Сената, Конгресса или автономии и ILP приходят сюда по разным правилам. Предварительная проверка ILP в Mesa Конгресса происходит ещё до сбора подписей.",
+      "locator": ""
+    },
+    {
+      "text": "Правительство вносит proyecto de ley, одобренный Советом министров.",
+      "locator": ""
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "Consejo de Ministros одобряет proyecto de ley и направляет его в Конгресс с объяснением мотивов и необходимыми материалами.",
+      "locator": "CE 88"
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "Consejo de Ministros одобряет proyecto de ley и направляет его в Конгресс с объяснением мотивов и необходимыми материалами.",
+      "locator": "CE 88"
+    },
+    {
+      "text": "Текст закона, который вносит Правительство после одобрения Советом министров. Его направляют в Конгресс с объяснением мотивов и материалами. Это ещё проект: принятие парламентом предстоит.",
+      "locator": "CE 88"
+    },
+    {
+      "text": "Коллегиальный орган Правительства. В законодательном пути он одобряет правительственный законопроект и его направление в парламент.",
+      "locator": "Ley 50/1997, статья 5.1.a; CE 88"
+    },
+    {
+      "text": "Сопровождающее проект или предложение объяснение того, зачем предлагается этот закон. Конституция требует его для правительственного проекта; Регламент Конгресса — также для законодательного предложения.",
+      "locator": "CE 88; RCD 124"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Constitución Española",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "retrieved_at_utc": "2026-10-14T13:54:29.642281+00:00",
+      "sha256": "4fcb22f5b32889b0828ae67e83483df7b1c6a0cd364447527882379e3978eb35",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/constitution/official.html",
+      "key": "constitution",
+      "version": "Última actualización, publicada el 20/05/2026",
+      "articles": [
+        {
+          "heading": "Artículo 88",
+          "anchor": "a88",
+          "text": "[Bloque 102: #a88]\nJurisprudencia\nArtículo 88\nLos proyectos de ley serán aprobados en Consejo de Ministros, que los someterá al Congreso, acompañados de una exposición de motivos y de los antecedentes necesarios para pronunciarse sobre ellos.\nSubir"
+        }
+      ]
+    }
+  ]
+}

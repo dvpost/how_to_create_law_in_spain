@@ -1,0 +1,80 @@
+{
+  "id": "001",
+  "title": "Кто обладает законодательной инициативой",
+  "checked_date": "14.10.2026",
+  "claims": [
+    {
+      "text": "Правительство, палаты, собрания автономий, граждане по правилам ILP.",
+      "locator": ""
+    },
+    {
+      "text": "Правительственный проект, предложение Сената, Конгресса или автономии и ILP приходят сюда по разным правилам. Предварительная проверка ILP в Mesa Конгресса происходит ещё до сбора подписей.",
+      "locator": ""
+    },
+    {
+      "text": "Собрание выбирает один из двух способов по статье 87.2 Конституции.",
+      "locator": ""
+    },
+    {
+      "text": "Для защиты предложения перед Конгрессом собрание делегирует максимум трёх своих членов.",
+      "locator": "CE 87.2"
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "Собрание может попросить Правительство принять proyecto de ley или направить собственную proposición de ley в Mesa Конгресса.",
+      "locator": "CE 87.2"
+    },
+    {
+      "text": "",
+      "locator": ""
+    },
+    {
+      "text": "Собрание может попросить Правительство принять proyecto de ley или направить собственную proposición de ley в Mesa Конгресса.",
+      "locator": "CE 87.2"
+    },
+    {
+      "text": "Форма законодательной инициативы, которую могут использовать парламентские заявители, собрание автономии или граждане через ILP. Для каждого источника установлены собственные требования к внесению и началу рассмотрения.",
+      "locator": "CE 87, 89; RCD 124–127; RS 108; LO 3/1984, статья 3"
+    },
+    {
+      "text": "Полномочие короля осуществлять помилование в соответствии с законом; общие помилования законом разрешены быть не могут. Народная законодательная инициатива по этому предмету исключена Конституцией.",
+      "locator": "CE 62.i, 87.3"
+    },
+    {
+      "text": "Вторая палата парламента Испании. Конституция называет её палатой территориального представительства. Сенат может быть источником предложения закона и отдельно рассматривает текст, уже одобренный Конгрессом.",
+      "locator": "CE 66.1, 69.1, 87.1, 90"
+    },
+    {
+      "text": "Территориальная автономия Испании имеет собственный статут — базовую норму об её устройстве и полномочиях. Её собрание может попросить Правительство принять законопроект либо направить собственное предложение в Конгресс.",
+      "locator": "CE 147.1–2, 87.2"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Constitución Española",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "retrieved_at_utc": "2026-10-14T13:54:29.642281+00:00",
+      "sha256": "4fcb22f5b32889b0828ae67e83483df7b1c6a0cd364447527882379e3978eb35",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/constitution/official.html",
+      "key": "constitution",
+      "version": "Última actualización, publicada el 20/05/2026",
+      "articles": [
+        {
+          "heading": "Artículo 87",
+          "anchor": "a87",
+          "text": "[Bloque 101: #a87]\nArtículo 87\n1. La iniciativa legislativa corresponde al Gobierno, al Congreso y al Senado, de acuerdo con la Constitución y los Reglamentos de las Cámaras.\n2. Las Asambleas de las Comunidades Autónomas podrán solicitar del Gobierno la adopción de un proyecto de ley o remitir a la Mesa del Congreso una proposición de ley, delegando ante dicha Cámara un máximo de tres miembros de la Asamblea encargados de su defensa.\n3. Una ley orgánica regulará las formas de ejercicio y requisitos de la iniciativa popular para la presentación de proposiciones de ley. En todo caso se exigirán no menos de 500.000 firmas acreditadas. No procederá dicha iniciativa en materias propias de ley orgánica, tributarias o de carácter internacional, ni en lo relativo a la prerrogativa de gracia.\nSubir"
+        },
+        {
+          "heading": "Artículo 89",
+          "anchor": "a89",
+          "text": "[Bloque 103: #a89]\nArtículo 89\n1. La tramitación de las proposiciones de ley se regulará por los Reglamentos de las Cámaras, sin que la prioridad debida a los proyectos de ley impida el ejercicio de la iniciativa legislativa en los términos regulados por el artículo 87.\n2. Las proposiciones de ley que, de acuerdo con el artículo 87, tome en consideración el Senado, se remitirán al Congreso para su trámite en éste como tal proposición.\nSubir"
+        }
+      ]
+    }
+  ]
+}

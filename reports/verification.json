@@ -1,0 +1,55 @@
+{
+  "version": "v14",
+  "checked_date": "2026-10-14",
+  "structure": "participants-procedures-v7",
+  "layout_engine": "elkjs 0.12.0",
+  "browser_suites": {
+    "graph": "PASS",
+    "glossary": "PASS",
+    "interface": "PASS",
+    "layout": "PASS"
+  },
+  "geometry": {
+    "scenarios": 17,
+    "largest_graph_nodes": 58,
+    "node_overlaps": 0,
+    "edge_node_hits": 0,
+    "senate_crossing_pairs": 1,
+    "details": "reports/layout-checks.json"
+  },
+  "regression_evidence": "The Senate reproduction failed on the original renderer with eight non-return edge/node collisions; the same rendered-geometry assertion passes with ELK.",
+  "checks": [
+    "Every disclosure and all/ordinary/organic modes",
+    "Main-stage order and Senate return placement",
+    "ILP signers beside their signature stage",
+    "Dragging preserves attached arrow endpoints; align recalculates routes",
+    "Latest asynchronous request wins",
+    "Engine failure is visible and clears the map without another engine or retry",
+    "Reading cards and terms preserves graph and viewport",
+    "Fullscreen enter/exit, mobile bounds, no page scroll",
+    "No HTTP requests during page use"
+  ],
+  "local_html_links": 121,
+  "original_source_hashes": 14,
+  "proof_archive_hashes": 36,
+  "proof_folders": 20,
+  "glossary_terms": 60,
+  "proof_references": "PASS",
+  "current_screenshots": [
+    "reports/map.png",
+    "reports/map-mobile.png",
+    "reports/senate.png",
+    "reports/expanded.png"
+  ],
+  "cleanup": [
+    "Dagre dependency and layout integration removed",
+    "Post-layout node offsets and saved manual positions removed",
+    "Redundant route-fit button and handler removed",
+    "Research prototype, historical screenshots and numbered ZIP copies removed"
+  ],
+  "limits": [
+    "Edge crossings are minimized heuristically, not guaranteed absent for every possible graph",
+    "Arbitrary manual movement can create crossings until the next layout"
+  ],
+  "browser_refresh": "Automation of the open file:// tab was blocked by browser URL policy; manual reload is required"
+}

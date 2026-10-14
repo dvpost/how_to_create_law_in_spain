@@ -1,0 +1,87 @@
+{
+  "id": "011",
+  "title": "Король: санкция, промульгация, контрасигнатура",
+  "checked_date": "14.10.2026",
+  "claims": [
+    {
+      "text": "Санкция в течение 15 дней; распоряжение о немедленной публикации.",
+      "locator": ""
+    },
+    {
+      "text": "Король санкционирует законы, одобренные Cortes Generales, в течение 15 дней, промульгирует их и распоряжается об их немедленной публикации.",
+      "locator": "CE 91"
+    },
+    {
+      "text": "Официальный комментарий Конгресса к статье 91 характеризует это как обязательное действие: у главы государства нет свободы решения об отказе. Вето короля здесь не предусмотрено.",
+      "locator": "комментарий Congreso, обновление 2026; это комментарий, не текст нормы"
+    },
+    {
+      "text": "Акты короля контрасигнует председатель Правительства и, в соответствующих случаях, компетентные министры; ответственность несут контрасигнующие лица.",
+      "locator": "CE 64.1–2"
+    },
+    {
+      "text": "Здесь «санкция» означает предусмотренное Конституцией одобрение королём уже принятого парламентом закона. Король должен выполнить этот акт в течение 15 дней. Официальный комментарий Конгресса объясняет, что отказ не предоставлен на его усмотрение.",
+      "locator": "CE 91; официальный комментарий Конгресса к статье 91 — пояснение, не норма"
+    },
+    {
+      "text": "Формальный акт короля после принятия закона парламентом. В описанной Конгрессом практике формула объявляет принятие закона и предписывает его соблюдать; санкция, промульгация и распоряжение о публикации оформляются подписью одного документа. Само опубликование текста — следующий отдельный шаг.",
+      "locator": "CE 91; официальный комментарий Конгресса, раздел Desarrollo legislativo y jurisprudencial — пояснение, не норма"
+    },
+    {
+      "text": "Акты короля заверяются председателем Правительства и, когда это требуется, компетентными министрами. Ответственность за акт несёт тот, кто его заверил. Для предусмотренных Конституцией отдельных действий заверение выполняет председатель Конгресса.",
+      "locator": "CE 64"
+    },
+    {
+      "text": "Сокращение названия Конституции Испании в ссылках на статьи. Например, CE 91 означает статью 91 Конституции о действиях короля после одобрения закона парламентом.",
+      "locator": "Constitución Española, статья 91"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Constitución Española",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "retrieved_at_utc": "2026-10-14T13:54:29.642281+00:00",
+      "sha256": "4fcb22f5b32889b0828ae67e83483df7b1c6a0cd364447527882379e3978eb35",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/constitution/official.html",
+      "key": "constitution",
+      "version": "Última actualización, publicada el 20/05/2026",
+      "articles": [
+        {
+          "heading": "Artículo 64",
+          "anchor": "a64",
+          "text": "[Bloque 75: #a64]\nArtículo 64\n1. Los actos del Rey serán refrendados por el Presidente del Gobierno y, en su caso, por los Ministros competentes. La propuesta y el nombramiento del Presidente del Gobierno, y la disolución prevista en el artículo 99, serán refrendados por el Presidente del Congreso.\n2. De los actos del Rey serán responsables las personas que los refrenden.\nSubir"
+        },
+        {
+          "heading": "Artículo 91",
+          "anchor": "a91",
+          "text": "[Bloque 105: #a91]\nArtículo 91\nEl Rey sancionará en el plazo de quince días las leyes aprobadas por las Cortes Generales, y las promulgará y ordenará su inmediata publicación.\nSubir"
+        }
+      ]
+    },
+    {
+      "title": "Congreso · comentario oficial del artículo 91",
+      "url": "https://constitucion.congreso.es/imprimir-articulo?numero=91",
+      "resolved_url": "https://constitucion.congreso.es/imprimir-articulo?numero=91",
+      "retrieved_at_utc": "2026-10-14T13:54:29.716111+00:00",
+      "sha256": "3b27a043384836141f703a3163b833a88ab68ce3c1cb78215f13127e15d67ee7",
+      "content_type": "text/html;charset=UTF-8",
+      "file": "sources/royal-comment/official.html",
+      "key": "royal-comment",
+      "version": "Официальный комментарий · обновление Enrique García Ortea, 2026 · не норма",
+      "articles": [
+        {
+          "heading": "Комментарий к статье 91 · короткая выдержка",
+          "anchor": "",
+          "text": "No existe margen para que el Jefe del Estado decida nada"
+        },
+        {
+          "heading": "Оформление санкции и промульгации · короткие выдержки комментария",
+          "anchor": "",
+          "text": "[…] firma por el monarca […]\n[…] que guarden y hagan guardar esta Ley […]"
+        }
+      ]
+    }
+  ]
+}

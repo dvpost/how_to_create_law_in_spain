@@ -1,0 +1,94 @@
+{
+  "id": "019",
+  "title": "Местные образования: виды и муниципальные вопросы",
+  "checked_date": "14.10.2026",
+  "claims": [
+    {
+      "text": "Местные территориальные образования — муниципалитеты, провинции и острова Балеарского и Канарского архипелагов. Закон также предусматривает другие виды местных образований, например объединения муниципалитетов.",
+      "locator": "Ley 7/1985, статья 3"
+    },
+    {
+      "text": "Пример различия уровней: провинция Валенсия — местное территориальное образование. Валенсийское сообщество — автономное сообщество, включающее муниципалитеты провинций Аликанте, Кастельон и Валенсия.",
+      "locator": "Ley 7/1985, статья 3.1.b; статут Валенсийского сообщества, статьи 1–2"
+    },
+    {
+      "text": "Территории и организации местного управления. К местным территориальным образованиям закон относит муниципалитеты, провинции и острова Балеарского и Канарского архипелагов. Муниципалитет имеет территорию, население и собственную организацию управления; провинция объединяет муниципалитеты. Есть также другие формы, например объединения муниципалитетов. Автономные сообщества — отдельный уровень территориального устройства.",
+      "locator": "Ley 7/1985, статьи 3, 11.2, 31.1; CE 137"
+    },
+    {
+      "text": "Провинция Валенсия — местное территориальное образование. Валенсийское сообщество — автономное сообщество: его территория включает муниципалитеты провинций Аликанте, Кастельон и Валенсия.",
+      "locator": "Ley 7/1985, статья 3.1.b; статут Валенсийского сообщества, статьи 1–2"
+    },
+    {
+      "text": "Комиссия Сената, работающая с вопросами местных образований: муниципалитетов, провинций и других предусмотренных законом форм местного управления. Она изучает местные вопросы и даёт заключения по инициативам, затрагивающим местные полномочия, финансирование и другие местные дела. Имеет собственное право законодательной инициативы с рассмотрением предложения по статье 108 Регламента Сената.",
+      "locator": "RS 56 quater 2.a–b, g; Ley 7/1985, статья 3"
+    },
+    {
+      "text": "Примеры муниципальных вопросов: уличное освещение, сбор отходов и подача питьевой воды в дома. Закон относит эти услуги к обязательным для всех муниципалитетов. Комиссия Сената рассматривает инициативы, влияющие на местные полномочия и финансирование.",
+      "locator": "Ley 7/1985, статья 26.1.a; RS 56 quater 2.b"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ley 7/1985 · Bases del Régimen Local",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392",
+      "retrieved_at_utc": "2026-10-14T19:40:24.529032+00:00",
+      "sha256": "18c6892e75af210339c4b84b3c58907b70ba3f2a413b4874660a221aaabf24d5",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/local-regime/official.html",
+      "key": "local-regime",
+      "version": "Última actualización, publicada el 03/10/2026",
+      "articles": [
+        {
+          "heading": "Artículo 1.",
+          "anchor": "a1",
+          "text": "[Bloque 4: #a1]\nArtículo 1.\n1. Los Municipios son entidades básicas de la organización territorial del Estado y cauces inmediatos de participación ciudadana en los asuntos públicos, que institucionalizan y gestionan con autonomía los intereses propios de las correspondientes colectividades.\n2. La Provincia y, en su caso, la Isla gozan, asimismo, de idéntica autonomía para la gestión de los intereses respectivos.\nSubir"
+        },
+        {
+          "heading": "Artículo 3.",
+          "anchor": "a3",
+          "text": "[Bloque 6: #a3]\nArtículo 3.\n1. Son Entidades Locales territoriales:\na) El Municipio.\nb) La Provincia.\nc) La Isla en los archipiélagos balear y canario.\n2. Gozan, asimismo, de la condición de Entidades Locales:\na) Las Comarcas u otras entidades que agrupen varios Municipios, instituidas por las Comunidades Autónomas de conformidad con esta Ley y los correspondientes Estatutos de Autonomía.\nb) Las Áreas Metropolitanas.\nc) Las Mancomunidades de Municipios.\nSe modifica el apartado 2 por el art. 1.2 de la Ley 27/2013, de 27 de diciembre. Ref. BOE-A-2013-13756.\nTéngase en cuenta lo previsto en las disposiciones transitorias 4 y 5 de la citada Ley, sobre disolución de entidades de ámbito territorial inferior al Municipio y las que estén en constitución.\nSeleccionar redacción:\nÚltima actualización, publicada el 30/12/2013, en vigor a partir del 31/12/2013.\nTexto original, publicado el 03/04/1985, en vigor a partir del 23/04/1985.\nSubir"
+        },
+        {
+          "heading": "Artículo 11.",
+          "anchor": "a11",
+          "text": "[Bloque 15: #a11]\nJurisprudencia\nArtículo 11.\n1. El Municipio es la entidad local básica de la organización territorial del Estado. Tiene personalidad jurídica y plena capacidad para el cumplimiento de sus fines.\n2. Son elementos del Municipio el territorio, la población y la organización.\nSubir"
+        },
+        {
+          "heading": "Artículo 19.",
+          "anchor": "a19",
+          "text": "[Bloque 25: #a19]\nArtículo 19.\n1. El Gobierno y la administración municipal, salvo en aquellos municipios que legalmente funcionen en régimen de Concejo Abierto, corresponde al ayuntamiento, integrado por el Alcalde y los Concejales.\n2. Los Concejales son elegidos mediante sufragio universal, igual, libre, directo y secreto, y el Alcalde es elegido por los Concejales o por los vecinos; todo ello en los términos que establezca la legislación electoral general.\n3. El régimen de organización de los municipios señalados en el título X de esta ley se ajustará a lo dispuesto en el mismo. En lo no previsto por dicho título, será de aplicación el régimen común regulado en los artículos siguientes.\nSe modifica por el art. 1.1 de la Ley 57/2003, de 16 de diciembre. Ref. BOE-A-2003-23103\nSeleccionar redacción:\nÚltima actualización, publicada el 17/12/2003, en vigor a partir del 01/01/2004.\nTexto original, publicado el 03/04/1985, en vigor a partir del 23/04/1985.\nSubir"
+        },
+        {
+          "heading": "Artículo 26.",
+          "anchor": "a26",
+          "text": "[Bloque 34: #a26]\nJurisprudencia\nArtículo 26.\n1. Los Municipios deberán prestar, en todo caso, los servicios siguientes:\na) En todos los Municipios: alumbrado público, cementerio, recogida de residuos, limpieza viaria, abastecimiento domiciliario de agua potable, alcantarillado, acceso a los núcleos de población y pavimentación de las vías públicas.\nb) En los Municipios con población superior a 5.000 habitantes, además: parque público, biblioteca pública y tratamiento de residuos.\nc) En los Municipios con población superior a 20.000 habitantes, además: protección civil, evaluación e información de situaciones de necesidad social y la atención inmediata a personas en situación o riesgo de exclusión social, prevención y extinción de incendios e instalaciones deportivas de uso público.\nd) En los Municipios con población superior a 50.000 habitantes, además: transporte colectivo urbano de viajeros y medio ambiente urbano.\n2. En los municipios con población inferior a 20.000 habitantes será la Diputación provincial o entidad equivalente la que coordinará la prestación de los siguientes servicios:\na) Recogida y tratamiento de residuos.\nb) Abastecimiento de agua potable a domicilio y evacuación y tratamiento de aguas residuales.\nc) Limpieza viaria.\nd) Acceso a los núcleos de población.\ne) Pavimentación de vías urbanas.\nf) Alumbrado público.\nPara coordinar la citada prestación de servicios la Diputación propondrá, con la conformidad de los municipios afectados, al Ministerio de Hacienda y Administraciones Públicas la forma de prestación, consistente en la prestación directa por la Diputación o la implantación de fórmulas de gestión compartida a través de consorcios, mancomunidades u otras fórmulas. Para reducir los costes efectivos de los servicios el mencionado Ministerio decidirá sobre la propuesta formulada que deberá contar con el informe preceptivo de la Comunidad Autónoma si es la Administración que ejerce la tutela financiera.\nCuando el municipio justifique ante la Diputación que puede prestar estos servicios con un coste efectivo menor que el derivado de la forma de gestión propuesta por la Diputación provincial o entidad equivalente, el municipio podrá asumir la prestación y coordinación de estos servicios si la Diputación lo considera acreditado.\nCuando la Diputación o entidad equivalente asuma la prestación de estos servicios repercutirá a los municipios el coste efectivo del servicio en función de su uso. Si estos servicios estuvieran financiados por tasas y asume su prestación la Diputación o entidad equivalente, será a ésta a quien vaya destinada la tasa para la financiación de los servicios.\n3. La asistencia de las Diputaciones o entidades equivalentes a los Municipios, prevista en el artículo 36, se dirigirá preferentemente al establecimiento y adecuada prestación de los servicios mínimos.\nSe declaran inconstitucionales y nulos los incisos destacados del apartado 2, en la redacción dada por el art. 1.9 de la Ley 27/2013, de 27 de diciembre. Ref. BOE-A-2013-13756., por Sentencia del TC 111/2016, de 9 de junio. Ref. BOE-A-2016-6839.\nSe modifica por el art. 1.9 de la Ley 27/2013, de 27 de diciembre. Ref. BOE-A-2013-13756.\nSe modifica el apartado 1.c) por el art. 24 del Real Decreto-Ley 7/1996, de 7 de junio. Ref. BOE-A-1996-13002\nSe añade el apartado 4 por el art. 1 de la Ley 10/1993, de 21 de abril. Ref. BOE-A-1993-10455\nSeleccionar redacción:\nÚltima actualización, publicada el 15/07/2016, en vigor a partir del 15/07/2016.\nModificación publicada el 30/12/2013, en vigor a partir del 31/12/2013.\nModificación publicada el 08/06/1996, en vigor a partir del 09/06/1996.\nModificación publicada el 22/04/1993, en vigor a partir del 23/04/1993.\nTexto original, publicado el 03/04/1985, en vigor a partir del 23/04/1985.\nSubir"
+        },
+        {
+          "heading": "Artículo 31.",
+          "anchor": "a31",
+          "text": "[Bloque 41: #a31]\nArtículo 31.\n1. La Provincia es una entidad local determinada por la agrupación de Municipios, con personalidad jurídica propia y plena capacidad para el cumplimiento de sus fines.\n2. Son fines propios y específicos de la Provincia garantizar los principios de solidaridad y equilibrio intermunicipales, en el marco de la política económica y social, y, en particular:\na) Asegurar la prestación integral y adecuada en la totalidad del territorio provincial de los servicios de competencia municipal.\nb) Participar en la coordinación de la Administración local con la de la Comunidad Autónoma y la del Estado.\n3. El gobierno y la administración autónoma de la Provincia corresponden a la Diputación u otras Corporaciones de carácter representativo.\nSubir"
+        }
+      ]
+    },
+    {
+      "title": "Constitución Española",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "retrieved_at_utc": "2026-10-14T13:54:29.642281+00:00",
+      "sha256": "4fcb22f5b32889b0828ae67e83483df7b1c6a0cd364447527882379e3978eb35",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/constitution/official.html",
+      "key": "constitution",
+      "version": "Última actualización, publicada el 20/05/2026",
+      "articles": [
+        {
+          "heading": "Artículo 137",
+          "anchor": "a137",
+          "text": "[Bloque 158: #a137]\nJurisprudencia\nArtículo 137\nEl Estado se organiza territorialmente en municipios, en provincias y en las Comunidades Autónomas que se constituyan. Todas estas entidades gozan de autonomía para la gestión de sus respectivos intereses.\nSubir"
+        }
+      ]
+    }
+  ]
+}

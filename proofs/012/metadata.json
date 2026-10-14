@@ -1,0 +1,44 @@
+{
+  "id": "012",
+  "title": "Официальная публикация в BOE",
+  "checked_date": "14.10.2026",
+  "claims": [
+    {
+      "text": "Официальная публикация в BOE; действие — в установленный законом срок.",
+      "locator": ""
+    },
+    {
+      "text": "Общие нормативные акты органов государства публикуются в BOE. Опубликованный текст закона имеет официальный и аутентичный характер.",
+      "locator": "RD 181/2008, ст. 6.1.a, 3.1"
+    },
+    {
+      "text": "Официальное издание государства Испания, в котором публикуют законы и другие акты, подлежащие обязательному опубликованию. На сайте BOE есть и отдельная база поиска документов. В этой карте BOE означает официальную публикацию закона.",
+      "locator": "RD 181/2008, статьи 1, 3, 17"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Real Decreto 181/2008 · BOE",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-2389",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-2389",
+      "retrieved_at_utc": "2026-10-14T13:54:29.601923+00:00",
+      "sha256": "fa3135cc0650d1b36e18486c9a766a2b3747b07e4745f450251c636d507d0372",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/publication/official.html",
+      "key": "publication",
+      "version": "Última actualización, publicada el 24/09/2022",
+      "articles": [
+        {
+          "heading": "Artículo 3. Carácter oficial y auténtico.",
+          "anchor": "a3",
+          "text": "[Bloque 5: #a3]\nArtículo 3. Carácter oficial y auténtico.\n1. El texto de las leyes, disposiciones y actos publicados en el «Boletín Oficial del Estado» tendrá la consideración de oficial y auténtico, con arreglo a las normas y condiciones que se establecen en este real decreto.\n2. El texto de las normas emanadas de las comunidades autónomas que se publiquen en el «Boletín Oficial del Estado» tendrá el carácter que le atribuyan los respectivos Estatutos.\nSubir"
+        },
+        {
+          "heading": "Artículo 6. Contenido.",
+          "anchor": "a6",
+          "text": "[Bloque 9: #a6]\nArtículo 6. Contenido.\n1. En el «Boletín Oficial del Estado» se publicarán:\na) Las disposiciones generales de los órganos del Estado y los tratados o convenios internacionales.\nb) Las disposiciones generales de las comunidades autónomas, de acuerdo con lo establecido en los Estatutos de Autonomía y en las normas con rango de ley dictadas para el desarrollo de los mismos.\nc) Las resoluciones y actos de los órganos constitucionales del Estado, de acuerdo con lo establecido en sus respectivas leyes orgánicas.\nd) Las disposiciones que no sean de carácter general, las resoluciones y actos de los departamentos ministeriales y de otros órganos del Estado y Administraciones públicas, cuando una ley o un real decreto así lo establezcan.\ne) Las convocatorias, citaciones, requisitorias y anuncios cuando una ley o un real decreto así lo establezcan.\n2. El Consejo de Ministros podrá excepcionalmente acordar la publicación de informes, documentos o comunicaciones oficiales, cuya difusión sea considerada de interés general.\nSubir"
+        }
+      ]
+    }
+  ]
+}
