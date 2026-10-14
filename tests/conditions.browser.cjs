@@ -22,8 +22,10 @@ assert.ok(!link('congress-budget-consent','government-approval'),'Consent does n
 assert.ok(!link('senate-mesa','senate-toma'),'Mesa alone must not bypass the Senate budget gate');
 assert.ok(link('senate-budget-review','senate-ready')&&link('senate-budget-review','senate-budget-blocked'));
 assert.ok(link('senate-ready','senate-toma'));
-assert.ok(link('amend-budget-blocked','amend-organic-effect'),'An amendment veto does not reject the bill');
-assert.ok(link('senate-amend-blocked','senate-review-result'));
+assert.ok(!link('amend-budget-blocked','amend-organic-effect'));
+assert.ok(link('amend-budget-exclude','amend-organic-effect'),'Only the remaining bill continues after an amendment is excluded');
+assert.ok(!link('senate-amend-blocked','senate-review-result'));
+assert.ok(link('senate-amend-exclude','senate-review-result'));
 assert.ok(link('ilp-refused','ilp-appeal')&&link('ilp-blocked','ilp-appeal'));
 assert.ok(link('ilp-appeal','ilp-court-result')&&link('ilp-court-result','ilp-court-continue'));
 assert.ok(link('ilp-extension','ilp-delivery')&&link('ilp-timely','ilp-expired'));

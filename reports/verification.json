@@ -1,24 +1,25 @@
 {
-  "version": "v18",
-  "checked_date": "14.10.2026",
-  "structure": "participants-procedures-v9",
+  "version": "v19",
+  "checked_date": "2026-10-15",
+  "structure": "participants-procedures-v10",
   "browser_suites": {
     "graph": "PASS",
     "glossary": "PASS",
     "interface": "PASS",
     "layout": "PASS",
     "interactions": "PASS",
-    "conditions": "PASS"
+    "conditions": "PASS",
+    "terminals": "PASS"
   },
   "geometry": {
-    "scenarios": 21,
-    "largest_graph_nodes": 109,
+    "scenarios": 22,
+    "largest_graph_nodes": 130,
     "node_overlaps": 0,
     "edge_node_hits": 0,
     "senate_crossing_pairs": 2,
     "details": "reports/layout-checks.json"
   },
-  "regression_evidence": "conditions.browser.cjs first failed because congress-budget-effect did not exist. Extended ILP branches then exposed coincident fixed group ports and a nonorthogonal route in ordinary mode; distinct member-side ports resolve that case. Both regressions pass.",
+  "regression_evidence": "terminals.browser.cjs failed before the changes because amend-budget-blocked did not name the ending object. It now verifies no outgoing connections from amendment/text terminals, separate bill continuation, veto rejection, ordinary/organic thresholds and original-text restoration.",
   "checks": [
     "Conditional routes are explicit data entities with ref/loc; no automatic fact-to-node conversion",
     "Direct autonomy submission reaches Congress before the shared budget gate",
@@ -30,8 +31,12 @@
     "Stable source order, fixed disclosure anchor, animation and reduced motion",
     "Every expansion/mode, orthogonal dragfree rerouting, latest request and visible engine failure",
     "Bulk expand/collapse and exact initial restoration",
-    "Card and term reading without reflow; no duplicate identical paragraph",
-    "Independent toggles, fullscreen API, mobile bounds and offline operation"
+    "Independent toggles, fullscreen API, mobile bounds and offline operation",
+    "Thirteen typed terminal nodes have no outgoing connections",
+    "Rejected amendment and remaining bill have separate paths",
+    "First veto vote, repeat after two months and failed-vote whole-text rejection",
+    "Ordinary and organic amendment decisions, no accepted amendments, and original-text restoration",
+    "Single-reading negative result ends the whole text"
   ],
   "local_html_links": 96,
   "original_source_hashes": 14,
@@ -40,13 +45,14 @@
   "glossary_terms": 62,
   "proof_references": "PASS",
   "current_screenshots": [
-    "reports/map.png",
-    "reports/map-mobile.png",
-    "reports/senate.png",
-    "reports/expanded.png",
     "reports/autonomy-collapsed.png",
     "reports/autonomy-expanded.png",
-    "reports/budget-conditions.png"
+    "reports/budget-conditions.png",
+    "reports/expanded.png",
+    "reports/map-mobile.png",
+    "reports/map.png",
+    "reports/senate.png",
+    "reports/terminal-paths.png"
   ],
   "limits": [
     "Crossing minimization is heuristic; zero edge crossings is not guaranteed",
@@ -56,5 +62,6 @@
   "placement": "elkjs 0.12.0",
   "routing": "libavoid-js 0.5.0-beta.5",
   "legal_checks": "reports/legal-conditions.json",
-  "source_archives": "Original source bytes unchanged; existing official articles added to relevant proof readers"
+  "source_archives": "Original source bytes unchanged; existing official articles added to relevant proof readers",
+  "source_archive_check_date": "14.10.2026"
 }

@@ -1,5 +1,5 @@
 window.LAW_GRAPH = {
-  "schema": "participants-procedures-v9",
+  "schema": "participants-procedures-v10",
   "mainPath": [
     "initiative",
     "entry",
@@ -904,7 +904,8 @@ window.LAW_GRAPH = {
         "government-returned",
         "alternative-text",
         "congress-ponencia",
-        "congress-commission"
+        "congress-commission",
+        "single-reading-rejected"
       ],
       "edges": [
         {
@@ -1000,6 +1001,14 @@ window.LAW_GRAPH = {
           "target": "approval",
           "kind": "flow",
           "ref": "007"
+        },
+        {
+          "id": "single-reading>single-reading-rejected",
+          "source": "single-reading",
+          "target": "single-reading-rejected",
+          "kind": "flow",
+          "ref": "008",
+          "label": "Нет"
         }
       ],
       "removeEdges": [
@@ -1173,7 +1182,9 @@ window.LAW_GRAPH = {
         "amend-budget-blocked",
         "amend-organic-effect",
         "amend-organic-mesa",
-        "amend-organic-blocked"
+        "amend-organic-blocked",
+        "amend-budget-exclude",
+        "amend-organic-exclude"
       ],
       "edges": [
         {
@@ -1208,19 +1219,11 @@ window.LAW_GRAPH = {
           "ref": "007"
         },
         {
-          "id": "amend-budget-consent>amend-budget-blocked",
+          "id": "amend-budget-consent>amend-budget-exclude",
           "source": "amend-budget-consent",
-          "target": "amend-budget-blocked",
+          "target": "amend-budget-exclude",
           "kind": "flow",
           "label": "Несогласие",
-          "ref": "007"
-        },
-        {
-          "id": "amend-budget-blocked>amend-organic-effect",
-          "source": "amend-budget-blocked",
-          "target": "amend-organic-effect",
-          "kind": "flow",
-          "label": "Остальные положения без этой поправки",
           "ref": "007"
         },
         {
@@ -1248,20 +1251,44 @@ window.LAW_GRAPH = {
           "ref": "020"
         },
         {
-          "id": "amend-organic-mesa>amend-organic-blocked",
+          "id": "amend-organic-mesa>amend-organic-exclude",
           "source": "amend-organic-mesa",
-          "target": "amend-organic-blocked",
+          "target": "amend-organic-exclude",
           "kind": "flow",
           "label": "Не допущено",
           "ref": "020"
         },
         {
-          "id": "amend-organic-blocked>congress-commission",
-          "source": "amend-organic-blocked",
+          "id": "amend-budget-exclude>amend-budget-blocked",
+          "source": "amend-budget-exclude",
+          "target": "amend-budget-blocked",
+          "kind": "flow",
+          "ref": "007",
+          "label": "Эта поправка: путь окончен"
+        },
+        {
+          "id": "amend-budget-exclude>amend-organic-effect",
+          "source": "amend-budget-exclude",
+          "target": "amend-organic-effect",
+          "kind": "flow",
+          "ref": "007",
+          "label": "Законопроект без этой поправки"
+        },
+        {
+          "id": "amend-organic-exclude>amend-organic-blocked",
+          "source": "amend-organic-exclude",
+          "target": "amend-organic-blocked",
+          "kind": "flow",
+          "ref": "020",
+          "label": "Эта поправка: путь окончен"
+        },
+        {
+          "id": "amend-organic-exclude>congress-commission",
+          "source": "amend-organic-exclude",
           "target": "congress-commission",
           "kind": "flow",
-          "label": "Без этой поправки",
-          "ref": "020"
+          "ref": "020",
+          "label": "Законопроект без этой поправки"
         }
       ],
       "removeEdges": [
@@ -1439,7 +1466,8 @@ window.LAW_GRAPH = {
         "senate-session-change",
         "senate-session-consent",
         "senate-session-mesa",
-        "senate-session-remedy"
+        "senate-session-remedy",
+        "senate-amend-exclude"
       ],
       "edges": [
         {
@@ -1506,19 +1534,11 @@ window.LAW_GRAPH = {
           "ref": "010"
         },
         {
-          "id": "senate-amend-review>senate-amend-blocked",
+          "id": "senate-amend-review>senate-amend-exclude",
           "source": "senate-amend-review",
-          "target": "senate-amend-blocked",
+          "target": "senate-amend-exclude",
           "kind": "flow",
           "label": "Нет",
-          "ref": "010"
-        },
-        {
-          "id": "senate-amend-blocked>senate-review-result",
-          "source": "senate-amend-blocked",
-          "target": "senate-review-result",
-          "kind": "flow",
-          "label": "Решение по остальному тексту",
           "ref": "010"
         },
         {
@@ -1534,7 +1554,7 @@ window.LAW_GRAPH = {
           "source": "senate-review-result",
           "target": "final",
           "kind": "flow",
-          "label": "Нет: процедура завершена",
+          "label": "Нет вето / изменений; текст окончательно одобрен",
           "ref": "010"
         },
         {
@@ -1570,9 +1590,9 @@ window.LAW_GRAPH = {
           "ref": "010"
         },
         {
-          "id": "senate-session-mesa>senate-amend-blocked",
+          "id": "senate-session-mesa>senate-amend-exclude",
           "source": "senate-session-mesa",
-          "target": "senate-amend-blocked",
+          "target": "senate-amend-exclude",
           "kind": "flow",
           "label": "Да: возражение сохраняется",
           "ref": "010"
@@ -1600,6 +1620,22 @@ window.LAW_GRAPH = {
           "kind": "flow",
           "label": "Учесть результат при дальнейшем решении",
           "ref": "010"
+        },
+        {
+          "id": "senate-amend-exclude>senate-amend-blocked",
+          "source": "senate-amend-exclude",
+          "target": "senate-amend-blocked",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Эта поправка: путь окончен"
+        },
+        {
+          "id": "senate-amend-exclude>senate-review-result",
+          "source": "senate-amend-exclude",
+          "target": "senate-review-result",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Законопроект без этой поправки"
         }
       ],
       "removeEdges": [
@@ -1607,6 +1643,252 @@ window.LAW_GRAPH = {
         "senate-return"
       ],
       "description": "Поправки, бюджетное согласие и решение Сената; отдельный государственный бюджет за границами карты."
+    },
+    "return": {
+      "nodes": [
+        "response-kind",
+        "veto-first-vote",
+        "veto-wait",
+        "veto-repeat-ordinary",
+        "veto-repeat-organic",
+        "veto-rejected",
+        "veto-overcome",
+        "response-amend-vote",
+        "response-amend-include",
+        "response-amend-exclude",
+        "response-amend-rejected",
+        "response-amendments-present",
+        "response-original-text",
+        "response-law-type",
+        "response-organic-vote",
+        "response-restore-original",
+        "response-amends-discarded"
+      ],
+      "edges": [
+        {
+          "id": "return>response-kind",
+          "source": "return",
+          "target": "response-kind",
+          "kind": "flow",
+          "ref": "010"
+        },
+        {
+          "id": "response-kind>veto-first-vote",
+          "source": "response-kind",
+          "target": "veto-first-vote",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Да: вето"
+        },
+        {
+          "id": "response-kind>response-amend-vote",
+          "source": "response-kind",
+          "target": "response-amend-vote",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Нет: принятые Сенатом поправки"
+        },
+        {
+          "id": "veto-first-vote>veto-overcome",
+          "source": "veto-first-vote",
+          "target": "veto-overcome",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Да"
+        },
+        {
+          "id": "veto-first-vote>veto-wait",
+          "source": "veto-first-vote",
+          "target": "veto-wait",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Нет"
+        },
+        {
+          "id": "veto-wait>veto-repeat-ordinary",
+          "source": "veto-wait",
+          "target": "veto-repeat-ordinary",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Обычный закон",
+          "mode": "ordinary"
+        },
+        {
+          "id": "veto-wait>veto-repeat-organic",
+          "source": "veto-wait",
+          "target": "veto-repeat-organic",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Органический закон",
+          "mode": "organic"
+        },
+        {
+          "id": "veto-repeat-ordinary>veto-overcome",
+          "source": "veto-repeat-ordinary",
+          "target": "veto-overcome",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Да",
+          "mode": "ordinary"
+        },
+        {
+          "id": "veto-repeat-ordinary>veto-rejected",
+          "source": "veto-repeat-ordinary",
+          "target": "veto-rejected",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Нет",
+          "mode": "ordinary"
+        },
+        {
+          "id": "veto-repeat-organic>veto-overcome",
+          "source": "veto-repeat-organic",
+          "target": "veto-overcome",
+          "kind": "flow",
+          "ref": "009",
+          "label": "Да",
+          "mode": "organic"
+        },
+        {
+          "id": "veto-repeat-organic>veto-rejected",
+          "source": "veto-repeat-organic",
+          "target": "veto-rejected",
+          "kind": "flow",
+          "ref": "009",
+          "label": "Нет",
+          "mode": "organic"
+        },
+        {
+          "id": "veto-overcome>final",
+          "source": "veto-overcome",
+          "target": "final",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Исходный текст Конгресса"
+        },
+        {
+          "id": "response-amend-vote>response-amend-include",
+          "source": "response-amend-vote",
+          "target": "response-amend-include",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Да"
+        },
+        {
+          "id": "response-amend-vote>response-amend-exclude",
+          "source": "response-amend-vote",
+          "target": "response-amend-exclude",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Нет"
+        },
+        {
+          "id": "response-amend-include>response-amendments-present",
+          "source": "response-amend-include",
+          "target": "response-amendments-present",
+          "kind": "flow",
+          "ref": "010",
+          "label": "После голосований по всем поправкам"
+        },
+        {
+          "id": "response-amend-exclude>response-amend-rejected",
+          "source": "response-amend-exclude",
+          "target": "response-amend-rejected",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Эта поправка: путь окончен"
+        },
+        {
+          "id": "response-amend-exclude>response-amendments-present",
+          "source": "response-amend-exclude",
+          "target": "response-amendments-present",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Законопроект после остальных голосований"
+        },
+        {
+          "id": "response-amendments-present>response-original-text",
+          "source": "response-amendments-present",
+          "target": "response-original-text",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Нет"
+        },
+        {
+          "id": "response-original-text>final",
+          "source": "response-original-text",
+          "target": "final",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Первоначальная редакция"
+        },
+        {
+          "id": "response-amendments-present>response-law-type",
+          "source": "response-amendments-present",
+          "target": "response-law-type",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Да"
+        },
+        {
+          "id": "response-law-type>final",
+          "source": "response-law-type",
+          "target": "final",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Нет: обычный текст с принятыми поправками",
+          "mode": "ordinary"
+        },
+        {
+          "id": "response-law-type>response-organic-vote",
+          "source": "response-law-type",
+          "target": "response-organic-vote",
+          "kind": "flow",
+          "ref": "009",
+          "label": "Да",
+          "mode": "organic"
+        },
+        {
+          "id": "response-organic-vote>final",
+          "source": "response-organic-vote",
+          "target": "final",
+          "kind": "flow",
+          "ref": "009",
+          "label": "Да: редакция с принятыми поправками",
+          "mode": "organic"
+        },
+        {
+          "id": "response-organic-vote>response-restore-original",
+          "source": "response-organic-vote",
+          "target": "response-restore-original",
+          "kind": "flow",
+          "ref": "009",
+          "label": "Нет",
+          "mode": "organic"
+        },
+        {
+          "id": "response-restore-original>response-amends-discarded",
+          "source": "response-restore-original",
+          "target": "response-amends-discarded",
+          "kind": "flow",
+          "ref": "009",
+          "label": "Поправки: путь окончен",
+          "mode": "organic"
+        },
+        {
+          "id": "response-restore-original>final",
+          "source": "response-restore-original",
+          "target": "final",
+          "kind": "flow",
+          "ref": "009",
+          "label": "Законопроект: исходная редакция",
+          "mode": "organic"
+        }
+      ],
+      "removeEdges": [
+        "return-final"
+      ],
+      "description": "Раздельные решения по вето и поправкам Сената, необходимые большинства, повторное голосование и явные окончания пути текста или поправки."
     }
   },
   "nodeModes": {
@@ -1629,7 +1911,12 @@ window.LAW_GRAPH = {
     "ilp-delivery": "ordinary",
     "ilp-extension": "ordinary",
     "ilp-timely": "ordinary",
-    "ilp-expired": "ordinary"
+    "ilp-expired": "ordinary",
+    "veto-repeat-organic": "organic",
+    "response-organic-vote": "organic",
+    "response-restore-original": "organic",
+    "response-amends-discarded": "organic",
+    "veto-repeat-ordinary": "ordinary"
   },
   "participantGroups": [
     {

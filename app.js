@@ -26,7 +26,8 @@ function showItem(entry,isExpanded,openDescription=true){
  selected=entry.id;glossary.close();
  if(!document.getElementById('show-descriptions').checked){closeDetail();return;}
  const item=entry.item,labels={actor:'Участник процесса',source:'Источник инициативы',process:'Процедурное действие',decision:'Процедурное решение',gateway:'Состояние документа',outcome:'Результат / ограничение',unknown:'Серая область'};
- detail.innerHTML=`<p class="eyebrow">${labels[entry.kind]}</p><h2>${escapeHtml(item.title)}</h2>${item.es?`<p class="detail-es">${escapeHtml(item.es)}</p>`:''}${item.summary?`<p class="detail-summary">${escapeHtml(item.summary)}${cite(item)}</p>`:''}${facts(item.facts)}${topics(item.topics)}${item.note?`<p class="note">${escapeHtml(item.note)}</p>`:''}`;
+ const ending={amendment:'Конец пути поправки',text:'Конец рассмотрения этого текста'};
+ detail.innerHTML=`<p class="eyebrow">${ending[item.endType]||labels[entry.kind]}</p><h2>${escapeHtml(item.title)}</h2>${item.es?`<p class="detail-es">${escapeHtml(item.es)}</p>`:''}${item.summary?`<p class="detail-summary">${escapeHtml(item.summary)}${cite(item)}</p>`:''}${facts(item.facts)}${topics(item.topics)}${item.note?`<p class="note">${escapeHtml(item.note)}</p>`:''}`;
  glossary.annotate(detail);detailPanel.scrollTop=0;
  if(openDescription&&!detailPanel.matches(':popover-open'))detailPanel.showPopover();
  if(detailPanel.matches(':popover-open')){

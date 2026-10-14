@@ -1,6 +1,6 @@
 {
   "checked_date": "14.10.2026",
-  "structure": "participants-procedures-v9",
+  "structure": "participants-procedures-v10",
   "audited_stages": [
     "initiative",
     "entry",
@@ -168,7 +168,7 @@
         "007",
         "020"
       ],
-      "finding": "15-day Government amendment consent through Presidency; Mesa must admit reserved organic amendment"
+      "finding": "15-day Government amendment consent through Presidency; Mesa must admit reserved organic amendment Amendment exclusion now has separate arrows for the terminal amendment and the remaining bill."
     },
     {
       "area": "congress-commission",
@@ -214,20 +214,29 @@
       "proofs": [
         "010"
       ],
-      "finding": "5/2-day ordinary amendment gate separated from in-session Government objection and Mesa/remedies"
+      "finding": "5/2-day ordinary amendment gate separated from in-session Government objection and Mesa/remedies Amendment exclusion now has separate arrows for the terminal amendment and the remaining bill."
     },
     {
       "area": "return",
       "nodes": [
-        "return",
-        "final"
+        "response-kind",
+        "veto-first-vote",
+        "veto-wait",
+        "veto-repeat-ordinary",
+        "veto-repeat-organic",
+        "veto-rejected",
+        "response-amend-vote",
+        "response-amend-rejected",
+        "response-organic-vote",
+        "response-restore-original",
+        "response-amends-discarded"
       ],
       "loc": "CE 90.2; RCD 121–123,132",
       "proofs": [
         "010",
         "009"
       ],
-      "finding": "Existing conditional Congress resolution retained, no second Senate round; majority details in description"
+      "finding": "Explicit Senate veto and amendment decisions, 2-month repeat vote, whole-text rejection on failed repeat, and original-text restoration under RCD 132.2; terminal amendment nodes do not carry the remaining bill."
     },
     {
       "area": "king",
@@ -257,5 +266,11 @@
     "Legal assessment of a concrete budget effect or disputed Government objection",
     "Full amparo procedure and all procedural dispositions",
     "Special procedures listed in the scope catalog"
-  ]
+  ],
+  "reviewed_terminal_routes_on": "2026-10-15",
+  "terminal_contract": {
+    "amendment": "This amendment path ends; the remaining bill is a separate path.",
+    "text": "Consideration of this text ends in this procedure, not a perpetual subject ban.",
+    "terminal_nodes": 13
+  }
 }

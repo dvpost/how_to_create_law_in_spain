@@ -21,7 +21,7 @@ const {pathToFileURL}=require('node:url');
   const initial=await state(),root=initial.positions.initiative;
   assert.ok(Math.abs(root.x*initial.viewport.zoom+initial.viewport.pan.x-800)<320,'Initial route is near the horizontal centre');
   await page.screenshot({path:path.resolve(__dirname,'../reports/map.png')});
-  await page.locator('#menu-toggle').click();assert.match(await page.locator('#project-menu').textContent(),/Как появляется закон.*v18/s);await page.locator('#menu-toggle').click();
+  await page.locator('#menu-toggle').click();assert.match(await page.locator('#project-menu').textContent(),/Как появляется закон.*v19/s);await page.locator('#menu-toggle').click();
   await page.locator('#help-toggle').click();assert.match(await page.locator('#help-menu').textContent(),/Связь без стрелки/);assert.equal(await noScroll(),true);await page.locator('#help-toggle').click();
   // Reading and independently disabling descriptions/terms must preserve the graph.
   await page.evaluate(()=>graph.activate('publication'));assert.equal(await page.locator('#detail-panel').isVisible(),true);assert.deepEqual(await state(),initial);

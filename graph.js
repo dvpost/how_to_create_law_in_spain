@@ -13,13 +13,14 @@ window.createLawGraph=function(container,data,config,callbacks){
  }
  const allowed=(mode,type=lawMode)=>!mode||type==='all'||mode===type;
  const children=(id,type=lawMode)=>(config.expansions[id]?.nodes||[]).filter(child=>allowed(config.nodeModes[child],type));
- function label(entry){return (entry.core&&entry.item.number?entry.item.number+' · ':'')+entry.item.title;}
+ function label(entry){return (entry.item.endType?'■ · ':'')+(entry.core&&entry.item.number?entry.item.number+' · ':'')+entry.item.title;}
  const cy=cytoscape({container,elements:[],layout:{name:'preset'},minZoom:.08,maxZoom:2.5,style:[
   {selector:'node',style:{shape:'round-rectangle',width:'data(width)',height:'data(height)','background-color':'#fffdf8','border-width':1.2,'border-color':'#b7c9c2',label:'',color:'#112a46','font-family':'Segoe UI, Arial, sans-serif','font-size':'data(fontSize)','text-wrap':'wrap','text-max-width':'data(textWidth)','text-valign':'center','text-halign':'center','line-height':1.3,'overlay-opacity':0}},
   {selector:'node.actor',style:{'background-color':'#e0eee7','border-color':'#57988b'}},
   {selector:'node.source',style:{'background-color':'#eaece6','border-color':'#80988c'}},
   {selector:'node.decision',style:{shape:'diamond','background-color':'#f5ead2','border-color':'#c5aa71'}},
   {selector:'node.outcome',style:{'background-color':'#f3e5df','border-color':'#b77265'}},
+  {selector:'node.terminal',style:{'border-width':2.4,'border-color':'#a24c42'}},
   {selector:'node.unknown',style:{'background-color':'#e5e5e0','border-color':'#969d96','border-style':'dashed'}},
   {selector:'node.gateway',style:{'background-color':'#e2ecec','border-width':2,'border-color':'#547d80'}},
   {selector:'node[id="king"]',style:{'background-color':'#112a46','border-color':'#112a46',color:'#f7f3ea'}},
@@ -120,7 +121,7 @@ window.createLawGraph=function(container,data,config,callbacks){
  }
  function nodeElement(node,position){
   const entry=model.get(node.id);
-  return {group:'nodes',data:{...node,label:label(entry),kind:entry.kind},position:{...position},classes:entry.kind+(entry.children.length?' expandable':'')+(node.id===current?' current':'')};
+  return {group:'nodes',data:{...node,label:label(entry),kind:entry.kind},position:{...position},classes:entry.kind+(entry.item.endType?' terminal':'')+(entry.children.length?' expandable':'')+(node.id===current?' current':'')};
  }
  function applyGraph(spec,result){
   const ids=new Set(spec.nodes.map(node=>node.id)),sizes=new Map(spec.nodes.map(node=>[node.id,node]));actions.replaceChildren();edgeLabels.clear();
@@ -227,7 +228,7 @@ window.createLawGraph=function(container,data,config,callbacks){
  rebuild();
  return {activate,toggle,getState,whenReady:()=>latest,
   getGeometry:()=>({nodes:cy.nodes().map(n=>({id:n.id(),x:n.position('x')-n.outerWidth()/2,y:n.position('y')-n.outerHeight()/2,width:n.outerWidth(),height:n.outerHeight()})),edges:cy.edges().map(e=>({id:e.id(),source:e.source().id(),target:e.target().id(),kind:e.data('kind'),points:[e.sourceEndpoint(),...e.segmentPoints(),e.targetEndpoint()]}))}),
-  refreshLabels:rebuildActions,getVisibleGraph:()=>({nodes:cy.nodes().map(n=>({id:n.id(),kind:model.get(n.id()).kind,title:model.get(n.id()).item.title,parent:model.get(n.id()).parent,label:n.data('label')})),edges:cy.edges().map(e=>({...e.data()}))}),fit:()=>focus(cy.elements()),
+  refreshLabels:rebuildActions,getVisibleGraph:()=>({nodes:cy.nodes().map(n=>({id:n.id(),kind:model.get(n.id()).kind,endType:model.get(n.id()).item.endType||null,title:model.get(n.id()).item.title,parent:model.get(n.id()).parent,label:n.data('label')})),edges:cy.edges().map(e=>({...e.data()}))}),fit:()=>focus(cy.elements()),
   align:()=>rebuild(),showReturns:value=>{returns=value;return rebuild();},
   expandAll:()=>{
    expanded.clear();current=null;
