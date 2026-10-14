@@ -728,7 +728,7 @@ window.LAW_GRAPH = {
           "source": "congress-toma-needed",
           "target": "congress-budget",
           "kind": "flow",
-          "label": "Конгресс / автономия / ILP",
+          "label": "Конгресс / автономное сообщество / ILP",
           "ref": "003"
         },
         {

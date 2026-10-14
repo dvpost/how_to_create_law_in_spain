@@ -1,6 +1,6 @@
 {
   "id": "017",
-  "title": "Примеры автономий: Валенсийское сообщество и Страна Басков",
+  "title": "Примеры автономных сообществ: Валенсийское сообщество и Страна Басков",
   "checked_date": "14.10.2026",
   "claims": [
     {
@@ -12,11 +12,11 @@
       "locator": "Статут Валенсийского сообщества, статья 22.f"
     },
     {
-      "text": "Статут Валенсийского сообщества утверждён органическим законом 5/1982. Статуты автономии — один из предметов, для которых Конституция предусматривает органический закон.",
+      "text": "Статут Валенсийского сообщества утверждён органическим законом 5/1982. Статуты автономных сообществ — один из предметов, для которых Конституция предусматривает органический закон.",
       "locator": "LO 5/1982; CE 81.1"
     },
     {
-      "text": "Валенсийское сообщество (Comunitat Valenciana) — автономия, включающая муниципалитеты провинций Аликанте, Кастельон и Валенсия. Его парламент называется Les Corts.",
+      "text": "Валенсийское сообщество (Comunitat Valenciana) — автономное сообщество Испании, включающее муниципалитеты провинций Аликанте, Кастельон и Валенсия. Его парламент называется Les Corts.",
       "locator": "Статут Валенсийского сообщества, статьи 1–2, 21"
     },
     {
@@ -24,11 +24,23 @@
       "locator": "Статут Страны Басков, статьи 1, 25"
     },
     {
-      "text": "Статья 21 Статута Валенсийского сообщества закрепляет законодательные полномочия Les Corts. Так статут определяет роль конкретного органа автономии.",
+      "text": "Валенсийское сообщество и Страна Басков — два разных автономных сообщества Испании. Оба относятся к одному территориальному уровню. Их парламенты имеют разные названия: Les Corts и Parlamento Vasco.",
+      "locator": "Статут Валенсийского сообщества, статьи 1, 21; статут Страны Басков, статьи 1, 25"
+    },
+    {
+      "text": "Валенсийское сообщество охватывает муниципалитеты трёх провинций: Аликанте, Кастельон и Валенсия. Провинция Валенсия — одна из этих трёх провинций. Город Валенсия — конкретный город, в котором расположен парламент Les Corts. Это парламент всего Валенсийского сообщества.",
+      "locator": "Статут Валенсийского сообщества, статьи 1–2, 21.1–2"
+    },
+    {
+      "text": "В статье 6 Статута Валенсийского сообщества слово valenciano обозначает валенсийский язык. Он назван собственным языком сообщества и официальным наряду с кастильским (испанским). Это название языка, а не дополнительного территориального уровня.",
+      "locator": "Статут Валенсийского сообщества, статья 6.1–2"
+    },
+    {
+      "text": "Статья 21 Статута Валенсийского сообщества закрепляет законодательные полномочия Les Corts. Так статут определяет роль конкретного органа автономного сообщества.",
       "locator": "Статут Валенсийского сообщества, статья 21"
     },
     {
-      "text": "Les Corts, парламент Валенсийского сообщества, назначает сенаторов, которые должны представлять это сообщество в Сенате Испании. Это пример участия автономии в формировании общегосударственной палаты.",
+      "text": "Les Corts, парламент Валенсийского сообщества, назначает сенаторов, которые должны представлять это сообщество в Сенате Испании. Это пример участия автономного сообщества в формировании общегосударственной палаты.",
       "locator": "Статут Валенсийского сообщества, статья 22.j; CE 69.5"
     },
     {
@@ -61,6 +73,11 @@
           "heading": "Artículo 2.",
           "anchor": "asegundo",
           "text": "[Bloque 4: #asegundo]\nArtículo 2.\nEl territorio de la Comunitat Valenciana comprende el de los municipios integrados en las provincias de Alicante, Castellón y Valencia.\nSe modifica por el art. 3 de la Ley Orgánica 1/2006, de 10 de abril. Ref. BOE-A-2006-6472.\nSeleccionar redacción:\nÚltima actualización, publicada el 11/04/2006, en vigor a partir del 11/04/2006.\nTexto original, publicado el 10/07/1982, en vigor a partir del 10/07/1982.\nSubir"
+        },
+        {
+          "heading": "Artículo 6.",
+          "anchor": "asexto",
+          "text": "[Bloque 8: #asexto]\nArtículo 6.\n1. La lengua propia de la Comunitat Valenciana es el valenciano.\n2. El idioma valenciano es el oficial en la Comunitat Valenciana, al igual que lo es el castellano, que es el idioma oficial del Estado. Todos tienen derecho a conocerlos y a usarlos y a recibir la enseñanza del, y en, idioma valenciano.\n3. La Generalitat garantizará el uso normal y oficial de las dos lenguas, y adoptará las medidas necesarias para asegurar su conocimiento.\n4. Nadie podrá ser discriminado por razón de su lengua.\n5. Se otorgará especial protección y respeto a la recuperación del valenciano.\n6. La ley establecerá los criterios de aplicación de la lengua propia en la Administración y la enseñanza.\n7. Se delimitarán por ley los territorios en los que predomine el uso de una y otra lengua, así como los que puedan ser exceptuados de la enseñanza y del uso de la lengua propia de la Comunitat Valenciana.\n8. L'Acadèmia Valenciana de la Llengua es la institución normativa del idioma valenciano.\nSe modifica por el art. 7 de la Ley Orgánica 1/2006, de 10 de abril. Ref. BOE-A-2006-6472.\nSeleccionar redacción:\nÚltima actualización, publicada el 11/04/2006, en vigor a partir del 11/04/2006.\nTexto original, publicado el 10/07/1982, en vigor a partir del 10/07/1982.\nSubir"
         },
         {
           "heading": "Artículo 21.",

@@ -1,5 +1,5 @@
 {
-  "version": "v21",
+  "version": "v22",
   "checked_date": "2026-10-15",
   "structure": "participants-procedures-v12",
   "browser_suites": {
@@ -19,8 +19,9 @@
     "senate_crossing_pairs": 2,
     "details": "reports/layout-checks.json"
   },
-  "regression_evidence": "terminals.browser.cjs failed before the change because final remained a separate card. It now checks all eight summarized/detailed successful outputs enter the King directly, no final references or self-loops remain, and publication is the only exit from the King. Existing graph/conditions checks preserve origin-specific toma en consideracion and its refusal path.",
+  "regression_evidence": "Content-only clarification checked with existing glossary, graph, interface, layout, interactions, conditions and terminals suites. Glossary checks cover both regional examples, proof access, nested definitions and long mobile popovers; reports/territory-terms.png records the updated explanation. No new procedural branches or runtime paths.",
   "checks": [
+    "Consistent autonomous-community terminology; sourced distinctions between community, province, city and valenciano in proof 017",
     "Successful parliamentary paths enter the King directly; final-version conditions and proof references retained in the description",
     "Single Congress submission/admission stage; no separate connector, broken input routes or numbering gap",
     "Conditional routes are explicit data entities with ref/loc; no automatic fact-to-node conversion",
@@ -54,7 +55,8 @@
     "reports/map-mobile.png",
     "reports/map.png",
     "reports/senate.png",
-    "reports/terminal-paths.png"
+    "reports/terminal-paths.png",
+    "reports/territory-terms.png"
   ],
   "limits": [
     "Crossing minimization is heuristic; zero edge crossings is not guaranteed",
