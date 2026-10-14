@@ -1,7 +1,7 @@
 {
-  "version": "v19",
+  "version": "v20",
   "checked_date": "2026-10-15",
-  "structure": "participants-procedures-v10",
+  "structure": "participants-procedures-v11",
   "browser_suites": {
     "graph": "PASS",
     "glossary": "PASS",
@@ -13,14 +13,15 @@
   },
   "geometry": {
     "scenarios": 22,
-    "largest_graph_nodes": 130,
+    "largest_graph_nodes": 129,
     "node_overlaps": 0,
     "edge_node_hits": 0,
     "senate_crossing_pairs": 2,
     "details": "reports/layout-checks.json"
   },
-  "regression_evidence": "terminals.browser.cjs failed before the changes because amend-budget-blocked did not name the ending object. It now verifies no outgoing connections from amendment/text terminals, separate bill continuation, veto rejection, ordinary/organic thresholds and original-text restoration.",
+  "regression_evidence": "conditions.browser.cjs failed before the change because the connector entry remained a separate stage. The model now has nine stages, continuous numbering and all six detailed applicant outputs enter admission. graph.browser.cjs verifies reading without disclosure, actual Mesa routes on expansion and removal of the direct discussion summary while expanded.",
   "checks": [
+    "Single Congress submission/admission stage; no separate connector, broken input routes or numbering gap",
     "Conditional routes are explicit data entities with ref/loc; no automatic fact-to-node conversion",
     "Direct autonomy submission reaches Congress before the shared budget gate",
     "Government fiscal consent, criterio and adoption of a proyecto remain different",

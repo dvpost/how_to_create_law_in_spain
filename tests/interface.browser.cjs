@@ -21,7 +21,7 @@ const {pathToFileURL}=require('node:url');
   const initial=await state(),root=initial.positions.initiative;
   assert.ok(Math.abs(root.x*initial.viewport.zoom+initial.viewport.pan.x-800)<320,'Initial route is near the horizontal centre');
   await page.screenshot({path:path.resolve(__dirname,'../reports/map.png')});
-  await page.locator('#menu-toggle').click();assert.match(await page.locator('#project-menu').textContent(),/Как появляется закон.*v19/s);await page.locator('#menu-toggle').click();
+  await page.locator('#menu-toggle').click();assert.match(await page.locator('#project-menu').textContent(),/Как появляется закон.*v20/s);await page.locator('#menu-toggle').click();
   await page.locator('#help-toggle').click();assert.match(await page.locator('#help-menu').textContent(),/Связь без стрелки/);assert.equal(await noScroll(),true);await page.locator('#help-toggle').click();
   // Reading and independently disabling descriptions/terms must preserve the graph.
   await page.evaluate(()=>graph.activate('publication'));assert.equal(await page.locator('#detail-panel').isVisible(),true);assert.deepEqual(await state(),initial);
@@ -48,7 +48,10 @@ const {pathToFileURL}=require('node:url');
   await page.locator('#fullscreen').click();await page.waitForFunction(()=>document.fullscreenElement===document.documentElement);assert.equal(await noScroll(),true);assert.match(await page.locator('#fullscreen').getAttribute('aria-label'),/Выйти/);
   await page.locator('#fullscreen').click();await page.waitForFunction(()=>!document.fullscreenElement);
   await page.locator('#menu-toggle').click();await page.locator('[data-archive="proofs"]').click();assert.equal(await page.locator('#archive-dialog').isVisible(),true);assert.equal(await page.locator('.proof-row').count(),20);await page.keyboard.press('Escape');
-  await page.setViewportSize({width:390,height:844});await page.evaluate(()=>graph.fit());assert.equal(await noScroll(),true);assert.deepEqual(await page.locator('#viewport').boundingBox(),{x:0,y:0,width:390,height:844});
+  await page.setViewportSize({width:390,height:844});await page.evaluate(()=>{graph.resize();graph.fit();});assert.equal(await noScroll(),true);assert.deepEqual(await page.locator('#viewport').boundingBox(),{x:0,y:0,width:390,height:844});
+  for(const label of await page.locator('[data-node-title]').all()){
+   const bounds=await label.boundingBox();assert.ok(bounds.x>=0&&bounds.y>=0&&bounds.x+bounds.width<=390&&bounds.y+bounds.height<=844,'The fitted mobile map must actually be visible');
+  }
   await settings();const mobile=await page.locator('#settings-menu').boundingBox();assert.ok(mobile.x>=0&&mobile.x+mobile.width<=390&&mobile.y+mobile.height<=844);await closeSettings();
   await page.screenshot({path:path.resolve(__dirname,'../reports/map-mobile.png')});
   assert.deepEqual(errors,[]);assert.deepEqual(network,[]);

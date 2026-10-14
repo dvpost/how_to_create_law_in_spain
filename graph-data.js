@@ -1,8 +1,7 @@
 window.LAW_GRAPH = {
-  "schema": "participants-procedures-v10",
+  "schema": "participants-procedures-v11",
   "mainPath": [
     "initiative",
-    "entry",
     "admission",
     "discussion",
     "approval",
@@ -29,14 +28,8 @@ window.LAW_GRAPH = {
   },
   "edges": [
     {
-      "id": "initiative-entry",
+      "id": "initiative-admission",
       "source": "initiative",
-      "target": "entry",
-      "kind": "flow"
-    },
-    {
-      "id": "entry-admission",
-      "source": "entry",
       "target": "admission",
       "kind": "flow"
     },
@@ -152,33 +145,33 @@ window.LAW_GRAPH = {
           "kind": "membership"
         },
         {
-          "id": "government-source-entry",
+          "id": "government-source-admission",
           "source": "government-source",
-          "target": "entry",
+          "target": "admission",
           "kind": "collapsed"
         },
         {
-          "id": "congress-source-entry",
+          "id": "congress-source-admission",
           "source": "congress-source",
-          "target": "entry",
+          "target": "admission",
           "kind": "collapsed"
         },
         {
-          "id": "senate-source-entry",
+          "id": "senate-source-admission",
           "source": "senate-source",
-          "target": "entry",
+          "target": "admission",
           "kind": "collapsed"
         },
         {
-          "id": "autonomy-source-entry",
+          "id": "autonomy-source-admission",
           "source": "autonomy-source",
-          "target": "entry",
+          "target": "admission",
           "kind": "collapsed"
         },
         {
-          "id": "ilp-source-entry",
+          "id": "ilp-source-admission",
           "source": "ilp-source",
-          "target": "entry",
+          "target": "admission",
           "kind": "collapsed",
           "mode": "ordinary"
         },
@@ -191,7 +184,7 @@ window.LAW_GRAPH = {
         }
       ],
       "removeEdges": [
-        "initiative-entry"
+        "initiative-admission"
       ],
       "description": "Пять источников. Раскрытие источника показывает заявителей и путь к Конгрессу."
     },
@@ -218,9 +211,9 @@ window.LAW_GRAPH = {
           "label": "Да"
         },
         {
-          "id": "government-send>entry",
+          "id": "government-send>admission",
           "source": "government-send",
-          "target": "entry",
+          "target": "admission",
           "kind": "flow",
           "ref": "002"
         },
@@ -234,7 +227,7 @@ window.LAW_GRAPH = {
         }
       ],
       "removeEdges": [
-        "government-source-entry"
+        "government-source-admission"
       ],
       "description": "Действия до внесения правительственного проекта в Конгресс."
     },
@@ -257,22 +250,22 @@ window.LAW_GRAPH = {
           "kind": "membership"
         },
         {
-          "id": "congress-deputies>entry",
+          "id": "congress-deputies>admission",
           "source": "congress-deputies",
-          "target": "entry",
+          "target": "admission",
           "kind": "flow",
           "ref": "003"
         },
         {
-          "id": "congress-group>entry",
+          "id": "congress-group>admission",
           "source": "congress-group",
-          "target": "entry",
+          "target": "admission",
           "kind": "flow",
           "ref": "003"
         }
       ],
       "removeEdges": [
-        "congress-source-entry"
+        "congress-source-admission"
       ],
       "description": "Два альтернативных заявителя. Требования к ним — в описании карточки."
     },
@@ -324,9 +317,9 @@ window.LAW_GRAPH = {
           "ref": "004"
         },
         {
-          "id": "senate-send>entry",
+          "id": "senate-send>admission",
           "source": "senate-send",
-          "target": "entry",
+          "target": "admission",
           "kind": "flow",
           "label": "Без повторной toma в Конгрессе",
           "ref": "003"
@@ -460,7 +453,7 @@ window.LAW_GRAPH = {
         }
       ],
       "removeEdges": [
-        "senate-source-entry"
+        "senate-source-admission"
       ],
       "description": "Сенаторские заявители и общая карточка двух специальных комиссий → процедура Сената → общий узел Конгресса. Требования и неуточнённые подписи комиссий читаются в описании карточки."
     },
@@ -487,9 +480,9 @@ window.LAW_GRAPH = {
           "ref": "001"
         },
         {
-          "id": "autonomy-direct>entry",
+          "id": "autonomy-direct>admission",
           "source": "autonomy-direct",
-          "target": "entry",
+          "target": "admission",
           "kind": "flow",
           "ref": "001"
         },
@@ -504,7 +497,7 @@ window.LAW_GRAPH = {
         }
       ],
       "removeEdges": [
-        "autonomy-source-entry",
+        "autonomy-source-admission",
         "autonomy-government-preview"
       ],
       "description": "Два предусмотренных Конституцией способа. Просьба не равна уже принятому правительственному проекту."
@@ -602,9 +595,9 @@ window.LAW_GRAPH = {
           "mode": "ordinary"
         },
         {
-          "id": "ilp-parliament>entry",
+          "id": "ilp-parliament>admission",
           "source": "ilp-parliament",
-          "target": "entry",
+          "target": "admission",
           "kind": "flow",
           "ref": "005",
           "mode": "ordinary"
@@ -700,7 +693,7 @@ window.LAW_GRAPH = {
         }
       ],
       "removeEdges": [
-        "ilp-source-entry"
+        "ilp-source-admission"
       ],
       "description": "Один маршрут через организаторов: подача документов, предварительный допуск, сбор подписей, проверка и парламентская процедура. Подписанты раскрываются у этапа сбора подписей."
     },

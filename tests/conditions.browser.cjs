@@ -8,12 +8,22 @@ const config=JSON.parse(fs.readFileSync(path.join(root,'graph.json'),'utf8'));
 const items=new Map([...data.stages,...data.entities].map(item=>[item.id,item]));
 const allEdges=[...config.edges,...Object.values(config.expansions).flatMap(spec=>spec.edges)];
 const link=(a,b)=>allEdges.find(edge=>edge.source===a&&edge.target===b);
+assert.ok(!items.has('entry'),'A connector must not appear as a separate procedural stage');
+assert.equal(data.stages.length,9);
+assert.equal(items.get('admission').title,'Внесение и допуск в Конгрессе');
+assert.equal(items.get('admission').number,'02');
+assert.deepEqual(data.stages.filter(item=>/^\d+$/.test(item.number)).map(item=>item.number),['01','02','03','04','05','06','07']);
+for(const source of ['government-send','congress-deputies','congress-group','senate-send','autonomy-direct','ilp-parliament']){
+ assert.ok(link(source,'admission'),source+' must enter the common Congress admission stage');
+}
+assert.ok(link('admission','congress-mesa'),'Opening the merged stage must expose Mesa admission');
+assert.ok(allEdges.every(edge=>edge.source!=='entry'&&edge.target!=='entry'&&edge.source!==edge.target),'No removed connector or self-loop remains');
 // These decisions must be explicit, sourced model entries, not generated facts.
 for(const id of ['congress-budget-effect','congress-budget-consent','senate-budget-effect','senate-budget-consent','senate-budget-review','amend-budget-effect','amend-budget-consent','senate-amend-consent','senate-amend-review','ilp-extension','ilp-timely','late-organic','commission-delegable','commission-avocation']){
  assert.equal(items.get(id)?.kind,'decision',id+' must be an explicit decision');
  assert.ok(items.get(id).facts.some(fact=>fact.ref&&fact.loc),id+' needs exact legal provenance');
 }
-assert.ok(link('autonomy-direct','entry'),'Autonomy may file in Congress without Government adopting its text');
+assert.ok(link('autonomy-direct','admission'),'Autonomy may file in Congress without Government adopting its text');
 assert.ok(!link('autonomy-direct','government-source'),'Budget consent must not become a Government proyecto');
 assert.ok(link('congress-budget-effect','congress-budget-wait'));
 assert.ok(link('congress-budget-effect','congress-budget-consent'));

@@ -1,9 +1,8 @@
 {
   "checked_date": "14.10.2026",
-  "structure": "participants-procedures-v10",
+  "structure": "participants-procedures-v11",
   "audited_stages": [
     "initiative",
-    "entry",
     "admission",
     "discussion",
     "approval",
@@ -54,7 +53,7 @@
       "area": "autonomy",
       "nodes": [
         "autonomy-direct",
-        "entry",
+        "admission",
         "congress-budget-effect"
       ],
       "loc": "CE 87.2; RCD 126.2–3, 127; CE 134.6",

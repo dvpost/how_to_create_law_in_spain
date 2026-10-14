@@ -10,7 +10,7 @@ const {pathToFileURL}=require('node:url');
   await page.goto(pathToFileURL(path.resolve(__dirname,'../index.html')).href);
   const ready=()=>page.evaluate(()=>graph.whenReady());await ready();
   assert.equal(await page.locator('[data-edge-title="senate-final"] [data-term="veto"]').count(),1,'Arrow labels also expose terms');
-  await page.evaluate(id=>graph.activate(id),'entry');
+  await page.evaluate(id=>graph.activate(id),'admission');
   assert.ok(await page.locator('#detail-content [data-term="ilp"]').count(),'ILP must have an inline definition');
   const initial=await page.evaluate(()=>graph.getState());
   for(const [term,expected] of [['ilp',/500 000/],['mesa',/руковод/]]){

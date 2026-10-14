@@ -51,9 +51,9 @@ function nodeHits(geometry){
    const order=stagePositions(geometry);
    for(let i=1;i<order.length;i++)assert.ok(order[i-1]<order[i],name+': main stages must retain their order');
    const returnNode=geometry.nodes.find(node=>node.id==='return');
-   if(returnNode)assert.ok(returnNode.y>order[5]&&returnNode.y<order[6],name+': Senate return belongs between Senate review and the final text');
+   if(returnNode)assert.ok(returnNode.y>order[4]&&returnNode.y<order[5],name+': Senate return belongs between Senate review and the final text');
   }
-  function stagePositions(g){return ['initiative','entry','admission','discussion','approval','senate','final','king','publication'].map(id=>g.nodes.find(n=>n.id===id).y);}
+  function stagePositions(g){return ['initiative','admission','discussion','approval','senate','final','king','publication'].map(id=>g.nodes.find(n=>n.id===id).y);}
   verify(geometry,'Senate');
   assert.ok(crossings(geometry).length<=2,'The Senate reproduction must have at most two crossing pairs');
   await page.screenshot({path:path.resolve(__dirname,'../reports/senate.png')});
@@ -76,10 +76,10 @@ function nodeHits(geometry){
   assert.ok(!(await page.evaluate(()=>graph.getVisibleGraph().nodes)).some(n=>n.id==='ilp-blocked'));
   verify(await page.evaluate(()=>graph.getGeometry()),'Latest request');
   await page.evaluate(()=>graph.reset());
-  const beforeDrag=await page.evaluate(()=>({state:graph.getState(),edge:graph.getGeometry().edges.find(edge=>edge.id==='initiative-entry')}));
+  const beforeDrag=await page.evaluate(()=>({state:graph.getState(),edge:graph.getGeometry().edges.find(edge=>edge.id==='initiative-admission')}));
   const root=beforeDrag.state.positions.initiative,z=beforeDrag.state.viewport.zoom,pan=beforeDrag.state.viewport.pan;
   await page.mouse.move(root.x*z+pan.x,root.y*z+pan.y);await page.mouse.down();await page.mouse.move(root.x*z+pan.x+90,root.y*z+pan.y+15,{steps:12});await page.mouse.up();await page.evaluate(()=>graph.whenReady());
-  const afterDrag=await page.evaluate(()=>({state:graph.getState(),edge:graph.getGeometry().edges.find(edge=>edge.id==='initiative-entry'),geometry:graph.getGeometry()}));
+  const afterDrag=await page.evaluate(()=>({state:graph.getState(),edge:graph.getGeometry().edges.find(edge=>edge.id==='initiative-admission'),geometry:graph.getGeometry()}));
   assert.deepEqual(nodeHits(afterDrag.geometry),[],'Dropped routes must avoid other cards');
   const delta=afterDrag.state.positions.initiative.x-root.x;assert.ok(delta>50,'Node remains draggable');
   assert.ok(Math.abs(afterDrag.edge.points[0].x-beforeDrag.edge.points[0].x-delta)<.1,'Arrow source follows dragged node');
