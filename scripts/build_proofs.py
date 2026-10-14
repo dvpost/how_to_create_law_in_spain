@@ -66,7 +66,7 @@ def build():
                 if value.get('ref')==proof['id'] or proof['id'] in value.get('extraRefs',[]):
                     text=value.get('text',value.get('summary',''))
                     if value.get('kind')=='illustration': text='Условный учебный пример применения правила: '+text
-                    claims.append(dict(text=text,locator=value.get('loc','')))
+                    if text: claims.append(dict(text=text,locator=value.get('loc','')))
                 for child in value.values(): collect(child)
             elif isinstance(value,list):
                 for child in value: collect(child)

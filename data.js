@@ -206,6 +206,10 @@ window.LAW_MAP = {
           "13",
           "14",
           "8"
+        ],
+        "constitution": [
+          "131",
+          "134"
         ]
       },
       "sources": [
@@ -279,6 +283,29 @@ window.LAW_MAP = {
               "heading": "Artículo octavo. Pliegos para la recogida de firmas.",
               "anchor": "aoctavo",
               "text": "[Bloque 9: #aoctavo]\nArtículo octavo. Pliegos para la recogida de firmas.\n1. Recibida la notificación de admisión de la proposición, la Comisión Promotora presentará ante la Junta Electoral Central, en papel de oficio, los pliegos necesarios para la recogida de firmas. Estos pliegos reproducirán el texto íntegro de la proposición.\nLos pliegos deberán estar escritos en castellano. Para la recogida de firmas en el territorio de una Comunidad Autónoma con otra lengua cooficial podrá utilizarse, conjuntamente, esta otra lengua.\n2. Si el texto de la proposición superase en extensión las tres caras de cada pliego, se acompañará en pliegos aparte, que se unirán al destinado a recoger las firmas, de modo que no puedan ser separados, sellándose y numerándose, de acuerdo con lo dispuesto en el apartado siguiente.\n3. Recibidos los pliegos por la Junta Electoral Central, ésta, dentro de las cuarenta y ocho horas siguientes, los sellará, numerará y devolverá a la Comisión Promotora.\nSe añade el párrafo segundo al apartado 1 por el art. único.6 de la Ley Orgánica 4/2006, de 26 de mayo. Ref. BOE-A-2006-9290\nSeleccionar redacción:\nÚltima actualización, publicada el 27/05/2006, en vigor a partir del 28/05/2006.\nTexto original, publicado el 27/03/1984, en vigor a partir del 16/04/1984.\nSubir"
+            }
+          ]
+        },
+        {
+          "title": "Constitución Española",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+          "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+          "retrieved_at_utc": "2026-10-14T13:54:29.642281+00:00",
+          "sha256": "4fcb22f5b32889b0828ae67e83483df7b1c6a0cd364447527882379e3978eb35",
+          "content_type": "text/html; charset=UTF-8",
+          "file": "sources/constitution/official.html",
+          "key": "constitution",
+          "version": "Última actualización, publicada el 20/05/2026",
+          "articles": [
+            {
+              "heading": "Artículo 131",
+              "anchor": "a131",
+              "text": "[Bloque 150: #a131]\nJurisprudencia\nArtículo 131\n1. El Estado, mediante ley, podrá planificar la actividad económica general para atender a las necesidades colectivas, equilibrar y armonizar el desarrollo regional y sectorial y estimular el crecimiento de la renta y de la riqueza y su más justa distribución.\n2. El Gobierno elaborará los proyectos de planificación, de acuerdo con las previsiones que le sean suministradas por las Comunidades Autónomas y el asesoramiento y colaboración de los sindicatos y otras organizaciones profesionales, empresariales y económicas. A tal fin se constituirá un Consejo, cuya composición y funciones se desarrollarán por ley.\nSubir"
+            },
+            {
+              "heading": "Artículo 134",
+              "anchor": "a134",
+              "text": "[Bloque 153: #a134]\nJurisprudencia\nArtículo 134\n1. Corresponde al Gobierno la elaboración de los Presupuestos Generales del Estado y a las Cortes Generales, su examen, enmienda y aprobación.\n2. Los Presupuestos Generales del Estado tendrán carácter anual, incluirán la totalidad de los gastos e ingresos del sector público estatal y en ellos se consignará el importe de los beneficios fiscales que afecten a los tributos del Estado.\n3. El Gobierno deberá presentar ante el Congreso de los Diputados los Presupuestos Generales del Estado al menos tres meses antes de la expiración de los del año anterior.\n4. Si la Ley de Presupuestos no se aprobara antes del primer día del ejercicio económico correspondiente, se considerarán automáticamente prorrogados los Presupuestos del ejercicio anterior hasta la aprobación de los nuevos.\n5. Aprobados los Presupuestos Generales del Estado, el Gobierno podrá presentar proyectos de ley que impliquen aumento del gasto público o disminución de los ingresos correspondientes al mismo ejercicio presupuestario.\n6. Toda proposición o enmienda que suponga aumento de los créditos o disminución de los ingresos presupuestarios requerirá la conformidad del Gobierno para su tramitación.\n7. La Ley de Presupuestos no puede crear tributos. Podrá modificarlos cuando una ley tributaria sustantiva así lo prevea.\nSubir"
             }
           ]
         }
@@ -364,7 +391,11 @@ window.LAW_MAP = {
           "116",
           "117",
           "118",
-          "119"
+          "119",
+          "111"
+        ],
+        "constitution": [
+          "134"
         ]
       },
       "sources": [
@@ -418,6 +449,29 @@ window.LAW_MAP = {
               "heading": "Artículo 119.",
               "anchor": "art119",
               "text": "[Bloque 161: #art119]\nArtículo 119.\nTerminado el debate de un proyecto, si, como consecuencia de la aprobación de un voto particular o de una enmienda o de la votación de los artículos, el texto resultante pudiera ser incongruente u oscuro en alguno de sus puntos, la Mesa de la Cámara podrá, por iniciativa propia o a petición de la Comisión, enviar el texto aprobado por el Pleno de nuevo a la Comisión, con el único fin de que ésta, en el plazo de un mes, efectúe una redacción armónica que deje a salvo los acuerdos del Pleno. El dictamen así redactado se someterá a la decisión final del Pleno, que deberá aprobarlo o rechazarlo en su conjunto, en una sola votación.\nSubir"
+            },
+            {
+              "heading": "Artículo 111.",
+              "anchor": "art111",
+              "text": "[Bloque 150: #art111]\nArtículo 111.\n1. Las enmiendas a un proyecto de ley que supongan aumento de los créditos o disminución de los ingresos presupuestarios requerirán la conformidad del Gobierno para su tramitación.\n2. A tal efecto, la Ponencia encargada de redactar el informe, remitirá al Gobierno, por conducto de la Presidencia del Congreso, las que a su juicio puedan estar incluidas en lo previsto en el apartado anterior.\n3. El Gobierno deberá dar respuesta razonada en el plazo de quince días, transcurrido el cual se entenderá que el silencio del Gobierno expresa conformidad.\n4. El Gobierno podrá manifestar su disconformidad con la tramitación de enmiendas que supongan aumento de los créditos o disminución de los ingresos presupuestarios en cualquier momento de la tramitación, de no haber sido consultado en la forma que señalan los apartados anteriores.\nSe modifica el apartado 2 por el art. único.94 de la Reforma del Reglamento de 22 de julio de 2025. Ref. BOE-A-2025-15844\nSeleccionar redacción:\nÚltima actualización, publicada el 31/07/2025, en vigor a partir del 31/07/2025.\nTexto original, publicado el 05/03/1982, en vigor a partir del 24/02/1982.\nSubir"
+            }
+          ]
+        },
+        {
+          "title": "Constitución Española",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+          "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+          "retrieved_at_utc": "2026-10-14T13:54:29.642281+00:00",
+          "sha256": "4fcb22f5b32889b0828ae67e83483df7b1c6a0cd364447527882379e3978eb35",
+          "content_type": "text/html; charset=UTF-8",
+          "file": "sources/constitution/official.html",
+          "key": "constitution",
+          "version": "Última actualización, publicada el 20/05/2026",
+          "articles": [
+            {
+              "heading": "Artículo 134",
+              "anchor": "a134",
+              "text": "[Bloque 153: #a134]\nJurisprudencia\nArtículo 134\n1. Corresponde al Gobierno la elaboración de los Presupuestos Generales del Estado y a las Cortes Generales, su examen, enmienda y aprobación.\n2. Los Presupuestos Generales del Estado tendrán carácter anual, incluirán la totalidad de los gastos e ingresos del sector público estatal y en ellos se consignará el importe de los beneficios fiscales que afecten a los tributos del Estado.\n3. El Gobierno deberá presentar ante el Congreso de los Diputados los Presupuestos Generales del Estado al menos tres meses antes de la expiración de los del año anterior.\n4. Si la Ley de Presupuestos no se aprobara antes del primer día del ejercicio económico correspondiente, se considerarán automáticamente prorrogados los Presupuestos del ejercicio anterior hasta la aprobación de los nuevos.\n5. Aprobados los Presupuestos Generales del Estado, el Gobierno podrá presentar proyectos de ley que impliquen aumento del gasto público o disminución de los ingresos correspondientes al mismo ejercicio presupuestario.\n6. Toda proposición o enmienda que suponga aumento de los créditos o disminución de los ingresos presupuestarios requerirá la conformidad del Gobierno para su tramitación.\n7. La Ley de Presupuestos no puede crear tributos. Podrá modificarlos cuando una ley tributaria sustantiva así lo prevea.\nSubir"
             }
           ]
         }
@@ -564,7 +618,8 @@ window.LAW_MAP = {
       "title": "Сенат и повторное решение Конгресса",
       "articles": {
         "constitution": [
-          "90"
+          "90",
+          "134"
         ],
         "congress": [
           "120",
@@ -578,7 +633,9 @@ window.LAW_MAP = {
           "106",
           "107",
           "122",
-          "133"
+          "133",
+          "151",
+          "36"
         ]
       },
       "sources": [
@@ -597,6 +654,11 @@ window.LAW_MAP = {
               "heading": "Artículo 90",
               "anchor": "a90",
               "text": "[Bloque 104: #a90]\nJurisprudencia\nArtículo 90\n1. Aprobado un proyecto de ley ordinaria u orgánica por el Congreso de los Diputados, su Presidente dará inmediata cuenta del mismo al Presidente del Senado, el cual lo someterá a la deliberación de éste.\n2. El Senado en el plazo de dos meses, a partir del día de la recepción del texto, puede, mediante mensaje motivado, oponer su veto o introducir enmiendas al mismo. El veto deberá ser aprobado por mayoría absoluta. El proyecto no podrá ser sometido al Rey para sanción sin que el Congreso ratifique por mayoría absoluta, en caso de veto, el texto inicial, o por mayoría simple, una vez transcurridos dos meses desde la interposición del mismo, o se pronuncie sobre las enmiendas, aceptándolas o no por mayoría simple.\n3. El plazo de dos meses de que el Senado dispone para vetar o enmendar el proyecto se reducirá al de veinte días naturales en los proyectos declarados urgentes por el Gobierno o por el Congreso de los Diputados.\nSubir"
+            },
+            {
+              "heading": "Artículo 134",
+              "anchor": "a134",
+              "text": "[Bloque 153: #a134]\nJurisprudencia\nArtículo 134\n1. Corresponde al Gobierno la elaboración de los Presupuestos Generales del Estado y a las Cortes Generales, su examen, enmienda y aprobación.\n2. Los Presupuestos Generales del Estado tendrán carácter anual, incluirán la totalidad de los gastos e ingresos del sector público estatal y en ellos se consignará el importe de los beneficios fiscales que afecten a los tributos del Estado.\n3. El Gobierno deberá presentar ante el Congreso de los Diputados los Presupuestos Generales del Estado al menos tres meses antes de la expiración de los del año anterior.\n4. Si la Ley de Presupuestos no se aprobara antes del primer día del ejercicio económico correspondiente, se considerarán automáticamente prorrogados los Presupuestos del ejercicio anterior hasta la aprobación de los nuevos.\n5. Aprobados los Presupuestos Generales del Estado, el Gobierno podrá presentar proyectos de ley que impliquen aumento del gasto público o disminución de los ingresos correspondientes al mismo ejercicio presupuestario.\n6. Toda proposición o enmienda que suponga aumento de los créditos o disminución de los ingresos presupuestarios requerirá la conformidad del Gobierno para su tramitación.\n7. La Ley de Presupuestos no puede crear tributos. Podrá modificarlos cuando una ley tributaria sustantiva así lo prevea.\nSubir"
             }
           ]
         },
@@ -673,6 +735,16 @@ window.LAW_MAP = {
               "heading": "Artículo 133.",
               "anchor": "a133",
               "text": "[Bloque 198: #a133]\nArtículo 133.\nEn los proyectos declarados urgentes por el Gobierno o por el Congreso de los Diputados, el Senado dispone de un plazo de veinte días naturales para ejercitar sus facultades de orden legislativo.\nLa Mesa de la Cámara podrá solicitar, en su caso, los antecedentes necesarios para apreciar que concurren las razones que conducen a la aplicación del procedimiento de urgencia.\nAsimismo, la Mesa del Senado, de oficio o a propuesta de un Grupo parlamentario o de veinticinco Senadores, podrá decidir la aplicación del procedimiento de urgencia.\nSe modifica por la Reforma del Reglamento de 19 de junio de 2025. Ref. BOE-A-2025-12859\nSe declara la inconstitucionalidad y nulidad del apartado 2, en la redacción dada por la Reforma aprobada por el Pleno el 14 de noviembre de 2023, por Sentencia del TC 63/2025, de 12 de marzo. Ref. BOE-A-2025-7429\nSe modifica por el art. 1 de la Reforma del Reglamento de 14 de noviembre de 2023. Ref. BOE-A-2023-23340\nTéngase en cuenta para su aplicación la disposición transitoria de la citada Reforma.\nSeleccionar redacción:\nÚltima actualización, publicada el 25/06/2025, en vigor a partir del 21/06/2025.\nModificación publicada el 11/04/2025, en vigor a partir del 11/04/2025.\nModificación publicada el 18/11/2023, en vigor a partir del 16/11/2023.\nTexto original, publicado el 13/05/1994, en vigor a partir del 10/05/1994.\nSubir"
+            },
+            {
+              "heading": "Artículo 151.",
+              "anchor": "a151",
+              "text": "[Bloque 221: #a151]\nArtículo 151.\n1. Toda proposición de ley presentada en el Senado será remitida de inmediato al Gobierno para que, al amparo del artículo 134. 6 de la Constitución, pueda manifestar su conformidad o disconformidad con su tramitación, si en su opinión supusiese aumento de los créditos o disminución de los ingresos presupuestarios.\n2. Finalizado el plazo de presentación de enmiendas a un proyecto o proposición de ley, éstas serán remitidas de inmediato al Gobierno a los efectos mencionados en el apartado anterior, salvo en el caso del Proyecto de Ley de Presupuestos Generales del Estado.\n3. La correspondiente comunicación del Gobierno deberá tener entrada en el Senado en el plazo máximo de diez días, a contar desde la remisión, si se tratase de proposiciones de ley, en el de cinco días si afectase a enmiendas presentadas a un proyecto o proposición tramitado por el procedimiento ordinario o en el de dos días cuando se refiriese a enmiendas formuladas dentro del procedimiento legislativo de urgencia. La no conformidad deberá ser motivada, pudiendo ser rechazada por la Mesa del Senado si no se aprecia suficientemente fundamentada. Transcurridos dichos plazos se entenderá que el silencio del Gobierno expresa conformidad con que prosiga la tramitación.\n4. La comunicación del Gobierno se pondrá de inmediato en conocimiento del Presidente de la Comisión en que se tramite el proyecto o proposición de ley.\n5. La presente facultad del Gobierno se entiende aplicable también a las enmiendas transaccionales y propuestas de modificación que se presenten durante las sesiones de las Comisiones y del Pleno, que serán remitidas inmediatamente al Gobierno a los efectos de este artículo, debiendo el Gobierno manifestar su eventual disconformidad antes de las últimas votaciones que se efectúen en el Senado.\nCuando se trate de una sesión de la Comisión, corresponderá a la Mesa de la Comisión pronunciarse sobre la admisión de la disconformidad del Gobierno. Si no se admite ésta, la enmienda transaccional o propuesta de modificación se tramitará por la Comisión. Contra el acuerdo de la Mesa de la Comisión, cabrá recurso ante la Mesa de la Cámara, que, de estimarse, tendrá efectos para la fase del Pleno.\nCuando se trate de la sesión plenaria, corresponderá a la Mesa de la Cámara pronunciarse sobre la admisión de la disconformidad del Gobierno, para lo cual el Presidente podrá decidir, en su caso, suspender la sesión. Contra el acuerdo de la Mesa del Senado cabrá reconsideración ante la misma en los términos del artículo 36.2 del Reglamento, debiendo ser necesariamente presentada por escrito y con anterioridad al inicio de las votaciones en el Pleno.\nSe modifica por el art. único.106 de la Reforma del Reglamento de 12 de noviembre de 2025. Ref. BOE-A-2025-23055\nSeleccionar redacción:\nÚltima actualización, publicada el 14/11/2025, en vigor a partir del 15/11/2025.\nTexto original, publicado el 13/05/1994, en vigor a partir del 10/05/1994.\nSubir"
+            },
+            {
+              "heading": "Artículo 36.",
+              "anchor": "a36",
+              "text": "[Bloque 53: #a36]\nArtículo 36.\n1. Corresponden a la Mesa las siguientes funciones:\na) (Suprimida)\nb) Determinar el calendario de sesiones del Pleno para cada período de sesiones y acordar con el Presidente el orden del día de las sesiones plenarias, oída la Junta de Portavoces.\nb bis) Adoptar cuantas decisiones y medidas sean necesarias para el adecuado funcionamiento y organización de las Comisiones y sus órganos.\nc) Calificar, con arreglo al Reglamento, los escritos y documentos de índole parlamentaria, así como decidir sobre su admisibilidad y tramitación.\nd) Adoptar cuantas decisiones y medidas requieran la organización del trabajo y el régimen y gobierno interiores de la Cámara.\ne) Aprobar el proyecto de Presupuesto del Senado, dirigir y controlar su ejecución y aprobar sus modificaciones y su liquidación.\nf) Aprobar las normas que, en ejercicio de la autonomía del Senado, adapten las disposiciones generales del ordenamiento jurídico en materia presupuestaria, de control, de contabilidad y de contratación a la organización y funcionamiento de la Cámara.\ng) Aprobar las normas y adoptar las medidas que resulten precisas para garantizar la transparencia de la actividad de la Cámara y el derecho de acceso a la información pública del Senado.\ng bis) Aprobar las normas que, en ejercicio de la autonomía del Senado, adapten las disposiciones generales del ordenamiento jurídico en aquellas otras materias distintas a las enunciadas en las letras f) y g), si así fuera necesario por exigirlo la legislación aplicable.\nh) Cualesquiera otras que le confieran las leyes y el presente Reglamento.\n2. Cuando una decisión adoptada por la Mesa, en el ejercicio de las funciones a que se refiere el punto c) del número anterior, afecte directamente a un Senador o a un Grupo parlamentario, éstos podrán solicitar su reconsideración. La Mesa decidirá mediante resolución motivada.\n3. Las reuniones de la Mesa se podrán celebrar telemáticamente.\nSe modifica por el art. único.26 de la Reforma del Reglamento de 12 de noviembre de 2025. Ref. BOE-A-2025-23055\nSe reordena la letra d) como h) y se añaden las letras d), e), f) y g) por el art. 1 de la Reforma del Reglamento de 5 de junio de 2014. Ref. BOE-A-2014-6174.\nSeleccionar redacción:\nÚltima actualización, publicada el 14/11/2025, en vigor a partir del 15/11/2025.\nModificación publicada el 11/06/2014, en vigor a partir del 10/06/2014.\nTexto original, publicado el 13/05/1994, en vigor a partir del 10/05/1994.\nSubir"
             }
           ]
         }
@@ -2006,6 +2078,22 @@ window.LAW_MAP = {
       "unknown": true,
       "ref": "004",
       "loc": "RS 56.s; 56 quater 2.g; 108"
+    },
+    {
+      "title": "Бюджетные проверки и их границы",
+      "text": "Показаны бюджетные проверки предложений, ранее внесённых поправок и изменений во время заседаний Сената, включая решения Mesa и предусмотренные обращения. Государственный бюджет имеет отдельную процедуру; судебные споры о пределах бюджетного вето не развёрнуты.",
+      "ref": "010",
+      "loc": "RCD 111, 126–127; RS 151.1–5; CE 134.1",
+      "extraRefs": [
+        "006",
+        "007"
+      ]
+    },
+    {
+      "title": "Судебная ветвь ILP",
+      "text": "Показано необязательное amparo и последствия решений, прямо указанные в статье 6.2–3. Полная судебная процедура, её допустимость и остальные процессуальные исходы не детализированы; подача жалобы сама по себе не означает допуск ILP.",
+      "ref": "005",
+      "loc": "LO 3/1984, ст. 6"
     }
   ],
   "entities": [
@@ -2051,12 +2139,13 @@ window.LAW_MAP = {
           "loc": "CE 87.2"
         },
         {
-          "text": "При прямом внесении действуют отдельные бюджетные правила: если предложение увеличивает бюджетные ассигнования или уменьшает бюджетные доходы, для его рассмотрения необходимо согласие Правительства.",
+          "text": "Собрание вправе направить собственное предложение сразу в Mesa Конгресса. По статьям 127 и 126.2 Mesa после внесения направляет его Правительству для позиции по toma en consideración и, при увеличении бюджетных ассигнований или уменьшении доходов, для согласия на рассмотрение. Это не превращает предложение автономии в правительственный проект.",
           "ref": "003",
+          "loc": "CE 87.2; RCD 127, 126.2–3; CE 134.6",
           "extraRefs": [
+            "001",
             "006"
-          ],
-          "loc": "RCD 127, 126.2–3; CE 134.6"
+          ]
         }
       ],
       "summary": "Собрание выбирает один из двух способов по статье 87.2 Конституции."
@@ -2173,8 +2262,8 @@ window.LAW_MAP = {
     },
     {
       "id": "government-approval",
-      "title": "Одобрение в Совете министров",
-      "kind": "process",
+      "title": "Совет министров одобрил proyecto?",
+      "kind": "decision",
       "ref": "002",
       "facts": [
         {
@@ -2200,8 +2289,8 @@ window.LAW_MAP = {
     },
     {
       "id": "senate-mesa",
-      "title": "Mesa Сената: допуск и публикация",
-      "kind": "process",
+      "title": "Mesa Сената: допустить и опубликовать?",
+      "kind": "decision",
       "ref": "004",
       "facts": [
         {
@@ -2290,6 +2379,16 @@ window.LAW_MAP = {
           "text": "Mesa проверяет установленные требования; далее применяется процедура статьи 126. Предложение при toma en consideración защищает делегация автономии.",
           "ref": "003",
           "loc": "RCD 127"
+        },
+        {
+          "text": "Бюджетная проверка выполняется в общей ветви «Допуск и начало рассмотрения» после внесения в Конгресс, а не как предварительное принятие текста Правительством по статье 88 Конституции.",
+          "ref": "003",
+          "loc": "RCD 127, 126.2–3; CE 87.2, 88",
+          "extraRefs": [
+            "001",
+            "002",
+            "006"
+          ]
         }
       ]
     },
@@ -2381,6 +2480,11 @@ window.LAW_MAP = {
           "text": "Отказ в допуске можно оспорить через recurso de amparo в Конституционном суде. Закон предусматривает продолжение процедуры или изменение затронутых положений по решению суда.",
           "ref": "005",
           "loc": "ст. 6"
+        },
+        {
+          "text": "Помимо органических предметов, ILP исключена по налоговым и международным вопросам, помилованию, экономическому планированию по статье 131 Конституции и подготовке бюджета по статье 134.1. Mesa также проверяет требования документов, однородность предмета, отсутствие уже рассматриваемого совпадающего текста на стадии поправок или далее и отсутствие повторной существенно равной ILP в том же созыве.",
+          "ref": "005",
+          "loc": "LO 3/1984, ст. 2, 5.2.a–e"
         }
       ],
       "topics": [
@@ -2441,14 +2545,19 @@ window.LAW_MAP = {
     },
     {
       "id": "ilp-check",
-      "title": "Проверка подписей и сертификат JEC",
-      "kind": "process",
+      "title": "JEC: подтверждено 500 000 действительных подписей?",
+      "kind": "decision",
       "ref": "005",
       "facts": [
         {
           "text": "Oficina del Censo Electoral проводит проверку и первичный подсчёт; JEC — окончательные проверку и подсчёт, затем направляет сертификат числа действительных подписей в Конгресс.",
           "ref": "005",
           "loc": "ст. 11–12"
+        },
+        {
+          "text": "Парламентская процедура начинается после уведомления о требуемом числе подписей. Недействительные подписи не считаются; само направление подписных листов не равнозначно подтверждению порога.",
+          "ref": "005",
+          "loc": "LO 3/1984, ст. 3.1, 12.2–3, 13.1"
         }
       ]
     },
@@ -2478,7 +2587,7 @@ window.LAW_MAP = {
           "loc": "ст. 6"
         }
       ],
-      "note": "Возможность amparo и последствия решения Конституционного суда изложены в описании карточки. Судебная ветвь не сведена к автоматическому возврату в процедуру."
+      "note": "Отказ не отменяется автоматически. Необязательная судебная ветвь показана отдельно: организаторы могут обратиться в Конституционный суд по статье 6."
     },
     {
       "id": "ilp-blocked",
@@ -2495,8 +2604,8 @@ window.LAW_MAP = {
     },
     {
       "id": "congress-mesa",
-      "title": "Mesa Конгресса: проверка и порядок",
-      "kind": "process",
+      "title": "Mesa Конгресса: документы допустимы?",
+      "kind": "decision",
       "ref": "006",
       "facts": [
         {
@@ -2533,19 +2642,14 @@ window.LAW_MAP = {
     },
     {
       "id": "congress-budget",
-      "title": "Критерий и бюджетное согласие Правительства",
+      "title": "Mesa: направить предложение Правительству",
       "kind": "process",
       "ref": "006",
       "facts": [
         {
-          "text": "Для предложения, увеличивающего бюджетные ассигнования или уменьшающего бюджетные доходы, Конституция требует согласия Правительства на рассмотрение.",
+          "text": "После внесения Mesa публикует предложение и направляет его Правительству для позиции по toma en consideración. Бюджетное согласие требуется лишь при увеличении ассигнований или уменьшении бюджетных доходов; это отличается от обычной позиции Правительства по предложению.",
           "ref": "006",
-          "loc": "CE 134.6; RCD 126.2"
-        },
-        {
-          "text": "После 30 дней без выраженного Правительством отказа в согласии предложение может быть включено в повестку пленума для toma en consideración.",
-          "ref": "006",
-          "loc": "RCD 126.3"
+          "loc": "RCD 126.2, 127; CE 134.6"
         }
       ]
     },
@@ -2669,6 +2773,11 @@ window.LAW_MAP = {
           "text": "После срока поправок и прений по тексту в целом, если они были, комиссия назначает Ponencia. Она готовит доклад по тексту и поправкам за 15 дней; Mesa комиссии может продлить этот срок из-за значимости или сложности проекта.",
           "ref": "007",
           "loc": "RCD 113"
+        },
+        {
+          "text": "Ponencia направляет Правительству через председательство Конгресса поправки, которые, по её оценке, увеличивают бюджетные ассигнования или уменьшают доходы. Мотивированный ответ — за 15 дней; молчание означает согласие. Если Правительство не было проконсультировано, оно может заявить несогласие в любой момент рассмотрения такой поправки.",
+          "ref": "007",
+          "loc": "RCD 111.1–4"
         }
       ]
     },
@@ -2920,6 +3029,671 @@ window.LAW_MAP = {
           "text": "После квалификации Mesa текст рассматривается по общему законодательному порядку со специальными правилами органического закона. Нужны окончательное голосование по всему тексту и абсолютное большинство Конгресса; окончательное принятие комиссией с полной компетенцией исключено.",
           "ref": "020",
           "loc": "RCD 130.1, 131.1–2; CE 75.3, 81.2"
+        }
+      ]
+    },
+    {
+      "id": "congress-budget-effect",
+      "title": "Увеличение ассигнований или уменьшение доходов?",
+      "kind": "decision",
+      "ref": "006",
+      "facts": [
+        {
+          "text": "Для предложений Конгресса, автономий и ILP увеличение бюджетных ассигнований либо уменьшение бюджетных доходов требует согласия Правительства на рассмотрение. При отсутствии этого эффекта отдельное бюджетное согласие не требуется; направление Правительству для его позиции сохраняется.",
+          "ref": "006",
+          "loc": "CE 134.6; RCD 126.2, 127"
+        }
+      ]
+    },
+    {
+      "id": "congress-budget-consent",
+      "title": "Правительство: бюджетное согласие?",
+      "kind": "decision",
+      "ref": "006",
+      "facts": [
+        {
+          "text": "Если предложение имеет указанный бюджетный эффект, для рассмотрения необходимо согласие Правительства. После 30 дней без выраженного отказа предложение может быть включено в повестку пленума. Обычная отрицательная позиция по существу текста и бюджетный отказ — разные основания.",
+          "ref": "006",
+          "loc": "CE 134.6; RCD 126.2–3"
+        }
+      ]
+    },
+    {
+      "id": "congress-budget-wait",
+      "title": "30 дней: условие включения в повестку",
+      "kind": "process",
+      "ref": "006",
+      "facts": [
+        {
+          "text": "По истечении 30 дней без выраженного отказа в согласии на рассмотрение предложение готово к включению в повестку пленума для toma en consideración. Перед прениями оглашают позицию Правительства, если она имеется. Это ещё не положительное голосование палаты.",
+          "ref": "006",
+          "loc": "RCD 126.3–4"
+        }
+      ]
+    },
+    {
+      "id": "congress-budget-blocked",
+      "title": "Нет бюджетного согласия на рассмотрение",
+      "kind": "outcome",
+      "ref": "006",
+      "facts": [
+        {
+          "text": "При требуемом бюджетном согласии выраженный отказ Правительства препятствует переходу предложения к рассмотрению по этому пути. Бюджетное согласие не является принятием предложения Правительством как своего проекта.",
+          "ref": "006",
+          "loc": "CE 134.6; RCD 126.2–3"
+        }
+      ],
+      "note": "Спор о наличии бюджетного эффекта и пределах допустимого возражения нельзя решать одним подсчётом расходов на карте. Судебные споры о бюджетном вето в этой версии не развёрнуты."
+    },
+    {
+      "id": "senate-budget-effect",
+      "title": "Правительство усматривает бюджетный эффект?",
+      "kind": "decision",
+      "ref": "004",
+      "facts": [
+        {
+          "text": "Каждое внесённое в Сенат предложение немедленно направляют Правительству. Оно может возразить против рассмотрения, если, по его мнению, предложение увеличивает ассигнования или уменьшает бюджетные доходы. Ответ — в течение 10 дней; молчание означает согласие.",
+          "ref": "004",
+          "loc": "RS 151.1, 151.3; 108.3"
+        }
+      ]
+    },
+    {
+      "id": "senate-budget-consent",
+      "title": "Правительство: согласие на предложение?",
+      "kind": "decision",
+      "ref": "004",
+      "facts": [
+        {
+          "text": "При бюджетном эффекте Правительство выражает согласие или мотивированное несогласие. Срок для предложения — 10 дней от направления; после него молчание считается согласием.",
+          "ref": "004",
+          "loc": "RS 151.1, 151.3"
+        }
+      ]
+    },
+    {
+      "id": "senate-budget-review",
+      "title": "Mesa отклонила недостаточно обоснованный отказ?",
+      "kind": "decision",
+      "ref": "004",
+      "facts": [
+        {
+          "text": "Мотивированное бюджетное несогласие Правительства Mesa Сената может отклонить, если не сочтёт его достаточно обоснованным. При отклонении несогласия предложение может продолжить путь по статье 108.3.",
+          "ref": "004",
+          "loc": "RS 151.3; 108.3"
+        }
+      ]
+    },
+    {
+      "id": "senate-budget-blocked",
+      "title": "Бюджетное возражение не снято",
+      "kind": "outcome",
+      "ref": "004",
+      "facts": [
+        {
+          "text": "Если бюджетное несогласие Правительства сохраняется и Mesa его не отклонила, условия перехода к toma en consideración, предусмотренные статьёй 108.3, не выполнены.",
+          "ref": "004",
+          "loc": "RS 108.3; 151.3"
+        }
+      ]
+    },
+    {
+      "id": "senate-ready",
+      "title": "Допуск Mesa и бюджетные условия выполнены?",
+      "kind": "decision",
+      "ref": "004",
+      "facts": [
+        {
+          "text": "Для дальнейшего включения в повестку нужны допуск и публикация Mesa по статье 108.2, завершение срока Правительства и благоприятная позиция либо отклонение его несогласия Mesa. По истечении 10 дней молчание Правительства означает согласие. Сам бюджетный ответ не заменяет допуска Mesa.",
+          "ref": "004",
+          "loc": "RS 108.2–3; 151.3"
+        }
+      ]
+    },
+    {
+      "id": "amend-budget-effect",
+      "title": "Ponencia: у поправки есть бюджетный эффект?",
+      "kind": "decision",
+      "ref": "007",
+      "facts": [
+        {
+          "text": "Ponencia отбирает поправки, которые, по её оценке, увеличивают ассигнования или уменьшают бюджетные доходы, и направляет их Правительству через председательство Конгресса. Проверка касается поправки, а не передачи авторства всего текста Правительству.",
+          "ref": "007",
+          "loc": "RCD 111.1–2; CE 134.6"
+        }
+      ]
+    },
+    {
+      "id": "amend-budget-consent",
+      "title": "Правительство: согласие на поправку?",
+      "kind": "decision",
+      "ref": "007",
+      "facts": [
+        {
+          "text": "Для бюджетной поправки требуется согласие Правительства. Мотивированный ответ даётся в течение 15 дней; молчание после этого срока означает согласие. Если предусмотренной консультации не было, Правительство может заявить несогласие в любой момент её рассмотрения.",
+          "ref": "007",
+          "loc": "RCD 111.1–4"
+        }
+      ]
+    },
+    {
+      "id": "amend-budget-blocked",
+      "title": "Бюджетная поправка не проходит",
+      "kind": "outcome",
+      "ref": "007",
+      "facts": [
+        {
+          "text": "Поправка с указанным бюджетным эффектом требует согласия Правительства для рассмотрения. При несогласии условие для этой поправки не выполнено; эта норма не предписывает отклонить весь законопроект.",
+          "ref": "007",
+          "loc": "RCD 111.1, 111.3–4"
+        }
+      ]
+    },
+    {
+      "id": "amend-organic-effect",
+      "title": "В обычном тексте есть органическая поправка?",
+      "kind": "decision",
+      "ref": "020",
+      "facts": [
+        {
+          "text": "Поправки с предметом, зарезервированным за органическим законом, внесённые к обычному проекту, могут быть допущены только решением Mesa Конгресса по обращению соответствующей Ponencia.",
+          "ref": "020",
+          "loc": "RCD 130.3"
+        }
+      ]
+    },
+    {
+      "id": "amend-organic-mesa",
+      "title": "Mesa допускает органическую поправку?",
+      "kind": "decision",
+      "ref": "020",
+      "facts": [
+        {
+          "text": "Допуск поправки с органическим предметом к обычному проекту требует решения Mesa по обращению Ponencia. При необходимости применяется квалификация и возврат к началу прений в комиссии по статье 130.2.",
+          "ref": "020",
+          "loc": "RCD 130.2–3"
+        }
+      ]
+    },
+    {
+      "id": "amend-organic-blocked",
+      "title": "Нет допуска этой органической поправки",
+      "kind": "outcome",
+      "ref": "020",
+      "facts": [
+        {
+          "text": "Без решения Mesa о допуске органическая поправка к обычному проекту не может рассматриваться. Это ограничение конкретной поправки, а не автоматическое отклонение остального текста.",
+          "ref": "020",
+          "loc": "RCD 130.3"
+        }
+      ]
+    },
+    {
+      "id": "late-organic-needed",
+      "title": "После доклада комиссия запросила квалификацию?",
+      "kind": "decision",
+      "ref": "020",
+      "facts": [
+        {
+          "text": "После завершения доклада комиссия вправе запросить Mesa о характере закона, если вопрос ранее не поднимался. Этот запрос не является обязательным этапом для каждого текста.",
+          "ref": "020",
+          "loc": "RCD 130.2"
+        }
+      ]
+    },
+    {
+      "id": "late-organic",
+      "title": "Mesa признала органический характер?",
+      "kind": "decision",
+      "ref": "020",
+      "facts": [
+        {
+          "text": "По запросу комиссии Mesa определяет надлежащую квалификацию с учётом, в соответствующем случае, позиции Ponencia. Правила органического текста применяются при такой квалификации.",
+          "ref": "020",
+          "loc": "RCD 130.1–2"
+        }
+      ]
+    },
+    {
+      "id": "late-debate-started",
+      "title": "Прения в комиссии уже начались?",
+      "kind": "decision",
+      "ref": "020",
+      "facts": [
+        {
+          "text": "Если органическая квалификация присвоена после начала прений в комиссии, процедура возвращается к началу этих прений. При отсутствии начатых прений такого возврата нет.",
+          "ref": "020",
+          "loc": "RCD 130.2"
+        }
+      ]
+    },
+    {
+      "id": "late-organic-restart",
+      "title": "Вернуться к началу прений в комиссии",
+      "kind": "process",
+      "ref": "020",
+      "facts": [
+        {
+          "text": "При органической квалификации, присвоенной после начала прений в комиссии, рассмотрение возвращается к начальному моменту именно этих прений, а не к первоначальному внесению в Конгресс.",
+          "ref": "020",
+          "loc": "RCD 130.2"
+        }
+      ]
+    },
+    {
+      "id": "commission-debate",
+      "title": "Прения комиссии и dictamen",
+      "kind": "process",
+      "ref": "007",
+      "facts": [
+        {
+          "text": "Комиссия рассматривает текст по статьям; её dictamen направляется председательству Конгресса для дальнейшего рассмотрения.",
+          "ref": "007",
+          "loc": "RCD 114.1, 116"
+        }
+      ]
+    },
+    {
+      "id": "commission-delegable",
+      "title": "Допускает ли Конституция полную компетенцию комиссии?",
+      "kind": "decision",
+      "ref": "008",
+      "facts": [
+        {
+          "text": "Конституция допускает делегирование комиссиям окончательного законодательного рассмотрения, кроме конституционной реформы, международных вопросов, органических законов, leyes de bases и государственного бюджета. Обычная форма сама по себе не означает, что любой текст можно делегировать.",
+          "ref": "008",
+          "loc": "CE 75.2–3; RCD 148"
+        }
+      ]
+    },
+    {
+      "id": "commission-avocation",
+      "title": "Пленум оставил окончательное решение за собой?",
+      "kind": "decision",
+      "ref": "008",
+      "facts": [
+        {
+          "text": "Для конституционно делегируемых текстов делегирование предполагается. Однако пленум может оставить за собой окончательные прения и голосование при debate de totalidad или toma en consideración; в остальных случаях — до начала прений в комиссии, по предложению Mesa, выслушав Junta de Portavoces. Это проверка ранее принятого решения, а не возможность позднего отзыва в любой момент.",
+          "ref": "008",
+          "loc": "RCD 148.1; 149.1"
+        }
+      ]
+    },
+    {
+      "id": "organic-first-vote",
+      "title": "Органический: абсолютное большинство по всему тексту?",
+      "kind": "decision",
+      "ref": "009",
+      "facts": [
+        {
+          "text": "Первое окончательное голосование по всему органическому тексту требует абсолютного большинства Конгресса. При успехе текст направляется в Сенат; при неудаче его возвращают в комиссию.",
+          "ref": "009",
+          "loc": "CE 81.2; RCD 131.2"
+        }
+      ]
+    },
+    {
+      "id": "organic-new-report",
+      "title": "Комиссия: новый dictamen за месяц",
+      "kind": "process",
+      "ref": "009",
+      "facts": [
+        {
+          "text": "После отсутствия абсолютного большинства в первом окончательном голосовании комиссия должна выдать новый dictamen в течение месяца. Далее проводятся прения по правилам totalidad и повторное голосование.",
+          "ref": "009",
+          "loc": "RCD 131.2–3"
+        }
+      ]
+    },
+    {
+      "id": "organic-second-vote",
+      "title": "Повторно набрано абсолютное большинство?",
+      "kind": "decision",
+      "ref": "009",
+      "facts": [
+        {
+          "text": "В повторном голосовании по новому dictamen требуется абсолютное большинство всех членов Конгресса. При его наличии текст направляют в Сенат, иначе текст отклонён.",
+          "ref": "009",
+          "loc": "RCD 131.3"
+        }
+      ]
+    },
+    {
+      "id": "organic-rejected",
+      "title": "Органический текст отклонён",
+      "kind": "outcome",
+      "ref": "009",
+      "facts": [
+        {
+          "text": "Отсутствие абсолютного большинства в повторном голосовании по новому dictamen означает отклонение органического текста.",
+          "ref": "009",
+          "loc": "RCD 131.3"
+        }
+      ]
+    },
+    {
+      "id": "senate-review-amendments",
+      "title": "Поправки Сената: направить Правительству",
+      "kind": "process",
+      "ref": "010",
+      "facts": [
+        {
+          "text": "После окончания срока внесения поправки в Сенате немедленно направляют Правительству для бюджетной проверки, кроме поправок к проекту государственного бюджета. Особая бюджетная процедура не включена в эту карту.",
+          "ref": "010",
+          "loc": "RS 151.2–3"
+        }
+      ]
+    },
+    {
+      "id": "senate-amend-effect",
+      "title": "У поправки есть бюджетный эффект по мнению Правительства?",
+      "kind": "decision",
+      "ref": "010",
+      "facts": [
+        {
+          "text": "Правительство вправе заявить бюджетное несогласие с поправками, если, по его мнению, они увеличивают ассигнования или уменьшают бюджетные доходы.",
+          "ref": "010",
+          "loc": "RS 151.1–3; CE 134.6"
+        }
+      ]
+    },
+    {
+      "id": "senate-amend-consent",
+      "title": "Правительство: согласие на поправку Сената?",
+      "kind": "decision",
+      "ref": "010",
+      "facts": [
+        {
+          "text": "Для поправок в обычной процедуре Правительству дано 5 дней, в срочной — 2 дня с направления. Несогласие должно быть мотивировано. По истечении срока молчание означает согласие.",
+          "ref": "010",
+          "loc": "RS 151.3"
+        }
+      ]
+    },
+    {
+      "id": "senate-amend-review",
+      "title": "Mesa отклонила бюджетное несогласие?",
+      "kind": "decision",
+      "ref": "010",
+      "facts": [
+        {
+          "text": "Mesa Сената может отклонить несогласие Правительства с рассмотрением поправки, если не сочтёт его достаточно обоснованным.",
+          "ref": "010",
+          "loc": "RS 151.3"
+        }
+      ]
+    },
+    {
+      "id": "senate-amend-blocked",
+      "title": "Эта поправка не проходит бюджетную проверку",
+      "kind": "outcome",
+      "ref": "010",
+      "facts": [
+        {
+          "text": "При необходимом бюджетном согласии и сохраняющемся несогласии Правительства поправка не продолжает рассмотрение по этому пути. Остальной текст и другие допустимые поправки не становятся автоматически отклонённым законопроектом.",
+          "ref": "010",
+          "loc": "RS 151.1–3; CE 134.6"
+        }
+      ]
+    },
+    {
+      "id": "senate-review-result",
+      "title": "Сенат принял вето или поправки?",
+      "kind": "decision",
+      "ref": "010",
+      "facts": [
+        {
+          "text": "Вето, требующее абсолютного большинства сенаторов, или принятые поправки требуют последующего решения Конгресса. При завершённой процедуре без вето и изменений сохраняется редакция Конгресса. Условия окончательного одобрения без пленарного запроса указаны в RS 107.3.",
+          "ref": "010",
+          "loc": "CE 90.2; RS 107.3, 122.1; RCD 121"
+        }
+      ]
+    },
+    {
+      "id": "ilp-appeal",
+      "title": "Организаторы: amparo в Конституционный суд",
+      "kind": "process",
+      "ref": "005",
+      "facts": [
+        {
+          "text": "Комиссия инициаторов вправе обжаловать отказ Mesa Конгресса в допуске инициативы через recurso de amparo в Конституционном суде. Это отдельный, необязательный судебный путь.",
+          "ref": "005",
+          "loc": "LO 3/1984, ст. 6.1"
+        }
+      ]
+    },
+    {
+      "id": "ilp-court-result",
+      "title": "Конституционный суд: отказ необоснован или нужны изменения?",
+      "kind": "decision",
+      "ref": "005",
+      "facts": [
+        {
+          "text": "Если суд решит, что оснований недопуска из статьи 5.2 нет, процедура продолжается. Если неправильность затрагивает отдельные положения, Mesa сообщает об этом организаторам для выбора между отзывом и продолжением после изменений.",
+          "ref": "005",
+          "loc": "LO 3/1984, ст. 6.2–3"
+        }
+      ],
+      "note": "Здесь раскрыты последствия благоприятного решения, прямо названные в статье 6.2–3. Процессуальные условия и остальные исходы amparo в этой карте не детализированы. Обращение в суд само по себе не отменяет отказ."
+    },
+    {
+      "id": "ilp-court-continue",
+      "title": "Продолжение по решению Конституционного суда",
+      "kind": "gateway",
+      "ref": "005",
+      "facts": [
+        {
+          "text": "Процедура продолжается при признании отсутствия оснований недопуска либо при сохранении инициативы после соответствующих изменений. Это не разрешение ILP по предметам, исключённым статьёй 2.",
+          "ref": "005",
+          "loc": "LO 3/1984, ст. 6.2–3; 7.1"
+        }
+      ]
+    },
+    {
+      "id": "ilp-court-partial",
+      "title": "Mesa сообщает организаторам о затронутых положениях",
+      "kind": "process",
+      "ref": "005",
+      "facts": [
+        {
+          "text": "Если суд указал на неправильность отдельных положений, Mesa Конгресса сообщает об этом инициаторам: они выбирают отзыв или сохранение инициативы после исправлений.",
+          "ref": "005",
+          "loc": "LO 3/1984, ст. 6.3"
+        }
+      ]
+    },
+    {
+      "id": "ilp-court-maintain",
+      "title": "Организаторы сохраняют инициативу с исправлениями?",
+      "kind": "decision",
+      "ref": "005",
+      "facts": [
+        {
+          "text": "После решения суда по отдельным положениям организаторы могут отозвать инициативу либо сохранить её, внеся соответствующие изменения.",
+          "ref": "005",
+          "loc": "LO 3/1984, ст. 6.3"
+        }
+      ]
+    },
+    {
+      "id": "ilp-withdrawn",
+      "title": "Организаторы отозвали инициативу",
+      "kind": "outcome",
+      "ref": "005",
+      "facts": [
+        {
+          "text": "После сообщения Mesa о решении суда по отдельным положениям организаторы вправе выбрать отзыв инициативы.",
+          "ref": "005",
+          "loc": "LO 3/1984, ст. 6.3"
+        }
+      ]
+    },
+    {
+      "id": "ilp-insufficient",
+      "title": "Не подтверждено требуемое число подписей",
+      "kind": "outcome",
+      "ref": "005",
+      "facts": [
+        {
+          "text": "Недействительные подписи не учитываются. Для парламентской процедуры статьи 13.1 требуется уведомление, подтверждающее не менее 500 000 действительных подписей; без такого подтверждения этот переход не выполнен.",
+          "ref": "005",
+          "loc": "LO 3/1984, ст. 3.1, 12.2–3, 13.1"
+        }
+      ]
+    },
+    {
+      "id": "ilp-delivery",
+      "title": "Передать собранные подписи JEC",
+      "kind": "process",
+      "ref": "005",
+      "facts": [
+        {
+          "text": "Сбор подписей завершается передачей JEC в течение 9 месяцев с уведомления. При causa mayor, признанной Mesa Конгресса, срок может быть продлён на 3 месяца.",
+          "ref": "005",
+          "loc": "LO 3/1984, ст. 7.3"
+        }
+      ]
+    },
+    {
+      "id": "ilp-extension",
+      "title": "Mesa признала causa mayor и продлила срок?",
+      "kind": "decision",
+      "ref": "005",
+      "facts": [
+        {
+          "text": "При causa mayor, признанной Mesa Конгресса, девятимесячный срок сбора и передачи подписей может быть продлён на 3 месяца. Продление не автоматическое и не заменяет передачу подписей.",
+          "ref": "005",
+          "loc": "LO 3/1984, ст. 7.3"
+        }
+      ]
+    },
+    {
+      "id": "ilp-timely",
+      "title": "Подписи переданы в действующий срок?",
+      "kind": "decision",
+      "ref": "005",
+      "facts": [
+        {
+          "text": "Если установленный срок истёк без передачи собранных подписей, инициатива утрачивает силу (caducidad). При продлении учитывается продлённый срок.",
+          "ref": "005",
+          "loc": "LO 3/1984, ст. 7.3"
+        }
+      ]
+    },
+    {
+      "id": "ilp-expired",
+      "title": "Срок истёк без передачи подписей: caducidad",
+      "kind": "outcome",
+      "ref": "005",
+      "facts": [
+        {
+          "text": "Истечение применимого срока без передачи собранных подписей приводит к прекращению инициативы вследствие caducidad.",
+          "ref": "005",
+          "loc": "LO 3/1984, ст. 7.3"
+        }
+      ]
+    },
+    {
+      "id": "government-not-approved",
+      "title": "Нет одобренного правительственного проекта",
+      "kind": "outcome",
+      "ref": "002",
+      "facts": [
+        {
+          "text": "В Конгресс направляются правительственные проекты, одобренные Советом министров. Без такого одобрения условие внесения именно proyecto de ley по статье 88 не выполнено.",
+          "ref": "002",
+          "loc": "CE 88"
+        }
+      ]
+    },
+    {
+      "id": "senate-session-change",
+      "title": "Поправка или изменение в ходе заседания",
+      "kind": "process",
+      "ref": "010",
+      "facts": [
+        {
+          "text": "Enmiendas transaccionales и предложения изменений во время заседаний комиссии или пленума немедленно направляют Правительству. Оно должно заявить возможное бюджетное несогласие до последних голосований в Сенате.",
+          "ref": "010",
+          "loc": "RS 151.5"
+        }
+      ]
+    },
+    {
+      "id": "senate-session-consent",
+      "title": "Правительство возразило до последних голосований?",
+      "kind": "decision",
+      "ref": "010",
+      "facts": [
+        {
+          "text": "Для этих изменений Правительство должно заявить возможное бюджетное несогласие до последних голосований в Сенате. Здесь не применяется обычный срок 5 дней или срочный срок 2 дня для ранее внесённых поправок.",
+          "ref": "010",
+          "loc": "RS 151.5"
+        }
+      ]
+    },
+    {
+      "id": "senate-session-mesa",
+      "title": "Бюро комиссии или Mesa палаты допускает несогласие?",
+      "kind": "decision",
+      "ref": "010",
+      "facts": [
+        {
+          "text": "В заседании комиссии допустимость несогласия Правительства решает Mesa комиссии. Если оно не допускается, комиссия рассматривает поправку. В пленарном заседании решение принимает Mesa Сената; председатель может приостановить заседание для этого решения.",
+          "ref": "010",
+          "loc": "RS 151.5, абзацы 2–3"
+        }
+      ]
+    },
+    {
+      "id": "senate-session-remedy",
+      "title": "Обжалование: Mesa Сената / reconsideración",
+      "kind": "process",
+      "ref": "010",
+      "facts": [
+        {
+          "text": "Решение Mesa комиссии можно обжаловать в Mesa Сената: удовлетворение жалобы имеет последствия для пленарной стадии. Решение Mesa Сената по вопросу, возникшему в пленуме, можно просить пересмотреть по статье 36.2; требование подают письменно до начала пленарных голосований. Это не автоматический допуск поправки.",
+          "ref": "010",
+          "loc": "RS 151.5, абзацы 2–3; RS 36.2"
+        }
+      ]
+    },
+    {
+      "id": "congress-inadmissible",
+      "title": "Нет допуска документов в Конгрессе",
+      "kind": "outcome",
+      "ref": "006",
+      "facts": [
+        {
+          "text": "Mesa квалифицирует парламентские документы и решает вопрос их допустимости. Для предложений автономий и ILP она проверяет соблюдение установленных требований. Отрицательное решение не является бюджетным отказом Правительства.",
+          "ref": "006",
+          "loc": "RCD 31.1.4–5; 127"
+        }
+      ]
+    },
+    {
+      "id": "congress-reconsider",
+      "title": "Mesa: окончательное решение после reconsideración",
+      "kind": "decision",
+      "ref": "006",
+      "facts": [
+        {
+          "text": "Депутат или парламентская группа, не согласные с решением Mesa по квалификации, допуску или порядку рассмотрения, вправе попросить reconsideración. Mesa принимает мотивированное окончательное решение, выслушав Junta de Portavoces. Этот путь относится к субъектам статьи 31.2 и не заменяет amparo организаторов ILP по LO 3/1984, статье 6.",
+          "ref": "006",
+          "loc": "RCD 31.2"
+        }
+      ]
+    },
+    {
+      "id": "senate-inadmissible",
+      "title": "Mesa Сената не допустила предложение",
+      "kind": "outcome",
+      "ref": "004",
+      "facts": [
+        {
+          "text": "Публикация предложения и открытие срока альтернативных предложений по статье 108.2 следуют при допуске Mesa. Отсутствие допуска не заменяется бюджетным согласием Правительства.",
+          "ref": "004",
+          "loc": "RS 108.2"
         }
       ]
     }
@@ -4114,6 +4888,31 @@ window.LAW_MAP = {
           "loc": "Статут Валенсийского сообщества, статья 1; статут Страны Басков, статья 1; RS 56.a"
         }
       ]
+    },
+    {
+      "id": "budget-consent",
+      "title": "Бюджетное согласие Правительства",
+      "es": "Conformidad del Gobierno",
+      "aliases": [
+        "бюджетное согласие",
+        "бюджетного согласия",
+        "бюджетным согласием",
+        "conformidad"
+      ],
+      "text": "Согласие Правительства на рассмотрение предложения или поправки, увеличивающих бюджетные ассигнования либо уменьшающих бюджетные доходы. Оно отличается от позиции Правительства о том, стоит ли поддерживать предложение. Согласие не означает, что Правительство стало автором текста или что парламент уже принял закон.",
+      "ref": "006",
+      "loc": "CE 134.6; RCD 126.2–5"
+    },
+    {
+      "id": "caducidad",
+      "title": "Caducidad — прекращение ILP из-за пропуска срока",
+      "es": "Caducidad de la iniciativa",
+      "aliases": [
+        "caducidad"
+      ],
+      "text": "В показанной процедуре ILP так называется последствие истечения срока без передачи собранных подписей JEC. Общий срок — 9 месяцев от уведомления; при causa mayor, признанной Mesa Конгресса, возможно продление на 3 месяца.",
+      "ref": "005",
+      "loc": "LO 3/1984, статья 7.3"
     }
   ]
 };

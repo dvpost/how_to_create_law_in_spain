@@ -1,5 +1,5 @@
 window.LAW_GRAPH = {
-  "schema": "participants-procedures-v8",
+  "schema": "participants-procedures-v9",
   "mainPath": [
     "initiative",
     "entry",
@@ -99,17 +99,16 @@ window.LAW_GRAPH = {
       "source": "approval",
       "target": "discussion",
       "kind": "return",
-      "label": "Согласованная редакция",
+      "label": "Несогласованный текст: редакция по RCD 119",
       "ref": "007",
-      "organicLabel": "Нет абсолютного большинства",
-      "organicRef": "009",
       "sourceWhenExpanded": {
         "approval": "congress-plenary"
       },
       "targetWhenExpanded": {
         "discussion": "congress-commission"
       },
-      "feedback": true
+      "feedback": true,
+      "mode": "ordinary"
     }
   ],
   "expansions": {
@@ -199,7 +198,8 @@ window.LAW_GRAPH = {
     "government-source": {
       "nodes": [
         "government-approval",
-        "government-send"
+        "government-send",
+        "government-not-approved"
       ],
       "edges": [
         {
@@ -214,13 +214,22 @@ window.LAW_GRAPH = {
           "source": "government-approval",
           "target": "government-send",
           "kind": "flow",
-          "ref": "002"
+          "ref": "002",
+          "label": "Да"
         },
         {
           "id": "government-send>entry",
           "source": "government-send",
           "target": "entry",
           "kind": "flow",
+          "ref": "002"
+        },
+        {
+          "id": "government-approval>government-not-approved",
+          "source": "government-approval",
+          "target": "government-not-approved",
+          "kind": "flow",
+          "label": "Нет",
           "ref": "002"
         }
       ],
@@ -277,7 +286,13 @@ window.LAW_GRAPH = {
         "senate-toma",
         "senate-send",
         "senate-not-taken",
-        "senate-commissions"
+        "senate-commissions",
+        "senate-budget-effect",
+        "senate-budget-consent",
+        "senate-budget-review",
+        "senate-budget-blocked",
+        "senate-ready",
+        "senate-inadmissible"
       ],
       "edges": [
         {
@@ -291,14 +306,6 @@ window.LAW_GRAPH = {
           "source": "senate-source",
           "target": "senate-group",
           "kind": "membership"
-        },
-        {
-          "id": "senate-budget>senate-toma",
-          "source": "senate-budget",
-          "target": "senate-toma",
-          "kind": "flow",
-          "label": "После предусмотренных условий",
-          "ref": "004"
         },
         {
           "id": "senate-toma>senate-send",
@@ -353,13 +360,6 @@ window.LAW_GRAPH = {
           "ref": "004"
         },
         {
-          "id": "senate-mesa>senate-toma",
-          "source": "senate-mesa",
-          "target": "senate-toma",
-          "kind": "flow",
-          "ref": "004"
-        },
-        {
           "id": "senate-source>senate-commissions",
           "source": "senate-source",
           "target": "senate-commissions",
@@ -377,6 +377,85 @@ window.LAW_GRAPH = {
           "source": "senate-commissions",
           "target": "senate-budget",
           "kind": "flow",
+          "ref": "004"
+        },
+        {
+          "id": "senate-mesa>senate-ready",
+          "source": "senate-mesa",
+          "target": "senate-ready",
+          "kind": "flow",
+          "label": "Да: допуск и публикация",
+          "ref": "004"
+        },
+        {
+          "id": "senate-budget>senate-budget-effect",
+          "source": "senate-budget",
+          "target": "senate-budget-effect",
+          "kind": "flow",
+          "ref": "004"
+        },
+        {
+          "id": "senate-budget-effect>senate-ready",
+          "source": "senate-budget-effect",
+          "target": "senate-ready",
+          "kind": "flow",
+          "label": "Нет бюджетного возражения; срок истёк",
+          "ref": "004"
+        },
+        {
+          "id": "senate-budget-effect>senate-budget-consent",
+          "source": "senate-budget-effect",
+          "target": "senate-budget-consent",
+          "kind": "flow",
+          "label": "Да",
+          "ref": "004"
+        },
+        {
+          "id": "senate-budget-consent>senate-ready",
+          "source": "senate-budget-consent",
+          "target": "senate-ready",
+          "kind": "flow",
+          "label": "Согласие / молчание 10 дней",
+          "ref": "004"
+        },
+        {
+          "id": "senate-budget-consent>senate-budget-review",
+          "source": "senate-budget-consent",
+          "target": "senate-budget-review",
+          "kind": "flow",
+          "label": "Мотивированное несогласие",
+          "ref": "004"
+        },
+        {
+          "id": "senate-budget-review>senate-ready",
+          "source": "senate-budget-review",
+          "target": "senate-ready",
+          "kind": "flow",
+          "label": "Да",
+          "ref": "004"
+        },
+        {
+          "id": "senate-budget-review>senate-budget-blocked",
+          "source": "senate-budget-review",
+          "target": "senate-budget-blocked",
+          "kind": "flow",
+          "label": "Нет",
+          "ref": "004"
+        },
+        {
+          "id": "senate-ready>senate-toma",
+          "source": "senate-ready",
+          "target": "senate-toma",
+          "kind": "flow",
+          "label": "Оба условия выполнены",
+          "ref": "004"
+        },
+        {
+          "id": "senate-mesa>senate-inadmissible",
+          "source": "senate-mesa",
+          "target": "senate-inadmissible",
+          "kind": "flow",
+          "label": "Нет",
           "ref": "004"
         }
       ],
@@ -419,8 +498,8 @@ window.LAW_GRAPH = {
           "source": "autonomy-request",
           "target": "government-source",
           "kind": "flow",
-          "label": "Если Правительство принимает проект",
-          "ref": "002",
+          "label": "Просьба: требуется решение Совета министров",
+          "ref": "001",
           "feedback": true
         }
       ],
@@ -440,7 +519,14 @@ window.LAW_GRAPH = {
         "ilp-check",
         "ilp-parliament",
         "ilp-refused",
-        "ilp-blocked"
+        "ilp-blocked",
+        "ilp-appeal",
+        "ilp-court-result",
+        "ilp-court-continue",
+        "ilp-court-partial",
+        "ilp-court-maintain",
+        "ilp-withdrawn",
+        "ilp-insufficient"
       ],
       "edges": [
         {
@@ -531,6 +617,86 @@ window.LAW_GRAPH = {
           "label": "Органический предмет",
           "ref": "020",
           "mode": "organic"
+        },
+        {
+          "id": "ilp-refused>ilp-appeal",
+          "source": "ilp-refused",
+          "target": "ilp-appeal",
+          "kind": "flow",
+          "label": "Если организаторы обжалуют",
+          "ref": "005"
+        },
+        {
+          "id": "ilp-blocked>ilp-appeal",
+          "source": "ilp-blocked",
+          "target": "ilp-appeal",
+          "kind": "flow",
+          "label": "Если организаторы обжалуют",
+          "ref": "005"
+        },
+        {
+          "id": "ilp-appeal>ilp-court-result",
+          "source": "ilp-appeal",
+          "target": "ilp-court-result",
+          "kind": "flow",
+          "ref": "005"
+        },
+        {
+          "id": "ilp-court-result>ilp-court-continue",
+          "source": "ilp-court-result",
+          "target": "ilp-court-continue",
+          "kind": "flow",
+          "label": "Нет основания недопуска",
+          "ref": "005"
+        },
+        {
+          "id": "ilp-court-result>ilp-court-partial",
+          "source": "ilp-court-result",
+          "target": "ilp-court-partial",
+          "kind": "flow",
+          "label": "Неправильность отдельных положений",
+          "ref": "005"
+        },
+        {
+          "id": "ilp-court-partial>ilp-court-maintain",
+          "source": "ilp-court-partial",
+          "target": "ilp-court-maintain",
+          "kind": "flow",
+          "ref": "005"
+        },
+        {
+          "id": "ilp-court-maintain>ilp-court-continue",
+          "source": "ilp-court-maintain",
+          "target": "ilp-court-continue",
+          "kind": "flow",
+          "label": "Да, после изменений",
+          "ref": "005"
+        },
+        {
+          "id": "ilp-court-maintain>ilp-withdrawn",
+          "source": "ilp-court-maintain",
+          "target": "ilp-withdrawn",
+          "kind": "flow",
+          "label": "Нет: отзыв",
+          "ref": "005"
+        },
+        {
+          "id": "ilp-court-continue>ilp-notice",
+          "source": "ilp-court-continue",
+          "target": "ilp-notice",
+          "kind": "flow",
+          "label": "Продолжить допущенную процедуру",
+          "ref": "005",
+          "mode": "ordinary"
+        },
+        {
+          "id": "ilp-check>ilp-insufficient",
+          "source": "ilp-check",
+          "target": "ilp-insufficient",
+          "kind": "flow",
+          "label": "Нет подтверждения 500 000",
+          "ref": "005",
+          "mode": "ordinary"
         }
       ],
       "removeEdges": [
@@ -547,7 +713,13 @@ window.LAW_GRAPH = {
         "congress-toma-needed",
         "congress-budget",
         "congress-toma",
-        "congress-not-taken"
+        "congress-not-taken",
+        "congress-budget-effect",
+        "congress-budget-consent",
+        "congress-budget-wait",
+        "congress-budget-blocked",
+        "congress-inadmissible",
+        "congress-reconsider"
       ],
       "edges": [
         {
@@ -574,13 +746,6 @@ window.LAW_GRAPH = {
           "ref": "003"
         },
         {
-          "id": "congress-budget>congress-toma",
-          "source": "congress-budget",
-          "target": "congress-toma",
-          "kind": "flow",
-          "ref": "006"
-        },
-        {
           "id": "congress-toma>discussion",
           "source": "congress-toma",
           "target": "discussion",
@@ -602,7 +767,7 @@ window.LAW_GRAPH = {
           "target": "congress-law-type",
           "kind": "flow",
           "ref": "020",
-          "label": "При квалификации типа"
+          "label": "Допущено; при квалификации типа"
         },
         {
           "id": "type-ordinary",
@@ -643,8 +808,86 @@ window.LAW_GRAPH = {
           "source": "congress-mesa",
           "target": "congress-toma-needed",
           "kind": "flow",
-          "label": "Вопрос ещё не поднят",
+          "label": "Допущено; вопрос типа ещё не поднят",
           "ref": "020"
+        },
+        {
+          "id": "congress-budget>congress-budget-effect",
+          "source": "congress-budget",
+          "target": "congress-budget-effect",
+          "kind": "flow",
+          "ref": "006"
+        },
+        {
+          "id": "congress-budget-effect>congress-budget-wait",
+          "source": "congress-budget-effect",
+          "target": "congress-budget-wait",
+          "kind": "flow",
+          "label": "Нет: бюджетное согласие не требуется",
+          "ref": "006"
+        },
+        {
+          "id": "congress-budget-effect>congress-budget-consent",
+          "source": "congress-budget-effect",
+          "target": "congress-budget-consent",
+          "kind": "flow",
+          "label": "Да: требуется conformidad",
+          "ref": "006"
+        },
+        {
+          "id": "congress-budget-consent>congress-budget-wait",
+          "source": "congress-budget-consent",
+          "target": "congress-budget-wait",
+          "kind": "flow",
+          "label": "Согласие / нет отказа за 30 дней",
+          "ref": "006"
+        },
+        {
+          "id": "congress-budget-consent>congress-budget-blocked",
+          "source": "congress-budget-consent",
+          "target": "congress-budget-blocked",
+          "kind": "flow",
+          "label": "Выраженный бюджетный отказ",
+          "ref": "006"
+        },
+        {
+          "id": "congress-budget-wait>congress-toma",
+          "source": "congress-budget-wait",
+          "target": "congress-toma",
+          "kind": "flow",
+          "ref": "006"
+        },
+        {
+          "id": "congress-mesa>congress-inadmissible",
+          "source": "congress-mesa",
+          "target": "congress-inadmissible",
+          "kind": "flow",
+          "label": "Нет",
+          "ref": "006"
+        },
+        {
+          "id": "congress-mesa>congress-reconsider",
+          "source": "congress-mesa",
+          "target": "congress-reconsider",
+          "kind": "flow",
+          "label": "Депутат / группа запросили reconsideración",
+          "ref": "006"
+        },
+        {
+          "id": "congress-reconsider>congress-toma-needed",
+          "source": "congress-reconsider",
+          "target": "congress-toma-needed",
+          "kind": "flow",
+          "label": "Допустимо: дальнейший порядок",
+          "ref": "006"
+        },
+        {
+          "id": "congress-reconsider>congress-inadmissible",
+          "source": "congress-reconsider",
+          "target": "congress-inadmissible",
+          "kind": "flow",
+          "label": "Не допущено",
+          "ref": "006"
         }
       ],
       "removeEdges": [
@@ -767,26 +1010,11 @@ window.LAW_GRAPH = {
     "approval": {
       "nodes": [
         "congress-plenary",
-        "congress-full-commission"
+        "congress-full-commission",
+        "commission-delegable",
+        "commission-avocation"
       ],
       "edges": [
-        {
-          "id": "approval>congress-plenary",
-          "source": "approval",
-          "target": "congress-plenary",
-          "kind": "flow",
-          "label": "Рассмотрение пленумом",
-          "ref": "008"
-        },
-        {
-          "id": "approval>congress-full-commission",
-          "source": "approval",
-          "target": "congress-full-commission",
-          "kind": "flow",
-          "label": "Обычный закон · при делегировании",
-          "ref": "008",
-          "mode": "ordinary"
-        },
         {
           "id": "congress-plenary>senate",
           "source": "congress-plenary",
@@ -803,6 +1031,48 @@ window.LAW_GRAPH = {
           "label": "Текст одобрен",
           "ref": "008",
           "mode": "ordinary"
+        },
+        {
+          "id": "approval>commission-delegable",
+          "source": "approval",
+          "target": "commission-delegable",
+          "kind": "flow",
+          "ref": "008"
+        },
+        {
+          "id": "commission-delegable>congress-plenary",
+          "source": "commission-delegable",
+          "target": "congress-plenary",
+          "kind": "flow",
+          "label": "Нет, в том числе органический закон",
+          "ref": "008"
+        },
+        {
+          "id": "commission-delegable>commission-avocation",
+          "source": "commission-delegable",
+          "target": "commission-avocation",
+          "kind": "flow",
+          "label": "Да",
+          "ref": "008",
+          "mode": "ordinary"
+        },
+        {
+          "id": "commission-avocation>congress-plenary",
+          "source": "commission-avocation",
+          "target": "congress-plenary",
+          "kind": "flow",
+          "label": "Да",
+          "ref": "008",
+          "mode": "ordinary"
+        },
+        {
+          "id": "commission-avocation>congress-full-commission",
+          "source": "commission-avocation",
+          "target": "congress-full-commission",
+          "kind": "flow",
+          "label": "Нет: действует делегирование",
+          "ref": "008",
+          "mode": "ordinary"
         }
       ],
       "removeEdges": [
@@ -812,7 +1082,11 @@ window.LAW_GRAPH = {
     },
     "ilp-signatures": {
       "nodes": [
-        "ilp-electors"
+        "ilp-electors",
+        "ilp-delivery",
+        "ilp-extension",
+        "ilp-timely",
+        "ilp-expired"
       ],
       "edges": [
         {
@@ -823,10 +1097,516 @@ window.LAW_GRAPH = {
           "label": "Подписывают",
           "ref": "005",
           "mode": "ordinary"
+        },
+        {
+          "id": "ilp-signatures>ilp-delivery",
+          "source": "ilp-signatures",
+          "target": "ilp-delivery",
+          "kind": "flow",
+          "label": "Общий срок — 9 месяцев",
+          "ref": "005",
+          "mode": "ordinary"
+        },
+        {
+          "id": "ilp-signatures>ilp-extension",
+          "source": "ilp-signatures",
+          "target": "ilp-extension",
+          "kind": "flow",
+          "label": "Вопрос продления при causa mayor",
+          "ref": "005",
+          "mode": "ordinary"
+        },
+        {
+          "id": "ilp-extension>ilp-delivery",
+          "source": "ilp-extension",
+          "target": "ilp-delivery",
+          "kind": "flow",
+          "label": "Да: ещё 3 месяца",
+          "ref": "005",
+          "mode": "ordinary"
+        },
+        {
+          "id": "ilp-extension-denied",
+          "source": "ilp-extension",
+          "target": "ilp-delivery",
+          "kind": "flow",
+          "label": "Нет: срок не продлён",
+          "ref": "005",
+          "mode": "ordinary"
+        },
+        {
+          "id": "ilp-delivery>ilp-timely",
+          "source": "ilp-delivery",
+          "target": "ilp-timely",
+          "kind": "flow",
+          "ref": "005",
+          "mode": "ordinary"
+        },
+        {
+          "id": "ilp-timely>ilp-check",
+          "source": "ilp-timely",
+          "target": "ilp-check",
+          "kind": "flow",
+          "label": "Да",
+          "ref": "005",
+          "mode": "ordinary"
+        },
+        {
+          "id": "ilp-timely>ilp-expired",
+          "source": "ilp-timely",
+          "target": "ilp-expired",
+          "kind": "flow",
+          "label": "Нет",
+          "ref": "005",
+          "mode": "ordinary"
         }
       ],
-      "removeEdges": [],
-      "description": "Граждане участвуют на этом этапе, подписывая предварительно допущенное предложение."
+      "removeEdges": [
+        "ilp-signatures>ilp-check"
+      ],
+      "description": "Подписанты как участники, необязательное продление Mesa и проверка срока передачи подписей JEC."
+    },
+    "congress-ponencia": {
+      "nodes": [
+        "amend-budget-effect",
+        "amend-budget-consent",
+        "amend-budget-blocked",
+        "amend-organic-effect",
+        "amend-organic-mesa",
+        "amend-organic-blocked"
+      ],
+      "edges": [
+        {
+          "id": "congress-ponencia>amend-budget-effect",
+          "source": "congress-ponencia",
+          "target": "amend-budget-effect",
+          "kind": "flow",
+          "ref": "007"
+        },
+        {
+          "id": "amend-budget-effect>amend-organic-effect",
+          "source": "amend-budget-effect",
+          "target": "amend-organic-effect",
+          "kind": "flow",
+          "label": "Нет",
+          "ref": "007"
+        },
+        {
+          "id": "amend-budget-effect>amend-budget-consent",
+          "source": "amend-budget-effect",
+          "target": "amend-budget-consent",
+          "kind": "flow",
+          "label": "Да: через председательство Конгресса",
+          "ref": "007"
+        },
+        {
+          "id": "amend-budget-consent>amend-organic-effect",
+          "source": "amend-budget-consent",
+          "target": "amend-organic-effect",
+          "kind": "flow",
+          "label": "Согласие / молчание 15 дней",
+          "ref": "007"
+        },
+        {
+          "id": "amend-budget-consent>amend-budget-blocked",
+          "source": "amend-budget-consent",
+          "target": "amend-budget-blocked",
+          "kind": "flow",
+          "label": "Несогласие",
+          "ref": "007"
+        },
+        {
+          "id": "amend-budget-blocked>amend-organic-effect",
+          "source": "amend-budget-blocked",
+          "target": "amend-organic-effect",
+          "kind": "flow",
+          "label": "Остальные положения без этой поправки",
+          "ref": "007"
+        },
+        {
+          "id": "amend-organic-effect>congress-commission",
+          "source": "amend-organic-effect",
+          "target": "congress-commission",
+          "kind": "flow",
+          "label": "Нет",
+          "ref": "020"
+        },
+        {
+          "id": "amend-organic-effect>amend-organic-mesa",
+          "source": "amend-organic-effect",
+          "target": "amend-organic-mesa",
+          "kind": "flow",
+          "label": "Да: обращение Ponencia",
+          "ref": "020"
+        },
+        {
+          "id": "amend-organic-mesa>congress-commission",
+          "source": "amend-organic-mesa",
+          "target": "congress-commission",
+          "kind": "flow",
+          "label": "Допущено; учесть квалификацию",
+          "ref": "020"
+        },
+        {
+          "id": "amend-organic-mesa>amend-organic-blocked",
+          "source": "amend-organic-mesa",
+          "target": "amend-organic-blocked",
+          "kind": "flow",
+          "label": "Не допущено",
+          "ref": "020"
+        },
+        {
+          "id": "amend-organic-blocked>congress-commission",
+          "source": "amend-organic-blocked",
+          "target": "congress-commission",
+          "kind": "flow",
+          "label": "Без этой поправки",
+          "ref": "020"
+        }
+      ],
+      "removeEdges": [
+        "congress-ponencia>congress-commission"
+      ],
+      "description": "Проверки отдельных поправок с участием Правительства и Mesa. Неудача поправки не означает отклонения всего текста."
+    },
+    "congress-commission": {
+      "nodes": [
+        "late-organic-needed",
+        "late-organic",
+        "late-debate-started",
+        "late-organic-restart",
+        "commission-debate"
+      ],
+      "edges": [
+        {
+          "id": "congress-commission>late-organic-needed",
+          "source": "congress-commission",
+          "target": "late-organic-needed",
+          "kind": "flow",
+          "ref": "020"
+        },
+        {
+          "id": "late-organic-needed>late-organic",
+          "source": "late-organic-needed",
+          "target": "late-organic",
+          "kind": "flow",
+          "label": "Да; вопрос ранее не поднимался",
+          "ref": "020"
+        },
+        {
+          "id": "late-organic-needed>commission-debate",
+          "source": "late-organic-needed",
+          "target": "commission-debate",
+          "kind": "flow",
+          "label": "Нет",
+          "ref": "020"
+        },
+        {
+          "id": "late-organic>late-debate-started",
+          "source": "late-organic",
+          "target": "late-debate-started",
+          "kind": "flow",
+          "label": "Да",
+          "ref": "020"
+        },
+        {
+          "id": "late-organic>commission-debate",
+          "source": "late-organic",
+          "target": "commission-debate",
+          "kind": "flow",
+          "label": "Нет",
+          "ref": "020"
+        },
+        {
+          "id": "late-debate-started>late-organic-restart",
+          "source": "late-debate-started",
+          "target": "late-organic-restart",
+          "kind": "flow",
+          "label": "Да",
+          "ref": "020"
+        },
+        {
+          "id": "late-debate-started>commission-debate",
+          "source": "late-debate-started",
+          "target": "commission-debate",
+          "kind": "flow",
+          "label": "Нет",
+          "ref": "020"
+        },
+        {
+          "id": "late-organic-restart>commission-debate",
+          "source": "late-organic-restart",
+          "target": "commission-debate",
+          "kind": "flow",
+          "ref": "020"
+        },
+        {
+          "id": "commission-debate>approval",
+          "source": "commission-debate",
+          "target": "approval",
+          "kind": "flow",
+          "ref": "007"
+        }
+      ],
+      "removeEdges": [
+        "congress-commission>approval"
+      ],
+      "description": "Необязательный поздний запрос комиссии в Mesa и последствия органической квалификации."
+    },
+    "congress-plenary": {
+      "nodes": [
+        "organic-first-vote",
+        "organic-new-report",
+        "organic-second-vote",
+        "organic-rejected"
+      ],
+      "edges": [
+        {
+          "id": "congress-plenary>senate",
+          "source": "congress-plenary",
+          "target": "senate",
+          "kind": "flow",
+          "label": "Обычный текст одобрен",
+          "ref": "008",
+          "mode": "ordinary"
+        },
+        {
+          "id": "congress-plenary>organic-first-vote",
+          "source": "congress-plenary",
+          "target": "organic-first-vote",
+          "kind": "flow",
+          "ref": "009",
+          "mode": "organic"
+        },
+        {
+          "id": "organic-first-vote>senate",
+          "source": "organic-first-vote",
+          "target": "senate",
+          "kind": "flow",
+          "label": "Да",
+          "ref": "009",
+          "mode": "organic"
+        },
+        {
+          "id": "organic-first-vote>organic-new-report",
+          "source": "organic-first-vote",
+          "target": "organic-new-report",
+          "kind": "return",
+          "label": "Нет: возврат в комиссию",
+          "ref": "009",
+          "mode": "organic"
+        },
+        {
+          "id": "organic-new-report>organic-second-vote",
+          "source": "organic-new-report",
+          "target": "organic-second-vote",
+          "kind": "flow",
+          "ref": "009",
+          "mode": "organic"
+        },
+        {
+          "id": "organic-second-vote>senate",
+          "source": "organic-second-vote",
+          "target": "senate",
+          "kind": "flow",
+          "label": "Да",
+          "ref": "009",
+          "mode": "organic"
+        },
+        {
+          "id": "organic-second-vote>organic-rejected",
+          "source": "organic-second-vote",
+          "target": "organic-rejected",
+          "kind": "flow",
+          "label": "Нет",
+          "ref": "009",
+          "mode": "organic"
+        }
+      ],
+      "removeEdges": [
+        "congress-plenary>senate"
+      ],
+      "description": "Обычное одобрение и два окончательных голосования органического текста с возвратом в комиссию между ними."
+    },
+    "senate": {
+      "nodes": [
+        "senate-review-amendments",
+        "senate-amend-effect",
+        "senate-amend-consent",
+        "senate-amend-review",
+        "senate-amend-blocked",
+        "senate-review-result",
+        "senate-session-change",
+        "senate-session-consent",
+        "senate-session-mesa",
+        "senate-session-remedy"
+      ],
+      "edges": [
+        {
+          "id": "senate>senate-review-amendments",
+          "source": "senate",
+          "target": "senate-review-amendments",
+          "kind": "flow",
+          "label": "Есть внесённые поправки",
+          "ref": "010"
+        },
+        {
+          "id": "senate>senate-review-result",
+          "source": "senate",
+          "target": "senate-review-result",
+          "kind": "flow",
+          "label": "Без поправок: решение по тексту / вето",
+          "ref": "010"
+        },
+        {
+          "id": "senate-review-amendments>senate-amend-effect",
+          "source": "senate-review-amendments",
+          "target": "senate-amend-effect",
+          "kind": "flow",
+          "ref": "010"
+        },
+        {
+          "id": "senate-amend-effect>senate-review-result",
+          "source": "senate-amend-effect",
+          "target": "senate-review-result",
+          "kind": "flow",
+          "label": "Нет бюджетного возражения",
+          "ref": "010"
+        },
+        {
+          "id": "senate-amend-effect>senate-amend-consent",
+          "source": "senate-amend-effect",
+          "target": "senate-amend-consent",
+          "kind": "flow",
+          "label": "Да",
+          "ref": "010"
+        },
+        {
+          "id": "senate-amend-consent>senate-review-result",
+          "source": "senate-amend-consent",
+          "target": "senate-review-result",
+          "kind": "flow",
+          "label": "Согласие / молчание 5 или 2 дня",
+          "ref": "010"
+        },
+        {
+          "id": "senate-amend-consent>senate-amend-review",
+          "source": "senate-amend-consent",
+          "target": "senate-amend-review",
+          "kind": "flow",
+          "label": "Мотивированное несогласие",
+          "ref": "010"
+        },
+        {
+          "id": "senate-amend-review>senate-review-result",
+          "source": "senate-amend-review",
+          "target": "senate-review-result",
+          "kind": "flow",
+          "label": "Да",
+          "ref": "010"
+        },
+        {
+          "id": "senate-amend-review>senate-amend-blocked",
+          "source": "senate-amend-review",
+          "target": "senate-amend-blocked",
+          "kind": "flow",
+          "label": "Нет",
+          "ref": "010"
+        },
+        {
+          "id": "senate-amend-blocked>senate-review-result",
+          "source": "senate-amend-blocked",
+          "target": "senate-review-result",
+          "kind": "flow",
+          "label": "Решение по остальному тексту",
+          "ref": "010"
+        },
+        {
+          "id": "senate-review-result>return",
+          "source": "senate-review-result",
+          "target": "return",
+          "kind": "return",
+          "label": "Да: вето / поправки",
+          "ref": "010"
+        },
+        {
+          "id": "senate-review-result>final",
+          "source": "senate-review-result",
+          "target": "final",
+          "kind": "flow",
+          "label": "Нет: процедура завершена",
+          "ref": "010"
+        },
+        {
+          "id": "senate>senate-session-change",
+          "source": "senate",
+          "target": "senate-session-change",
+          "kind": "flow",
+          "label": "Отдельно: изменения в ходе заседания",
+          "ref": "010"
+        },
+        {
+          "id": "senate-session-change>senate-session-consent",
+          "source": "senate-session-change",
+          "target": "senate-session-consent",
+          "kind": "flow",
+          "label": "Немедленно Правительству",
+          "ref": "010"
+        },
+        {
+          "id": "senate-session-consent>senate-review-result",
+          "source": "senate-session-consent",
+          "target": "senate-review-result",
+          "kind": "flow",
+          "label": "Нет бюджетного несогласия в этот срок",
+          "ref": "010"
+        },
+        {
+          "id": "senate-session-consent>senate-session-mesa",
+          "source": "senate-session-consent",
+          "target": "senate-session-mesa",
+          "kind": "flow",
+          "label": "Да",
+          "ref": "010"
+        },
+        {
+          "id": "senate-session-mesa>senate-amend-blocked",
+          "source": "senate-session-mesa",
+          "target": "senate-amend-blocked",
+          "kind": "flow",
+          "label": "Да: возражение сохраняется",
+          "ref": "010"
+        },
+        {
+          "id": "senate-session-mesa>senate-review-result",
+          "source": "senate-session-mesa",
+          "target": "senate-review-result",
+          "kind": "flow",
+          "label": "Нет: поправка рассматривается",
+          "ref": "010"
+        },
+        {
+          "id": "senate-session-mesa>senate-session-remedy",
+          "source": "senate-session-mesa",
+          "target": "senate-session-remedy",
+          "kind": "flow",
+          "label": "Если решение оспорено",
+          "ref": "010"
+        },
+        {
+          "id": "senate-session-remedy>senate-review-result",
+          "source": "senate-session-remedy",
+          "target": "senate-review-result",
+          "kind": "flow",
+          "label": "Учесть результат при дальнейшем решении",
+          "ref": "010"
+        }
+      ],
+      "removeEdges": [
+        "senate-final",
+        "senate-return"
+      ],
+      "description": "Поправки, бюджетное согласие и решение Сената; отдельный государственный бюджет за границами карты."
     }
   },
   "nodeModes": {
@@ -839,7 +1619,17 @@ window.LAW_GRAPH = {
     "ilp-parliament": "ordinary",
     "ilp-refused": "ordinary",
     "congress-ordinary-type": "ordinary",
-    "congress-organic-type": "organic"
+    "congress-organic-type": "organic",
+    "commission-avocation": "ordinary",
+    "organic-first-vote": "organic",
+    "organic-new-report": "organic",
+    "organic-second-vote": "organic",
+    "organic-rejected": "organic",
+    "ilp-insufficient": "ordinary",
+    "ilp-delivery": "ordinary",
+    "ilp-extension": "ordinary",
+    "ilp-timely": "ordinary",
+    "ilp-expired": "ordinary"
   },
   "participantGroups": [
     {

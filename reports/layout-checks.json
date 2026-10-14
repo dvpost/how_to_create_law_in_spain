@@ -4,131 +4,163 @@
   "scenarios": [
     {
       "name": "Senate",
-      "nodes": 24,
-      "edges": 34,
+      "nodes": 30,
+      "edges": 42,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 2
     },
     {
       "name": "Reveal initiative",
-      "nodes": 24,
-      "edges": 34,
+      "nodes": 30,
+      "edges": 42,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 2
     },
     {
       "name": "Reveal government-source",
-      "nodes": 26,
-      "edges": 36,
+      "nodes": 33,
+      "edges": 45,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 2
     },
     {
       "name": "Reveal congress-source",
-      "nodes": 28,
-      "edges": 39,
+      "nodes": 35,
+      "edges": 48,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 2
     },
     {
       "name": "Reveal senate-source",
-      "nodes": 28,
-      "edges": 39,
+      "nodes": 35,
+      "edges": 48,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 2
     },
     {
       "name": "Reveal autonomy-source",
-      "nodes": 30,
-      "edges": 41,
+      "nodes": 37,
+      "edges": 50,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 2
     },
     {
       "name": "Reveal ilp-source",
-      "nodes": 39,
-      "edges": 51,
+      "nodes": 53,
+      "edges": 70,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 2
     },
     {
       "name": "Reveal admission",
-      "nodes": 47,
-      "edges": 62,
+      "nodes": 67,
+      "edges": 90,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
       "crossingPairs": 2
     },
     {
       "name": "Reveal discussion",
-      "nodes": 55,
-      "edges": 73,
+      "nodes": 75,
+      "edges": 101,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
       "crossingPairs": 2
     },
     {
       "name": "Reveal approval",
-      "nodes": 57,
-      "edges": 76,
+      "nodes": 79,
+      "edges": 107,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
       "crossingPairs": 2
     },
     {
       "name": "Reveal ilp-signatures",
-      "nodes": 58,
-      "edges": 77,
+      "nodes": 84,
+      "edges": 114,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 8
+      "crossingPairs": 3
+    },
+    {
+      "name": "Reveal congress-ponencia",
+      "nodes": 90,
+      "edges": 124,
+      "nodeOverlaps": 0,
+      "edgeNodeHits": 0,
+      "crossingPairs": 3
+    },
+    {
+      "name": "Reveal congress-commission",
+      "nodes": 95,
+      "edges": 132,
+      "nodeOverlaps": 0,
+      "edgeNodeHits": 0,
+      "crossingPairs": 3
+    },
+    {
+      "name": "Reveal congress-plenary",
+      "nodes": 99,
+      "edges": 138,
+      "nodeOverlaps": 0,
+      "edgeNodeHits": 0,
+      "crossingPairs": 5
+    },
+    {
+      "name": "Reveal senate",
+      "nodes": 109,
+      "edges": 156,
+      "nodeOverlaps": 0,
+      "edgeNodeHits": 0,
+      "crossingPairs": 7
     },
     {
       "name": "ordinary",
-      "nodes": 56,
-      "edges": 74,
+      "nodes": 103,
+      "edges": 146,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 8
+      "crossingPairs": 4
     },
     {
       "name": "organic",
-      "nodes": 50,
-      "edges": 66,
+      "nodes": 91,
+      "edges": 127,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 5
     },
     {
       "name": "all",
-      "nodes": 57,
-      "edges": 76,
+      "nodes": 100,
+      "edges": 143,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 2
+      "crossingPairs": 3
     },
     {
       "name": "No returns",
-      "nodes": 56,
-      "edges": 71,
+      "nodes": 99,
+      "edges": 138,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 3
     },
     {
       "name": "Latest request",
-      "nodes": 54,
-      "edges": 68,
+      "nodes": 97,
+      "edges": 134,
       "nodeOverlaps": 0,
       "edgeNodeHits": 0,
-      "crossingPairs": 1
+      "crossingPairs": 4
     },
     {
       "name": "Reset and align",

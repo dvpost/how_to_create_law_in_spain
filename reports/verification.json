@@ -1,49 +1,43 @@
 {
-  "version": "v17",
-  "checked_date": "2026-10-14",
-  "structure": "participants-procedures-v8",
+  "version": "v18",
+  "checked_date": "14.10.2026",
+  "structure": "participants-procedures-v9",
   "browser_suites": {
     "graph": "PASS",
     "glossary": "PASS",
     "interface": "PASS",
     "layout": "PASS",
-    "interactions": "PASS"
+    "interactions": "PASS",
+    "conditions": "PASS"
   },
   "geometry": {
-    "scenarios": 17,
-    "largest_graph_nodes": 58,
+    "scenarios": 21,
+    "largest_graph_nodes": 109,
     "node_overlaps": 0,
     "edge_node_hits": 0,
-    "senate_crossing_pairs": 1,
+    "senate_crossing_pairs": 2,
     "details": "reports/layout-checks.json"
   },
-  "regression_evidence": "The new bulk-controls scenario failed because the expand-all toolbar button was absent. It passes with recursive expansion and the collapse button in the same toolbar.",
+  "regression_evidence": "conditions.browser.cjs first failed because congress-budget-effect did not exist. Extended ILP branches then exposed coincident fixed group ports and a nonorthogonal route in ordinary mode; distinct member-side ports resolve that case. Both regressions pass.",
   "checks": [
-    "Stable order through opening and closing all five source branches; autonomy second",
-    "Intermediate animation frames, fixed screen anchor and unchanged zoom",
-    "Orthogonal rerouting on dragfree with other node positions and camera unchanged",
-    "Reduced motion keeps the screen anchor",
-    "New request cancels an active transition",
-    "Every disclosure and all/ordinary/organic modes",
-    "Main-stage order and Senate return placement",
-    "ILP signers beside their signature stage",
-    "Latest asynchronous request wins",
-    "Visible ELK and libavoid failures, no automatic retry or alternative engine",
-    "Reading cards and terms preserves graph and viewport",
-    "Fullscreen enter/exit, mobile bounds, no page scroll",
-    "No HTTP requests during page use; embedded WASM",
-    "Collapsed Government alternative is clickable, preserved when returns are hidden, and replaced by the actual expanded path",
-    "The direct autonomy route keeps its own Congress path and separately explains budget consent",
-    "Senate responses continue to the final text only after the required Congress decision, without another Senate round",
-    "Toolbar expand/collapse all; complete nested expansion, subsequent individual edits, repeat collapse and exact initial overview restoration",
-    "Bulk actions preserve law/return filters and fit beside fullscreen on a mobile screen",
-    "Collapse cancels an unfinished bulk expansion"
+    "Conditional routes are explicit data entities with ref/loc; no automatic fact-to-node conversion",
+    "Direct autonomy submission reaches Congress before the shared budget gate",
+    "Government fiscal consent, criterio and adoption of a proyecto remain different",
+    "Mesa admission cannot by itself bypass the Senate budget gate",
+    "Individual amendment refusal does not reject the whole bill",
+    "ILP Mesa extension, delivery deadline, signature threshold and optional Constitutional Court path",
+    "Organic amendment admission, late qualification, delegation and two organic votes",
+    "Stable source order, fixed disclosure anchor, animation and reduced motion",
+    "Every expansion/mode, orthogonal dragfree rerouting, latest request and visible engine failure",
+    "Bulk expand/collapse and exact initial restoration",
+    "Card and term reading without reflow; no duplicate identical paragraph",
+    "Independent toggles, fullscreen API, mobile bounds and offline operation"
   ],
-  "local_html_links": 123,
+  "local_html_links": 96,
   "original_source_hashes": 14,
-  "proof_archive_hashes": 36,
+  "proof_archive_hashes": 38,
   "proof_folders": 20,
-  "glossary_terms": 60,
+  "glossary_terms": 62,
   "proof_references": "PASS",
   "current_screenshots": [
     "reports/map.png",
@@ -51,29 +45,16 @@
     "reports/senate.png",
     "reports/expanded.png",
     "reports/autonomy-collapsed.png",
-    "reports/autonomy-expanded.png"
-  ],
-  "cleanup": [
-    "Collapse-all control moved from settings to the toolbar with one existing reset handler",
-    "All branches open in one layout request; no sequential per-card rebuilds"
+    "reports/autonomy-expanded.png",
+    "reports/budget-conditions.png"
   ],
   "limits": [
     "Crossing minimization is heuristic; zero edge crossings is not guaranteed",
-    "Manual placement on top of another card is not resolved by moving other nodes",
-    "Edges are hidden during the 320 ms card transition and rebuilt at its end"
+    "Manual placement on another card is not resolved by moving other nodes",
+    "See the current scope catalog and reports/legal-conditions.json for legal boundaries"
   ],
   "placement": "elkjs 0.12.0",
   "routing": "libavoid-js 0.5.0-beta.5",
-  "legal_checks": {
-    "constitution": "Current BOE articles 87.2, 88, 90.2 and 134.6 checked against retained excerpts",
-    "congress": "Current BOE articles 121–123, 126–127 and 132 checked against retained excerpts",
-    "proofs": [
-      "001",
-      "002",
-      "003",
-      "006",
-      "010"
-    ],
-    "archive_bytes": "Existing official documents unchanged; claim mappings rebuilt"
-  }
+  "legal_checks": "reports/legal-conditions.json",
+  "source_archives": "Original source bytes unchanged; existing official articles added to relevant proof readers"
 }

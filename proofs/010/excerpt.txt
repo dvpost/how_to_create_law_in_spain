@@ -7,6 +7,18 @@ Artículo 90
 3. El plazo de dos meses de que el Senado dispone para vetar o enmendar el proyecto se reducirá al de veinte días naturales en los proyectos declarados urgentes por el Gobierno o por el Congreso de los Diputados.
 Subir
 
+[Bloque 153: #a134]
+Jurisprudencia
+Artículo 134
+1. Corresponde al Gobierno la elaboración de los Presupuestos Generales del Estado y a las Cortes Generales, su examen, enmienda y aprobación.
+2. Los Presupuestos Generales del Estado tendrán carácter anual, incluirán la totalidad de los gastos e ingresos del sector público estatal y en ellos se consignará el importe de los beneficios fiscales que afecten a los tributos del Estado.
+3. El Gobierno deberá presentar ante el Congreso de los Diputados los Presupuestos Generales del Estado al menos tres meses antes de la expiración de los del año anterior.
+4. Si la Ley de Presupuestos no se aprobara antes del primer día del ejercicio económico correspondiente, se considerarán automáticamente prorrogados los Presupuestos del ejercicio anterior hasta la aprobación de los nuevos.
+5. Aprobados los Presupuestos Generales del Estado, el Gobierno podrá presentar proyectos de ley que impliquen aumento del gasto público o disminución de los ingresos correspondientes al mismo ejercicio presupuestario.
+6. Toda proposición o enmienda que suponga aumento de los créditos o disminución de los ingresos presupuestarios requerirá la conformidad del Gobierno para su tramitación.
+7. La Ley de Presupuestos no puede crear tributos. Podrá modificarlos cuando una ley tributaria sustantiva así lo prevea.
+Subir
+
 Reglamento del Congreso
 [Bloque 163: #art120]
 Artículo 120.
@@ -98,5 +110,43 @@ Seleccionar redacción:
 Última actualización, publicada el 25/06/2025, en vigor a partir del 21/06/2025.
 Modificación publicada el 11/04/2025, en vigor a partir del 11/04/2025.
 Modificación publicada el 18/11/2023, en vigor a partir del 16/11/2023.
+Texto original, publicado el 13/05/1994, en vigor a partir del 10/05/1994.
+Subir
+
+[Bloque 221: #a151]
+Artículo 151.
+1. Toda proposición de ley presentada en el Senado será remitida de inmediato al Gobierno para que, al amparo del artículo 134. 6 de la Constitución, pueda manifestar su conformidad o disconformidad con su tramitación, si en su opinión supusiese aumento de los créditos o disminución de los ingresos presupuestarios.
+2. Finalizado el plazo de presentación de enmiendas a un proyecto o proposición de ley, éstas serán remitidas de inmediato al Gobierno a los efectos mencionados en el apartado anterior, salvo en el caso del Proyecto de Ley de Presupuestos Generales del Estado.
+3. La correspondiente comunicación del Gobierno deberá tener entrada en el Senado en el plazo máximo de diez días, a contar desde la remisión, si se tratase de proposiciones de ley, en el de cinco días si afectase a enmiendas presentadas a un proyecto o proposición tramitado por el procedimiento ordinario o en el de dos días cuando se refiriese a enmiendas formuladas dentro del procedimiento legislativo de urgencia. La no conformidad deberá ser motivada, pudiendo ser rechazada por la Mesa del Senado si no se aprecia suficientemente fundamentada. Transcurridos dichos plazos se entenderá que el silencio del Gobierno expresa conformidad con que prosiga la tramitación.
+4. La comunicación del Gobierno se pondrá de inmediato en conocimiento del Presidente de la Comisión en que se tramite el proyecto o proposición de ley.
+5. La presente facultad del Gobierno se entiende aplicable también a las enmiendas transaccionales y propuestas de modificación que se presenten durante las sesiones de las Comisiones y del Pleno, que serán remitidas inmediatamente al Gobierno a los efectos de este artículo, debiendo el Gobierno manifestar su eventual disconformidad antes de las últimas votaciones que se efectúen en el Senado.
+Cuando se trate de una sesión de la Comisión, corresponderá a la Mesa de la Comisión pronunciarse sobre la admisión de la disconformidad del Gobierno. Si no se admite ésta, la enmienda transaccional o propuesta de modificación se tramitará por la Comisión. Contra el acuerdo de la Mesa de la Comisión, cabrá recurso ante la Mesa de la Cámara, que, de estimarse, tendrá efectos para la fase del Pleno.
+Cuando se trate de la sesión plenaria, corresponderá a la Mesa de la Cámara pronunciarse sobre la admisión de la disconformidad del Gobierno, para lo cual el Presidente podrá decidir, en su caso, suspender la sesión. Contra el acuerdo de la Mesa del Senado cabrá reconsideración ante la misma en los términos del artículo 36.2 del Reglamento, debiendo ser necesariamente presentada por escrito y con anterioridad al inicio de las votaciones en el Pleno.
+Se modifica por el art. único.106 de la Reforma del Reglamento de 12 de noviembre de 2025. Ref. BOE-A-2025-23055
+Seleccionar redacción:
+Última actualización, publicada el 14/11/2025, en vigor a partir del 15/11/2025.
+Texto original, publicado el 13/05/1994, en vigor a partir del 10/05/1994.
+Subir
+
+[Bloque 53: #a36]
+Artículo 36.
+1. Corresponden a la Mesa las siguientes funciones:
+a) (Suprimida)
+b) Determinar el calendario de sesiones del Pleno para cada período de sesiones y acordar con el Presidente el orden del día de las sesiones plenarias, oída la Junta de Portavoces.
+b bis) Adoptar cuantas decisiones y medidas sean necesarias para el adecuado funcionamiento y organización de las Comisiones y sus órganos.
+c) Calificar, con arreglo al Reglamento, los escritos y documentos de índole parlamentaria, así como decidir sobre su admisibilidad y tramitación.
+d) Adoptar cuantas decisiones y medidas requieran la organización del trabajo y el régimen y gobierno interiores de la Cámara.
+e) Aprobar el proyecto de Presupuesto del Senado, dirigir y controlar su ejecución y aprobar sus modificaciones y su liquidación.
+f) Aprobar las normas que, en ejercicio de la autonomía del Senado, adapten las disposiciones generales del ordenamiento jurídico en materia presupuestaria, de control, de contabilidad y de contratación a la organización y funcionamiento de la Cámara.
+g) Aprobar las normas y adoptar las medidas que resulten precisas para garantizar la transparencia de la actividad de la Cámara y el derecho de acceso a la información pública del Senado.
+g bis) Aprobar las normas que, en ejercicio de la autonomía del Senado, adapten las disposiciones generales del ordenamiento jurídico en aquellas otras materias distintas a las enunciadas en las letras f) y g), si así fuera necesario por exigirlo la legislación aplicable.
+h) Cualesquiera otras que le confieran las leyes y el presente Reglamento.
+2. Cuando una decisión adoptada por la Mesa, en el ejercicio de las funciones a que se refiere el punto c) del número anterior, afecte directamente a un Senador o a un Grupo parlamentario, éstos podrán solicitar su reconsideración. La Mesa decidirá mediante resolución motivada.
+3. Las reuniones de la Mesa se podrán celebrar telemáticamente.
+Se modifica por el art. único.26 de la Reforma del Reglamento de 12 de noviembre de 2025. Ref. BOE-A-2025-23055
+Se reordena la letra d) como h) y se añaden las letras d), e), f) y g) por el art. 1 de la Reforma del Reglamento de 5 de junio de 2014. Ref. BOE-A-2014-6174.
+Seleccionar redacción:
+Última actualización, publicada el 14/11/2025, en vigor a partir del 15/11/2025.
+Modificación publicada el 11/06/2014, en vigor a partir del 10/06/2014.
 Texto original, publicado el 13/05/1994, en vigor a partir del 10/05/1994.
 Subir

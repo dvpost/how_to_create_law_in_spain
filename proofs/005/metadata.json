@@ -8,6 +8,10 @@
       "locator": ""
     },
     {
+      "text": "Показано необязательное amparo и последствия решений, прямо указанные в статье 6.2–3. Полная судебная процедура, её допустимость и остальные процессуальные исходы не детализированы; подача жалобы сама по себе не означает допуск ILP.",
+      "locator": "LO 3/1984, ст. 6"
+    },
+    {
       "text": "Граждане вносят предложение через организаторов инициативы — Comisión Promotora. После предварительного допуска граждане поддерживают это предложение подписями.",
       "locator": "LO 3/1984, ст. 3–4, 7"
     },
@@ -40,16 +44,8 @@
       "locator": "ст. 3.1"
     },
     {
-      "text": "",
-      "locator": ""
-    },
-    {
       "text": "Сначала подают текст по статьям с мотивировкой и составом Comisión Promotora через Secretaría General в Mesa Конгресса. Если документы поданы вне периода парламентских сессий, сроки начинают исчисляться в следующем периоде.",
       "locator": "ст. 3–4"
-    },
-    {
-      "text": "",
-      "locator": ""
     },
     {
       "text": "Mesa решает вопрос допустимости в течение 15 дней. Для исправимого дефекта требований статьи 3 даётся один месяц.",
@@ -60,16 +56,16 @@
       "locator": "ст. 6"
     },
     {
+      "text": "Помимо органических предметов, ILP исключена по налоговым и международным вопросам, помилованию, экономическому планированию по статье 131 Конституции и подготовке бюджета по статье 134.1. Mesa также проверяет требования документов, однородность предмета, отсутствие уже рассматриваемого совпадающего текста на стадии поправок или далее и отсутствие повторной существенно равной ILP в том же созыве.",
+      "locator": "LO 3/1984, ст. 2, 5.2.a–e"
+    },
+    {
       "text": "Исключены вопросы органических законов, налогообложения, международного характера, prerrogativa de gracia, а также статьи 131 и 134.1 Конституции.",
       "locator": "ст. 2"
     },
     {
       "text": "Находящаяся в парламентском рассмотрении ILP не прекращается из-за роспуска палаты. Mesa может вернуть её на определённую стадию без нового сертификата подписей.",
       "locator": "ст. 14"
-    },
-    {
-      "text": "",
-      "locator": ""
     },
     {
       "text": "После допуска Mesa сообщает JEC; JEC уведомляет комиссию инициаторов о допуске для начала сбора подписей.",
@@ -88,32 +84,64 @@
       "locator": "ст. 7.1–3"
     },
     {
-      "text": "",
-      "locator": ""
-    },
-    {
       "text": "Oficina del Censo Electoral проводит проверку и первичный подсчёт; JEC — окончательные проверку и подсчёт, затем направляет сертификат числа действительных подписей в Конгресс.",
       "locator": "ст. 11–12"
     },
     {
-      "text": "",
-      "locator": ""
+      "text": "Парламентская процедура начинается после уведомления о требуемом числе подписей. Недействительные подписи не считаются; само направление подписных листов не равнозначно подтверждению порога.",
+      "locator": "LO 3/1984, ст. 3.1, 12.2–3, 13.1"
     },
     {
       "text": "После подтверждения нужного числа подписей предложение публикуют и включают в повестку пленума для toma en consideración максимум за 6 месяцев. До этих прений представитель инициаторов выступает в профильной комиссии.",
       "locator": "ст. 13"
     },
     {
-      "text": "",
-      "locator": ""
-    },
-    {
       "text": "Отказ в допуске можно оспорить через recurso de amparo в Конституционном суде. Закон предусматривает продолжение процедуры или изменение затронутых положений по решению суда.",
       "locator": "ст. 6"
     },
     {
-      "text": "",
-      "locator": ""
+      "text": "Комиссия инициаторов вправе обжаловать отказ Mesa Конгресса в допуске инициативы через recurso de amparo в Конституционном суде. Это отдельный, необязательный судебный путь.",
+      "locator": "LO 3/1984, ст. 6.1"
+    },
+    {
+      "text": "Если суд решит, что оснований недопуска из статьи 5.2 нет, процедура продолжается. Если неправильность затрагивает отдельные положения, Mesa сообщает об этом организаторам для выбора между отзывом и продолжением после изменений.",
+      "locator": "LO 3/1984, ст. 6.2–3"
+    },
+    {
+      "text": "Процедура продолжается при признании отсутствия оснований недопуска либо при сохранении инициативы после соответствующих изменений. Это не разрешение ILP по предметам, исключённым статьёй 2.",
+      "locator": "LO 3/1984, ст. 6.2–3; 7.1"
+    },
+    {
+      "text": "Если суд указал на неправильность отдельных положений, Mesa Конгресса сообщает об этом инициаторам: они выбирают отзыв или сохранение инициативы после исправлений.",
+      "locator": "LO 3/1984, ст. 6.3"
+    },
+    {
+      "text": "После решения суда по отдельным положениям организаторы могут отозвать инициативу либо сохранить её, внеся соответствующие изменения.",
+      "locator": "LO 3/1984, ст. 6.3"
+    },
+    {
+      "text": "После сообщения Mesa о решении суда по отдельным положениям организаторы вправе выбрать отзыв инициативы.",
+      "locator": "LO 3/1984, ст. 6.3"
+    },
+    {
+      "text": "Недействительные подписи не учитываются. Для парламентской процедуры статьи 13.1 требуется уведомление, подтверждающее не менее 500 000 действительных подписей; без такого подтверждения этот переход не выполнен.",
+      "locator": "LO 3/1984, ст. 3.1, 12.2–3, 13.1"
+    },
+    {
+      "text": "Сбор подписей завершается передачей JEC в течение 9 месяцев с уведомления. При causa mayor, признанной Mesa Конгресса, срок может быть продлён на 3 месяца.",
+      "locator": "LO 3/1984, ст. 7.3"
+    },
+    {
+      "text": "При causa mayor, признанной Mesa Конгресса, девятимесячный срок сбора и передачи подписей может быть продлён на 3 месяца. Продление не автоматическое и не заменяет передачу подписей.",
+      "locator": "LO 3/1984, ст. 7.3"
+    },
+    {
+      "text": "Если установленный срок истёк без передачи собранных подписей, инициатива утрачивает силу (caducidad). При продлении учитывается продлённый срок.",
+      "locator": "LO 3/1984, ст. 7.3"
+    },
+    {
+      "text": "Истечение применимого срока без передачи собранных подписей приводит к прекращению инициативы вследствие caducidad.",
+      "locator": "LO 3/1984, ст. 7.3"
     },
     {
       "text": "Способ, которым граждане могут предложить парламенту текст закона. Инициаторы подают предложение, а избиратели поддерживают его удостоверенными подписями: требуется не менее 500 000. Подписи позволяют внести предложение; закон ещё должен пройти парламентскую процедуру.",
@@ -206,6 +234,10 @@
     {
       "text": "Часть года, в которую палаты работают в обычных сессиях. Конституция устанавливает два периода: с сентября по декабрь и с февраля по июнь. Вне них возможны предусмотренные Конституцией чрезвычайные сессии. Для ILP, поданной вне такого периода, закон отдельно регулирует начало сроков.",
       "locator": "CE 73; LO 3/1984, статья 4.2"
+    },
+    {
+      "text": "В показанной процедуре ILP так называется последствие истечения срока без передачи собранных подписей JEC. Общий срок — 9 месяцев от уведомления; при causa mayor, признанной Mesa Конгресса, возможно продление на 3 месяца.",
+      "locator": "LO 3/1984, статья 7.3"
     }
   ],
   "sources": [
@@ -279,6 +311,29 @@
           "heading": "Artículo octavo. Pliegos para la recogida de firmas.",
           "anchor": "aoctavo",
           "text": "[Bloque 9: #aoctavo]\nArtículo octavo. Pliegos para la recogida de firmas.\n1. Recibida la notificación de admisión de la proposición, la Comisión Promotora presentará ante la Junta Electoral Central, en papel de oficio, los pliegos necesarios para la recogida de firmas. Estos pliegos reproducirán el texto íntegro de la proposición.\nLos pliegos deberán estar escritos en castellano. Para la recogida de firmas en el territorio de una Comunidad Autónoma con otra lengua cooficial podrá utilizarse, conjuntamente, esta otra lengua.\n2. Si el texto de la proposición superase en extensión las tres caras de cada pliego, se acompañará en pliegos aparte, que se unirán al destinado a recoger las firmas, de modo que no puedan ser separados, sellándose y numerándose, de acuerdo con lo dispuesto en el apartado siguiente.\n3. Recibidos los pliegos por la Junta Electoral Central, ésta, dentro de las cuarenta y ocho horas siguientes, los sellará, numerará y devolverá a la Comisión Promotora.\nSe añade el párrafo segundo al apartado 1 por el art. único.6 de la Ley Orgánica 4/2006, de 26 de mayo. Ref. BOE-A-2006-9290\nSeleccionar redacción:\nÚltima actualización, publicada el 27/05/2006, en vigor a partir del 28/05/2006.\nTexto original, publicado el 27/03/1984, en vigor a partir del 16/04/1984.\nSubir"
+        }
+      ]
+    },
+    {
+      "title": "Constitución Española",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "resolved_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229",
+      "retrieved_at_utc": "2026-10-14T13:54:29.642281+00:00",
+      "sha256": "4fcb22f5b32889b0828ae67e83483df7b1c6a0cd364447527882379e3978eb35",
+      "content_type": "text/html; charset=UTF-8",
+      "file": "sources/constitution/official.html",
+      "key": "constitution",
+      "version": "Última actualización, publicada el 20/05/2026",
+      "articles": [
+        {
+          "heading": "Artículo 131",
+          "anchor": "a131",
+          "text": "[Bloque 150: #a131]\nJurisprudencia\nArtículo 131\n1. El Estado, mediante ley, podrá planificar la actividad económica general para atender a las necesidades colectivas, equilibrar y armonizar el desarrollo regional y sectorial y estimular el crecimiento de la renta y de la riqueza y su más justa distribución.\n2. El Gobierno elaborará los proyectos de planificación, de acuerdo con las previsiones que le sean suministradas por las Comunidades Autónomas y el asesoramiento y colaboración de los sindicatos y otras organizaciones profesionales, empresariales y económicas. A tal fin se constituirá un Consejo, cuya composición y funciones se desarrollarán por ley.\nSubir"
+        },
+        {
+          "heading": "Artículo 134",
+          "anchor": "a134",
+          "text": "[Bloque 153: #a134]\nJurisprudencia\nArtículo 134\n1. Corresponde al Gobierno la elaboración de los Presupuestos Generales del Estado y a las Cortes Generales, su examen, enmienda y aprobación.\n2. Los Presupuestos Generales del Estado tendrán carácter anual, incluirán la totalidad de los gastos e ingresos del sector público estatal y en ellos se consignará el importe de los beneficios fiscales que afecten a los tributos del Estado.\n3. El Gobierno deberá presentar ante el Congreso de los Diputados los Presupuestos Generales del Estado al menos tres meses antes de la expiración de los del año anterior.\n4. Si la Ley de Presupuestos no se aprobara antes del primer día del ejercicio económico correspondiente, se considerarán automáticamente prorrogados los Presupuestos del ejercicio anterior hasta la aprobación de los nuevos.\n5. Aprobados los Presupuestos Generales del Estado, el Gobierno podrá presentar proyectos de ley que impliquen aumento del gasto público o disminución de los ingresos correspondientes al mismo ejercicio presupuestario.\n6. Toda proposición o enmienda que suponga aumento de los créditos o disminución de los ingresos presupuestarios requerirá la conformidad del Gobierno para su tramitación.\n7. La Ley de Presupuestos no puede crear tributos. Podrá modificarlos cuando una ley tributaria sustantiva así lo prevea.\nSubir"
         }
       ]
     }

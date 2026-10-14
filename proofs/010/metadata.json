@@ -64,6 +64,50 @@
       "locator": "CE 90; RS 107.3"
     },
     {
+      "text": "Показаны бюджетные проверки предложений, ранее внесённых поправок и изменений во время заседаний Сената, включая решения Mesa и предусмотренные обращения. Государственный бюджет имеет отдельную процедуру; судебные споры о пределах бюджетного вето не развёрнуты.",
+      "locator": "RCD 111, 126–127; RS 151.1–5; CE 134.1"
+    },
+    {
+      "text": "После окончания срока внесения поправки в Сенате немедленно направляют Правительству для бюджетной проверки, кроме поправок к проекту государственного бюджета. Особая бюджетная процедура не включена в эту карту.",
+      "locator": "RS 151.2–3"
+    },
+    {
+      "text": "Правительство вправе заявить бюджетное несогласие с поправками, если, по его мнению, они увеличивают ассигнования или уменьшают бюджетные доходы.",
+      "locator": "RS 151.1–3; CE 134.6"
+    },
+    {
+      "text": "Для поправок в обычной процедуре Правительству дано 5 дней, в срочной — 2 дня с направления. Несогласие должно быть мотивировано. По истечении срока молчание означает согласие.",
+      "locator": "RS 151.3"
+    },
+    {
+      "text": "Mesa Сената может отклонить несогласие Правительства с рассмотрением поправки, если не сочтёт его достаточно обоснованным.",
+      "locator": "RS 151.3"
+    },
+    {
+      "text": "При необходимом бюджетном согласии и сохраняющемся несогласии Правительства поправка не продолжает рассмотрение по этому пути. Остальной текст и другие допустимые поправки не становятся автоматически отклонённым законопроектом.",
+      "locator": "RS 151.1–3; CE 134.6"
+    },
+    {
+      "text": "Вето, требующее абсолютного большинства сенаторов, или принятые поправки требуют последующего решения Конгресса. При завершённой процедуре без вето и изменений сохраняется редакция Конгресса. Условия окончательного одобрения без пленарного запроса указаны в RS 107.3.",
+      "locator": "CE 90.2; RS 107.3, 122.1; RCD 121"
+    },
+    {
+      "text": "Enmiendas transaccionales и предложения изменений во время заседаний комиссии или пленума немедленно направляют Правительству. Оно должно заявить возможное бюджетное несогласие до последних голосований в Сенате.",
+      "locator": "RS 151.5"
+    },
+    {
+      "text": "Для этих изменений Правительство должно заявить возможное бюджетное несогласие до последних голосований в Сенате. Здесь не применяется обычный срок 5 дней или срочный срок 2 дня для ранее внесённых поправок.",
+      "locator": "RS 151.5"
+    },
+    {
+      "text": "В заседании комиссии допустимость несогласия Правительства решает Mesa комиссии. Если оно не допускается, комиссия рассматривает поправку. В пленарном заседании решение принимает Mesa Сената; председатель может приостановить заседание для этого решения.",
+      "locator": "RS 151.5, абзацы 2–3"
+    },
+    {
+      "text": "Решение Mesa комиссии можно обжаловать в Mesa Сената: удовлетворение жалобы имеет последствия для пленарной стадии. Решение Mesa Сената по вопросу, возникшему в пленуме, можно просить пересмотреть по статье 36.2; требование подают письменно до начала пленарных голосований. Это не автоматический допуск поправки.",
+      "locator": "RS 151.5, абзацы 2–3; RS 36.2"
+    },
+    {
       "text": "Голосов «за» должно быть больше половины всего состава палаты или комиссии, а не только пришедших на заседание. В этой карте такое большинство нужно, например, для окончательного принятия органического закона Конгрессом и для вето Сената.",
       "locator": "CE 81.2, 90.2; официальный словарь Сената: Mayoría absoluta — пояснение, не норма"
     },
@@ -104,6 +148,11 @@
           "heading": "Artículo 90",
           "anchor": "a90",
           "text": "[Bloque 104: #a90]\nJurisprudencia\nArtículo 90\n1. Aprobado un proyecto de ley ordinaria u orgánica por el Congreso de los Diputados, su Presidente dará inmediata cuenta del mismo al Presidente del Senado, el cual lo someterá a la deliberación de éste.\n2. El Senado en el plazo de dos meses, a partir del día de la recepción del texto, puede, mediante mensaje motivado, oponer su veto o introducir enmiendas al mismo. El veto deberá ser aprobado por mayoría absoluta. El proyecto no podrá ser sometido al Rey para sanción sin que el Congreso ratifique por mayoría absoluta, en caso de veto, el texto inicial, o por mayoría simple, una vez transcurridos dos meses desde la interposición del mismo, o se pronuncie sobre las enmiendas, aceptándolas o no por mayoría simple.\n3. El plazo de dos meses de que el Senado dispone para vetar o enmendar el proyecto se reducirá al de veinte días naturales en los proyectos declarados urgentes por el Gobierno o por el Congreso de los Diputados.\nSubir"
+        },
+        {
+          "heading": "Artículo 134",
+          "anchor": "a134",
+          "text": "[Bloque 153: #a134]\nJurisprudencia\nArtículo 134\n1. Corresponde al Gobierno la elaboración de los Presupuestos Generales del Estado y a las Cortes Generales, su examen, enmienda y aprobación.\n2. Los Presupuestos Generales del Estado tendrán carácter anual, incluirán la totalidad de los gastos e ingresos del sector público estatal y en ellos se consignará el importe de los beneficios fiscales que afecten a los tributos del Estado.\n3. El Gobierno deberá presentar ante el Congreso de los Diputados los Presupuestos Generales del Estado al menos tres meses antes de la expiración de los del año anterior.\n4. Si la Ley de Presupuestos no se aprobara antes del primer día del ejercicio económico correspondiente, se considerarán automáticamente prorrogados los Presupuestos del ejercicio anterior hasta la aprobación de los nuevos.\n5. Aprobados los Presupuestos Generales del Estado, el Gobierno podrá presentar proyectos de ley que impliquen aumento del gasto público o disminución de los ingresos correspondientes al mismo ejercicio presupuestario.\n6. Toda proposición o enmienda que suponga aumento de los créditos o disminución de los ingresos presupuestarios requerirá la conformidad del Gobierno para su tramitación.\n7. La Ley de Presupuestos no puede crear tributos. Podrá modificarlos cuando una ley tributaria sustantiva así lo prevea.\nSubir"
         }
       ]
     },
@@ -180,6 +229,16 @@
           "heading": "Artículo 133.",
           "anchor": "a133",
           "text": "[Bloque 198: #a133]\nArtículo 133.\nEn los proyectos declarados urgentes por el Gobierno o por el Congreso de los Diputados, el Senado dispone de un plazo de veinte días naturales para ejercitar sus facultades de orden legislativo.\nLa Mesa de la Cámara podrá solicitar, en su caso, los antecedentes necesarios para apreciar que concurren las razones que conducen a la aplicación del procedimiento de urgencia.\nAsimismo, la Mesa del Senado, de oficio o a propuesta de un Grupo parlamentario o de veinticinco Senadores, podrá decidir la aplicación del procedimiento de urgencia.\nSe modifica por la Reforma del Reglamento de 19 de junio de 2025. Ref. BOE-A-2025-12859\nSe declara la inconstitucionalidad y nulidad del apartado 2, en la redacción dada por la Reforma aprobada por el Pleno el 14 de noviembre de 2023, por Sentencia del TC 63/2025, de 12 de marzo. Ref. BOE-A-2025-7429\nSe modifica por el art. 1 de la Reforma del Reglamento de 14 de noviembre de 2023. Ref. BOE-A-2023-23340\nTéngase en cuenta para su aplicación la disposición transitoria de la citada Reforma.\nSeleccionar redacción:\nÚltima actualización, publicada el 25/06/2025, en vigor a partir del 21/06/2025.\nModificación publicada el 11/04/2025, en vigor a partir del 11/04/2025.\nModificación publicada el 18/11/2023, en vigor a partir del 16/11/2023.\nTexto original, publicado el 13/05/1994, en vigor a partir del 10/05/1994.\nSubir"
+        },
+        {
+          "heading": "Artículo 151.",
+          "anchor": "a151",
+          "text": "[Bloque 221: #a151]\nArtículo 151.\n1. Toda proposición de ley presentada en el Senado será remitida de inmediato al Gobierno para que, al amparo del artículo 134. 6 de la Constitución, pueda manifestar su conformidad o disconformidad con su tramitación, si en su opinión supusiese aumento de los créditos o disminución de los ingresos presupuestarios.\n2. Finalizado el plazo de presentación de enmiendas a un proyecto o proposición de ley, éstas serán remitidas de inmediato al Gobierno a los efectos mencionados en el apartado anterior, salvo en el caso del Proyecto de Ley de Presupuestos Generales del Estado.\n3. La correspondiente comunicación del Gobierno deberá tener entrada en el Senado en el plazo máximo de diez días, a contar desde la remisión, si se tratase de proposiciones de ley, en el de cinco días si afectase a enmiendas presentadas a un proyecto o proposición tramitado por el procedimiento ordinario o en el de dos días cuando se refiriese a enmiendas formuladas dentro del procedimiento legislativo de urgencia. La no conformidad deberá ser motivada, pudiendo ser rechazada por la Mesa del Senado si no se aprecia suficientemente fundamentada. Transcurridos dichos plazos se entenderá que el silencio del Gobierno expresa conformidad con que prosiga la tramitación.\n4. La comunicación del Gobierno se pondrá de inmediato en conocimiento del Presidente de la Comisión en que se tramite el proyecto o proposición de ley.\n5. La presente facultad del Gobierno se entiende aplicable también a las enmiendas transaccionales y propuestas de modificación que se presenten durante las sesiones de las Comisiones y del Pleno, que serán remitidas inmediatamente al Gobierno a los efectos de este artículo, debiendo el Gobierno manifestar su eventual disconformidad antes de las últimas votaciones que se efectúen en el Senado.\nCuando se trate de una sesión de la Comisión, corresponderá a la Mesa de la Comisión pronunciarse sobre la admisión de la disconformidad del Gobierno. Si no se admite ésta, la enmienda transaccional o propuesta de modificación se tramitará por la Comisión. Contra el acuerdo de la Mesa de la Comisión, cabrá recurso ante la Mesa de la Cámara, que, de estimarse, tendrá efectos para la fase del Pleno.\nCuando se trate de la sesión plenaria, corresponderá a la Mesa de la Cámara pronunciarse sobre la admisión de la disconformidad del Gobierno, para lo cual el Presidente podrá decidir, en su caso, suspender la sesión. Contra el acuerdo de la Mesa del Senado cabrá reconsideración ante la misma en los términos del artículo 36.2 del Reglamento, debiendo ser necesariamente presentada por escrito y con anterioridad al inicio de las votaciones en el Pleno.\nSe modifica por el art. único.106 de la Reforma del Reglamento de 12 de noviembre de 2025. Ref. BOE-A-2025-23055\nSeleccionar redacción:\nÚltima actualización, publicada el 14/11/2025, en vigor a partir del 15/11/2025.\nTexto original, publicado el 13/05/1994, en vigor a partir del 10/05/1994.\nSubir"
+        },
+        {
+          "heading": "Artículo 36.",
+          "anchor": "a36",
+          "text": "[Bloque 53: #a36]\nArtículo 36.\n1. Corresponden a la Mesa las siguientes funciones:\na) (Suprimida)\nb) Determinar el calendario de sesiones del Pleno para cada período de sesiones y acordar con el Presidente el orden del día de las sesiones plenarias, oída la Junta de Portavoces.\nb bis) Adoptar cuantas decisiones y medidas sean necesarias para el adecuado funcionamiento y organización de las Comisiones y sus órganos.\nc) Calificar, con arreglo al Reglamento, los escritos y documentos de índole parlamentaria, así como decidir sobre su admisibilidad y tramitación.\nd) Adoptar cuantas decisiones y medidas requieran la organización del trabajo y el régimen y gobierno interiores de la Cámara.\ne) Aprobar el proyecto de Presupuesto del Senado, dirigir y controlar su ejecución y aprobar sus modificaciones y su liquidación.\nf) Aprobar las normas que, en ejercicio de la autonomía del Senado, adapten las disposiciones generales del ordenamiento jurídico en materia presupuestaria, de control, de contabilidad y de contratación a la organización y funcionamiento de la Cámara.\ng) Aprobar las normas y adoptar las medidas que resulten precisas para garantizar la transparencia de la actividad de la Cámara y el derecho de acceso a la información pública del Senado.\ng bis) Aprobar las normas que, en ejercicio de la autonomía del Senado, adapten las disposiciones generales del ordenamiento jurídico en aquellas otras materias distintas a las enunciadas en las letras f) y g), si así fuera necesario por exigirlo la legislación aplicable.\nh) Cualesquiera otras que le confieran las leyes y el presente Reglamento.\n2. Cuando una decisión adoptada por la Mesa, en el ejercicio de las funciones a que se refiere el punto c) del número anterior, afecte directamente a un Senador o a un Grupo parlamentario, éstos podrán solicitar su reconsideración. La Mesa decidirá mediante resolución motivada.\n3. Las reuniones de la Mesa se podrán celebrar telemáticamente.\nSe modifica por el art. único.26 de la Reforma del Reglamento de 12 de noviembre de 2025. Ref. BOE-A-2025-23055\nSe reordena la letra d) como h) y se añaden las letras d), e), f) y g) por el art. 1 de la Reforma del Reglamento de 5 de junio de 2014. Ref. BOE-A-2014-6174.\nSeleccionar redacción:\nÚltima actualización, publicada el 14/11/2025, en vigor a partir del 15/11/2025.\nModificación publicada el 11/06/2014, en vigor a partir del 10/06/2014.\nTexto original, publicado el 13/05/1994, en vigor a partir del 10/05/1994.\nSubir"
         }
       ]
     }

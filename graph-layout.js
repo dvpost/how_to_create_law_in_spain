@@ -36,10 +36,22 @@ window.createLawLayout=function(config){
   }
   if(order.size!==children.length)throw new Error('Unclassified cycle in legislative procedure');
   const reversed=new Set(edges.filter(edge=>edge.feedback&&order.get(ownerId(edge.source))>order.get(ownerId(edge.target))).map(edge=>edge.id));
+  const portSide=(edge,end)=>edge.kind==='return'||edge.feedback?'WEST':end==='source'?'SOUTH':'NORTH';
+  const groupPorts=new Map();
+  for(const edge of edges.filter(edge=>!internal.has(edge.id)))for(const end of ['source','target']){
+   if(!owners.has(edge[end]))continue;
+   const key=edge[end]+':'+portSide(edge,end);
+   if(!groupPorts.has(key))groupPorts.set(key,[]);
+   groupPorts.get(key).push(edge.id+':'+end);
+  }
   function port(edge,end){
-   const id=edge[end],owner=owners.get(id),node=byId.get(owner?owner.group.id:id),side=edge.kind==='return'||edge.feedback?'WEST':end==='source'?'SOUTH':'NORTH';
+   const id=edge[end],owner=owners.get(id),node=byId.get(owner?owner.group.id:id),side=portSide(edge,end);
    const result={id:edge.id+':'+end,width:0,height:0,layoutOptions:{'elk.port.side':side}};
-   if(owner){const m=owner.member;result.x=side==='WEST'?m.x:m.x+m.width/2;result.y=side==='SOUTH'?m.y+m.height:side==='NORTH'?m.y:m.y+m.height/2;}
+   if(owner){
+    const m=owner.member,slots=groupPorts.get(id+':'+side),fraction=(slots.indexOf(result.id)+1)/(slots.length+1);
+    result.x=side==='WEST'?m.x:m.x+m.width*fraction;
+    result.y=side==='SOUTH'?m.y+m.height:side==='NORTH'?m.y:m.y+m.height*fraction;
+   }
    node.ports.push(result);return result.id;
   }
   const modelOrder=new Map(children.map((node,index)=>[node.id,index]));
