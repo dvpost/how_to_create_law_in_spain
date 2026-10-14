@@ -1,6 +1,6 @@
 {
   "checked_date": "14.10.2026",
-  "structure": "participants-procedures-v11",
+  "structure": "participants-procedures-v12",
   "audited_stages": [
     "initiative",
     "admission",
@@ -8,7 +8,6 @@
     "approval",
     "senate",
     "return",
-    "final",
     "king",
     "publication"
   ],
@@ -242,11 +241,12 @@
       "nodes": [
         "king"
       ],
-      "loc": "CE 64,91",
+      "loc": "CE 64,90.2,91; RCD 121–123,132; RS 107.3",
       "proofs": [
+        "010",
         "011"
       ],
-      "finding": "Mandatory sanction/promulgation and countersignature described, no invented royal veto"
+      "finding": "Successful parliamentary outcomes enter the King directly; final-version conditions remain on decisions/edges and in the King description. Mandatory sanction/promulgation and countersignature, no invented royal veto."
     },
     {
       "area": "publication",

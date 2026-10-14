@@ -1,7 +1,7 @@
 {
-  "version": "v20",
+  "version": "v21",
   "checked_date": "2026-10-15",
-  "structure": "participants-procedures-v11",
+  "structure": "participants-procedures-v12",
   "browser_suites": {
     "graph": "PASS",
     "glossary": "PASS",
@@ -13,14 +13,15 @@
   },
   "geometry": {
     "scenarios": 22,
-    "largest_graph_nodes": 129,
+    "largest_graph_nodes": 128,
     "node_overlaps": 0,
     "edge_node_hits": 0,
     "senate_crossing_pairs": 2,
     "details": "reports/layout-checks.json"
   },
-  "regression_evidence": "conditions.browser.cjs failed before the change because the connector entry remained a separate stage. The model now has nine stages, continuous numbering and all six detailed applicant outputs enter admission. graph.browser.cjs verifies reading without disclosure, actual Mesa routes on expansion and removal of the direct discussion summary while expanded.",
+  "regression_evidence": "terminals.browser.cjs failed before the change because final remained a separate card. It now checks all eight summarized/detailed successful outputs enter the King directly, no final references or self-loops remain, and publication is the only exit from the King. Existing graph/conditions checks preserve origin-specific toma en consideracion and its refusal path.",
   "checks": [
+    "Successful parliamentary paths enter the King directly; final-version conditions and proof references retained in the description",
     "Single Congress submission/admission stage; no separate connector, broken input routes or numbering gap",
     "Conditional routes are explicit data entities with ref/loc; no automatic fact-to-node conversion",
     "Direct autonomy submission reaches Congress before the shared budget gate",
@@ -39,7 +40,7 @@
     "Ordinary and organic amendment decisions, no accepted amendments, and original-text restoration",
     "Single-reading negative result ends the whole text"
   ],
-  "local_html_links": 96,
+  "local_html_links": 117,
   "original_source_hashes": 14,
   "proof_archive_hashes": 38,
   "proof_folders": 20,

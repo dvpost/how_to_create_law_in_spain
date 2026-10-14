@@ -1,12 +1,11 @@
 {
-  "schema": "participants-procedures-v11",
+  "schema": "participants-procedures-v12",
   "mainPath": [
     "initiative",
     "admission",
     "discussion",
     "approval",
     "senate",
-    "final",
     "king",
     "publication"
   ],
@@ -52,18 +51,12 @@
       "kind": "flow"
     },
     {
-      "id": "senate-final",
+      "id": "senate-king",
       "source": "senate",
-      "target": "final",
+      "target": "king",
       "kind": "flow",
       "label": "Без вето / изменений",
       "ref": "010"
-    },
-    {
-      "id": "final-king",
-      "source": "final",
-      "target": "king",
-      "kind": "flow"
     },
     {
       "id": "king-publication",
@@ -80,9 +73,9 @@
       "ref": "010"
     },
     {
-      "id": "return-final",
+      "id": "return-king",
       "source": "return",
-      "target": "final",
+      "target": "king",
       "kind": "flow",
       "label": "Вето снято / решение по поправкам",
       "ref": "010"
@@ -1543,9 +1536,9 @@
           "ref": "010"
         },
         {
-          "id": "senate-review-result>final",
+          "id": "senate-review-result>king",
           "source": "senate-review-result",
-          "target": "final",
+          "target": "king",
           "kind": "flow",
           "label": "Нет вето / изменений; текст окончательно одобрен",
           "ref": "010"
@@ -1632,7 +1625,7 @@
         }
       ],
       "removeEdges": [
-        "senate-final",
+        "senate-king",
         "senate-return"
       ],
       "description": "Поправки, бюджетное согласие и решение Сената; отдельный государственный бюджет за границами карты."
@@ -1752,9 +1745,9 @@
           "mode": "organic"
         },
         {
-          "id": "veto-overcome>final",
+          "id": "veto-overcome>king",
           "source": "veto-overcome",
-          "target": "final",
+          "target": "king",
           "kind": "flow",
           "ref": "010",
           "label": "Исходный текст Конгресса"
@@ -1808,9 +1801,9 @@
           "label": "Нет"
         },
         {
-          "id": "response-original-text>final",
+          "id": "response-original-text>king",
           "source": "response-original-text",
-          "target": "final",
+          "target": "king",
           "kind": "flow",
           "ref": "010",
           "label": "Первоначальная редакция"
@@ -1824,9 +1817,9 @@
           "label": "Да"
         },
         {
-          "id": "response-law-type>final",
+          "id": "response-law-type>king",
           "source": "response-law-type",
-          "target": "final",
+          "target": "king",
           "kind": "flow",
           "ref": "010",
           "label": "Нет: обычный текст с принятыми поправками",
@@ -1842,9 +1835,9 @@
           "mode": "organic"
         },
         {
-          "id": "response-organic-vote>final",
+          "id": "response-organic-vote>king",
           "source": "response-organic-vote",
-          "target": "final",
+          "target": "king",
           "kind": "flow",
           "ref": "009",
           "label": "Да: редакция с принятыми поправками",
@@ -1869,9 +1862,9 @@
           "mode": "organic"
         },
         {
-          "id": "response-restore-original>final",
+          "id": "response-restore-original>king",
           "source": "response-restore-original",
-          "target": "final",
+          "target": "king",
           "kind": "flow",
           "ref": "009",
           "label": "Законопроект: исходная редакция",
@@ -1879,7 +1872,7 @@
         }
       ],
       "removeEdges": [
-        "return-final"
+        "return-king"
       ],
       "description": "Раздельные решения по вето и поправкам Сената, необходимые большинства, повторное голосование и явные окончания пути текста или поправки."
     }

@@ -71,7 +71,7 @@ const {pathToFileURL}=require('node:url');
   await scenario('Senate amendments end with the Congress decision',async page=>{
    const visible=await page.evaluate(()=>graph.getVisibleGraph());
    assert.ok(visible.edges.some(edge=>edge.source==='senate'&&edge.target==='return'&&edge.kind==='return'));
-   assert.ok(visible.edges.some(edge=>edge.source==='return'&&edge.target==='final'&&edge.kind==='flow'&&/Вето снято/.test(edge.label)));
+   assert.ok(visible.edges.some(edge=>edge.source==='return'&&edge.target==='king'&&edge.kind==='flow'&&/Вето снято/.test(edge.label)));
    assert.ok(!visible.edges.some(edge=>edge.source==='return'&&edge.target==='senate'));
    await page.evaluate(()=>graph.activate('return'));assert.match(await page.locator('#detail-content').textContent(),/повторного направления текста в Сенат нет/);assert.ok(await page.locator('#detail-content [data-proof="010"]').count());
   });

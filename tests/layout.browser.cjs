@@ -51,9 +51,9 @@ function nodeHits(geometry){
    const order=stagePositions(geometry);
    for(let i=1;i<order.length;i++)assert.ok(order[i-1]<order[i],name+': main stages must retain their order');
    const returnNode=geometry.nodes.find(node=>node.id==='return');
-   if(returnNode)assert.ok(returnNode.y>order[4]&&returnNode.y<order[5],name+': Senate return belongs between Senate review and the final text');
+   if(returnNode)assert.ok(returnNode.y>order[4]&&returnNode.y<order[5],name+': Senate return belongs between Senate review and the King');
   }
-  function stagePositions(g){return ['initiative','admission','discussion','approval','senate','final','king','publication'].map(id=>g.nodes.find(n=>n.id===id).y);}
+  function stagePositions(g){return ['initiative','admission','discussion','approval','senate','king','publication'].map(id=>g.nodes.find(n=>n.id===id).y);}
   verify(geometry,'Senate');
   assert.ok(crossings(geometry).length<=2,'The Senate reproduction must have at most two crossing pairs');
   await page.screenshot({path:path.resolve(__dirname,'../reports/senate.png')});

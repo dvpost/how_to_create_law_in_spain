@@ -7,6 +7,11 @@ const config=JSON.parse(fs.readFileSync(path.join(root,'graph.json'),'utf8'));
 const items=new Map([...data.stages,...data.entities].map(node=>[node.id,node]));
 const allEdges=[...config.edges,...Object.values(config.expansions).flatMap(spec=>spec.edges)];
 const has=(a,b)=>allEdges.some(edge=>edge.source===a&&edge.target===b);
+assert.ok(!items.has('final'),'Final approval is a condition of the incoming route, not another card before the King');
+assert.equal(items.get('king').number,'06');
+for(const source of ['senate','return','senate-review-result','veto-overcome','response-original-text','response-law-type','response-organic-vote','response-restore-original'])assert.ok(has(source,'king'),source+' must send the approved text directly to the King');
+assert.ok(allEdges.every(edge=>edge.source!=='final'&&edge.target!=='final'&&edge.source!==edge.target));
+assert.deepEqual(allEdges.filter(edge=>edge.source==='king').map(edge=>edge.target),['publication']);
 const amendmentEnds=['amend-budget-blocked','amend-organic-blocked','senate-amend-blocked','response-amend-rejected','response-amends-discarded'];
 const textEnds=['veto-rejected','single-reading-rejected','organic-rejected','congress-not-taken','senate-not-taken','government-returned','ilp-withdrawn','ilp-expired'];
 for(const [kind,ids] of [['amendment',amendmentEnds],['text',textEnds]])for(const id of ids){
@@ -32,7 +37,7 @@ assert.ok(!has('return','senate'));
   await page.goto(pathToFileURL(path.join(root,'index.html')).href);await page.evaluate(()=>graph.whenReady());
   await page.evaluate(()=>graph.toggle('return'));
   let view=await page.evaluate(()=>graph.getVisibleGraph());
-  assert.ok(!view.edges.some(edge=>edge.id==='return-final'),'Expanded Congress response has no summary shortcut');
+  assert.ok(!view.edges.some(edge=>edge.id==='return-king'),'Expanded Congress response has no summary shortcut');
   for(const id of ['veto-rejected','response-amend-rejected']){
    assert.ok(view.nodes.some(node=>node.id===id&&node.endType));
    const before=await page.evaluate(()=>graph.getState());await page.evaluate(id=>graph.activate(id),id);

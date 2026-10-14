@@ -9,7 +9,7 @@ const {pathToFileURL}=require('node:url');
   const errors=[],network=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))network.push(r.url());});
   await page.goto(pathToFileURL(path.resolve(__dirname,'../index.html')).href);
   const ready=()=>page.evaluate(()=>graph.whenReady());await ready();
-  assert.equal(await page.locator('[data-edge-title="senate-final"] [data-term="veto"]').count(),1,'Arrow labels also expose terms');
+  assert.equal(await page.locator('[data-edge-title="senate-king"] [data-term="veto"]').count(),1,'Arrow labels also expose terms');
   await page.evaluate(id=>graph.activate(id),'admission');
   assert.ok(await page.locator('#detail-content [data-term="ilp"]').count(),'ILP must have an inline definition');
   const initial=await page.evaluate(()=>graph.getState());

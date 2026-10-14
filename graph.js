@@ -4,7 +4,7 @@ window.createLawGraph=function(container,data,config,callbacks){
  const model=new Map(),expanded=new Set();
  let lawMode='all',returns=true,current=null,revision=0,latest,layoutStatus='pending',cancelMotion=null;
  const arrange=createLawLayout(config),routeFixed=createLawRouter(),edgeLabels=new Map();
- const kinds={initiative:'source',admission:'process',discussion:'process',approval:'process',senate:'process',final:'gateway',king:'actor',publication:'process',return:'process'};
+ const kinds={initiative:'source',admission:'process',discussion:'process',approval:'process',senate:'process',king:'actor',publication:'process',return:'process'};
  data.stages.forEach(item=>model.set(item.id,{id:item.id,item,kind:kinds[item.id],core:true,parent:null,children:[]}));
  data.entities.forEach(item=>model.set(item.id,{id:item.id,item,kind:item.kind,core:false,parent:null,children:[]}));
  for(const [id,spec] of Object.entries(config.expansions)){
