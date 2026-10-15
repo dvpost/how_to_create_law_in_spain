@@ -1,5 +1,5 @@
 {
-  "schema": "participants-procedures-v13",
+  "schema": "participants-procedures-v14",
   "mainPath": [
     "initiative",
     "admission",
@@ -95,6 +95,22 @@
       },
       "feedback": true,
       "mode": "ordinary"
+    },
+    {
+      "id": "discussion-single-preview",
+      "source": "discussion",
+      "target": "senate",
+      "kind": "preview",
+      "ref": "008",
+      "label": "Одно чтение: сразу на пленум"
+    },
+    {
+      "id": "senate-single-preview",
+      "source": "senate",
+      "target": "king",
+      "kind": "preview",
+      "ref": "010",
+      "label": "Одно чтение: без вето"
     }
   ],
   "expansions": {
@@ -891,7 +907,9 @@
         "alternative-text",
         "congress-ponencia",
         "congress-commission",
-        "single-reading-rejected"
+        "single-reading-rejected",
+        "single-organic-report",
+        "single-organic-revote"
       ],
       "edges": [
         {
@@ -915,7 +933,9 @@
           "target": "senate",
           "kind": "flow",
           "label": "Текст одобрен",
-          "ref": "008"
+          "ref": "008",
+          "organicLabel": "Есть абсолютное большинство",
+          "organicRef": "009"
         },
         {
           "id": "reading-choice>congress-amendments",
@@ -994,11 +1014,49 @@
           "target": "single-reading-rejected",
           "kind": "flow",
           "ref": "008",
+          "label": "Нет",
+          "mode": "ordinary"
+        },
+        {
+          "id": "single-reading>single-organic-report",
+          "source": "single-reading",
+          "target": "single-organic-report",
+          "kind": "flow",
+          "ref": "009",
+          "mode": "organic",
+          "label": "Нет абсолютного большинства"
+        },
+        {
+          "id": "single-organic-report>single-organic-revote",
+          "source": "single-organic-report",
+          "target": "single-organic-revote",
+          "kind": "flow",
+          "ref": "009",
+          "mode": "organic",
+          "label": "Новый dictamen — в течение месяца"
+        },
+        {
+          "id": "single-organic-revote>senate",
+          "source": "single-organic-revote",
+          "target": "senate",
+          "kind": "flow",
+          "ref": "009",
+          "mode": "organic",
+          "label": "Да"
+        },
+        {
+          "id": "single-organic-revote>single-reading-rejected",
+          "source": "single-organic-revote",
+          "target": "single-reading-rejected",
+          "kind": "flow",
+          "ref": "009",
+          "mode": "organic",
           "label": "Нет"
         }
       ],
       "removeEdges": [
-        "discussion-approval"
+        "discussion-approval",
+        "discussion-single-preview"
       ],
       "description": "Настоящие процедурные развилки и действия; сроки и формальные требования остаются в описании карточки."
     },
@@ -1443,6 +1501,9 @@
     },
     "senate": {
       "nodes": [
+        "senate-reading-choice",
+        "senate-single-reading",
+        "senate-ordinary-review",
         "senate-review-amendments",
         "senate-amend-effect",
         "senate-amend-consent",
@@ -1457,16 +1518,58 @@
       ],
       "edges": [
         {
-          "id": "senate>senate-review-amendments",
+          "id": "senate>senate-reading-choice",
           "source": "senate",
+          "target": "senate-reading-choice",
+          "kind": "flow",
+          "ref": "010"
+        },
+        {
+          "id": "senate-reading-choice>senate-single-reading",
+          "source": "senate-reading-choice",
+          "target": "senate-single-reading",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Да"
+        },
+        {
+          "id": "senate-reading-choice>senate-ordinary-review",
+          "source": "senate-reading-choice",
+          "target": "senate-ordinary-review",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Нет"
+        },
+        {
+          "id": "senate-single-reading>return",
+          "source": "senate-single-reading",
+          "target": "return",
+          "kind": "return",
+          "ref": "010",
+          "targetWhenExpanded": {
+            "return": "veto-first-vote"
+          },
+          "label": "Вето / отклонение абсолютным большинством"
+        },
+        {
+          "id": "senate-single-reading>king",
+          "source": "senate-single-reading",
+          "target": "king",
+          "kind": "flow",
+          "ref": "010",
+          "label": "Текст одобрен / вето отклонено"
+        },
+        {
+          "id": "senate-ordinary-review>senate-review-amendments",
+          "source": "senate-ordinary-review",
           "target": "senate-review-amendments",
           "kind": "flow",
           "label": "Есть внесённые поправки",
           "ref": "010"
         },
         {
-          "id": "senate>senate-review-result",
-          "source": "senate",
+          "id": "senate-ordinary-review>senate-review-result",
+          "source": "senate-ordinary-review",
           "target": "senate-review-result",
           "kind": "flow",
           "label": "Без поправок: решение по тексту / вето",
@@ -1544,8 +1647,8 @@
           "ref": "010"
         },
         {
-          "id": "senate>senate-session-change",
-          "source": "senate",
+          "id": "senate-ordinary-review>senate-session-change",
+          "source": "senate-ordinary-review",
           "target": "senate-session-change",
           "kind": "flow",
           "label": "Отдельно: изменения в ходе заседания",
@@ -1626,9 +1729,10 @@
       ],
       "removeEdges": [
         "senate-king",
-        "senate-return"
+        "senate-return",
+        "senate-single-preview"
       ],
-      "description": "Поправки, бюджетное согласие и решение Сената; отдельный государственный бюджет за границами карты."
+      "description": "Выбор одного чтения или обычного рассмотрения; вето, поправки и их бюджетная проверка. Срочность меняет сроки, а не выбирает одно чтение."
     },
     "return": {
       "nodes": [
@@ -1902,7 +2006,9 @@
     "response-organic-vote": "organic",
     "response-restore-original": "organic",
     "response-amends-discarded": "organic",
-    "veto-repeat-ordinary": "ordinary"
+    "veto-repeat-ordinary": "ordinary",
+    "single-organic-report": "organic",
+    "single-organic-revote": "organic"
   },
   "participantGroups": [
     {

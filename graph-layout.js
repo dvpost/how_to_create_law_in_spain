@@ -80,7 +80,15 @@ window.createLawLayout=function(config){
   const sizes=new Map(nodes.map(node=>[node.id,node]));
   for(const edge of previews){
    const source=positions.get(edge.source),target=positions.get(edge.target),direction=source.x<target.x?1:-1;
-   endpoints.set(edge.id,{source:{x:source.x+direction*sizes.get(edge.source).width/2,y:source.y},target:{x:target.x-direction*sizes.get(edge.target).width/2,y:target.y}});
+   const sourceSize=sizes.get(edge.source),targetSize=sizes.get(edge.target);
+   const sameRow=Math.abs(source.y-target.y)<(sourceSize.height+targetSize.height)/2;
+   const facing=sameRow&&Math.abs(source.x-target.x)>(sourceSize.width+targetSize.width)/2;
+   // A vertical shortcut runs along the right side of the main path. Separated
+   // participants in a row use facing ports, as with the autonomy/Government link.
+   endpoints.set(edge.id,{
+    source:{x:source.x+(facing?direction:1)*sourceSize.width/2,y:source.y+(facing?0:sourceSize.height/4)},
+    target:{x:target.x+(facing?-direction:1)*targetSize.width/2,y:target.y-(facing?0:targetSize.height/4)}
+   });
   }
   return {positions,endpoints};
  };

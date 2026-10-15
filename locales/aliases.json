@@ -62,7 +62,8 @@
     "local-commission": ["Comisión General de las Entidades Locales", "Comisión General de las Entidades Locales del Senado", "Comisión de Entidades Locales", "Comisión de Entidades Locales del Senado"],
     "autonomy-commission": ["Comisión General de las Comunidades Autónomas", "Comisión General de las Comunidades Autónomas del Senado"],
     "budget-consent": ["conformidad del Gobierno", "conformidad presupuestaria", "conformidad presupuestaria del Gobierno", "conformidad"],
-    "caducidad": ["caducidad de la iniciativa", "caducidad", "caduca"]
+    "caducidad": ["caducidad de la iniciativa", "caducidad", "caduca"],
+    "urgency": ["urgencia", "procedimiento de urgencia", "tramitación urgente"]
   },
   "en": {
     "ilp": ["popular legislative initiative", "popular legislative initiatives", "popular initiative", "popular initiatives", "ILP"],
@@ -127,6 +128,7 @@
     "local-commission": ["General Committee of Local Entities", "Senate General Committee of Local Entities", "Local Entities Committee", "Senate Local Entities Committee"],
     "autonomy-commission": ["General Committee of the Autonomous Communities", "Senate General Committee of the Autonomous Communities"],
     "budget-consent": ["Government budgetary consent", "Government consent", "budgetary consent"],
-    "caducidad": ["lapse of the popular initiative", "initiative lapses", "initiative lapsing", "lapses", "caducidad"]
+    "caducidad": ["lapse of the popular initiative", "initiative lapses", "initiative lapsing", "lapses", "caducidad"],
+    "urgency": ["urgency", "urgent procedure", "expedited time limits"]
   }
 }

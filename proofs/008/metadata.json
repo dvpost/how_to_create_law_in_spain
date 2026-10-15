@@ -4,6 +4,14 @@
   "checked_date": "14.10.2026",
   "claims": [
     {
+      "text": "Срочную процедуру назначает Mesa Конгресса по просьбе Правительства, двух парламентских групп или одной пятой членов палаты. Сроки по общему правилу сокращаются вдвое, с учётом полномочий Mesa по статье 91; если решение принято в ходе рассмотрения, срочность применяется к следующим процессуальным действиям.",
+      "locator": "RCD 91, 93–94"
+    },
+    {
+      "text": "◷ При срочности: сроки вдвое",
+      "locator": "RCD 93–94"
+    },
+    {
       "text": "Пленум или комиссия с полными законодательными полномочиями.",
       "locator": ""
     },
@@ -84,8 +92,8 @@
       "locator": "RCD 79.1, 122.2; официальный словарь Сената: Mayoría simple — пояснение, не норма"
     },
     {
-      "text": "Процедура Конгресса, при которой пленум обсуждает и голосует весь текст одним голосованием. Её назначает пленум по предложению Mesa, выслушав Junta de Portavoces, если характер или простота текста позволяют такой порядок.",
-      "locator": "RCD 150"
+      "text": "Сокращённый порядок рассмотрения текста непосредственно на пленуме, минуя обычную работу Ponencia и комиссии. Конгресс и Сенат назначают его каждый своим решением, если характер или простота текста позволяют. Одно чтение в Конгрессе не отменяет последующее рассмотрение в Сенате.",
+      "locator": "RCD 150; RS 129"
     },
     {
       "text": "Парламент принимает закон, которым поручает Правительству разработать и принять подробный текст с силой закона. В этом законе парламент заранее определяет тему, пределы, принципы и критерии поручения. Такой закон называется ley de bases; leyes de bases — множественное число.",
@@ -94,6 +102,14 @@
     {
       "text": "Саму ley de bases нельзя окончательно одобрить только в комиссии: она входит в перечень статьи 75.3. В этой ситуации парламент передаёт Правительству право издать акт с силой закона. Передача комиссии права одобрить закон — другой механизм.",
       "locator": "CE 75.2–3, 82.1–4"
+    },
+    {
+      "text": "Режим рассмотрения с сокращёнными сроками. Сам по себе он не пропускает работу над текстом и не заменяет её одним чтением. В Конгрессе сроки по общему правилу сокращаются вдвое; в Сенате действует срок 20 календарных дней с особыми правилами его исчисления.",
+      "locator": "RCD 91, 93–94; RS 133–135"
+    },
+    {
+      "text": "Срочную процедуру назначает Mesa Конгресса по просьбе Правительства, двух парламентских групп или одной пятой членов палаты. Сроки по общему правилу сокращаются вдвое, с учётом полномочий Mesa по статье 91; если решение принято в ходе рассмотрения, срочность применяется к следующим процессуальным действиям.",
+      "locator": "RCD 91, 93–94"
     }
   ],
   "sources": [
@@ -150,6 +166,21 @@
           "heading": "Artículo 150.",
           "anchor": "art150",
           "text": "[Bloque 205: #art150]\nArtículo 150.\n1. Cuando la naturaleza del proyecto o proposición de ley tomada en consideración lo aconsejen o su simplicidad de formulación lo permita, el Pleno de la Cámara, a propuesta de la Mesa, oída la Junta de Portavoces, podrá acordar que se tramite directamente y en lectura única.\n2. Adoptado tal acuerdo se procederá a un debate sujeto a las normas establecidas para los de totalidad, sometiéndose seguidamente el conjunto del texto a una sola votación.\n3. Si el resultado de la votación es favorable, el texto quedará aprobado y se remitirá al Senado. En caso contrario, quedará rechazado.\nSubir"
+        },
+        {
+          "heading": "Artículo 91.",
+          "anchor": "art91",
+          "text": "[Bloque 119: #art91]\nArtículo 91.\n1. La Mesa de la Cámara podrá acordar la prórroga o reducción de los plazos establecidos en este Reglamento.\n2. Salvo casos excepcionales, las prórrogas no serán superiores a otro tanto del plazo ni las reducciones a su mitad.\nSubir"
+        },
+        {
+          "heading": "Artículo 93.",
+          "anchor": "art93",
+          "text": "[Bloque 122: #art93]\nArtículo 93.\n1. A petición del Gobierno, de dos grupos parlamentarios o de una quinta parte de los miembros de la Cámara, la Mesa del Congreso podrá acordar que un asunto se tramite por procedimiento de urgencia.\n2. Si el acuerdo se tomara hallándose un trámite en curso, el procedimiento de urgencia se aplicará para los trámites siguientes a aquél.\nSe modifica el apartado 1 por el art. único.79 de la Reforma del Reglamento de 22 de julio de 2025. Ref. BOE-A-2025-15844\nSeleccionar redacción:\nÚltima actualización, publicada el 31/07/2025, en vigor a partir del 31/07/2025.\nTexto original, publicado el 05/03/1982, en vigor a partir del 24/02/1982.\nSubir"
+        },
+        {
+          "heading": "Artículo 94.",
+          "anchor": "art94",
+          "text": "[Bloque 123: #art94]\nArtículo 94.\nSin perjuicio de lo establecido en el artículo 91 del presente Reglamento, los plazos tendrán una duración de la mitad de los establecidos con carácter ordinario.\nSubir"
         }
       ]
     }

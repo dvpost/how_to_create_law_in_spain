@@ -489,7 +489,10 @@ window.LAW_MAP = {
           "79",
           "148",
           "149",
-          "150"
+          "150",
+          "91",
+          "93",
+          "94"
         ]
       },
       "sources": [
@@ -546,6 +549,21 @@ window.LAW_MAP = {
               "heading": "Artículo 150.",
               "anchor": "art150",
               "text": "[Bloque 205: #art150]\nArtículo 150.\n1. Cuando la naturaleza del proyecto o proposición de ley tomada en consideración lo aconsejen o su simplicidad de formulación lo permita, el Pleno de la Cámara, a propuesta de la Mesa, oída la Junta de Portavoces, podrá acordar que se tramite directamente y en lectura única.\n2. Adoptado tal acuerdo se procederá a un debate sujeto a las normas establecidas para los de totalidad, sometiéndose seguidamente el conjunto del texto a una sola votación.\n3. Si el resultado de la votación es favorable, el texto quedará aprobado y se remitirá al Senado. En caso contrario, quedará rechazado.\nSubir"
+            },
+            {
+              "heading": "Artículo 91.",
+              "anchor": "art91",
+              "text": "[Bloque 119: #art91]\nArtículo 91.\n1. La Mesa de la Cámara podrá acordar la prórroga o reducción de los plazos establecidos en este Reglamento.\n2. Salvo casos excepcionales, las prórrogas no serán superiores a otro tanto del plazo ni las reducciones a su mitad.\nSubir"
+            },
+            {
+              "heading": "Artículo 93.",
+              "anchor": "art93",
+              "text": "[Bloque 122: #art93]\nArtículo 93.\n1. A petición del Gobierno, de dos grupos parlamentarios o de una quinta parte de los miembros de la Cámara, la Mesa del Congreso podrá acordar que un asunto se tramite por procedimiento de urgencia.\n2. Si el acuerdo se tomara hallándose un trámite en curso, el procedimiento de urgencia se aplicará para los trámites siguientes a aquél.\nSe modifica el apartado 1 por el art. único.79 de la Reforma del Reglamento de 22 de julio de 2025. Ref. BOE-A-2025-15844\nSeleccionar redacción:\nÚltima actualización, publicada el 31/07/2025, en vigor a partir del 31/07/2025.\nTexto original, publicado el 05/03/1982, en vigor a partir del 24/02/1982.\nSubir"
+            },
+            {
+              "heading": "Artículo 94.",
+              "anchor": "art94",
+              "text": "[Bloque 123: #art94]\nArtículo 94.\nSin perjuicio de lo establecido en el artículo 91 del presente Reglamento, los plazos tendrán una duración de la mitad de los establecidos con carácter ordinario.\nSubir"
             }
           ]
         }
@@ -635,7 +653,13 @@ window.LAW_MAP = {
           "122",
           "133",
           "151",
-          "36"
+          "36",
+          "115",
+          "120",
+          "129",
+          "134",
+          "135",
+          "136"
         ]
       },
       "sources": [
@@ -745,6 +769,36 @@ window.LAW_MAP = {
               "heading": "Artículo 36.",
               "anchor": "a36",
               "text": "[Bloque 53: #a36]\nArtículo 36.\n1. Corresponden a la Mesa las siguientes funciones:\na) (Suprimida)\nb) Determinar el calendario de sesiones del Pleno para cada período de sesiones y acordar con el Presidente el orden del día de las sesiones plenarias, oída la Junta de Portavoces.\nb bis) Adoptar cuantas decisiones y medidas sean necesarias para el adecuado funcionamiento y organización de las Comisiones y sus órganos.\nc) Calificar, con arreglo al Reglamento, los escritos y documentos de índole parlamentaria, así como decidir sobre su admisibilidad y tramitación.\nd) Adoptar cuantas decisiones y medidas requieran la organización del trabajo y el régimen y gobierno interiores de la Cámara.\ne) Aprobar el proyecto de Presupuesto del Senado, dirigir y controlar su ejecución y aprobar sus modificaciones y su liquidación.\nf) Aprobar las normas que, en ejercicio de la autonomía del Senado, adapten las disposiciones generales del ordenamiento jurídico en materia presupuestaria, de control, de contabilidad y de contratación a la organización y funcionamiento de la Cámara.\ng) Aprobar las normas y adoptar las medidas que resulten precisas para garantizar la transparencia de la actividad de la Cámara y el derecho de acceso a la información pública del Senado.\ng bis) Aprobar las normas que, en ejercicio de la autonomía del Senado, adapten las disposiciones generales del ordenamiento jurídico en aquellas otras materias distintas a las enunciadas en las letras f) y g), si así fuera necesario por exigirlo la legislación aplicable.\nh) Cualesquiera otras que le confieran las leyes y el presente Reglamento.\n2. Cuando una decisión adoptada por la Mesa, en el ejercicio de las funciones a que se refiere el punto c) del número anterior, afecte directamente a un Senador o a un Grupo parlamentario, éstos podrán solicitar su reconsideración. La Mesa decidirá mediante resolución motivada.\n3. Las reuniones de la Mesa se podrán celebrar telemáticamente.\nSe modifica por el art. único.26 de la Reforma del Reglamento de 12 de noviembre de 2025. Ref. BOE-A-2025-23055\nSe reordena la letra d) como h) y se añaden las letras d), e), f) y g) por el art. 1 de la Reforma del Reglamento de 5 de junio de 2014. Ref. BOE-A-2014-6174.\nSeleccionar redacción:\nÚltima actualización, publicada el 14/11/2025, en vigor a partir del 15/11/2025.\nModificación publicada el 11/06/2014, en vigor a partir del 10/06/2014.\nTexto original, publicado el 13/05/1994, en vigor a partir del 10/05/1994.\nSubir"
+            },
+            {
+              "heading": "Artículo 115.",
+              "anchor": "a115",
+              "text": "[Bloque 172: #a115]\nArtículo 115.\n1. Durante la sesión de la Comisión, el Presidente podrá admitir a trámite enmiendas transaccionales que se presenten en ese momento y por escrito, tendentes a alcanzar un acuerdo entre dos o más enmiendas presentadas o un acuerdo entre una y varias enmiendas y el texto remitido por el Congreso de los Diputados. Aquellas enmiendas sobre las que se sustente la enmienda transaccional se tendrán por sustituidas por la enmienda transaccional resultante y ya no serán objeto de ulterior tramitación ni serán, por tanto, sometidas a votación. La enmienda transaccional deberá ser congruente con las enmiendas de las que trae causa y deberá estar suscrita por los autores de las mismas. El Presidente de la Comisión acordará no admitir a trámite aquellas enmiendas transaccionales que no cumplan con los anteriores requisitos. Frente a su resolución, cabrá la presentación de solicitudes de reconsideración ante la Mesa de la Cámara. En caso de que la Mesa estimase la reconsideración, la enmienda transaccional surtirá efectos en la fase de Pleno.\n2. También se podrán presentar, por cualquier Grupo parlamentario, durante el debate en la Comisión y por escrito correcciones de errores técnicos, aritméticos, terminológicos o gramaticales, que deberán ser admitidas por el Presidente de la Comisión si responden a esta finalidad y, en caso contrario, ser rechazadas, con aplicación del mismo régimen de impugnación expuesto en el apartado anterior. De aprobarse, no tendrán la consideración de enmienda a los efectos del artículo 90.2 de la Constitución.\n3. Asimismo, cabrá la presentación de propuestas de modificación del texto remitido por el Congreso de los Diputados, sin apoyo en ninguna enmienda, si están suscritas por todos los Portavoces de los Grupos parlamentarios.\nSe modifica por el art. único.88 de la Reforma del Reglamento de 12 de noviembre de 2025. Ref. BOE-A-2025-23055\nSeleccionar redacción:\nÚltima actualización, publicada el 14/11/2025, en vigor a partir del 15/11/2025.\nTexto original, publicado el 13/05/1994, en vigor a partir del 10/05/1994.\nSubir"
+            },
+            {
+              "heading": "Artículo 120.",
+              "anchor": "a120",
+              "text": "[Bloque 178: #a120]\nArtículo 120.\n1. El debate en el Pleno comenzará por la presentación del Dictamen por parte del representante designado, en su caso, por la Comisión correspondiente, por tiempo no superior a cinco minutos.\n2. Si no hubiera propuestas de veto, procederá un debate de totalidad con un turno a favor y otro en contra, más la intervención de los Portavoces de los Grupos parlamentarios que lo deseen.\n3. Cada una de las intervenciones a que se refiere el anterior apartado no podrá exceder de diez minutos.\n4. No obstante, el Presidente del Senado, oída la Junta de Portavoces, podrá acordar modificar los turnos y la duración de las intervenciones previstas en este precepto cuando así lo aconseje el desarrollo de los debates.\nSe modifica por el art. único.92 de la Reforma del Reglamento de 12 de noviembre de 2025. Ref. BOE-A-2025-23055\nSeleccionar redacción:\nÚltima actualización, publicada el 14/11/2025, en vigor a partir del 15/11/2025.\nTexto original, publicado el 13/05/1994, en vigor a partir del 10/05/1994.\nSubir"
+            },
+            {
+              "heading": "Artículo 129.",
+              "anchor": "a129",
+              "text": "[Bloque 192: #a129]\nArtículo 129.\n1. Cuando la naturaleza de un proyecto o de una proposición de ley, remitidos por el Congreso de los Diputados, lo aconseje, o su simplicidad de formulación lo permita, el Pleno de la Cámara, a propuesta de la Mesa, oída la Junta de Portavoces, podrá acordar que se tramite en lectura única.\n2. A tal efecto, se procederá a un debate de totalidad sobre la aplicación del procedimiento de lectura única, con un turno a favor y otro en contra de diez minutos, y tras ellos los Grupos parlamentarios podrán fijar su posición en intervenciones que no excedan de diez minutos.\n3. Acordada la lectura única por el Pleno, y dentro del plazo señalado por la Mesa de la Cámara, podrán presentarse únicamente propuestas de veto, cuya tramitación se realizará conforme a las normas establecidas en el artículo 121 de este Reglamento.\n4. Si no hay propuestas de veto, el debate en el Pleno de la iniciativa consistirá en un turno a favor, un turno en contra y un turno de los Portavoces de los Grupos parlamentarios, todos ellos de hasta diez minutos. Si se presentan propuestas de veto, el debate se ajustará a las reglas generales de debate de las mismas.\n5. Caso de ser aprobada alguna propuesta de veto o si el texto se rechazase por mayoría absoluta, el Presidente del Senado declarará que la Cámara ha vetado el proyecto o proposición de ley, dará por concluido el debate y lo comunicará al Presidente del Gobierno y del Congreso de los Diputados. Si se rechazase la propuesta de veto o si el texto se aprobase, se entenderá definitivamente aprobado por las Cortes Generales y se dará cuenta al Congreso de los Diputados y al Gobierno a efectos del cumplimiento del artículo 91 de la Constitución.\nSe modifica por el art. único.101 de la Reforma del Reglamento de 12 de noviembre de 2025. Ref. BOE-A-2025-23055\nSeleccionar redacción:\nÚltima actualización, publicada el 14/11/2025, en vigor a partir del 15/11/2025.\nTexto original, publicado el 13/05/1994, en vigor a partir del 10/05/1994.\nSubir"
+            },
+            {
+              "heading": "Artículo 134.",
+              "anchor": "a134",
+              "text": "[Bloque 199: #a134]\nArtículo 134.\nEl plazo de veinte días naturales se entiende referido al período ordinario de sesiones. En el caso de que concluyese fuera de éste, se computarán los días necesarios del siguiente período hasta completar el plazo de veinte días. Si este plazo acaba en día inhábil, se entenderá prorrogado al día hábil siguiente.\nSe modifica por el art. único.102 de la Reforma del Reglamento de 12 de noviembre de 2025. Ref. BOE-A-2025-23055\nSeleccionar redacción:\nÚltima actualización, publicada el 14/11/2025, en vigor a partir del 15/11/2025.\nTexto original, publicado el 13/05/1994, en vigor a partir del 10/05/1994.\nSubir"
+            },
+            {
+              "heading": "Artículo 135.",
+              "anchor": "a135",
+              "text": "[Bloque 200: #a135]\nArtículo 135.\n1. El plazo para la presentación de enmiendas y propuestas de veto será de cuatro días a partir de la publicación del texto del proyecto o proposición de ley, con una única prórroga de dos días.\n2. Los Grupos parlamentarios, dentro de los dos días siguientes a aquel en que finalice el plazo de presentación de propuestas de veto y enmiendas, podrán designar entre los miembros de la Comisión una Ponencia encargada de emitir el informe sobre el proyecto o proposición de ley de que se trate. Dicha Ponencia será ratificada en la sesión de la Comisión en la que se dictamine la iniciativa, como punto primero del orden del día.\nLa Ponencia dispondrá de un plazo de cuatro días para emitir su Informe desde la conclusión del plazo de presentación de enmiendas.\n3. La Comisión se reunirá para dictaminar dentro de los tres días siguientes a aquel en que la Ponencia haya concluido su Informe o, si no se designa Ponencia, dentro de los seis días desde la finalización del plazo de presentación de propuestas de veto y enmiendas.\n4. La tramitación en la Ponencia, en la Comisión y en el Pleno se regirá por las mismas normas que las del procedimiento legislativo ordinario.\n5. Todos los plazos recogidos en este artículo se refieren a días naturales. En el caso de que uno de estos plazos concluya en día inhábil se entenderá prorrogado al día hábil siguiente.\n6. (Suprimido)\nSe modifica por el art. único.103 de la Reforma del Reglamento de 12 de noviembre de 2025. Ref. BOE-A-2025-23055\nSeleccionar redacción:\nÚltima actualización, publicada el 14/11/2025, en vigor a partir del 15/11/2025.\nTexto original, publicado el 13/05/1994, en vigor a partir del 10/05/1994.\nSubir"
+            },
+            {
+              "heading": "Artículo 136.",
+              "anchor": "a136",
+              "text": "[Bloque 201: #a136]\nArtículo 136.\nCuando no resulte aplicable lo dispuesto en el artículo 133, la Mesa del Senado, a propuesta de la Junta de Portavoces, podrá establecer que los proyectos legislativos se tramiten en el plazo de un mes, reduciéndose a la mitad los plazos establecidos en el procedimiento legislativo ordinario.\nSubir"
             }
           ]
         }
@@ -1818,8 +1872,23 @@ window.LAW_MAP = {
               "loc": "RCD 119"
             }
           ]
+        },
+        {
+          "title": "Срочность меняет сроки",
+          "facts": [
+            {
+              "text": "Срочную процедуру назначает Mesa Конгресса по просьбе Правительства, двух парламентских групп или одной пятой членов палаты. Сроки по общему правилу сокращаются вдвое, с учётом полномочий Mesa по статье 91; если решение принято в ходе рассмотрения, срочность применяется к следующим процессуальным действиям.",
+              "ref": "008",
+              "loc": "RCD 91, 93–94"
+            }
+          ]
         }
-      ]
+      ],
+      "mapNote": {
+        "text": "◷ При срочности: сроки вдвое",
+        "ref": "008",
+        "loc": "RCD 93–94"
+      }
     },
     {
       "id": "approval",
@@ -1917,8 +1986,53 @@ window.LAW_MAP = {
               "loc": "RS 107.3"
             }
           ]
+        },
+        {
+          "title": "Срочность и месячный срок",
+          "facts": [
+            {
+              "text": "Для текстов, объявленных срочными Правительством или Конгрессом, срок Сената составляет 20 календарных дней. Mesa Сената также может назначить срочную процедуру сама, по предложению парламентской группы или 25 сенаторов.",
+              "ref": "010",
+              "loc": "CE 90.3; RS 133"
+            },
+            {
+              "text": "Эти 20 дней исчисляются в пределах обычного периода сессий: недостающие дни переносятся на следующий период. Окончание срока в нерабочий день переносится на следующий рабочий день. Срочная процедура сохраняет рассмотрение в Ponencia, комиссии и пленуме по правилам обычного порядка.",
+              "ref": "010",
+              "loc": "RS 134, 135.4–5"
+            },
+            {
+              "text": "Отдельный вариант: если статья 133 не применяется, Mesa Сената по предложению Junta de Portavoces может установить рассмотрение за один месяц, сократив сроки обычной процедуры вдвое.",
+              "ref": "010",
+              "loc": "RS 136"
+            }
+          ]
+        },
+        {
+          "title": "Одно чтение в Сенате",
+          "facts": [
+            {
+              "text": "Сенат отдельно решает, применять ли одно чтение к поступившему из Конгресса тексту. Если характер или простота текста позволяют, решение принимает пленум по предложению Mesa, выслушав Junta de Portavoces. По вопросу назначения процедуры проводятся отдельные прения.",
+              "ref": "010",
+              "loc": "RS 129.1–2"
+            },
+            {
+              "text": "После назначения одного чтения можно вносить только предложения вето в срок, установленный Mesa. Поправки к статьям по этому порядку не вносятся. Далее текст рассматривает пленум Сената; правила прений зависят от наличия предложений вето.",
+              "ref": "010",
+              "loc": "RS 129.3–4"
+            },
+            {
+              "text": "Принятое предложение вето или отклонение текста абсолютным большинством считается вето Сената: далее требуется решение Конгресса. Если предложение вето отклонено либо текст одобрен, статья 129.5 предусматривает окончательное одобрение парламентом и передачу для действий по статье 91 Конституции.",
+              "ref": "010",
+              "loc": "RS 129.5; CE 90.2, 91"
+            }
+          ]
         }
-      ]
+      ],
+      "mapNote": {
+        "text": "◷ Обычно 2 месяца; при срочности — 20 дней",
+        "ref": "010",
+        "loc": "CE 90.2–3; RS 133–135"
+      }
     },
     {
       "id": "return",
@@ -2688,7 +2802,7 @@ window.LAW_MAP = {
     },
     {
       "id": "reading-choice",
-      "title": "Назначена lectura única?",
+      "title": "Конгресс назначил одно чтение?",
       "kind": "decision",
       "ref": "008",
       "facts": [
@@ -2701,7 +2815,7 @@ window.LAW_MAP = {
     },
     {
       "id": "single-reading",
-      "title": "Пленум одобрил текст в одно чтение?",
+      "title": "Пленум Конгресса одобрил текст в одно чтение?",
       "kind": "decision",
       "ref": "008",
       "facts": [
@@ -3998,6 +4112,76 @@ window.LAW_MAP = {
         }
       ],
       "endType": "amendment"
+    },
+    {
+      "id": "single-organic-report",
+      "kind": "process",
+      "title": "Органический текст: новый доклад комиссии",
+      "ref": "009",
+      "facts": [
+        {
+          "text": "Если органический текст не получил абсолютного большинства при окончательном голосовании по всему тексту, его возвращают в комиссию для нового dictamen в течение месяца. Затем проводится повторное голосование; снова нужно абсолютное большинство, иначе текст отклонён.",
+          "ref": "009",
+          "loc": "RCD 131.2–3; CE 81.2"
+        }
+      ]
+    },
+    {
+      "id": "single-organic-revote",
+      "kind": "decision",
+      "title": "Повторное голосование: есть абсолютное большинство?",
+      "ref": "009",
+      "facts": [
+        {
+          "text": "Если органический текст не получил абсолютного большинства при окончательном голосовании по всему тексту, его возвращают в комиссию для нового dictamen в течение месяца. Затем проводится повторное голосование; снова нужно абсолютное большинство, иначе текст отклонён.",
+          "ref": "009",
+          "loc": "RCD 131.2–3; CE 81.2"
+        }
+      ]
+    },
+    {
+      "id": "senate-reading-choice",
+      "kind": "decision",
+      "title": "Сенат назначил одно чтение?",
+      "ref": "010",
+      "facts": [
+        {
+          "text": "Сенат отдельно решает, применять ли одно чтение к поступившему из Конгресса тексту. Если характер или простота текста позволяют, решение принимает пленум по предложению Mesa, выслушав Junta de Portavoces. По вопросу назначения процедуры проводятся отдельные прения.",
+          "ref": "010",
+          "loc": "RS 129.1–2"
+        }
+      ]
+    },
+    {
+      "id": "senate-single-reading",
+      "kind": "decision",
+      "title": "Пленум Сената: результат одного чтения",
+      "ref": "010",
+      "facts": [
+        {
+          "text": "После назначения одного чтения можно вносить только предложения вето в срок, установленный Mesa. Поправки к статьям по этому порядку не вносятся. Далее текст рассматривает пленум Сената; правила прений зависят от наличия предложений вето.",
+          "ref": "010",
+          "loc": "RS 129.3–4"
+        },
+        {
+          "text": "Принятое предложение вето или отклонение текста абсолютным большинством считается вето Сената: далее требуется решение Конгресса. Если предложение вето отклонено либо текст одобрен, статья 129.5 предусматривает окончательное одобрение парламентом и передачу для действий по статье 91 Конституции.",
+          "ref": "010",
+          "loc": "RS 129.5; CE 90.2, 91"
+        }
+      ]
+    },
+    {
+      "id": "senate-ordinary-review",
+      "kind": "process",
+      "title": "Сенат: обычное рассмотрение с поправками",
+      "ref": "010",
+      "facts": [
+        {
+          "text": "Если одно чтение не назначено, сохраняется общий порядок Сената: внесение поправок и предложений вето, работа комиссии и предусмотренное регламентом решение. Бюджетная проверка поправок и изменений во время заседания раскрыта отдельными ветвями.",
+          "ref": "010",
+          "loc": "RS 107, 115, 120–122, 151"
+        }
+      ]
     }
   ],
   "glossary": [
@@ -4641,9 +4825,32 @@ window.LAW_MAP = {
         "одного чтения",
         "одном чтении"
       ],
-      "text": "Процедура Конгресса, при которой пленум обсуждает и голосует весь текст одним голосованием. Её назначает пленум по предложению Mesa, выслушав Junta de Portavoces, если характер или простота текста позволяют такой порядок.",
+      "text": "Сокращённый порядок рассмотрения текста непосредственно на пленуме, минуя обычную работу Ponencia и комиссии. Конгресс и Сенат назначают его каждый своим решением, если характер или простота текста позволяют. Одно чтение в Конгрессе не отменяет последующее рассмотрение в Сенате.",
       "ref": "008",
-      "loc": "RCD 150"
+      "loc": "RCD 150; RS 129",
+      "extraRefs": [
+        "010"
+      ],
+      "sections": [
+        {
+          "title": "Кто назначает",
+          "text": "Сенат отдельно решает, применять ли одно чтение к поступившему из Конгресса тексту. Если характер или простота текста позволяют, решение принимает пленум по предложению Mesa, выслушав Junta de Portavoces. По вопросу назначения процедуры проводятся отдельные прения.",
+          "ref": "010",
+          "loc": "RS 129.1–2"
+        },
+        {
+          "title": "Что можно внести в Сенате",
+          "text": "После назначения одного чтения можно вносить только предложения вето в срок, установленный Mesa. Поправки к статьям по этому порядку не вносятся. Далее текст рассматривает пленум Сената; правила прений зависят от наличия предложений вето.",
+          "ref": "010",
+          "loc": "RS 129.3–4"
+        },
+        {
+          "title": "Органическое большинство сохраняется",
+          "text": "Если органический текст не получил абсолютного большинства при окончательном голосовании по всему тексту, его возвращают в комиссию для нового dictamen в течение месяца. Затем проводится повторное голосование; снова нужно абсолютное большинство, иначе текст отклонён.",
+          "ref": "009",
+          "loc": "RCD 131.2–3; CE 81.2"
+        }
+      ]
     },
     {
       "id": "veto",
@@ -5288,6 +5495,52 @@ window.LAW_MAP = {
       "text": "В показанной процедуре ILP так называется последствие истечения срока без передачи собранных подписей JEC. Общий срок — 9 месяцев от уведомления; при causa mayor, признанной Mesa Конгресса, возможно продление на 3 месяца.",
       "ref": "005",
       "loc": "LO 3/1984, статья 7.3"
+    },
+    {
+      "id": "urgency",
+      "title": "Срочная процедура — сокращённые сроки",
+      "es": "Procedimiento de urgencia",
+      "aliases": [
+        "срочность",
+        "срочности",
+        "срочный порядок",
+        "срочном порядке",
+        "срочная процедура",
+        "срочную процедуру",
+        "срочной процедуре"
+      ],
+      "text": "Режим рассмотрения с сокращёнными сроками. Сам по себе он не пропускает работу над текстом и не заменяет её одним чтением. В Конгрессе сроки по общему правилу сокращаются вдвое; в Сенате действует срок 20 календарных дней с особыми правилами его исчисления.",
+      "ref": "008",
+      "extraRefs": [
+        "010"
+      ],
+      "loc": "RCD 91, 93–94; RS 133–135",
+      "sections": [
+        {
+          "title": "Как включается в Конгрессе",
+          "text": "Срочную процедуру назначает Mesa Конгресса по просьбе Правительства, двух парламентских групп или одной пятой членов палаты. Сроки по общему правилу сокращаются вдвое, с учётом полномочий Mesa по статье 91; если решение принято в ходе рассмотрения, срочность применяется к следующим процессуальным действиям.",
+          "ref": "008",
+          "loc": "RCD 91, 93–94"
+        },
+        {
+          "title": "Как действует в Сенате",
+          "text": "Для текстов, объявленных срочными Правительством или Конгрессом, срок Сената составляет 20 календарных дней. Mesa Сената также может назначить срочную процедуру сама, по предложению парламентской группы или 25 сенаторов.",
+          "ref": "010",
+          "loc": "CE 90.3; RS 133"
+        },
+        {
+          "title": "Как считать дни",
+          "text": "Эти 20 дней исчисляются в пределах обычного периода сессий: недостающие дни переносятся на следующий период. Окончание срока в нерабочий день переносится на следующий рабочий день. Срочная процедура сохраняет рассмотрение в Ponencia, комиссии и пленуме по правилам обычного порядка.",
+          "ref": "010",
+          "loc": "RS 134, 135.4–5"
+        },
+        {
+          "title": "Отдельный месячный вариант",
+          "text": "Отдельный вариант: если статья 133 не применяется, Mesa Сената по предложению Junta de Portavoces может установить рассмотрение за один месяц, сократив сроки обычной процедуры вдвое.",
+          "ref": "010",
+          "loc": "RS 136"
+        }
+      ]
     }
   ]
 };
