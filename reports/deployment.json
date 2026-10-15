@@ -1,0 +1,43 @@
+{
+  "checked_date": "2026-10-15",
+  "url": "https://how-to-create-law-in-spain.criteriascout.xyz/",
+  "host": "192.3.205.61",
+  "release": "/opt/law-pipeline-spain/releases/20261015",
+  "archive_sha256": "af8e204abf893cf495aacd93486871442bbcb5ebcf59ccf42213c5d6618b2d45",
+  "image_base_digest": "sha256:ed84151ed2d47ef93c0939eb9b9754c6990db6092cd2081e11988a47a83d47ea",
+  "tls": {
+    "issuer": "Let's Encrypt YE1",
+    "trusted_external_connection": true,
+    "not_after_utc": "2027-01-13T00:26:29Z",
+    "managed_by": "caddy.service",
+    "automatic_renewal_configured": true,
+    "forced_renewal_performed": false
+  },
+  "checks": {
+    "package_proof_and_vendor_sha256": "PASS",
+    "nginx_config": "PASS",
+    "caddy_validate_as_runtime_user": "PASS",
+    "ha_adapted_route_and_tls_policy_identical": "PASS",
+    "ha_container_id_started_at_restart_count_unchanged": "PASS",
+    "caddy_pid_unchanged_on_reload": "PASS",
+    "trusted_public_https": "PASS",
+    "http_308_preserves_query": "PASS",
+    "public_runtime_assets_match_local_sha256": "PASS",
+    "accept_language_passthrough_and_cache_headers": "PASS",
+    "malformed_language_header_rejected": "PASS",
+    "missing_file_404": "PASS",
+    "browser_es_ru_en": "PASS",
+    "browser_expand_branch_glossary_evidence": "PASS",
+    "nginx_nonroot_readonly_memory_limit": "PASS",
+    "published_ports_only_loopback_8087": "PASS",
+    "systemd_unit_verify_and_enabled": "PASS",
+    "no_failed_systemd_units": "PASS"
+  },
+  "site_memory_mib_observed": 2.469,
+  "vps_reboot_performed": false,
+  "notes": [
+    "Automatic boot is configured; a full VPS reboot was not performed to avoid interrupting HA.",
+    "The final verifier initially rejected inherited unbound 80/tcp metadata. Docker inspection proved it is null; the corrected verifier checks exact HostConfig.PortBindings and NetworkSettings.Ports and passes.",
+    "One browser native click failed before the expanded map was fitted. After fitting, semantic interaction opened the glossary and evidence successfully."
+  ]
+}

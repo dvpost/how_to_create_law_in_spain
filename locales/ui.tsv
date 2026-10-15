@@ -1,0 +1,104 @@
+Как появляется закон · Испания	Cómo se aprueba una ley · España	How a law is passed · Spain
+Как появляется закон	Cómo se aprueba una ley	How a law is passed
+Интерактивная карта законодательной процедуры Испании	Mapa interactivo del procedimiento legislativo de España	Interactive map of Spain’s legislative procedure
+Интерактивная карта: как принимают законы в Испании. Этапы, участники и официальные источники.	Mapa interactivo: cómo se aprueban las leyes en España. Etapas, participantes y fuentes oficiales.	Interactive map: how laws are passed in Spain. Stages, participants and official sources.
+Управление картой	Controles del mapa	Map controls
+Меню проекта	Menú del proyecto	Project menu
+Настройки	Ajustes	Settings
+Помощь и легенда	Ayuda y leyenda	Help and legend
+Развернуть всё	Desplegar todo	Expand all
+Свернуть всё	Contraer todo	Collapse all
+Развернуть на весь экран	Ver en pantalla completa	Enter fullscreen
+Выйти из полноэкранного режима	Salir de pantalla completa	Exit fullscreen
+Испания · проверено 14.10.2026 · v23	España · verificado el 14.10.2026 · v23	Spain · verified on 14 October 2026 · v23
+Испания · проверено 	España · verificado el 	Spain · verified on 
+Источники и пруфы	Fuentes y documentación	Sources and evidence
+Границы исследования	Alcance del estudio	Scope of the study
+Показывать описания карточек	Mostrar descripciones de las tarjetas	Show card descriptions
+Пояснять термины	Mostrar explicaciones de los términos	Explain terms
+Показывать возвраты	Mostrar devoluciones	Show return paths
+Маршруты на карте	Recorridos del mapa	Map routes
+Оба типа закона	Ambos tipos de ley	Both types of law
+Обычный закон	Ley ordinaria	Ordinary law
+Органический закон	Ley orgánica	Organic law
+Выровнять	Ordenar el mapa	Arrange map
+Язык	Idioma	Language
+Язык сайта	Idioma del sitio	Site language
+Как пользоваться картой	Cómo usar el mapa	How to use the map
+Перетаскивайте фон, чтобы двигаться по карте. Колесо мыши меняет масштаб. Карточки можно перетаскивать — после отпускания стрелки заново прокладываются с прямыми углами.	Arrastra el fondo para moverte por el mapa. La rueda del ratón cambia el zoom. También puedes arrastrar las tarjetas: al soltarlas, las flechas se vuelven a trazar con ángulos rectos.	Drag the background to move around the map. Use the mouse wheel to zoom. You can also drag cards; when you release them, the arrows are rerouted with right angles.
+Нажатие на карточку открывает описание. Ссылка «Раскрыть (N)» или «Свернуть (N)» меняет отдельную ветвь. N — число элементов ближайшего уровня.	Al pulsar una tarjeta se abre su descripción. El enlace «Desplegar (N)» o «Contraer (N)» modifica una sola rama. N indica el número de elementos del nivel inmediatamente inferior.	Click a card to open its description. The “Expand (N)” or “Collapse (N)” link changes an individual branch. N is the number of items at the next level.
+Две кнопки со стопкой карточек рядом с «?» раскрывают всё (+) или сворачивают всё (−). Полное раскрытие показывает все ветви выбранного типа закона и вписывает карту в экран. Затем можно отдельно закрывать или открывать любые ветви. «Свернуть всё» возвращает начальный обзор, сохраняя настройки.	Los dos botones con tarjetas apiladas junto a «?» despliegan todo (+) o lo contraen todo (−). Al desplegar todo se muestran todas las ramas del tipo de ley seleccionado y se ajusta el mapa a la pantalla. Después puedes abrir o cerrar cualquier rama por separado. «Contraer todo» recupera la vista inicial y conserva los ajustes.	The two stacked-card buttons next to “?” expand all (+) or collapse all (−). Expanding all shows every branch for the selected type of law and fits the map to the screen. You can then open or close individual branches. “Collapse all” restores the initial overview while keeping your settings.
+Слово с пунктирным подчёркиванием открывает определение, примеры и источники. Описания карточек и пояснения терминов можно независимо отключить в настройках.	Las palabras con subrayado discontinuo abren una definición con ejemplos y fuentes. Las descripciones de las tarjetas y las explicaciones de los términos se pueden desactivar por separado en los ajustes.	Words with a dotted underline open a definition, examples and sources. Card descriptions and term explanations can be turned off independently in the settings.
+Сплошная стрелка — показанный ход процедуры	Flecha continua: recorrido del procedimiento mostrado	Solid arrow: the procedure’s displayed path
+Бледная точечная стрелка — вариант внутри свёрнутой ветви	Flecha tenue de puntos: alternativa dentro de una rama contraída	Faint dotted arrow: an option within a collapsed branch
+Зелёная пунктирная стрелка — возврат	Flecha verde discontinua: devolución	Green dashed arrow: a return path
+Связь без стрелки — состав или роль	Línea sin flecha: composición o función	Line without an arrow: membership or role
+Толстая сплошная стрелка показывает свёрнутый путь к следующему общему этапу. Она не означает, что все условия уже выполнены. При раскрытии бледная связь заменяется конкретными действиями и стрелками.	Una flecha continua gruesa resume el recorrido contraído hasta la siguiente etapa común. No significa que ya se cumplan todas las condiciones. Al desplegar la rama, la conexión tenue se sustituye por acciones y flechas concretas.	A thick solid arrow summarizes a collapsed path to the next shared stage. It does not mean that all conditions have already been met. Expanding the branch replaces the faint connection with specific actions and arrows.
+Зелёные карточки — участники, светлые — действия, ромбы — решения. Серые пояснения обозначают неуточнённые вопросы.	Las tarjetas verdes representan participantes; las claras, acciones; y los rombos, decisiones. Las notas grises señalan cuestiones pendientes de aclaración.	Green cards represent participants, light cards represent actions, and diamonds represent decisions. Grey notes indicate unresolved questions.
+Тип закона в настройках фильтрует маршруты. Юридическую квалификацию выполняет Mesa Конгресса; её решения показаны в раскрываемых ветвях.	El tipo de ley seleccionado en los ajustes filtra los recorridos. La calificación jurídica corresponde a la Mesa del Congreso; sus decisiones se muestran en las ramas desplegables.	The type of law selected in the settings filters the routes. Legal classification is carried out by the Bureau of Congress (Mesa); its decisions appear in the expandable branches.
+«Выровнять» заново раскладывает карточки и стрелки и подбирает масштаб. При раскрытии ветви карточки плавно раздвигаются, сохраняя порядок; масштаб и выбранная карточка остаются на месте. Ручные перемещения сохраняются до следующей перестройки. Полноэкранный режим включается кнопкой справа сверху; выход — этой же кнопкой или Esc.	«Ordenar el mapa» redistribuye las tarjetas y las flechas y ajusta el zoom. Al desplegar una rama, las tarjetas se separan suavemente manteniendo su orden; se conservan el zoom y la posición en pantalla de la tarjeta seleccionada. Los desplazamientos manuales se mantienen hasta la siguiente redistribución. El botón de la esquina superior derecha activa la pantalla completa; para salir, pulsa el mismo botón o Esc.	“Arrange map” recalculates card and arrow positions and adjusts the zoom. When a branch expands, cards move apart smoothly while keeping their order; the zoom and the selected card’s screen position stay fixed. Manual positions remain until the next layout change. The button at the top right enters fullscreen; use the same button or Esc to exit.
+Описание карточки	Descripción de la tarjeta	Card description
+Закрыть описание	Cerrar descripción	Close description
+Закрыть каталог	Cerrar catálogo	Close catalogue
+Номер источника соответствует папке proofs/. Сохранены статьи, полные официальные документы и метаданные. Консолидированные тексты BOE имеют информационный характер; ссылки на официальные публикации сохранены внутри оригиналов.	El número de la fuente corresponde a su carpeta en proofs/. Se conservan los artículos, los documentos oficiales completos y sus metadatos. Los textos consolidados del BOE tienen carácter informativo; los originales contienen enlaces a las publicaciones oficiales.	Each source number corresponds to a folder in proofs/. Articles, full official documents and metadata are preserved. Consolidated BOE texts are for information only; links to official publications are retained in the originals.
+Доказательство	Documentación de respaldo	Supporting evidence
+Закрыть доказательство	Cerrar documentación	Close evidence
+Для интерактивной карты включите JavaScript. Сохранённые документы доступны в каталоге proofs.	Activa JavaScript para utilizar el mapa interactivo. Los documentos guardados están disponibles en la carpeta proofs.	Enable JavaScript to use the interactive map. Saved documents are available in the proofs folder.
+Источник №	Fuente n.º 	Source no. 
+Участник процесса	Participante en el procedimiento	Participant in the procedure
+Источник инициативы	Origen de la iniciativa	Source of the initiative
+Процедурное действие	Actuación del procedimiento	Procedural action
+Процедурное решение	Decisión del procedimiento	Procedural decision
+Состояние документа	Estado del texto	Status of the text
+Результат / ограничение	Resultado / limitación	Outcome / limitation
+Серая область	Cuestión no aclarada	Unresolved area
+Конец пути поправки	Fin del recorrido de la enmienda	End of the amendment’s path
+Конец рассмотрения этого текста	Fin de la tramitación de este texto	End of consideration of this text
+Основание раскрыто ниже	El fundamento se detalla a continuación	The supporting basis is set out below
+CE — Конституция; RCD — Регламент Конгресса; RS — Регламент Сената. Оригиналы ниже — на испанском. 	CE: Constitución; RCD: Reglamento del Congreso; RS: Reglamento del Senado. Los originales que figuran a continuación están en español. 	CE: Constitution; RCD: Standing Orders of Congress; RS: Standing Orders of the Senate. The originals below are in Spanish. 
+Открыть папку пруфа	Abrir documentación archivada	Open archived evidence
+Загружено: 	Descargado: 	Downloaded: 
+Официальный источник ↗	Fuente oficial ↗	Official source ↗
+Сохранённый исходный HTML ↓	HTML original guardado ↓	Saved original HTML ↓
+Статья на официальном сайте ↗	Artículo en el sitio oficial ↗	Article on the official website ↗
+Локальный пруф ↗	Documentación archivada ↗	Archived evidence ↗
+Читать	Leer	Read
+Серая область · не проверено	Cuestión no aclarada · sin verificar	Unresolved area · unverified
+Граница подтверждена	Límite del estudio confirmado	Scope boundary confirmed
+Браузер не включил полноэкранный режим: 	El navegador no ha activado la pantalla completa: 	The browser could not enter fullscreen: 
+Не удалось построить карту: 	No se ha podido generar el mapa: 	Could not build the map: 
+Не удалось загрузить сайт: 	No se ha podido cargar el sitio: 	Could not load the site: 
+Пояснить: 	Explicar: 	Explain: 
+Условный пример	Ejemplo hipotético	Hypothetical example
+Пример	Ejemplo	Example
+Пояснение термина	Explicación del término	Term explanation
+Закрыть пояснение	Cerrar explicación	Close explanation
+Серая область: определены только указанные в законе последствия.	Cuestión no aclarada: solo se describen las consecuencias indicadas en la ley.	Unresolved area: only the consequences specified in the law are defined.
+Основание определения	Fundamento de la definición	Basis for the definition
+Раскрыть	Desplegar	Expand
+Свернуть	Contraer	Collapse
+ / органический: 	 / ley orgánica: 	 / organic law: 
+Не найден путь стрелки: 	No se ha encontrado un recorrido para la flecha: 	No arrow route found: 
+Непрямоугольный путь стрелки: 	El recorrido de la flecha no es ortogonal: 	The arrow route is not orthogonal: 
+Официальный комментарий · обновление Enrique García Ortea, 2026 · не норма	Comentario oficial · actualización de Enrique García Ortea, 2026 · no es una norma	Official commentary · updated by Enrique García Ortea, 2026 · not a legal rule
+Комментарий к статье 91 · короткая выдержка	Comentario al artículo 91 · breve extracto	Commentary on Article 91 · short excerpt
+Оформление санкции и промульгации · короткие выдержки комментария	Formalización de la sanción y la promulgación · breves extractos del comentario	Formalization of assent and promulgation · short commentary excerpts
+Условный учебный пример применения правила: 	Ejemplo didáctico hipotético de aplicación de la regla: 	Hypothetical teaching example of how the rule applies: 
+← Вернуться к карте	← Volver al mapa	← Back to the map
+Архив проверки 	Archivo de verificación 	Verification archive 
+. Консолидированные тексты BOE имеют информационный характер. Ссылки на официальные публикации и изменения находятся в оригиналах.	. Los textos consolidados del BOE tienen carácter informativo. Los originales contienen los enlaces a las publicaciones oficiales y a sus modificaciones.	. Consolidated BOE texts are for information only. Links to official publications and amendments are in the originals.
+Подтверждаемые пункты	Afirmaciones respaldadas	Supported claims
+Загрузка UTC: 	Descarga UTC: 	Downloaded at UTC: 
+Метаданные	Metadatos	Metadata
+Ambiguous glossary alias: 	Alias ambiguo del glosario: 	Ambiguous glossary alias: 
+Unknown glossary term: 	Término desconocido del glosario: 	Unknown glossary term: 
+Participant has no visible stage: 	El participante no tiene una etapa visible: 	Participant has no visible stage: 
+Participant has no membership link: 	El participante no tiene un enlace de pertenencia: 	Participant has no membership link: 
+Unclassified cycle in legislative procedure	Ciclo sin clasificar en el procedimiento legislativo	Unclassified cycle in legislative procedure
+Invalid ELK route: 	Recorrido ELK no válido: 	Invalid ELK route: 
+Invalid ELK coordinates: 	Coordenadas ELK no válidas: 	Invalid ELK coordinates: 
+Unknown expansion: 	Rama desplegable desconocida: 	Unknown expansion: 
+Invalid node owner: 	Nodo superior no válido: 	Invalid node owner: 
+Coincident connected nodes: 	Los nodos conectados coinciden en la misma posición: 	Coincident connected nodes: 
+Unknown law mode	Tipo de ley desconocido	Unknown law mode
+Senado · словарь парламентских терминов	Senado · glosario de términos parlamentarios	Senate · glossary of parliamentary terms

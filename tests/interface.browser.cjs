@@ -7,7 +7,7 @@ const {pathToFileURL}=require('node:url');
  try{
   const page=await browser.newPage({viewport:{width:1600,height:1000}}),errors=[],network=[];
   page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))network.push(r.url());});
-  await page.goto(pathToFileURL(path.resolve(__dirname,'../index.html')).href);
+  await page.goto(pathToFileURL(path.resolve(__dirname,'../index.html')).href+'?lang=ru');
   const ready=()=>page.evaluate(()=>graph.whenReady());await ready();
   const state=()=>page.evaluate(()=>graph.getState()),view=()=>page.evaluate(()=>graph.getVisibleGraph());
   const settings=async()=>{if(!await page.locator('#settings-menu').isVisible())await page.locator('#settings-toggle').click();};

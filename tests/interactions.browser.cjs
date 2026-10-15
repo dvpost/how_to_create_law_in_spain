@@ -4,7 +4,7 @@ const assert=require('node:assert/strict'),path=require('node:path');
 const {pathToFileURL}=require('node:url');
 (async()=>{
  const browser=await chromium.launch({channel:'msedge',headless:true}),failures=[];
- const url=pathToFileURL(path.resolve(__dirname,'../index.html')).href;
+ const url=pathToFileURL(path.resolve(__dirname,'../index.html')).href+'?lang=ru';
  async function scenario(name,run){
   const page=await browser.newPage({viewport:{width:1600,height:1100}}),errors=[],network=[];
   page.on('pageerror',error=>errors.push(error.message));page.on('request',request=>{if(/^https?:/.test(request.url()))network.push(request.url());});

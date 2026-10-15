@@ -74,18 +74,28 @@ def build():
         local=dict(id=proof['id'],title=proof['title'],checked_date=data['checked'],claims=claims,sources=sources)
         (folder/'metadata.json').write_text(json.dumps(local,ensure_ascii=False,indent=2),encoding='utf-8')
         chunks=['<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Источник №'+proof['id']+'</title><link rel="stylesheet" href="../../styles.css"></head><body><main style="max-width:1000px;margin:40px auto"><a href="../../index.html">← Вернуться к карте</a><h1>Источник №'+proof['id']+'</h1><h2>'+escape(proof['title'])+'</h2><p class="proof-note">Архив проверки '+data['checked']+'. Консолидированные тексты BOE имеют информационный характер. Ссылки на официальные публикации и изменения находятся в оригиналах.</p><h3>Подтверждаемые пункты</h3><ul>']
-        for claim in claims: chunks.append('<li>'+escape(claim['text'])+' <small>'+escape(claim['locator'])+'</small></li>')
+        # Keep the example label separate so both the label and the authored claim translate exactly.
+        for claim in claims:
+            prefix='Условный учебный пример применения правила: '
+            text=claim['text']
+            label='<span>'+escape(prefix)+'</span>' if text.startswith(prefix) else ''
+            if label: text=text[len(prefix):]
+            chunks.append('<li>'+label+'<span>'+escape(text)+'</span> <small>'+escape(claim['locator'])+'</small></li>')
         chunks.append('</ul>')
         for source in sources:
             chunks.append('<section class="proof-source"><h3>'+escape(source['title'])+'</h3><p class="proof-meta">'+escape(source['version'])+'<br>Загрузка UTC: '+source['retrieved_at_utc']+'<br>SHA-256: '+source['sha256']+'</p><div class="proof-links"><a target="_blank" rel="noopener" href="'+escape(source['url'])+'">Официальный источник ↗</a><a href="'+source['key']+'.html" download>Сохранённый исходный HTML ↓</a><a href="metadata.json">Метаданные</a></div>')
             for article in source['articles']: chunks.append('<h3>'+escape(article['heading'])+'</h3><pre>'+escape(article['text'])+'</pre>')
             chunks.append('</section>')
-        chunks.append('</main></body></html>')
+        chunks.append('</main><nav class="language-controls" aria-label="Язык сайта"><a data-language="es" href="?lang=es" lang="es">ES</a><a data-language="ru" href="?lang=ru" lang="ru">RU</a><a data-language="en" href="?lang=en" lang="en">EN</a></nav></body></html>')
+        chunks[0]=chunks[0].replace('<html lang="ru">', '<html lang="ru" class="proof-document">').replace('<body>', '<body class="proof-page">').replace('<main style="max-width:1000px;margin:40px auto">','<main>')
+        chunks[0]=chunks[0].replace('</head>', '<script src="../../analytics.js" async></script><script src="../../browser-language.js" defer></script><script src="../../translations.js" defer></script><script src="../../i18n.js" defer></script></head>')
         (folder/'index.html').write_text(''.join(chunks),encoding='utf-8')
         (folder/'excerpt.txt').write_text('\n\n'.join(source['title']+'\n'+'\n\n'.join(a['text'] for a in source['articles']) for source in sources),encoding='utf-8')
     (ROOT/'data.js').write_text('window.LAW_MAP = '+json.dumps(data,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
     graph = json.loads((ROOT/'graph.json').read_text(encoding='utf-8'))
     (ROOT/'graph-data.js').write_text('window.LAW_GRAPH = '+json.dumps(graph,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
+    from build_translations import build as build_translations
+    build_translations()
     print(f"Built {len(data['proofs'])} proof folders; {len(data['stages'])} interactive stages")
 
 if __name__=='__main__': build()

@@ -16,7 +16,7 @@ window.createLawGlossary=function(entries,popover,sourceLinks){
   const text=String(value);let result='',end=0;
   for(const match of text.matchAll(pattern)){
    result+=escape(text.slice(end,match.index));const id=aliases.get(match[0].toLocaleLowerCase());
-   result+=id===skip?escape(match[0]):`<button type="button" class="term" data-term="${id}" aria-haspopup="dialog" aria-label="Пояснить: ${escape(match[0])}">${escape(match[0])}</button>`;
+   result+=id===skip?escape(match[0]):`<button type="button" class="term" data-term="${id}" aria-haspopup="dialog" aria-label="${escape(window.lawI18n.t('Пояснить: '))}${escape(match[0])}">${escape(match[0])}</button>`;
    end=match.index+match[0].length;
   }
   return result+escape(text.slice(end));
@@ -41,7 +41,7 @@ window.createLawGlossary=function(entries,popover,sourceLinks){
  function examples(entry){
   if(!entry.examples?.length)return '';
   return `<div class="term-examples">${entry.examples.map(example=>{
-   const label=example.kind==='illustration'?'Условный пример':'Пример';
+   const label=window.lawI18n.t(example.kind==='illustration'?'Условный пример':'Пример');
    const claim={...example,text:label+': '+example.text};
    return `<section class="term-example"><h4>${label}</h4><p>${html(example.text,entry.id)}</p>${sourceLinks(claim)}</section>`;
   }).join('')}</div>`;
@@ -53,7 +53,7 @@ window.createLawGlossary=function(entries,popover,sourceLinks){
   close();
   popover.classList.toggle('term-extended',Boolean(entry.sections?.length));
   popover.innerHTML=`<div class="term-top"><span class="eyebrow">Пояснение термина</span><button type="button" data-close-term aria-label="Закрыть пояснение">×</button></div><h3 id="term-title">${escape(entry.title)}</h3><p class="term-es">${escape(entry.es)}</p>${entry.status==='partial'?'<p class="term-boundary">Серая область: определены только указанные в законе последствия.</p>':''}<p class="term-definition">${html(entry.text,id)}</p>${sections(entry)}${examples(entry)}<div class="term-sources">Основание определения${sourceLinks(entry)}</div>`;
-  popover.showPopover();
+  window.lawI18n.translateDOM(popover);popover.showPopover();
   const width=popover.offsetWidth,height=popover.offsetHeight;
   const left=Math.max(12,Math.min(rect.left,innerWidth-width-12));
   const top=rect.bottom+8+height<=innerHeight-12?rect.bottom+8:Math.max(12,rect.top-height-8);

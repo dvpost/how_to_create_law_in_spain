@@ -1,0 +1,25 @@
+name: law-pipeline-spain
+
+services:
+  site:
+    build: .
+    image: law-pipeline-spain:local
+    restart: "no"
+    pull_policy: never
+    read_only: true
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 64m
+    cpus: 0.50
+    pids_limit: 64
+    tmpfs:
+      - /var/cache/nginx:uid=101,gid=101,mode=0700,size=16m
+      - /tmp:uid=101,gid=101,mode=0700,size=4m
+    ports:
+      - "127.0.0.1:8087:8080"
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "3"

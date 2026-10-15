@@ -1,0 +1,10 @@
+how-to-create-law-in-spain.criteriascout.xyz {
+    tls {
+        issuer acme {
+            dir https://acme-v02.api.letsencrypt.org/directory
+            test_dir https://acme-v02.api.letsencrypt.org/directory
+            disable_tlsalpn_challenge
+        }
+    }
+    reverse_proxy 127.0.0.1:8087
+}

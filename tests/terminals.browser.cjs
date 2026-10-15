@@ -34,7 +34,7 @@ assert.ok(!has('return','senate'));
  try{
   const page=await browser.newPage({viewport:{width:1600,height:1100}}),errors=[],network=[];
   page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))network.push(r.url());});
-  await page.goto(pathToFileURL(path.join(root,'index.html')).href);await page.evaluate(()=>graph.whenReady());
+  await page.goto(pathToFileURL(path.join(root,'index.html')).href+'?lang=ru');await page.evaluate(()=>graph.whenReady());
   await page.evaluate(()=>graph.toggle('return'));
   let view=await page.evaluate(()=>graph.getVisibleGraph());
   assert.ok(!view.edges.some(edge=>edge.id==='return-king'),'Expanded Congress response has no summary shortcut');

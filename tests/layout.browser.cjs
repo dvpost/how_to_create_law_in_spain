@@ -3,6 +3,9 @@ const {chromium}=require(process.argv[2]);
 const assert=require('node:assert/strict'),path=require('node:path');
 const {pathToFileURL}=require('node:url');
 const fs=require('node:fs');
+const language=process.argv[3]||'ru';
+assert.ok(['es','ru','en'].includes(language),'Language must be es, ru or en');
+const reportSuffix=language==='ru'?'':'-'+language;
 function crossings(geometry){
  const edges=geometry.edges.filter(edge=>edge.kind!=='return'),pairs=[];
  function cuts(a,b,c,d){
@@ -28,7 +31,7 @@ function nodeHits(geometry){
  try{
   const page=await browser.newPage({viewport:{width:1600,height:1100}}),errors=[],network=[];
   page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))network.push(r.url());});
-  await page.goto(pathToFileURL(path.resolve(__dirname,'../index.html')).href);await page.evaluate(()=>graph.whenReady());
+  await page.goto(pathToFileURL(path.resolve(__dirname,'../index.html')).href+'?lang='+language);await page.evaluate(()=>graph.whenReady());
   // The reported reproduction: reveal initiative sources and the Senate pre-procedure.
   await page.evaluate(async()=>{await graph.toggle('initiative');await graph.toggle('senate-source');});
   let geometry=await page.evaluate(()=>graph.getGeometry());
@@ -56,7 +59,7 @@ function nodeHits(geometry){
   function stagePositions(g){return ['initiative','admission','discussion','approval','senate','king','publication'].map(id=>g.nodes.find(n=>n.id===id).y);}
   verify(geometry,'Senate');
   assert.ok(crossings(geometry).length<=2,'The Senate reproduction must have at most two crossing pairs');
-  await page.screenshot({path:path.resolve(__dirname,'../reports/senate.png')});
+  await page.screenshot({path:path.resolve(__dirname,'../reports/senate'+reportSuffix+'.png')});
   // Every disclosure is exercised, including the sideways ILP role group.
   const owners=await page.evaluate(()=>Object.keys(LAW_GRAPH.expansions));
   for(const id of owners){
@@ -65,7 +68,7 @@ function nodeHits(geometry){
   }
   const role=await page.evaluate(()=>graph.getState().positions);
   assert.equal(role['ilp-electors'].y,role['ilp-signatures'].y);assert.ok(role['ilp-electors'].x<role['ilp-signatures'].x);
-  await page.evaluate(()=>graph.fit());await page.screenshot({path:path.resolve(__dirname,'../reports/expanded.png')});
+  await page.evaluate(()=>graph.fit());await page.screenshot({path:path.resolve(__dirname,'../reports/expanded'+reportSuffix+'.png')});
   for(const mode of ['ordinary','organic','all']){
    await page.evaluate(mode=>graph.setLawMode(mode),mode);verify(await page.evaluate(()=>graph.getGeometry()),mode);
   }
@@ -89,10 +92,10 @@ function nodeHits(geometry){
   // An engine failure is visible and leaves no stale or alternate layout behind.
   const failed=await browser.newPage();
   await failed.addInitScript(()=>Object.defineProperty(window,'ELK',{get(){return class{layout(){return Promise.reject(new Error('test-layout-error'));}};},set(){},configurable:true}));
-  await failed.goto(pathToFileURL(path.resolve(__dirname,'../index.html')).href);assert.equal(await failed.evaluate(()=>graph.whenReady()),false);
+  await failed.goto(pathToFileURL(path.resolve(__dirname,'../index.html')).href+'?lang='+language);assert.equal(await failed.evaluate(()=>graph.whenReady()),false);
   assert.match(await failed.locator('#ui-status').textContent(),/test-layout-error/);assert.equal(await failed.locator('#ui-status').isVisible(),true);
   assert.deepEqual(await failed.evaluate(()=>graph.getVisibleGraph()),{nodes:[],edges:[]});assert.equal(await failed.locator('#viewport').getAttribute('aria-busy'),'false');await failed.close();
-  fs.writeFileSync(path.resolve(__dirname,'../reports/layout-checks.json'),JSON.stringify({placement:'elkjs 0.12.0',routing:'libavoid-js 0.5.0-beta.5',scenarios,offlineRequests:network,errors},null,2)+'\n');
+  fs.writeFileSync(path.resolve(__dirname,'../reports/layout-checks'+reportSuffix+'.json'),JSON.stringify({language,placement:'elkjs 0.12.0',routing:'libavoid-js 0.5.0-beta.5',scenarios,offlineRequests:network,errors},null,2)+'\n');
   console.log('PASS: every disclosure and law mode; orthogonal rendered routes; zero node/edge collisions; main-stage order; ILP group; latest async request; visible engine failure without fallback; offline');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1});

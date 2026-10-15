@@ -9,7 +9,9 @@
     "layout": "PASS",
     "interactions": "PASS",
     "conditions": "PASS",
-    "terminals": "PASS"
+    "terminals": "PASS",
+    "i18n": "PASS",
+    "analytics": "PASS"
   },
   "geometry": {
     "scenarios": 22,
@@ -19,7 +21,7 @@
     "senate_crossing_pairs": 2,
     "details": "reports/layout-checks.json"
   },
-  "regression_evidence": "conditions.browser.cjs failed before the change because the new mandatory-Plenary decision was absent. It now verifies Yes reaches the Plenary and No reaches the retention check, with the opposite-polarity node removed. glossary.browser.cjs clicks the condition on the canvas, checks all five exclusions, opens Leyes de bases from the list and verifies graph state is unchanged.",
+  "regression_evidence": "The i18n browser suite passed. A controlled product mutation that used navigator.languages instead of the incoming Accept-Language failed on the first ru header with navigator=en-US (actual en, expected ru). Exact original bytes and SHA-256 were restored. The final extended suite passed with all 20 source dialogs in all three languages, illustrative-claim translation, Spanish legal terminology, standalone proof scrolling and mobile control clearance.",
   "checks": [
     "Mandatory-Plenary category question, correct Yes/No branches, complete clickable five-category list and detailed Leyes de bases explanation",
     "Consistent autonomous-community terminology; sourced distinctions between community, province, city and valenciano in proof 017",
@@ -70,5 +72,46 @@
   "routing": "libavoid-js 0.5.0-beta.5",
   "legal_checks": "reports/legal-conditions.json",
   "source_archives": "Original source bytes unchanged; existing official articles added to relevant proof readers",
-  "source_archive_check_date": "14.10.2026"
+  "source_archive_check_date": "14.10.2026",
+  "languages": [
+    "es",
+    "ru",
+    "en"
+  ],
+  "geometry_by_language": {
+    "ru": {
+      "scenarios": 22,
+      "node_overlaps": 0,
+      "edge_node_hits": 0,
+      "errors": [],
+      "details": "reports/layout-checks.json"
+    },
+    "es": {
+      "scenarios": 22,
+      "node_overlaps": 0,
+      "edge_node_hits": 0,
+      "errors": [],
+      "details": "reports/layout-checks-es.json"
+    },
+    "en": {
+      "scenarios": 22,
+      "node_overlaps": 0,
+      "edge_node_hits": 0,
+      "errors": [],
+      "details": "reports/layout-checks-en.json"
+    }
+  },
+  "deployment_verification": {
+    "artifact": "law-pipeline-spain-server.zip",
+    "source_and_vendor_sha256": "PASS",
+    "existing_hosted_site": "PASS: SSH audit and loopback HTTP 200",
+    "deployment_report": "reports/deployment.json"
+  },
+  "analytics_verification": {
+    "measurement_id": "G-ZBZX7NP7HV",
+    "http_https_map_and_proof": "PASS: one config and one async Google tag",
+    "file_and_loopback": "PASS: no analytics commands or Google requests",
+    "real_google_hits_sent_by_tests": false,
+    "regression_evidence": "Changing only the configured measurement ID to G-WRONGTEST failed the config assertion. Exact analytics.js bytes and SHA-256 were restored, and the final analytics and i18n suites passed."
+  }
 }

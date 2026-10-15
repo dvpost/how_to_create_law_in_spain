@@ -52,7 +52,7 @@ assert.ok(!allEdges.some(edge=>edge.source==='return'&&edge.target==='senate'));
  try{
   const page=await browser.newPage({viewport:{width:1600,height:1100}}),errors=[],network=[];
   page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))network.push(r.url());});
-  await page.goto(pathToFileURL(path.join(root,'index.html')).href);await page.evaluate(()=>graph.whenReady());
+  await page.goto(pathToFileURL(path.join(root,'index.html')).href+'?lang=ru');await page.evaluate(()=>graph.whenReady());
   await page.evaluate(async()=>{await graph.toggle('admission');});
   let visible=await page.evaluate(()=>graph.getVisibleGraph());
   assert.ok(visible.nodes.some(node=>node.id==='congress-budget-effect'&&node.kind==='decision'));

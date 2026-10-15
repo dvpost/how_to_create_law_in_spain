@@ -58,7 +58,7 @@ window.createLawGraph=function(container,data,config,callbacks){
    if(!entry.children.length)return;
    const link=document.createElement('a');
    link.href='#'+entry.id;link.setAttribute('role','button');link.dataset.nodeToggle=entry.id;
-   link.textContent=`${expanded.has(entry.id)?'Свернуть':'Раскрыть'} (${entry.children.length})`;
+   link.textContent=`${window.lawI18n.t(expanded.has(entry.id)?'Свернуть':'Раскрыть')} (${entry.children.length})`;
    link.setAttribute('aria-expanded',String(expanded.has(entry.id)));link.setAttribute('aria-label',link.textContent+' · '+entry.item.title);
    link.addEventListener('click',event=>{event.preventDefault();event.stopPropagation();toggle(entry.id);});
    link.addEventListener('keydown',event=>{if(event.key===' '){event.preventDefault();link.click();}});
@@ -88,7 +88,7 @@ window.createLawGraph=function(container,data,config,callbacks){
   const ids=visibleIds(),visible=new Set(ids);let edges=[...config.edges];
   ids.forEach(id=>{if(expanded.has(id)){const spec=config.expansions[id];edges=edges.filter(e=>!spec.removeEdges.includes(e.id));edges.push(...spec.edges);}});
   edges=edges.filter(e=>allowed(e.mode)&&(returns||e.kind!=='return')).map(e=>{
-   const out={...e,label:lawMode==='organic'&&e.organicLabel?e.organicLabel:lawMode==='all'&&e.organicLabel?e.label+' / органический: '+e.organicLabel:(e.label||''),ref:lawMode==='organic'&&e.organicRef?e.organicRef:e.ref};
+   const out={...e,label:lawMode==='organic'&&e.organicLabel?e.organicLabel:lawMode==='all'&&e.organicLabel?e.label+window.lawI18n.t(' / органический: ')+e.organicLabel:(e.label||''),ref:lawMode==='organic'&&e.organicRef?e.organicRef:e.ref};
    for(const [owner,target] of Object.entries(e.sourceWhenExpanded||{}))if(expanded.has(owner)&&visible.has(target))out.source=target;
    for(const [owner,target] of Object.entries(e.targetWhenExpanded||{}))if(expanded.has(owner)&&visible.has(target))out.target=target;
    out.labelSize=out.label?measure(out.label,'edge-title',235,11):{width:0,height:0};return out;
@@ -208,7 +208,7 @@ window.createLawGraph=function(container,data,config,callbacks){
   });
  }
  function focus(collection){
-  cy.fit(collection,35);if(cy.zoom()>1.05)cy.zoom({level:1.05,renderedPosition:{x:container.clientWidth/2,y:container.clientHeight/2}});
+  cy.fit(collection,container.clientWidth<=600?72:35);if(cy.zoom()>1.05)cy.zoom({level:1.05,renderedPosition:{x:container.clientWidth/2,y:container.clientHeight/2}});
  }
  function select(id){current=id;cy.nodes().removeClass('current');cy.getElementById(id).addClass('current');}
  function collapse(id){expanded.delete(id);(config.expansions[id]?.nodes||[]).forEach(collapse);}
